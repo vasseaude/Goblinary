@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Goblinary.Api", "Goblinary.Api\Goblinary.Api.csproj", "{9F23BF15-C078-439E-8B45-9CC8A1F4AC9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Goblinary.Data", "..\Data\Goblinary.Data\Goblinary.Data.csproj", "{04E142A6-7831-4CAC-A1EA-DD4049205BF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Goblinary.Model", "..\Model\Goblinary.Model\Goblinary.Model.csproj", "{D5B01CF5-5F74-4406-9567-12E8CD09D0B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Goblinary.Data.SqlServer", "..\Data\Goblinary.Data.SqlServer\Goblinary.Data.SqlServer.csproj", "{D8436E54-4C59-469E-B63D-0A392537FA21}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://goblinary.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Goblinary.Api\\Goblinary.Api.csproj
+		SccProjectName1 = Goblinary.Api
+		SccLocalPath1 = Goblinary.Api
+		SccProjectUniqueName2 = ..\\Data\\Goblinary.Data\\Goblinary.Data.csproj
+		SccProjectName2 = ../Data/Goblinary.Data
+		SccLocalPath2 = ..\\Data\\Goblinary.Data
+		SccProjectUniqueName3 = ..\\Model\\Goblinary.Model\\Goblinary.Model.csproj
+		SccProjectName3 = ../Model/Goblinary.Model
+		SccLocalPath3 = ..\\Model\\Goblinary.Model
+		SccProjectUniqueName4 = ..\\Data\\Goblinary.Data.SqlServer\\Goblinary.Data.SqlServer.csproj
+		SccProjectName4 = ../Data/Goblinary.Data.SqlServer
+		SccLocalPath4 = ..\\Data\\Goblinary.Data.SqlServer
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9F23BF15-C078-439E-8B45-9CC8A1F4AC9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F23BF15-C078-439E-8B45-9CC8A1F4AC9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F23BF15-C078-439E-8B45-9CC8A1F4AC9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F23BF15-C078-439E-8B45-9CC8A1F4AC9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04E142A6-7831-4CAC-A1EA-DD4049205BF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04E142A6-7831-4CAC-A1EA-DD4049205BF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04E142A6-7831-4CAC-A1EA-DD4049205BF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04E142A6-7831-4CAC-A1EA-DD4049205BF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5B01CF5-5F74-4406-9567-12E8CD09D0B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5B01CF5-5F74-4406-9567-12E8CD09D0B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5B01CF5-5F74-4406-9567-12E8CD09D0B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5B01CF5-5F74-4406-9567-12E8CD09D0B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8436E54-4C59-469E-B63D-0A392537FA21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8436E54-4C59-469E-B63D-0A392537FA21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8436E54-4C59-469E-B63D-0A392537FA21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8436E54-4C59-469E-B63D-0A392537FA21}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

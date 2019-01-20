@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Goblinary.CharacterData", "Goblinary.CharacterData\Goblinary.CharacterData.csproj", "{054CC94A-2428-406F-B983-116FA3E105D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Goblinary.Common", "..\Common\Goblinary.Common\Goblinary.Common.csproj", "{693B2BE8-641D-4776-B47F-412E594169FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Goblinary.CharacterData.Model", "Goblinary.CharacterData.Model\Goblinary.CharacterData.Model.csproj", "{0B0B4ECF-60F9-4E14-ACA2-DA7FF9A9EE71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Goblinary.CharacterData.SqlServer", "Goblinary.CharacterData.SqlServer\Goblinary.CharacterData.SqlServer.csproj", "{60429A65-BC8D-42A3-9463-87B84AEEAFDB}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://goblinary.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Goblinary.CharacterData\\Goblinary.CharacterData.csproj
+		SccProjectName1 = Goblinary.CharacterData
+		SccLocalPath1 = Goblinary.CharacterData
+		SccProjectUniqueName2 = ..\\Common\\Goblinary.Common\\Goblinary.Common.csproj
+		SccProjectName2 = ../Common/Goblinary.Common
+		SccLocalPath2 = ..\\Common\\Goblinary.Common
+		SccProjectUniqueName3 = Goblinary.CharacterData.Model\\Goblinary.CharacterData.Model.csproj
+		SccProjectName3 = Goblinary.CharacterData.Model
+		SccLocalPath3 = Goblinary.CharacterData.Model
+		SccProjectUniqueName4 = Goblinary.CharacterData.SqlServer\\Goblinary.CharacterData.SqlServer.csproj
+		SccProjectName4 = Goblinary.CharacterData.SqlServer
+		SccLocalPath4 = Goblinary.CharacterData.SqlServer
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Alpha|Any CPU = Alpha|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{054CC94A-2428-406F-B983-116FA3E105D5}.Alpha|Any CPU.ActiveCfg = Release|Any CPU
+		{054CC94A-2428-406F-B983-116FA3E105D5}.Alpha|Any CPU.Build.0 = Release|Any CPU
+		{054CC94A-2428-406F-B983-116FA3E105D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{054CC94A-2428-406F-B983-116FA3E105D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{054CC94A-2428-406F-B983-116FA3E105D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{054CC94A-2428-406F-B983-116FA3E105D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{693B2BE8-641D-4776-B47F-412E594169FD}.Alpha|Any CPU.ActiveCfg = Release|Any CPU
+		{693B2BE8-641D-4776-B47F-412E594169FD}.Alpha|Any CPU.Build.0 = Release|Any CPU
+		{693B2BE8-641D-4776-B47F-412E594169FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{693B2BE8-641D-4776-B47F-412E594169FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{693B2BE8-641D-4776-B47F-412E594169FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{693B2BE8-641D-4776-B47F-412E594169FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B0B4ECF-60F9-4E14-ACA2-DA7FF9A9EE71}.Alpha|Any CPU.ActiveCfg = Release|Any CPU
+		{0B0B4ECF-60F9-4E14-ACA2-DA7FF9A9EE71}.Alpha|Any CPU.Build.0 = Release|Any CPU
+		{0B0B4ECF-60F9-4E14-ACA2-DA7FF9A9EE71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B0B4ECF-60F9-4E14-ACA2-DA7FF9A9EE71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B0B4ECF-60F9-4E14-ACA2-DA7FF9A9EE71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B0B4ECF-60F9-4E14-ACA2-DA7FF9A9EE71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60429A65-BC8D-42A3-9463-87B84AEEAFDB}.Alpha|Any CPU.ActiveCfg = Release|Any CPU
+		{60429A65-BC8D-42A3-9463-87B84AEEAFDB}.Alpha|Any CPU.Build.0 = Release|Any CPU
+		{60429A65-BC8D-42A3-9463-87B84AEEAFDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60429A65-BC8D-42A3-9463-87B84AEEAFDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60429A65-BC8D-42A3-9463-87B84AEEAFDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60429A65-BC8D-42A3-9463-87B84AEEAFDB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

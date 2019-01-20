@@ -1,0 +1,12 @@
+G:\Projects\Goblinary\WikiData\Goblinary.WikiData.Model\bin\Debug\Goblinary.WikiData.Model.dll.config
+G:\Projects\Goblinary\WikiData\Goblinary.WikiData.Model\bin\Debug\Goblinary.WikiData.Model.dll
+G:\Projects\Goblinary\WikiData\Goblinary.WikiData.Model\bin\Debug\Goblinary.WikiData.Model.pdb
+G:\Projects\Goblinary\WikiData\Goblinary.WikiData.Model\bin\Debug\EntityFramework.dll
+G:\Projects\Goblinary\WikiData\Goblinary.WikiData.Model\bin\Debug\EntityFramework.SqlServer.dll
+G:\Projects\Goblinary\WikiData\Goblinary.WikiData.Model\bin\Debug\Goblinary.Common.dll
+G:\Projects\Goblinary\WikiData\Goblinary.WikiData.Model\bin\Debug\Goblinary.Common.pdb
+G:\Projects\Goblinary\WikiData\Goblinary.WikiData.Model\bin\Debug\EntityFramework.xml
+G:\Projects\Goblinary\WikiData\Goblinary.WikiData.Model\bin\Debug\EntityFramework.SqlServer.xml
+G:\Projects\Goblinary\WikiData\Goblinary.WikiData.Model\obj\Debug\Goblinary.WikiData.Model.csprojResolveAssemblyReference.cache
+G:\Projects\Goblinary\WikiData\Goblinary.WikiData.Model\obj\Debug\Goblinary.WikiData.Model.dll
+G:\Projects\Goblinary\WikiData\Goblinary.WikiData.Model\obj\Debug\Goblinary.WikiData.Model.pdb

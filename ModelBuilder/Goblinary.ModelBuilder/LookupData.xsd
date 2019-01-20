@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="LookupData" targetNamespace="http://tempuri.org/LookupData.xsd" xmlns:mstns="http://tempuri.org/LookupData.xsd" xmlns="http://tempuri.org/LookupData.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="LookupData" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="LookupData" msprop:Generator_UserDSName="LookupData">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SourceWorksheets" msprop:Generator_TableClassName="SourceWorksheetsDataTable" msprop:Generator_TableVarName="tableSourceWorksheets" msprop:Generator_RowChangedName="SourceWorksheetsRowChanged" msprop:Generator_TablePropName="SourceWorksheets" msprop:Generator_RowDeletingName="SourceWorksheetsRowDeleting" msprop:Generator_RowChangingName="SourceWorksheetsRowChanging" msprop:Generator_RowEvHandlerName="SourceWorksheetsRowChangeEventHandler" msprop:Generator_RowDeletedName="SourceWorksheetsRowDeleted" msprop:Generator_RowClassName="SourceWorksheetsRow" msprop:Generator_UserTableName="SourceWorksheets" msprop:Generator_RowEvArgName="SourceWorksheetsRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="WorksheetName" msprop:Generator_ColumnVarNameInTable="columnWorksheetName" msprop:Generator_ColumnPropNameInRow="WorksheetName" msprop:Generator_ColumnPropNameInTable="WorksheetNameColumn" msprop:Generator_UserColumnName="WorksheetName" type="xs:string" />
+              <xs:element name="Action" msprop:Generator_ColumnVarNameInTable="columnAction" msprop:Generator_ColumnPropNameInRow="Action" msprop:Generator_ColumnPropNameInTable="ActionColumn" msprop:Generator_UserColumnName="Action" type="xs:string" minOccurs="0" />
+              <xs:element name="Type" msprop:Generator_ColumnVarNameInTable="columnType" msprop:Generator_ColumnPropNameInRow="Type" msprop:Generator_ColumnPropNameInTable="TypeColumn" msprop:Generator_UserColumnName="Type" type="xs:string" minOccurs="0" />
+              <xs:element name="Type2" msprop:Generator_ColumnVarNameInTable="columnType2" msprop:Generator_ColumnPropNameInRow="Type2" msprop:Generator_ColumnPropNameInTable="Type2Column" msprop:Generator_UserColumnName="Type2" type="xs:string" minOccurs="0" />
+              <xs:element name="TargetTableName" msdata:Caption="DataColumn1" msprop:Generator_ColumnVarNameInTable="columnTargetTableName" msprop:Generator_ColumnPropNameInRow="TargetTableName" msprop:Generator_ColumnPropNameInTable="TargetTableNameColumn" msprop:Generator_UserColumnName="TargetTableName" type="xs:string" minOccurs="0" />
+              <xs:element name="ColumnNames" msprop:Generator_ColumnVarNameInTable="columnColumnNames" msprop:Generator_ColumnPropNameInRow="ColumnNames" msprop:Generator_ColumnPropNameInTable="ColumnNamesColumn" msprop:Generator_UserColumnName="ColumnNames" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Dictionary" msprop:Generator_TableClassName="DictionaryDataTable" msprop:Generator_TableVarName="tableDictionary" msprop:Generator_RowChangedName="DictionaryRowChanged" msprop:Generator_TablePropName="Dictionary" msprop:Generator_RowDeletingName="DictionaryRowDeleting" msprop:Generator_RowChangingName="DictionaryRowChanging" msprop:Generator_RowEvHandlerName="DictionaryRowChangeEventHandler" msprop:Generator_RowDeletedName="DictionaryRowDeleted" msprop:Generator_RowClassName="DictionaryRow" msprop:Generator_UserTableName="Dictionary" msprop:Generator_RowEvArgName="DictionaryRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Key" msprop:Generator_ColumnVarNameInTable="columnKey" msprop:Generator_ColumnPropNameInRow="Key" msprop:Generator_ColumnPropNameInTable="KeyColumn" msprop:Generator_UserColumnName="Key" type="xs:string" />
+              <xs:element name="Value" msprop:Generator_ColumnVarNameInTable="columnValue" msprop:Generator_ColumnPropNameInRow="Value" msprop:Generator_ColumnPropNameInTable="ValueColumn" msprop:Generator_UserColumnName="Value" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Lookups" msprop:Generator_TableClassName="LookupsDataTable" msprop:Generator_TableVarName="tableLookups" msprop:Generator_RowChangedName="LookupsRowChanged" msprop:Generator_TablePropName="Lookups" msprop:Generator_RowDeletingName="LookupsRowDeleting" msprop:Generator_RowChangingName="LookupsRowChanging" msprop:Generator_RowEvHandlerName="LookupsRowChangeEventHandler" msprop:Generator_RowDeletedName="LookupsRowDeleted" msprop:Generator_RowClassName="LookupsRow" msprop:Generator_UserTableName="Lookups" msprop:Generator_RowEvArgName="LookupsRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Type" msprop:Generator_ColumnVarNameInTable="columnType" msprop:Generator_ColumnPropNameInRow="Type" msprop:Generator_ColumnPropNameInTable="TypeColumn" msprop:Generator_UserColumnName="Type" type="xs:string" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="FeatTypeLookups" msprop:Generator_TableClassName="FeatTypeLookupsDataTable" msprop:Generator_TableVarName="tableFeatTypeLookups" msprop:Generator_RowChangedName="FeatTypeLookupsRowChanged" msprop:Generator_TablePropName="FeatTypeLookups" msprop:Generator_RowDeletingName="FeatTypeLookupsRowDeleting" msprop:Generator_RowChangingName="FeatTypeLookupsRowChanging" msprop:Generator_RowEvHandlerName="FeatTypeLookupsRowChangeEventHandler" msprop:Generator_RowDeletedName="FeatTypeLookupsRowDeleted" msprop:Generator_RowClassName="FeatTypeLookupsRow" msprop:Generator_UserTableName="FeatTypeLookups" msprop:Generator_RowEvArgName="FeatTypeLookupsRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Feat_Name" msprop:Generator_ColumnVarNameInTable="columnFeat_Name" msprop:Generator_ColumnPropNameInRow="Feat_Name" msprop:Generator_ColumnPropNameInTable="Feat_NameColumn" msprop:Generator_UserColumnName="Feat_Name" type="xs:string" />
+              <xs:element name="FeatType" msprop:Generator_ColumnVarNameInTable="columnFeatType" msprop:Generator_ColumnPropNameInRow="FeatType" msprop:Generator_ColumnPropNameInTable="FeatTypeColumn" msprop:Generator_UserColumnName="FeatType" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="AdvancementRanks" msprop:Generator_TableClassName="AdvancementRanksDataTable" msprop:Generator_TableVarName="tableAdvancementRanks" msprop:Generator_RowChangedName="AdvancementRanksRowChanged" msprop:Generator_TablePropName="AdvancementRanks" msprop:Generator_RowDeletingName="AdvancementRanksRowDeleting" msprop:Generator_RowChangingName="AdvancementRanksRowChanging" msprop:Generator_RowEvHandlerName="AdvancementRanksRowChangeEventHandler" msprop:Generator_RowDeletedName="AdvancementRanksRowDeleted" msprop:Generator_RowClassName="AdvancementRanksRow" msprop:Generator_UserTableName="AdvancementRanks" msprop:Generator_RowEvArgName="AdvancementRanksRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Advancement_Name" msprop:Generator_ColumnVarNameInTable="columnAdvancement_Name" msprop:Generator_ColumnPropNameInRow="Advancement_Name" msprop:Generator_ColumnPropNameInTable="Advancement_NameColumn" msprop:Generator_UserColumnName="Advancement_Name" type="xs:string" />
+              <xs:element name="Rank" msprop:Generator_ColumnVarNameInTable="columnRank" msprop:Generator_ColumnPropNameInRow="Rank" msprop:Generator_ColumnPropNameInTable="RankColumn" msprop:Generator_UserColumnName="Rank" type="xs:string" />
+              <xs:element name="ExpCost" msprop:Generator_ColumnVarNameInTable="columnExpCost" msprop:Generator_ColumnPropNameInRow="ExpCost" msprop:Generator_ColumnPropNameInTable="ExpCostColumn" msprop:Generator_UserColumnName="ExpCost" type="xs:string" minOccurs="0" />
+              <xs:element name="CoinCost" msprop:Generator_ColumnVarNameInTable="columnCoinCost" msprop:Generator_ColumnPropNameInRow="CoinCost" msprop:Generator_ColumnPropNameInTable="CoinCostColumn" msprop:Generator_UserColumnName="CoinCost" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Effects" msprop:Generator_TableClassName="EffectsDataTable" msprop:Generator_TableVarName="tableEffects" msprop:Generator_RowChangedName="EffectsRowChanged" msprop:Generator_TablePropName="Effects" msprop:Generator_RowDeletingName="EffectsRowDeleting" msprop:Generator_RowChangingName="EffectsRowChanging" msprop:Generator_RowEvHandlerName="EffectsRowChangeEventHandler" msprop:Generator_RowDeletedName="EffectsRowDeleted" msprop:Generator_RowClassName="EffectsRow" msprop:Generator_UserTableName="Effects" msprop:Generator_RowEvArgName="EffectsRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" />
+              <xs:element name="EffectTerm_Name" msprop:Generator_ColumnVarNameInTable="columnEffectTerm_Name" msprop:Generator_ColumnPropNameInRow="EffectTerm_Name" msprop:Generator_ColumnPropNameInTable="EffectTerm_NameColumn" msprop:Generator_UserColumnName="EffectTerm_Name" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Conditionals" msprop:Generator_TableClassName="ConditionalsDataTable" msprop:Generator_TableVarName="tableConditionals" msprop:Generator_TablePropName="Conditionals" msprop:Generator_RowDeletingName="ConditionalsRowDeleting" msprop:Generator_RowChangingName="ConditionalsRowChanging" msprop:Generator_RowEvHandlerName="ConditionalsRowChangeEventHandler" msprop:Generator_RowDeletedName="ConditionalsRowDeleted" msprop:Generator_UserTableName="Conditionals" msprop:Generator_RowChangedName="ConditionalsRowChanged" msprop:Generator_RowEvArgName="ConditionalsRowChangeEvent" msprop:Generator_RowClassName="ConditionalsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" />
+              <xs:element name="Type" msprop:Generator_ColumnVarNameInTable="columnType" msprop:Generator_ColumnPropNameInRow="Type" msprop:Generator_ColumnPropNameInTable="TypeColumn" msprop:Generator_UserColumnName="Type" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:SourceWorksheets" />
+      <xs:field xpath="mstns:WorksheetName" />
+    </xs:unique>
+    <xs:unique name="Dictionary_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Dictionary" />
+      <xs:field xpath="mstns:Key" />
+    </xs:unique>
+    <xs:unique name="Lookups_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Lookups" />
+      <xs:field xpath="mstns:Type" />
+      <xs:field xpath="mstns:Name" />
+    </xs:unique>
+    <xs:unique name="FeatTypeLookups_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:FeatTypeLookups" />
+      <xs:field xpath="mstns:Feat_Name" />
+    </xs:unique>
+    <xs:unique name="AdvancementRanks_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:AdvancementRanks" />
+      <xs:field xpath="mstns:Advancement_Name" />
+      <xs:field xpath="mstns:Rank" />
+    </xs:unique>
+    <xs:unique name="Effects_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Effects" />
+      <xs:field xpath="mstns:Name" />
+      <xs:field xpath="mstns:EffectTerm_Name" />
+    </xs:unique>
+    <xs:unique name="Conditionals_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Conditionals" />
+      <xs:field xpath="mstns:Name" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

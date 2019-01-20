@@ -1,0 +1,100 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Goblinary.Website", "Goblinary.Website\Goblinary.Website.csproj", "{DD33FFC4-30DA-47BA-B106-FF10F16F70BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Goblinary.Common", "..\Common\Goblinary.Common\Goblinary.Common.csproj", "{693B2BE8-641D-4776-B47F-412E594169FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Goblinary.WikiData.Model", "..\WikiData\Goblinary.WikiData.Model\Goblinary.WikiData.Model.csproj", "{C707F889-556C-4BBB-BCBB-813AF2ECF707}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Goblinary.CharacterData.Model", "..\CharacterData\Goblinary.CharacterData.Model\Goblinary.CharacterData.Model.csproj", "{0B0B4ECF-60F9-4E14-ACA2-DA7FF9A9EE71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Goblinary.WikiData.SqlServer", "..\WikiData\Goblinary.WikiData.SqlServer\Goblinary.WikiData.SqlServer.csproj", "{FD3FBD4D-4261-48FF-BDD1-5B9A8D0FB4F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Goblinary.Web", "..\Web\Goblinary.Web\Goblinary.Web.csproj", "{875D9C47-AD4A-4F62-9CB4-F3E05C467FD3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Goblinary.CharacterData.SqlServer", "..\CharacterData\Goblinary.CharacterData.SqlServer\Goblinary.CharacterData.SqlServer.csproj", "{60429A65-BC8D-42A3-9463-87B84AEEAFDB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		PublicTest|Any CPU = PublicTest|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD33FFC4-30DA-47BA-B106-FF10F16F70BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD33FFC4-30DA-47BA-B106-FF10F16F70BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD33FFC4-30DA-47BA-B106-FF10F16F70BD}.PublicTest|Any CPU.ActiveCfg = PublicTest|Any CPU
+		{DD33FFC4-30DA-47BA-B106-FF10F16F70BD}.PublicTest|Any CPU.Build.0 = PublicTest|Any CPU
+		{DD33FFC4-30DA-47BA-B106-FF10F16F70BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD33FFC4-30DA-47BA-B106-FF10F16F70BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{693B2BE8-641D-4776-B47F-412E594169FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{693B2BE8-641D-4776-B47F-412E594169FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{693B2BE8-641D-4776-B47F-412E594169FD}.PublicTest|Any CPU.ActiveCfg = Release|Any CPU
+		{693B2BE8-641D-4776-B47F-412E594169FD}.PublicTest|Any CPU.Build.0 = Release|Any CPU
+		{693B2BE8-641D-4776-B47F-412E594169FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{693B2BE8-641D-4776-B47F-412E594169FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C707F889-556C-4BBB-BCBB-813AF2ECF707}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C707F889-556C-4BBB-BCBB-813AF2ECF707}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C707F889-556C-4BBB-BCBB-813AF2ECF707}.PublicTest|Any CPU.ActiveCfg = Release|Any CPU
+		{C707F889-556C-4BBB-BCBB-813AF2ECF707}.PublicTest|Any CPU.Build.0 = Release|Any CPU
+		{C707F889-556C-4BBB-BCBB-813AF2ECF707}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C707F889-556C-4BBB-BCBB-813AF2ECF707}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B0B4ECF-60F9-4E14-ACA2-DA7FF9A9EE71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B0B4ECF-60F9-4E14-ACA2-DA7FF9A9EE71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B0B4ECF-60F9-4E14-ACA2-DA7FF9A9EE71}.PublicTest|Any CPU.ActiveCfg = Release|Any CPU
+		{0B0B4ECF-60F9-4E14-ACA2-DA7FF9A9EE71}.PublicTest|Any CPU.Build.0 = Release|Any CPU
+		{0B0B4ECF-60F9-4E14-ACA2-DA7FF9A9EE71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B0B4ECF-60F9-4E14-ACA2-DA7FF9A9EE71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD3FBD4D-4261-48FF-BDD1-5B9A8D0FB4F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD3FBD4D-4261-48FF-BDD1-5B9A8D0FB4F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD3FBD4D-4261-48FF-BDD1-5B9A8D0FB4F6}.PublicTest|Any CPU.ActiveCfg = PublicTest|Any CPU
+		{FD3FBD4D-4261-48FF-BDD1-5B9A8D0FB4F6}.PublicTest|Any CPU.Build.0 = PublicTest|Any CPU
+		{FD3FBD4D-4261-48FF-BDD1-5B9A8D0FB4F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD3FBD4D-4261-48FF-BDD1-5B9A8D0FB4F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{875D9C47-AD4A-4F62-9CB4-F3E05C467FD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{875D9C47-AD4A-4F62-9CB4-F3E05C467FD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{875D9C47-AD4A-4F62-9CB4-F3E05C467FD3}.PublicTest|Any CPU.ActiveCfg = Release|Any CPU
+		{875D9C47-AD4A-4F62-9CB4-F3E05C467FD3}.PublicTest|Any CPU.Build.0 = Release|Any CPU
+		{875D9C47-AD4A-4F62-9CB4-F3E05C467FD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{875D9C47-AD4A-4F62-9CB4-F3E05C467FD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60429A65-BC8D-42A3-9463-87B84AEEAFDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60429A65-BC8D-42A3-9463-87B84AEEAFDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60429A65-BC8D-42A3-9463-87B84AEEAFDB}.PublicTest|Any CPU.ActiveCfg = PublicTest|Any CPU
+		{60429A65-BC8D-42A3-9463-87B84AEEAFDB}.PublicTest|Any CPU.Build.0 = PublicTest|Any CPU
+		{60429A65-BC8D-42A3-9463-87B84AEEAFDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60429A65-BC8D-42A3-9463-87B84AEEAFDB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://lynnear.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Goblinary.Website\\Goblinary.Website.csproj
+		SccProjectName1 = Goblinary.Website
+		SccLocalPath1 = Goblinary.Website
+		SccProjectUniqueName2 = ..\\Common\\Goblinary.Common\\Goblinary.Common.csproj
+		SccProjectName2 = ../Common/Goblinary.Common
+		SccLocalPath2 = ..\\Common\\Goblinary.Common
+		SccProjectUniqueName3 = ..\\WikiData\\Goblinary.WikiData.Model\\Goblinary.WikiData.Model.csproj
+		SccProjectName3 = ../WikiData/Goblinary.WikiData.Model
+		SccLocalPath3 = ..\\WikiData\\Goblinary.WikiData.Model
+		SccProjectUniqueName4 = ..\\CharacterData\\Goblinary.CharacterData.Model\\Goblinary.CharacterData.Model.csproj
+		SccProjectName4 = ../CharacterData/Goblinary.CharacterData.Model
+		SccLocalPath4 = ..\\CharacterData\\Goblinary.CharacterData.Model
+		SccProjectUniqueName5 = ..\\WikiData\\Goblinary.WikiData.SqlServer\\Goblinary.WikiData.SqlServer.csproj
+		SccProjectName5 = ../WikiData/Goblinary.WikiData.SqlServer
+		SccLocalPath5 = ..\\WikiData\\Goblinary.WikiData.SqlServer
+		SccProjectUniqueName6 = ..\\Web\\Goblinary.Web\\Goblinary.Web.csproj
+		SccProjectName6 = ../Web/Goblinary.Web
+		SccLocalPath6 = ..\\Web\\Goblinary.Web
+		SccProjectUniqueName7 = ..\\CharacterData\\Goblinary.CharacterData.SqlServer\\Goblinary.CharacterData.SqlServer.csproj
+		SccProjectName7 = ../CharacterData/Goblinary.CharacterData.SqlServer
+		SccLocalPath7 = ..\\CharacterData\\Goblinary.CharacterData.SqlServer
+	EndGlobalSection
+EndGlobal

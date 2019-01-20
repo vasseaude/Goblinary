@@ -1,0 +1,1239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DD33FFC4-30DA-47BA-B106-FF10F16F70BD}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Goblinary.Website</RootNamespace>
+    <AssemblyName>Goblinary.Website</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.1.8.2\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery.UI.Combined">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.UI.Combined.1.8.24\lib\net45\AspNet.ScriptManager.jQuery.UI.Combined.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax, Version=4.5.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.MSAjax.4.5.6\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms, Version=4.5.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.WebForms.4.5.6\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.0.0\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.2.0.0\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.Core, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.Core.4.1.4.12333\lib\net40-full\DotNetOpenAuth.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Core.4.1.4.12333\lib\net40-full\DotNetOpenAuth.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth.Consumer, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Consumer.4.1.4.12333\lib\net40-full\DotNetOpenAuth.OAuth.Consumer.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.Core.4.1.4.12333\lib\net40-full\DotNetOpenAuth.OpenId.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId.RelyingParty, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.RelyingParty.4.1.4.12333\lib\net40-full\DotNetOpenAuth.OpenId.RelyingParty.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.AspNet, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.AspNet.4.1.4.12333\lib\net40-full\DotNetOpenAuth.AspNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Membership.OpenAuth, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Membership.OpenAuth.2.0.1\lib\net45\Microsoft.AspNet.Membership.OpenAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.1.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.1.0\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.0.0\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.0\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AbilityDetails.aspx" />
+    <Content Include="AbilityList.aspx" />
+    <Content Include="CharacterDetails.aspx" />
+    <Content Include="CharacterList.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Manage.aspx" />
+    <Content Include="Account\OpenAuthProviders.ascx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Account\RegisterExternalLogin.aspx" />
+    <Content Include="AchievementDetails.aspx" />
+    <Content Include="AchievementList.aspx" />
+    <Content Include="CategoryDetails.aspx" />
+    <Content Include="CategoryList.aspx" />
+    <Content Include="Content\Mobile.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\Tables.css" />
+    <Content Include="Controls\AbilityDetailsControls.ascx" />
+    <Content Include="Controls\AbilityListControls.ascx" />
+    <Content Include="Controls\AchievementListControls.ascx" />
+    <Content Include="Controls\CharacterDetailsControls.ascx" />
+    <Content Include="Controls\CharacterFootnoteControls.ascx" />
+    <Content Include="Controls\CharacterListControls.ascx" />
+    <Content Include="Controls\Feat\ActiveFeat.ascx" />
+    <Content Include="Controls\Feat\HoldoutWeaponManeuver.ascx" />
+    <Content Include="Controls\Feat\ToolkitManeuver.ascx" />
+    <Content Include="Controls\Item\Ammo.ascx" />
+    <Content Include="Controls\Item\AmmoContainer.ascx" />
+    <Content Include="Controls\Item\Armor.ascx" />
+    <Content Include="Controls\Feat\ArmorFeat.ascx" />
+    <Content Include="Controls\Feat\Attack.ascx" />
+    <Content Include="Controls\Item\CampKit.ascx" />
+    <Content Include="Controls\Feat\Cantrip.ascx" />
+    <Content Include="Controls\CategoryListControls.ascx" />
+    <Content Include="Controls\Feat\ChanneledFeat.ascx" />
+    <Content Include="Controls\Feat\HolySymbolSpell.ascx" />
+    <Content Include="Controls\Item\Component.ascx" />
+    <Content Include="Controls\Feat\Consumable.ascx" />
+    <Content Include="Controls\Item\ConsumableItem.ascx" />
+    <Content Include="Controls\Achievement\CraftingAchievement.ascx" />
+    <Content Include="Controls\Feat\Defensive.ascx" />
+    <Content Include="Controls\EffectListControls.ascx" />
+    <Content Include="Controls\Feat\Expendable.ascx" />
+    <Content Include="Controls\Feat\Feat.ascx" />
+    <Content Include="Controls\Achievement\FeatAchievement.ascx" />
+    <Content Include="Controls\FeatEffects.ascx" />
+    <Content Include="Controls\FeatDetailsControls.ascx" />
+    <Content Include="Controls\EffectDetailsControls.ascx" />
+    <Content Include="Controls\Feat\Feature.ascx" />
+    <Content Include="Controls\Feat\TrophyCharmManeuver.ascx" />
+    <Content Include="Controls\CategoryDetailsControls.ascx" />
+    <Content Include="Controls\Item\Equipment.ascx" />
+    <Content Include="Controls\Item\Gear.ascx" />
+    <Content Include="Controls\Item\HoldingKit.ascx" />
+    <Content Include="Controls\Item\Implement.ascx" />
+    <Content Include="Controls\Achievement\InteractionAchievement.ascx" />
+    <Content Include="Controls\Item\Ingredient.ascx" />
+    <Content Include="Controls\Item\Item.ascx" />
+    <Content Include="Controls\Item\Mule.ascx" />
+    <Content Include="Controls\Item\OutpostKit.ascx" />
+    <Content Include="Controls\Item\StockItem.ascx" />
+    <Content Include="Controls\KeywordDetailsControls.ascx" />
+    <Content Include="Controls\KeywordListControls.ascx" />
+    <Content Include="Controls\MasterSearchGrid.ascx" />
+    <Content Include="Controls\Achievement\MetaAchievement.ascx" />
+    <Content Include="Controls\Achievement\NPCKillAchievement.ascx" />
+    <Content Include="Controls\Feat\Orison.ascx" />
+    <Content Include="Controls\Feat\PassiveFeat.ascx" />
+    <Content Include="Controls\Feat\PhysicalAttack.ascx" />
+    <Content Include="Controls\Achievement\PlayerKillAchievement.ascx" />
+    <Content Include="Controls\Feat\PowerAttack.ascx" />
+    <Content Include="Controls\Feat\ProficiencyFeat.ascx" />
+    <Content Include="Controls\Feat\Reactive.ascx" />
+    <Content Include="Controls\Achievement\RefiningAchievement.ascx" />
+    <Content Include="Controls\Item\Resource.ascx" />
+    <Content Include="Controls\Feat\RogueKitManeuver.ascx" />
+    <Content Include="Controls\Item\Salvage.ascx" />
+    <Content Include="Controls\Achievement\SettlementLocationAchievement.ascx" />
+    <Content Include="Controls\Achievement\SpecialLocationAchievement.ascx" />
+    <Content Include="Controls\Feat\StandardAttack.ascx" />
+    <Content Include="Controls\RecipeDetailsControls.ascx" />
+    <Content Include="Controls\Recipe\CraftingRecipe.ascx" />
+    <Content Include="Controls\Recipe\Recipe.ascx" />
+    <Content Include="Controls\Recipe\RefiningRecipe.ascx" />
+    <Content Include="Controls\StockDetailsControls.ascx" />
+    <Content Include="Controls\StockListControls.ascx" />
+    <Content Include="Controls\Structure\Camp.ascx" />
+    <Content Include="Controls\Structure\Holding.ascx" />
+    <Content Include="Controls\Structure\Outpost.ascx" />
+    <Content Include="Controls\Structure\Structure.ascx" />
+    <Content Include="Controls\TablesorterNotes.ascx" />
+    <Content Include="Controls\Feat\Upgrade.ascx" />
+    <Content Include="Controls\Feat\Utility.ascx" />
+    <Content Include="Controls\Item\Weapon.ascx" />
+    <Content Include="Controls\Item\WeaponCoating.ascx" />
+    <Content Include="Controls\Achievement\WeaponKillAchievement.ascx" />
+    <Content Include="Controls\Feat\SpellbookSpell.ascx" />
+    <Content Include="Account\PasswordRecoveryEmail.txt" />
+    <Content Include="Account\PasswordReset.aspx" />
+    <Content Include="EffectDetails.aspx" />
+    <Content Include="EffectList.aspx" />
+    <Content Include="FeatDetails.aspx" />
+    <Content Include="FeatList.aspx" />
+    <Content Include="fsgfe797.txt" />
+    <Content Include="Images\asc.gif" />
+    <Content Include="Images\bg.gif" />
+    <Content Include="Images\c.png" />
+    <Content Include="Images\desc.gif" />
+    <Content Include="Images\goblinary-logo-test.gif" />
+    <Content Include="Images\goblinary-logo-text.gif" />
+    <Content Include="Images\goblinary-logo.gif" />
+    <Content Include="Default.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\r.png" />
+    <Content Include="Images\s.png" />
+    <Content Include="Images\spiffygif.gif" />
+    <Content Include="ItemDetails.aspx" />
+    <Content Include="ItemList.aspx" />
+    <Content Include="KeywordDetails.aspx" />
+    <Content Include="KeywordList.aspx" />
+    <Content Include="MasterSearch.aspx" />
+    <Content Include="MembersOnly\TestSecure.aspx" />
+    <Content Include="RecipeDetails.aspx" />
+    <Content Include="RecipeList.aspx" />
+    <Content Include="ReleaseNotes.aspx" />
+    <Content Include="robots.txt" />
+    <Content Include="Scripts\jquery.tablesorter.settings.js" />
+    <Content Include="Scripts\jquery.tablesorter.js" />
+    <Content Include="Scripts\jquery.tablesorter.min.js" />
+    <Content Include="Scripts\jquery.tablesorter.widgets.js" />
+    <Content Include="Scripts\jquery.tablesorter.widgets.min.js" />
+    <Content Include="Scripts\showHideNotesDiv.js" />
+    <Content Include="Scripts\widget-columnSelector.js" />
+    <Content Include="sitemap.xml" />
+    <Content Include="StockDetails.aspx" />
+    <Content Include="StockList.aspx" />
+    <Content Include="StructureDetails.aspx" />
+    <Content Include="StructureList.aspx" />
+    <Content Include="packages.config" />
+    <None Include="Properties\PublishProfiles\FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\test.goblinary.com - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\goblinary.com - Web Deploy.pubxml" />
+    <None Include="Scripts\jquery-1.8.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.8.2.js" />
+    <Content Include="Scripts\jquery-1.8.2.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.24.js" />
+    <Content Include="Scripts\jquery-ui-1.8.24.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="TestFeatDetails.aspx" />
+    <Content Include="TreeLineImages\dash.gif" />
+    <Content Include="TreeLineImages\dashminus.gif" />
+    <Content Include="TreeLineImages\dashplus.gif" />
+    <Content Include="TreeLineImages\i.gif" />
+    <Content Include="TreeLineImages\l.gif" />
+    <Content Include="TreeLineImages\lminus.gif" />
+    <Content Include="TreeLineImages\lplus.gif" />
+    <Content Include="TreeLineImages\minus.gif" />
+    <Content Include="TreeLineImages\noexpand.gif" />
+    <Content Include="TreeLineImages\plus.gif" />
+    <Content Include="TreeLineImages\r.gif" />
+    <Content Include="TreeLineImages\rminus.gif" />
+    <Content Include="TreeLineImages\rplus.gif" />
+    <Content Include="TreeLineImages\t.gif" />
+    <Content Include="TreeLineImages\tminus.gif" />
+    <Content Include="TreeLineImages\tplus.gif" />
+    <Content Include="ViewSwitcher.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Bundle.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\_references.js" />
+    <Content Include="Site.Mobile.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.PublicTest.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbilityDetails.aspx.cs">
+      <DependentUpon>AbilityDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AbilityDetails.aspx.designer.cs">
+      <DependentUpon>AbilityDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AbilityList.aspx.cs">
+      <DependentUpon>AbilityList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AbilityList.aspx.designer.cs">
+      <DependentUpon>AbilityList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CharacterDetails.aspx.cs">
+      <DependentUpon>CharacterDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CharacterDetails.aspx.designer.cs">
+      <DependentUpon>CharacterDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CharacterList.aspx.cs">
+      <DependentUpon>CharacterList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CharacterList.aspx.designer.cs">
+      <DependentUpon>CharacterList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AchievementDetails.aspx.cs">
+      <DependentUpon>AchievementDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AchievementDetails.aspx.designer.cs">
+      <DependentUpon>AchievementDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AchievementList.aspx.cs">
+      <DependentUpon>AchievementList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AchievementList.aspx.designer.cs">
+      <DependentUpon>AchievementList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\AuthConfig.cs" />
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\OpenAuthProviders.ascx.cs">
+      <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\OpenAuthProviders.ascx.designer.cs">
+      <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\RegisterExternalLogin.aspx.cs">
+      <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\RegisterExternalLogin.aspx.designer.cs">
+      <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryDetails.aspx.cs">
+      <DependentUpon>CategoryDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CategoryDetails.aspx.designer.cs">
+      <DependentUpon>CategoryDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryList.aspx.cs">
+      <DependentUpon>CategoryList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CategoryList.aspx.designer.cs">
+      <DependentUpon>CategoryList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AbilityDetailsControls.ascx.cs">
+      <DependentUpon>AbilityDetailsControls.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\AbilityDetailsControls.ascx.designer.cs">
+      <DependentUpon>AbilityDetailsControls.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AbilityListControls.ascx.cs">
+      <DependentUpon>AbilityListControls.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\AbilityListControls.ascx.designer.cs">
+      <DependentUpon>AbilityListControls.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AchievementListControls.ascx.cs">
+      <DependentUpon>AchievementListControls.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\AchievementListControls.ascx.designer.cs">
+      <DependentUpon>AchievementListControls.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CharacterDetailsControls.ascx.cs">
+      <DependentUpon>CharacterDetailsControls.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CharacterDetailsControls.ascx.designer.cs">
+      <DependentUpon>CharacterDetailsControls.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CharacterFootnoteControls.ascx.cs">
+      <DependentUpon>CharacterFootnoteControls.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CharacterFootnoteControls.ascx.designer.cs">
+      <DependentUpon>CharacterFootnoteControls.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CharacterListControls.ascx.cs">
+      <DependentUpon>CharacterListControls.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CharacterListControls.ascx.designer.cs">
+      <DependentUpon>CharacterListControls.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Feat\ActiveFeat.ascx.cs">
+      <DependentUpon>ActiveFeat.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Feat\ActiveFeat.ascx.designer.cs">
+      <DependentUpon>ActiveFeat.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Feat\HoldoutWeaponManeuver.ascx.cs">
+      <DependentUpon>HoldoutWeaponManeuver.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Feat\HoldoutWeaponManeuver.ascx.designer.cs">
+      <DependentUpon>HoldoutWeaponManeuver.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Feat\ToolkitManeuver.ascx.cs">
+      <DependentUpon>ToolkitManeuver.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Feat\ToolkitManeuver.ascx.designer.cs">
+      <DependentUpon>ToolkitManeuver.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Item\Ammo.ascx.cs">
+      <DependentUpon>Ammo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Item\Ammo.ascx.designer.cs">
+      <DependentUpon>Ammo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Item\AmmoContainer.ascx.cs">
+      <DependentUpon>AmmoContainer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Item\AmmoContainer.ascx.designer.cs">
+      <DependentUpon>AmmoContainer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Item\Armor.ascx.cs">
+      <DependentUpon>Armor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Item\Armor.ascx.designer.cs">
+      <DependentUpon>Armor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Feat\ArmorFeat.ascx.cs">
+      <DependentUpon>ArmorFeat.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Feat\ArmorFeat.ascx.designer.cs">
+      <DependentUpon>ArmorFeat.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Feat\Attack.ascx.cs">
+      <DependentUpon>Attack.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Feat\Attack.ascx.designer.cs">
+      <DependentUpon>Attack.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Item\CampKit.ascx.cs">
+      <DependentUpon>CampKit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Item\CampKit.ascx.designer.cs">
+      <DependentUpon>CampKit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Feat\Cantrip.ascx.cs">
+      <DependentUpon>Cantrip.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Feat\Cantrip.ascx.designer.cs">
+      <DependentUpon>Cantrip.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CategoryListControls.ascx.cs">
+      <DependentUpon>CategoryListControls.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CategoryListControls.ascx.designer.cs">
+      <DependentUpon>CategoryListControls.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Feat\ChanneledFeat.ascx.cs">
+      <DependentUpon>ChanneledFeat.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Feat\ChanneledFeat.ascx.designer.cs">
+      <DependentUpon>ChanneledFeat.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Feat\HolySymbolSpell.ascx.cs">
+      <DependentUpon>HolySymbolSpell.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Feat\HolySymbolSpell.ascx.designer.cs">
+      <DependentUpon>HolySymbolSpell.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Item\Component.ascx.cs">
+      <DependentUpon>Component.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Item\Component.ascx.designer.cs">
+      <DependentUpon>Component.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Feat\Consumable.ascx.cs">
+      <DependentUpon>Consumable.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Feat\Consumable.ascx.designer.cs">
+      <DependentUpon>Consumable.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Item\ConsumableItem.ascx.cs">
+      <DependentUpon>ConsumableItem.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Item\ConsumableItem.ascx.designer.cs">
+      <DependentUpon>ConsumableItem.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Achievement\CraftingAchievement.ascx.cs">
+      <DependentUpon>CraftingAchievement.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Achievement\CraftingAchievement.ascx.designer.cs">
+      <DependentUpon>CraftingAchievement.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Feat\Defensive.ascx.cs">
+      <DependentUpon>Defensive.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Feat\Defensive.ascx.designer.cs">
+      <DependentUpon>Defensive.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\EffectListControls.ascx.cs">
+      <DependentUpon>EffectListControls.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\EffectListControls.ascx.designer.cs">
+      <DependentUpon>EffectListControls.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Feat\Expendable.ascx.cs">
+      <DependentUpon>Expendable.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Feat\Expendable.ascx.designer.cs">
+      <DependentUpon>Expendable.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Feat\Feat.ascx.cs">
+      <DependentUpon>Feat.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Feat\Feat.ascx.designer.cs">
+      <DependentUpon>Feat.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Achievement\FeatAchievement.ascx.cs">
+      <DependentUpon>FeatAchievement.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Achievement\FeatAchievement.ascx.designer.cs">
+      <DependentUpon>FeatAchievement.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FeatEffects.ascx.cs">
+      <DependentUpon>FeatEffects.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\FeatEffects.ascx.designer.cs">
+      <DependentUpon>FeatEffects.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FeatDetailsControls.ascx.cs">
+      <DependentUpon>FeatDetailsControls.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\FeatDetailsControls.ascx.designer.cs">
+      <DependentUpon>FeatDetailsControls.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\EffectDetailsControls.ascx.cs">
+      <DependentUpon>EffectDetailsControls.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\EffectDetailsControls.ascx.designer.cs">
+      <DependentUpon>EffectDetailsControls.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Feat\Feature.ascx.cs">
+      <DependentUpon>Feature.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Feat\Feature.ascx.designer.cs">
+      <DependentUpon>Feature.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Feat\TrophyCharmManeuver.ascx.cs">
+      <DependentUpon>TrophyCharmManeuver.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Feat\TrophyCharmManeuver.ascx.designer.cs">
+      <DependentUpon>TrophyCharmManeuver.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CategoryDetailsControls.ascx.cs">
+      <DependentUpon>CategoryDetailsControls.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CategoryDetailsControls.ascx.designer.cs">
+      <DependentUpon>CategoryDetailsControls.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Item\Equipment.ascx.cs">
+      <DependentUpon>Equipment.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Item\Equipment.ascx.designer.cs">
+      <DependentUpon>Equipment.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Item\Gear.ascx.cs">
+      <DependentUpon>Gear.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Item\Gear.ascx.designer.cs">
+      <DependentUpon>Gear.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Item\HoldingKit.ascx.cs">
+      <DependentUpon>HoldingKit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Item\HoldingKit.ascx.designer.cs">
+      <DependentUpon>HoldingKit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Item\Implement.ascx.cs">
+      <DependentUpon>Implement.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Item\Implement.ascx.designer.cs">
+      <DependentUpon>Implement.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Achievement\InteractionAchievement.ascx.cs">
+      <DependentUpon>InteractionAchievement.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Achievement\InteractionAchievement.ascx.designer.cs">
+      <DependentUpon>InteractionAchievement.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Item\Ingredient.ascx.cs">
+      <DependentUpon>Ingredient.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Item\Ingredient.ascx.designer.cs">
+      <DependentUpon>Ingredient.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Item\Item.ascx.cs">
+      <DependentUpon>Item.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Item\Item.ascx.designer.cs">
+      <DependentUpon>Item.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Item\Mule.ascx.cs">
+      <DependentUpon>Mule.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Item\Mule.ascx.designer.cs">
+      <DependentUpon>Mule.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Item\OutpostKit.ascx.cs">
+      <DependentUpon>OutpostKit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Item\OutpostKit.ascx.designer.cs">
+      <DependentUpon>OutpostKit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Item\StockItem.ascx.cs">
+      <DependentUpon>StockItem.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Item\StockItem.ascx.designer.cs">
+      <DependentUpon>StockItem.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\KeywordDetailsControls.ascx.cs">
+      <DependentUpon>KeywordDetailsControls.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\KeywordDetailsControls.ascx.designer.cs">
+      <DependentUpon>KeywordDetailsControls.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\KeywordListControls.ascx.cs">
+      <DependentUpon>KeywordListControls.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\KeywordListControls.ascx.designer.cs">
+      <DependentUpon>KeywordListControls.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MasterSearchGrid.ascx.cs">
+      <DependentUpon>MasterSearchGrid.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\MasterSearchGrid.ascx.designer.cs">
+      <DependentUpon>MasterSearchGrid.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Achievement\MetaAchievement.ascx.cs">
+      <DependentUpon>MetaAchievement.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Achievement\MetaAchievement.ascx.designer.cs">
+      <DependentUpon>MetaAchievement.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Achievement\NPCKillAchievement.ascx.cs">
+      <DependentUpon>NPCKillAchievement.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Achievement\NPCKillAchievement.ascx.designer.cs">
+      <DependentUpon>NPCKillAchievement.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Feat\Orison.ascx.cs">
+      <DependentUpon>Orison.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Feat\Orison.ascx.designer.cs">
+      <DependentUpon>Orison.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Feat\PassiveFeat.ascx.cs">
+      <DependentUpon>PassiveFeat.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Feat\PassiveFeat.ascx.designer.cs">
+      <DependentUpon>PassiveFeat.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Feat\PhysicalAttack.ascx.cs">
+      <DependentUpon>PhysicalAttack.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Feat\PhysicalAttack.ascx.designer.cs">
+      <DependentUpon>PhysicalAttack.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Achievement\PlayerKillAchievement.ascx.cs">
+      <DependentUpon>PlayerKillAchievement.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Achievement\PlayerKillAchievement.ascx.designer.cs">
+      <DependentUpon>PlayerKillAchievement.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Feat\PowerAttack.ascx.cs">
+      <DependentUpon>PowerAttack.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Feat\PowerAttack.ascx.designer.cs">
+      <DependentUpon>PowerAttack.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Feat\ProficiencyFeat.ascx.cs">
+      <DependentUpon>ProficiencyFeat.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Feat\ProficiencyFeat.ascx.designer.cs">
+      <DependentUpon>ProficiencyFeat.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Feat\Reactive.ascx.cs">
+      <DependentUpon>Reactive.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Feat\Reactive.ascx.designer.cs">
+      <DependentUpon>Reactive.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Achievement\RefiningAchievement.ascx.cs">
+      <DependentUpon>RefiningAchievement.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Achievement\RefiningAchievement.ascx.designer.cs">
+      <DependentUpon>RefiningAchievement.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Item\Resource.ascx.cs">
+      <DependentUpon>Resource.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Item\Resource.ascx.designer.cs">
+      <DependentUpon>Resource.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Feat\RogueKitManeuver.ascx.cs">
+      <DependentUpon>RogueKitManeuver.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Feat\RogueKitManeuver.ascx.designer.cs">
+      <DependentUpon>RogueKitManeuver.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Item\Salvage.ascx.cs">
+      <DependentUpon>Salvage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Item\Salvage.ascx.designer.cs">
+      <DependentUpon>Salvage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Achievement\SettlementLocationAchievement.ascx.cs">
+      <DependentUpon>SettlementLocationAchievement.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Achievement\SettlementLocationAchievement.ascx.designer.cs">
+      <DependentUpon>SettlementLocationAchievement.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Achievement\SpecialLocationAchievement.ascx.cs">
+      <DependentUpon>SpecialLocationAchievement.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Achievement\SpecialLocationAchievement.ascx.designer.cs">
+      <DependentUpon>SpecialLocationAchievement.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Feat\StandardAttack.ascx.cs">
+      <DependentUpon>StandardAttack.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Feat\StandardAttack.ascx.designer.cs">
+      <DependentUpon>StandardAttack.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RecipeDetailsControls.ascx.cs">
+      <DependentUpon>RecipeDetailsControls.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\RecipeDetailsControls.ascx.designer.cs">
+      <DependentUpon>RecipeDetailsControls.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Recipe\CraftingRecipe.ascx.cs">
+      <DependentUpon>CraftingRecipe.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Recipe\CraftingRecipe.ascx.designer.cs">
+      <DependentUpon>CraftingRecipe.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Recipe\Recipe.ascx.cs">
+      <DependentUpon>Recipe.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Recipe\Recipe.ascx.designer.cs">
+      <DependentUpon>Recipe.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Recipe\RefiningRecipe.ascx.cs">
+      <DependentUpon>RefiningRecipe.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Recipe\RefiningRecipe.ascx.designer.cs">
+      <DependentUpon>RefiningRecipe.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\StockDetailsControls.ascx.cs">
+      <DependentUpon>StockDetailsControls.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\StockDetailsControls.ascx.designer.cs">
+      <DependentUpon>StockDetailsControls.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\StockListControls.ascx.cs">
+      <DependentUpon>StockListControls.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\StockListControls.ascx.designer.cs">
+      <DependentUpon>StockListControls.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Structure\Camp.ascx.cs">
+      <DependentUpon>Camp.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Structure\Camp.ascx.designer.cs">
+      <DependentUpon>Camp.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Structure\Holding.ascx.cs">
+      <DependentUpon>Holding.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Structure\Holding.ascx.designer.cs">
+      <DependentUpon>Holding.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Structure\Outpost.ascx.cs">
+      <DependentUpon>Outpost.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Structure\Outpost.ascx.designer.cs">
+      <DependentUpon>Outpost.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Structure\Structure.ascx.cs">
+      <DependentUpon>Structure.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Structure\Structure.ascx.designer.cs">
+      <DependentUpon>Structure.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TablesorterNotes.ascx.cs">
+      <DependentUpon>TablesorterNotes.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\TablesorterNotes.ascx.designer.cs">
+      <DependentUpon>TablesorterNotes.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Feat\Upgrade.ascx.cs">
+      <DependentUpon>Upgrade.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Feat\Upgrade.ascx.designer.cs">
+      <DependentUpon>Upgrade.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Feat\Utility.ascx.cs">
+      <DependentUpon>Utility.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Feat\Utility.ascx.designer.cs">
+      <DependentUpon>Utility.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Item\Weapon.ascx.cs">
+      <DependentUpon>Weapon.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Item\Weapon.ascx.designer.cs">
+      <DependentUpon>Weapon.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Item\WeaponCoating.ascx.cs">
+      <DependentUpon>WeaponCoating.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Item\WeaponCoating.ascx.designer.cs">
+      <DependentUpon>WeaponCoating.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Achievement\WeaponKillAchievement.ascx.cs">
+      <DependentUpon>WeaponKillAchievement.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Achievement\WeaponKillAchievement.ascx.designer.cs">
+      <DependentUpon>WeaponKillAchievement.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controls\Feat\SpellbookSpell.ascx.cs">
+      <DependentUpon>SpellbookSpell.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Feat\SpellbookSpell.ascx.designer.cs">
+      <DependentUpon>SpellbookSpell.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomNode\CustomNode.cs" />
+    <Compile Include="Account\PasswordReset.aspx.cs">
+      <DependentUpon>PasswordReset.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\PasswordReset.aspx.designer.cs">
+      <DependentUpon>PasswordReset.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EffectDetails.aspx.cs">
+      <DependentUpon>EffectDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EffectDetails.aspx.designer.cs">
+      <DependentUpon>EffectDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EffectList.aspx.cs">
+      <DependentUpon>EffectList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EffectList.aspx.designer.cs">
+      <DependentUpon>EffectList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FeatDetails.aspx.cs">
+      <DependentUpon>FeatDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FeatDetails.aspx.designer.cs">
+      <DependentUpon>FeatDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FeatList.aspx.cs">
+      <DependentUpon>FeatList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FeatList.aspx.designer.cs">
+      <DependentUpon>FeatList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="ItemDetails.aspx.cs">
+      <DependentUpon>ItemDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ItemDetails.aspx.designer.cs">
+      <DependentUpon>ItemDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ItemList.aspx.cs">
+      <DependentUpon>ItemList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ItemList.aspx.designer.cs">
+      <DependentUpon>ItemList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KeywordDetails.aspx.cs">
+      <DependentUpon>KeywordDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KeywordDetails.aspx.designer.cs">
+      <DependentUpon>KeywordDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KeywordList.aspx.cs">
+      <DependentUpon>KeywordList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KeywordList.aspx.designer.cs">
+      <DependentUpon>KeywordList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterSearch.aspx.cs">
+      <DependentUpon>MasterSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterSearch.aspx.designer.cs">
+      <DependentUpon>MasterSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MembersOnly\TestSecure.aspx.cs">
+      <DependentUpon>TestSecure.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MembersOnly\TestSecure.aspx.designer.cs">
+      <DependentUpon>TestSecure.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RecipeDetails.aspx.cs">
+      <DependentUpon>RecipeDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RecipeDetails.aspx.designer.cs">
+      <DependentUpon>RecipeDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RecipeList.aspx.cs">
+      <DependentUpon>RecipeList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RecipeList.aspx.designer.cs">
+      <DependentUpon>RecipeList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReleaseNotes.aspx.cs">
+      <DependentUpon>ReleaseNotes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReleaseNotes.aspx.designer.cs">
+      <DependentUpon>ReleaseNotes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StockDetails.aspx.cs">
+      <DependentUpon>StockDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockDetails.aspx.designer.cs">
+      <DependentUpon>StockDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StockList.aspx.cs">
+      <DependentUpon>StockList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockList.aspx.designer.cs">
+      <DependentUpon>StockList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StructureDetails.aspx.cs">
+      <DependentUpon>StructureDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StructureDetails.aspx.designer.cs">
+      <DependentUpon>StructureDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StructureList.aspx.cs">
+      <DependentUpon>StructureList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StructureList.aspx.designer.cs">
+      <DependentUpon>StructureList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.designer.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="TestFeatDetails.aspx.cs">
+      <DependentUpon>TestFeatDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestFeatDetails.aspx.designer.cs">
+      <DependentUpon>TestFeatDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TypeLists\EntityTypeList.cs" />
+    <Compile Include="ViewSwitcher.ascx.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.designer.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\CharacterData\Goblinary.CharacterData.Model\Goblinary.CharacterData.Model.csproj">
+      <Project>{0b0b4ecf-60f9-4e14-aca2-da7ff9a9ee71}</Project>
+      <Name>Goblinary.CharacterData.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CharacterData\Goblinary.CharacterData.SqlServer\Goblinary.CharacterData.SqlServer.csproj">
+      <Project>{60429a65-bc8d-42a3-9463-87b84aeeafdb}</Project>
+      <Name>Goblinary.CharacterData.SqlServer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Common\Goblinary.Common\Goblinary.Common.csproj">
+      <Project>{693b2be8-641d-4776-b47f-412e594169fd}</Project>
+      <Name>Goblinary.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Web\Goblinary.Web\Goblinary.Web.csproj">
+      <Project>{875d9c47-ad4a-4f62-9cb4-f3e05c467fd3}</Project>
+      <Name>Goblinary.Web</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WikiData\Goblinary.WikiData.Model\Goblinary.WikiData.Model.csproj">
+      <Project>{c707f889-556c-4bbb-bcbb-813af2ecf707}</Project>
+      <Name>Goblinary.WikiData.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WikiData\Goblinary.WikiData.SqlServer\Goblinary.WikiData.SqlServer.csproj">
+      <Project>{fd3fbd4d-4261-48ff-bdd1-5b9a8d0fb4f6}</Project>
+      <Name>Goblinary.WikiData.SqlServer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'PublicTest|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE;PUBLIC_TEST</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>62985</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:58262/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

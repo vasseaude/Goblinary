@@ -1,0 +1,5 @@
+G:\Projects\Goblinary\Common\Goblinary.Common\bin\Debug\Goblinary.Common.dll
+G:\Projects\Goblinary\Common\Goblinary.Common\bin\Debug\Goblinary.Common.pdb
+G:\Projects\Goblinary\Common\Goblinary.Common\obj\Debug\Goblinary.Common.dll
+G:\Projects\Goblinary\Common\Goblinary.Common\obj\Debug\Goblinary.Common.pdb
+G:\Projects\Goblinary\Common\Goblinary.Common\obj\Debug\Goblinary.Common.csprojResolveAssemblyReference.cache

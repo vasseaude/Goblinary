@@ -1,0 +1,168 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Goblinary.Website.SiteMaster" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="google-site-verification" content="X4uA6-SfIWSb6jfjRZReYpcvHV1rPaNp9-vODPtO9H0" />
+    <title><%: Page.Title %> | <%: this.siteTitle %></title>
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+    <%--<webopt:BundleReference runat="server" Path="~/Content/css" />--%>
+	<link rel="stylesheet" type="text/css" href="/Content/Site.css?modified=<%= System.IO.File.GetLastWriteTime(Server.MapPath("/Content/Site.css")).ToString("MMddyyhhmmss") %>">
+	<link rel="stylesheet" type="text/css" href="/Content/Tables.css?modified=<%= System.IO.File.GetLastWriteTime(Server.MapPath("/Content/Tables.css")).ToString("MMddyyhhmmss") %>">
+	<link rel="stylesheet" type="text/css" href="/Content/Mobile.css?modified=<%= System.IO.File.GetLastWriteTime(Server.MapPath("/Content/Mobile.css")).ToString("MMddyyhhmmss") %>">
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+	<meta name="description" />
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="pragma" content="no-cache">
+	<script type="text/javascript" src="/Scripts/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" src="/Scripts/jquery.tablesorter.min.js"></script>
+	<script type="text/javascript" src="/Scripts/jquery.tablesorter.widgets.js?modified=<%= System.IO.File.GetLastWriteTime(Server.MapPath("/Scripts/jquery.tablesorter.widgets.js")).ToString("MMddyyhhmmss") %>"></script>
+	<script type="text/javascript" src="/Scripts/widget-columnSelector.js"></script>
+	<script type="text/javascript" src="/Scripts/jquery.tablesorter.settings.js?modified=<%= System.IO.File.GetLastWriteTime(Server.MapPath("/Scripts/jquery.tablesorter.settings.js")).ToString("MMddyyhhmmss") %>"></script>
+    <script type="application/ld+json">
+    {
+       "@context": "http://schema.org",
+       "@type": "WebSite",
+       "url": "http://goblinary.com/",
+       "potentialAction": {
+         "@type": "SearchAction",
+         "target": "http://goblinary.com/MasterSearch?q={search_term_string}",
+         "query-input": "required name=search_term_string"
+       }
+    }
+    </script>
+    <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see http://go.microsoft.com/fwlink/?LinkID=272931&clcid=0x409 --%>
+                <%--Framework Scripts--%>
+
+                <%--                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="jquery.ui.combined" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />--%>
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+        <header>
+            <div class="content-wrapper">
+                <div class="logoDiv">
+                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~\" CssClass="logo-link">
+                        <%--<asp:Image ID="logoImage" runat="server" ImageUrl="/Images/goblinary-logo.gif?modified=<%= System.IO.File.GetLastWriteTime(Server.MapPath("/Images/goblinary-logo.gif")).ToString("MMddyyhhmmss") %>" CssClass="logo-image1" />--%>
+						<asp:Image ID="logoImage" runat="server" CssClass="logo-image1" />
+                    </asp:HyperLink>
+                </div>
+                <asp:Panel ID="searchPanel" runat="server" DefaultButton="SearchSubmit" CssClass="searchPanel">
+                    <p class="searchText">Master Search</p>
+                    <p class="searchText2">Search the Goblinary for anything in PFO...</p>
+                    <asp:TextBox ID="searchbox" runat="server" CssClass="headerMasterSearch"></asp:TextBox>
+                    <asp:Button ID="SearchSubmit" runat="server" Text="Search" OnClick="SearchSubmit_Click" CssClass="headerMasterSearch" UseSubmitBehavior="false" />
+                </asp:Panel>
+                <asp:Panel ID="loginPanel" runat="server" CssClass="loginPanel">
+                    <section id="login">
+                        <asp:LoginView runat="server" ViewStateMode="Disabled" ID="masterLoginView">
+                            <AnonymousTemplate>
+                                <ul>
+                                    <li><a id="registerLink" runat="server" href="~/Account/Register">Register</a></li>
+                                    <li><a id="loginLink" runat="server" href="~/Account/Login">Log in</a></li>
+                                </ul>
+                            </AnonymousTemplate>
+                            <LoggedInTemplate>
+                                <p class="loginParagraph">
+                                    Hello, <a runat="server" class="username" href="~/Account/Manage" title="Manage your account"><asp:LoginName runat="server" CssClass="username" /></a>!
+                            <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" />
+                                </p>
+                                <p class="currentCharacter">
+                                    Character: <asp:Label runat="server" ID="characterNameLabel" />
+                                    <asp:HyperLink runat="server" ID="characterDetailsHyperLink" NavigateUrl="~/CharacterDetails" Text="Details" />
+                                    <asp:HyperLink runat="server" NavigateUrl="~/CharacterList" Text="List/Manage" />
+                                </p>
+                            </LoggedInTemplate>
+                        </asp:LoginView>
+                    </section>
+                </asp:Panel>
+				<br style="clear:both" />
+                <div class="nav">
+                    <nav>
+                        <ul id="menu">
+                            <li><a runat="server" href="~/">Home</a></li>
+                            <li><a runat="server" href="~/FeatList">Feats</a></li>
+                            <li><a runat="server" href="~/AchievementList">Achievements</a></li>
+                            <li><a runat="server" href="~/ItemList">Items</a></li>
+                            <li><a runat="server" href="~/RecipeList">Recipes</a></li>
+                            <li><a runat="server" href="~/StockList">Stocks</a></li>
+                            <li><a runat="server" href="~/EffectList">Effects</a></li>
+                            <li><a runat="server" href="~/CategoryList">Categories</a></li>
+                            <li><a runat="server" href="~/AbilityList">Abilities</a></li>
+                            <li><a runat="server" href="~/KeywordList">Keywords</a></li>
+                            <li><a runat="server" href="~/StructureList">Structures</a></li>
+                            <%--                            <asp:LoginView runat="server" ViewStateMode="Disabled">
+                                <AnonymousTemplate>
+                                </AnonymousTemplate>
+                                <LoggedInTemplate>
+                                    <li><a runat="server" href="~/MembersOnly/TestSecure">TestSecure</a></li>
+                                </LoggedInTemplate>
+                            </asp:LoginView>--%>
+                        </ul>
+
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div id="body">
+            <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
+            <section class="content-wrapper main-content clear-fix">
+                <asp:ContentPlaceHolder runat="server" ID="MainContent" />
+            </section>
+        </div>
+        <footer>
+            <div class="content-wrapper">
+                <p class="noPad">
+                    <asp:Label runat="server" ID="DatabaseUpdatedLabel" />
+                </p>
+                <p class="noPad">
+                    Goblinary.com website content/source &copy; <%: DateTime.Now.Year %>
+                    <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="http://lynnear.com/">Lynnear Progression, LLC</asp:HyperLink>
+                    - owned and operated by <i>Kitsune</i> and <i>Nihimon</i>.
+                </p>
+                <p class="noPad">
+                    <small><i>Goblinary</i> is a trademark of Lynnear Progression, LLC; Website logo designed by Pixie
+						(<i><asp:HyperLink runat="server" NavigateUrl="http://darkangelpixie.deviantart.com/">darkangelpixie</asp:HyperLink></i>).
+                        <br />
+                        <i>Goblinworks</i>, <i>Paizo</i>, <i>Pathfinder</i>, and <i>Pathfinder Online</i>, plus related data, images,
+                        screenshots and other materials are all trademarks and/or copyrights of
+                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="http://goblinworks.com/">Goblinworks, Inc.</asp:HyperLink>
+                        and
+                        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="http://paizo.com/">Paizo, Inc.</asp:HyperLink>
+                        and are used with permission.</small>
+                </p>
+            </div>
+        </footer>
+    </form>
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+
+    <script type="text/javascript">
+        var pageTracker = _gat._getTracker("UA-61810071-1");
+        pageTracker._trackPageview();
+    </script>
+</body>
+</html>

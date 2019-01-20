@@ -1,0 +1,7 @@
+G:\Projects\Goblinary\Web\Goblinary.Web\bin\Debug\Goblinary.Web.dll
+G:\Projects\Goblinary\Web\Goblinary.Web\bin\Debug\Goblinary.Web.pdb
+G:\Projects\Goblinary\Web\Goblinary.Web\bin\Debug\Goblinary.Common.dll
+G:\Projects\Goblinary\Web\Goblinary.Web\bin\Debug\Goblinary.Common.pdb
+G:\Projects\Goblinary\Web\Goblinary.Web\obj\Debug\Goblinary.Web.csprojResolveAssemblyReference.cache
+G:\Projects\Goblinary\Web\Goblinary.Web\obj\Debug\Goblinary.Web.dll
+G:\Projects\Goblinary\Web\Goblinary.Web\obj\Debug\Goblinary.Web.pdb

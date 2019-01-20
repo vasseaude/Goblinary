@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="MatchesDataSet" targetNamespace="http://tempuri.org/MatchesDataSet.xsd" xmlns:mstns="http://tempuri.org/MatchesDataSet.xsd" xmlns="http://tempuri.org/MatchesDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="MatchesDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="MatchesDataSet" msprop:Generator_UserDSName="MatchesDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Matches" msprop:Generator_TableClassName="MatchesDataTable" msprop:Generator_TableVarName="tableMatches" msprop:Generator_RowChangedName="MatchesRowChanged" msprop:Generator_TablePropName="Matches" msprop:Generator_RowDeletingName="MatchesRowDeleting" msprop:Generator_RowChangingName="MatchesRowChanging" msprop:Generator_RowEvHandlerName="MatchesRowChangeEventHandler" msprop:Generator_RowDeletedName="MatchesRowDeleted" msprop:Generator_RowClassName="MatchesRow" msprop:Generator_UserTableName="Matches" msprop:Generator_RowEvArgName="MatchesRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Match" msprop:Generator_ColumnVarNameInTable="columnMatch" msprop:Generator_ColumnPropNameInRow="Match" msprop:Generator_ColumnPropNameInTable="MatchColumn" msprop:Generator_UserColumnName="Match" type="xs:string" />
+              <xs:element name="Text" msprop:Generator_ColumnVarNameInTable="columnText" msprop:Generator_ColumnPropNameInRow="Text" msprop:Generator_ColumnPropNameInTable="TextColumn" msprop:Generator_UserColumnName="Text" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Inputs" msprop:Generator_TableClassName="InputsDataTable" msprop:Generator_TableVarName="tableInputs" msprop:Generator_TablePropName="Inputs" msprop:Generator_RowDeletingName="InputsRowDeleting" msprop:Generator_RowChangingName="InputsRowChanging" msprop:Generator_RowEvHandlerName="InputsRowChangeEventHandler" msprop:Generator_RowDeletedName="InputsRowDeleted" msprop:Generator_UserTableName="Inputs" msprop:Generator_RowChangedName="InputsRowChanged" msprop:Generator_RowEvArgName="InputsRowChangeEvent" msprop:Generator_RowClassName="InputsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EffectText" msprop:Generator_ColumnVarNameInTable="columnEffectText" msprop:Generator_ColumnPropNameInRow="EffectText" msprop:Generator_ColumnPropNameInTable="EffectTextColumn" msprop:Generator_UserColumnName="EffectText" type="xs:string" minOccurs="0" />
+              <xs:element name="IsMatch" msprop:Generator_ColumnVarNameInTable="columnIsMatch" msprop:Generator_ColumnPropNameInRow="IsMatch" msprop:Generator_ColumnPropNameInTable="IsMatchColumn" msprop:Generator_UserColumnName="IsMatch" type="xs:string" minOccurs="0" />
+              <xs:element name="EffectName" msprop:Generator_ColumnVarNameInTable="columnEffectName" msprop:Generator_ColumnPropNameInRow="EffectName" msprop:Generator_ColumnPropNameInTable="EffectNameColumn" msprop:Generator_UserColumnName="EffectName" type="xs:string" minOccurs="0" />
+              <xs:element name="Descriptor" msprop:Generator_ColumnVarNameInTable="columnDescriptor" msprop:Generator_ColumnPropNameInRow="Descriptor" msprop:Generator_ColumnPropNameInTable="DescriptorColumn" msprop:Generator_UserColumnName="Descriptor" type="xs:string" minOccurs="0" />
+              <xs:element name="ConditionalPrefix" msprop:Generator_ColumnVarNameInTable="columnConditionalPrefix" msprop:Generator_ColumnPropNameInRow="ConditionalPrefix" msprop:Generator_ColumnPropNameInTable="ConditionalPrefixColumn" msprop:Generator_UserColumnName="ConditionalPrefix" type="xs:string" minOccurs="0" />
+              <xs:element name="Condition" msprop:Generator_ColumnVarNameInTable="columnCondition" msprop:Generator_ColumnPropNameInRow="Condition" msprop:Generator_ColumnPropNameInTable="ConditionColumn" msprop:Generator_UserColumnName="Condition" type="xs:string" minOccurs="0" />
+              <xs:element name="ConditionalSuffix" msprop:Generator_ColumnVarNameInTable="columnConditionalSuffix" msprop:Generator_ColumnPropNameInRow="ConditionalSuffix" msprop:Generator_ColumnPropNameInTable="ConditionalSuffixColumn" msprop:Generator_UserColumnName="ConditionalSuffix" type="xs:string" minOccurs="0" />
+              <xs:element name="Remainder" msprop:Generator_ColumnVarNameInTable="columnRemainder" msprop:Generator_ColumnPropNameInRow="Remainder" msprop:Generator_ColumnPropNameInTable="RemainderColumn" msprop:Generator_UserColumnName="Remainder" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

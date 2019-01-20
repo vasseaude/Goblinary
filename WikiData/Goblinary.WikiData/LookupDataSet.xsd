@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="LookupDataSet" targetNamespace="http://tempuri.org/LookupDataSet.xsd" xmlns:mstns="http://tempuri.org/LookupDataSet.xsd" xmlns="http://tempuri.org/LookupDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="LookupDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="LookupDataSet" msprop:Generator_UserDSName="LookupDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SourceWorksheets" msprop:Generator_TableClassName="SourceWorksheetsDataTable" msprop:Generator_TableVarName="tableSourceWorksheets" msprop:Generator_TablePropName="SourceWorksheets" msprop:Generator_RowDeletingName="SourceWorksheetsRowDeleting" msprop:Generator_RowChangingName="SourceWorksheetsRowChanging" msprop:Generator_RowEvHandlerName="SourceWorksheetsRowChangeEventHandler" msprop:Generator_RowDeletedName="SourceWorksheetsRowDeleted" msprop:Generator_UserTableName="SourceWorksheets" msprop:Generator_RowChangedName="SourceWorksheetsRowChanged" msprop:Generator_RowEvArgName="SourceWorksheetsRowChangeEvent" msprop:Generator_RowClassName="SourceWorksheetsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="WorksheetName" msprop:Generator_ColumnVarNameInTable="columnWorksheetName" msprop:Generator_ColumnPropNameInRow="WorksheetName" msprop:Generator_ColumnPropNameInTable="WorksheetNameColumn" msprop:Generator_UserColumnName="WorksheetName" type="xs:string" />
+              <xs:element name="Action" msprop:Generator_ColumnVarNameInTable="columnAction" msprop:Generator_ColumnPropNameInRow="Action" msprop:Generator_ColumnPropNameInTable="ActionColumn" msprop:Generator_UserColumnName="Action" type="xs:string" minOccurs="0" />
+              <xs:element name="TargetTableName" msdata:Caption="DataColumn1" msprop:Generator_ColumnVarNameInTable="columnTargetTableName" msprop:Generator_ColumnPropNameInRow="TargetTableName" msprop:Generator_ColumnPropNameInTable="TargetTableNameColumn" msprop:Generator_UserColumnName="TargetTableName" type="xs:string" minOccurs="0" />
+              <xs:element name="Type" msprop:Generator_ColumnVarNameInTable="columnType" msprop:Generator_ColumnPropNameInRow="Type" msprop:Generator_ColumnPropNameInTable="TypeColumn" msprop:Generator_UserColumnName="Type" type="xs:string" minOccurs="0" />
+              <xs:element name="ColumnNames" msprop:Generator_ColumnVarNameInTable="columnColumnNames" msprop:Generator_ColumnPropNameInRow="ColumnNames" msprop:Generator_ColumnPropNameInTable="ColumnNamesColumn" msprop:Generator_UserColumnName="ColumnNames" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ResourceTypes" msprop:Generator_TableClassName="ResourceTypesDataTable" msprop:Generator_TableVarName="tableResourceTypes" msprop:Generator_TablePropName="ResourceTypes" msprop:Generator_RowDeletingName="ResourceTypesRowDeleting" msprop:Generator_RowChangingName="ResourceTypesRowChanging" msprop:Generator_RowEvHandlerName="ResourceTypesRowChangeEventHandler" msprop:Generator_RowDeletedName="ResourceTypesRowDeleted" msprop:Generator_UserTableName="ResourceTypes" msprop:Generator_RowChangedName="ResourceTypesRowChanged" msprop:Generator_RowEvArgName="ResourceTypesRowChangeEvent" msprop:Generator_RowClassName="ResourceTypesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ResourceType" msprop:Generator_ColumnVarNameInTable="columnResourceType" msprop:Generator_ColumnPropNameInRow="ResourceType" msprop:Generator_ColumnPropNameInTable="ResourceTypeColumn" msprop:Generator_UserColumnName="ResourceType" type="xs:string" />
+              <xs:element name="Variety" msprop:Generator_ColumnVarNameInTable="columnVariety" msprop:Generator_ColumnPropNameInRow="Variety" msprop:Generator_ColumnPropNameInTable="VarietyColumn" msprop:Generator_UserColumnName="Variety" type="xs:string" minOccurs="0" />
+              <xs:element name="Tier" msprop:Generator_ColumnVarNameInTable="columnTier" msprop:Generator_ColumnPropNameInRow="Tier" msprop:Generator_ColumnPropNameInTable="TierColumn" msprop:Generator_UserColumnName="Tier" type="xs:string" minOccurs="0" />
+              <xs:element name="BaseEncumbrance" msprop:Generator_ColumnVarNameInTable="columnBaseEncumbrance" msprop:Generator_ColumnPropNameInRow="BaseEncumbrance" msprop:Generator_ColumnPropNameInTable="BaseEncumbranceColumn" msprop:Generator_UserColumnName="BaseEncumbrance" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Resources" msprop:Generator_TableClassName="ResourcesDataTable" msprop:Generator_TableVarName="tableResources" msprop:Generator_TablePropName="Resources" msprop:Generator_RowDeletingName="ResourcesRowDeleting" msprop:Generator_RowChangingName="ResourcesRowChanging" msprop:Generator_RowEvHandlerName="ResourcesRowChangeEventHandler" msprop:Generator_RowDeletedName="ResourcesRowDeleted" msprop:Generator_UserTableName="Resources" msprop:Generator_RowChangedName="ResourcesRowChanged" msprop:Generator_RowEvArgName="ResourcesRowChangeEvent" msprop:Generator_RowClassName="ResourcesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Resource" msprop:Generator_ColumnVarNameInTable="columnResource" msprop:Generator_ColumnPropNameInRow="Resource" msprop:Generator_ColumnPropNameInTable="ResourceColumn" msprop:Generator_UserColumnName="Resource" type="xs:string" />
+              <xs:element name="Prefix" msprop:Generator_ColumnVarNameInTable="columnPrefix" msprop:Generator_ColumnPropNameInRow="Prefix" msprop:Generator_ColumnPropNameInTable="PrefixColumn" msprop:Generator_UserColumnName="Prefix" type="xs:string" minOccurs="0" />
+              <xs:element name="ResourceType" msprop:Generator_ColumnVarNameInTable="columnResourceType" msprop:Generator_ColumnPropNameInRow="ResourceType" msprop:Generator_ColumnPropNameInTable="ResourceTypeColumn" msprop:Generator_UserColumnName="ResourceType" type="xs:string" minOccurs="0" />
+              <xs:element name="EncumbranceFactor" msprop:Generator_ColumnVarNameInTable="columnEncumbranceFactor" msprop:Generator_ColumnPropNameInRow="EncumbranceFactor" msprop:Generator_ColumnPropNameInTable="EncumbranceFactorColumn" msprop:Generator_UserColumnName="EncumbranceFactor" type="xs:string" minOccurs="0" />
+              <xs:element name="Encumbrance" msprop:Generator_ColumnVarNameInTable="columnEncumbrance" msprop:Generator_ColumnPropNameInRow="Encumbrance" msprop:Generator_ColumnPropNameInTable="EncumbranceColumn" msprop:Generator_UserColumnName="Encumbrance" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Salvages" msprop:Generator_TableClassName="SalvagesDataTable" msprop:Generator_TableVarName="tableSalvages" msprop:Generator_TablePropName="Salvages" msprop:Generator_RowDeletingName="SalvagesRowDeleting" msprop:Generator_RowChangingName="SalvagesRowChanging" msprop:Generator_RowEvHandlerName="SalvagesRowChangeEventHandler" msprop:Generator_RowDeletedName="SalvagesRowDeleted" msprop:Generator_UserTableName="Salvages" msprop:Generator_RowChangedName="SalvagesRowChanged" msprop:Generator_RowEvArgName="SalvagesRowChangeEvent" msprop:Generator_RowClassName="SalvagesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Salvage" msprop:Generator_ColumnVarNameInTable="columnSalvage" msprop:Generator_ColumnPropNameInRow="Salvage" msprop:Generator_ColumnPropNameInTable="SalvageColumn" msprop:Generator_UserColumnName="Salvage" type="xs:string" />
+              <xs:element name="Variety" msprop:Generator_ColumnVarNameInTable="columnVariety" msprop:Generator_ColumnPropNameInRow="Variety" msprop:Generator_ColumnPropNameInTable="VarietyColumn" msprop:Generator_UserColumnName="Variety" type="xs:string" minOccurs="0" />
+              <xs:element name="Tier" msprop:Generator_ColumnVarNameInTable="columnTier" msprop:Generator_ColumnPropNameInRow="Tier" msprop:Generator_ColumnPropNameInTable="TierColumn" msprop:Generator_UserColumnName="Tier" type="xs:string" minOccurs="0" />
+              <xs:element name="Encumbrance" msprop:Generator_ColumnVarNameInTable="columnEncumbrance" msprop:Generator_ColumnPropNameInRow="Encumbrance" msprop:Generator_ColumnPropNameInTable="EncumbranceColumn" msprop:Generator_UserColumnName="Encumbrance" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Stocks" msprop:Generator_TableClassName="StocksDataTable" msprop:Generator_TableVarName="tableStocks" msprop:Generator_TablePropName="Stocks" msprop:Generator_RowDeletingName="StocksRowDeleting" msprop:Generator_RowChangingName="StocksRowChanging" msprop:Generator_RowEvHandlerName="StocksRowChangeEventHandler" msprop:Generator_RowDeletedName="StocksRowDeleted" msprop:Generator_UserTableName="Stocks" msprop:Generator_RowChangedName="StocksRowChanged" msprop:Generator_RowEvArgName="StocksRowChangeEvent" msprop:Generator_RowClassName="StocksRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Stock" msprop:Generator_ColumnVarNameInTable="columnStock" msprop:Generator_ColumnPropNameInRow="Stock" msprop:Generator_ColumnPropNameInTable="StockColumn" msprop:Generator_UserColumnName="Stock" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="StockIngredients" msprop:Generator_TableClassName="StockIngredientsDataTable" msprop:Generator_TableVarName="tableStockIngredients" msprop:Generator_TablePropName="StockIngredients" msprop:Generator_RowDeletingName="StockIngredientsRowDeleting" msprop:Generator_RowChangingName="StockIngredientsRowChanging" msprop:Generator_RowEvHandlerName="StockIngredientsRowChangeEventHandler" msprop:Generator_RowDeletedName="StockIngredientsRowDeleted" msprop:Generator_UserTableName="StockIngredients" msprop:Generator_RowChangedName="StockIngredientsRowChanged" msprop:Generator_RowEvArgName="StockIngredientsRowChangeEvent" msprop:Generator_RowClassName="StockIngredientsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Stock" msprop:Generator_ColumnVarNameInTable="columnStock" msprop:Generator_ColumnPropNameInRow="Stock" msprop:Generator_ColumnPropNameInTable="StockColumn" msprop:Generator_UserColumnName="Stock" type="xs:string" />
+              <xs:element name="IngredientType" msprop:Generator_ColumnVarNameInTable="columnIngredientType" msprop:Generator_ColumnPropNameInRow="IngredientType" msprop:Generator_ColumnPropNameInTable="IngredientTypeColumn" msprop:Generator_UserColumnName="IngredientType" type="xs:string" minOccurs="0" />
+              <xs:element name="Ingredient" msprop:Generator_ColumnVarNameInTable="columnIngredient" msprop:Generator_ColumnPropNameInRow="Ingredient" msprop:Generator_ColumnPropNameInTable="IngredientColumn" msprop:Generator_UserColumnName="Ingredient" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Dictionary" msprop:Generator_TableClassName="DictionaryDataTable" msprop:Generator_TableVarName="tableDictionary" msprop:Generator_TablePropName="Dictionary" msprop:Generator_RowDeletingName="DictionaryRowDeleting" msprop:Generator_RowChangingName="DictionaryRowChanging" msprop:Generator_RowEvHandlerName="DictionaryRowChangeEventHandler" msprop:Generator_RowDeletedName="DictionaryRowDeleted" msprop:Generator_UserTableName="Dictionary" msprop:Generator_RowChangedName="DictionaryRowChanged" msprop:Generator_RowEvArgName="DictionaryRowChangeEvent" msprop:Generator_RowClassName="DictionaryRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Key" msprop:Generator_ColumnVarNameInTable="columnKey" msprop:Generator_ColumnPropNameInRow="Key" msprop:Generator_ColumnPropNameInTable="KeyColumn" msprop:Generator_UserColumnName="Key" type="xs:string" />
+              <xs:element name="Value" msprop:Generator_ColumnVarNameInTable="columnValue" msprop:Generator_ColumnPropNameInRow="Value" msprop:Generator_ColumnPropNameInTable="ValueColumn" msprop:Generator_UserColumnName="Value" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="EffectLookups" msprop:Generator_TableClassName="EffectLookupsDataTable" msprop:Generator_TableVarName="tableEffectLookups" msprop:Generator_TablePropName="EffectLookups" msprop:Generator_RowDeletingName="EffectLookupsRowDeleting" msprop:Generator_RowChangingName="EffectLookupsRowChanging" msprop:Generator_RowEvHandlerName="EffectLookupsRowChangeEventHandler" msprop:Generator_RowDeletedName="EffectLookupsRowDeleted" msprop:Generator_UserTableName="EffectLookups" msprop:Generator_RowChangedName="EffectLookupsRowChanged" msprop:Generator_RowEvArgName="EffectLookupsRowChangeEvent" msprop:Generator_RowClassName="EffectLookupsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Type" msprop:Generator_ColumnVarNameInTable="columnType" msprop:Generator_ColumnPropNameInRow="Type" msprop:Generator_ColumnPropNameInTable="TypeColumn" msprop:Generator_UserColumnName="Type" type="xs:string" />
+              <xs:element name="Item" msprop:Generator_ColumnVarNameInTable="columnItem" msprop:Generator_ColumnPropNameInRow="Item" msprop:Generator_ColumnPropNameInTable="ItemColumn" msprop:Generator_UserColumnName="Item" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="KeywordTypes" msprop:Generator_TableClassName="KeywordTypesDataTable" msprop:Generator_TableVarName="tableKeywordTypes" msprop:Generator_RowChangedName="KeywordTypesRowChanged" msprop:Generator_TablePropName="KeywordTypes" msprop:Generator_RowDeletingName="KeywordTypesRowDeleting" msprop:Generator_RowChangingName="KeywordTypesRowChanging" msprop:Generator_RowEvHandlerName="KeywordTypesRowChangeEventHandler" msprop:Generator_RowDeletedName="KeywordTypesRowDeleted" msprop:Generator_RowClassName="KeywordTypesRow" msprop:Generator_UserTableName="KeywordTypes" msprop:Generator_RowEvArgName="KeywordTypesRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="KeywordType" msprop:Generator_ColumnVarNameInTable="columnKeywordType" msprop:Generator_ColumnPropNameInRow="KeywordType" msprop:Generator_ColumnPropNameInTable="KeywordTypeColumn" msprop:Generator_UserColumnName="KeywordType" type="xs:string" />
+              <xs:element name="SourceFeatType" msprop:Generator_ColumnVarNameInTable="columnSourceFeatType" msprop:Generator_ColumnPropNameInRow="SourceFeatType" msprop:Generator_ColumnPropNameInTable="SourceFeatTypeColumn" msprop:Generator_UserColumnName="SourceFeatType" type="xs:string" minOccurs="0" />
+              <xs:element name="MatchingFeatType" msprop:Generator_ColumnVarNameInTable="columnMatchingFeatType" msprop:Generator_ColumnPropNameInRow="MatchingFeatType" msprop:Generator_ColumnPropNameInTable="MatchingFeatTypeColumn" msprop:Generator_UserColumnName="MatchingFeatType" type="xs:string" minOccurs="0" />
+              <xs:element name="MatchingItemType" msprop:Generator_ColumnVarNameInTable="columnMatchingItemType" msprop:Generator_ColumnPropNameInRow="MatchingItemType" msprop:Generator_ColumnPropNameInTable="MatchingItemTypeColumn" msprop:Generator_UserColumnName="MatchingItemType" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="WeaponTypes" msprop:Generator_TableClassName="WeaponTypesDataTable" msprop:Generator_TableVarName="tableWeaponTypes" msprop:Generator_RowChangedName="WeaponTypesRowChanged" msprop:Generator_TablePropName="WeaponTypes" msprop:Generator_RowDeletingName="WeaponTypesRowDeleting" msprop:Generator_RowChangingName="WeaponTypesRowChanging" msprop:Generator_RowEvHandlerName="WeaponTypesRowChangeEventHandler" msprop:Generator_RowDeletedName="WeaponTypesRowDeleted" msprop:Generator_RowClassName="WeaponTypesRow" msprop:Generator_UserTableName="WeaponTypes" msprop:Generator_RowEvArgName="WeaponTypesRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="WeaponType" msprop:Generator_ColumnVarNameInTable="columnWeaponType" msprop:Generator_ColumnPropNameInRow="WeaponType" msprop:Generator_ColumnPropNameInTable="WeaponTypeColumn" msprop:Generator_UserColumnName="WeaponType" type="xs:string" />
+              <xs:element name="WeaponCategory" msprop:Generator_ColumnVarNameInTable="columnWeaponCategory" msprop:Generator_ColumnPropNameInRow="WeaponCategory" msprop:Generator_ColumnPropNameInTable="WeaponCategoryColumn" msprop:Generator_UserColumnName="WeaponCategory" type="xs:string" minOccurs="0" />
+              <xs:element name="AttackBonus" msprop:Generator_ColumnVarNameInTable="columnAttackBonus" msprop:Generator_ColumnPropNameInRow="AttackBonus" msprop:Generator_ColumnPropNameInTable="AttackBonusColumn" msprop:Generator_UserColumnName="AttackBonus" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="GearTypes" msprop:Generator_TableClassName="GearTypesDataTable" msprop:Generator_TableVarName="tableGearTypes" msprop:Generator_RowChangedName="GearTypesRowChanged" msprop:Generator_TablePropName="GearTypes" msprop:Generator_RowDeletingName="GearTypesRowDeleting" msprop:Generator_RowChangingName="GearTypesRowChanging" msprop:Generator_RowEvHandlerName="GearTypesRowChangeEventHandler" msprop:Generator_RowDeletedName="GearTypesRowDeleted" msprop:Generator_RowClassName="GearTypesRow" msprop:Generator_UserTableName="GearTypes" msprop:Generator_RowEvArgName="GearTypesRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="GearType" msprop:Generator_ColumnVarNameInTable="columnGearType" msprop:Generator_ColumnPropNameInRow="GearType" msprop:Generator_ColumnPropNameInTable="GearTypeColumn" msprop:Generator_UserColumnName="GearType" type="xs:string" />
+              <xs:element name="ItemType" msprop:Generator_ColumnVarNameInTable="columnItemType" msprop:Generator_ColumnPropNameInRow="ItemType" msprop:Generator_ColumnPropNameInTable="ItemTypeColumn" msprop:Generator_UserColumnName="ItemType" type="xs:string" minOccurs="0" />
+              <xs:element name="WeaponCategory" msprop:Generator_ColumnVarNameInTable="columnWeaponCategory" msprop:Generator_ColumnPropNameInRow="WeaponCategory" msprop:Generator_ColumnPropNameInTable="WeaponCategoryColumn" msprop:Generator_UserColumnName="WeaponCategory" type="xs:string" minOccurs="0" />
+              <xs:element name="AttackBonus" msprop:Generator_ColumnVarNameInTable="columnAttackBonus" msprop:Generator_ColumnPropNameInRow="AttackBonus" msprop:Generator_ColumnPropNameInTable="AttackBonusColumn" msprop:Generator_UserColumnName="AttackBonus" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Lookups" msprop:Generator_TableClassName="LookupsDataTable" msprop:Generator_TableVarName="tableLookups" msprop:Generator_TablePropName="Lookups" msprop:Generator_RowDeletingName="LookupsRowDeleting" msprop:Generator_RowChangingName="LookupsRowChanging" msprop:Generator_RowEvHandlerName="LookupsRowChangeEventHandler" msprop:Generator_RowDeletedName="LookupsRowDeleted" msprop:Generator_UserTableName="Lookups" msprop:Generator_RowChangedName="LookupsRowChanged" msprop:Generator_RowEvArgName="LookupsRowChangeEvent" msprop:Generator_RowClassName="LookupsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Type" msprop:Generator_ColumnVarNameInTable="columnType" msprop:Generator_ColumnPropNameInRow="Type" msprop:Generator_ColumnPropNameInTable="TypeColumn" msprop:Generator_UserColumnName="Type" type="xs:string" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="EntityTypes" msprop:Generator_TableClassName="EntityTypesDataTable" msprop:Generator_TableVarName="tableEntityTypes" msprop:Generator_TablePropName="EntityTypes" msprop:Generator_RowDeletingName="EntityTypesRowDeleting" msprop:Generator_RowChangingName="EntityTypesRowChanging" msprop:Generator_RowEvHandlerName="EntityTypesRowChangeEventHandler" msprop:Generator_RowDeletedName="EntityTypesRowDeleted" msprop:Generator_UserTableName="EntityTypes" msprop:Generator_RowChangedName="EntityTypesRowChanged" msprop:Generator_RowEvArgName="EntityTypesRowChangeEvent" msprop:Generator_RowClassName="EntityTypesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BaseType" msprop:Generator_ColumnVarNameInTable="columnBaseType" msprop:Generator_ColumnPropNameInRow="BaseType" msprop:Generator_ColumnPropNameInTable="BaseTypeColumn" msprop:Generator_UserColumnName="BaseType" type="xs:string" />
+              <xs:element name="EntityType" msprop:Generator_ColumnVarNameInTable="columnEntityType" msprop:Generator_ColumnPropNameInRow="EntityType" msprop:Generator_ColumnPropNameInTable="EntityTypeColumn" msprop:Generator_UserColumnName="EntityType" type="xs:string" />
+              <xs:element name="ParentType" msprop:Generator_ColumnVarNameInTable="columnParentType" msprop:Generator_ColumnPropNameInRow="ParentType" msprop:Generator_ColumnPropNameInTable="ParentTypeColumn" msprop:Generator_UserColumnName="ParentType" type="xs:string" minOccurs="0" />
+              <xs:element name="Modifier" msprop:Generator_ColumnVarNameInTable="columnModifier" msprop:Generator_ColumnPropNameInRow="Modifier" msprop:Generator_ColumnPropNameInTable="ModifierColumn" msprop:Generator_UserColumnName="Modifier" type="xs:string" minOccurs="0" />
+              <xs:element name="DisplayName" msprop:Generator_ColumnVarNameInTable="columnDisplayName" msprop:Generator_ColumnPropNameInRow="DisplayName" msprop:Generator_ColumnPropNameInTable="DisplayNameColumn" msprop:Generator_UserColumnName="DisplayName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="HexBulkRatings" msprop:Generator_TableClassName="HexBulkRatingsDataTable" msprop:Generator_TableVarName="tableHexBulkRatings" msprop:Generator_TablePropName="HexBulkRatings" msprop:Generator_RowDeletingName="HexBulkRatingsRowDeleting" msprop:Generator_RowChangingName="HexBulkRatingsRowChanging" msprop:Generator_RowEvHandlerName="HexBulkRatingsRowChangeEventHandler" msprop:Generator_RowDeletedName="HexBulkRatingsRowDeleted" msprop:Generator_UserTableName="HexBulkRatings" msprop:Generator_RowChangedName="HexBulkRatingsRowChanged" msprop:Generator_RowEvArgName="HexBulkRatingsRowChangeEvent" msprop:Generator_RowClassName="HexBulkRatingsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="HexNumber" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnHexNumber" msprop:Generator_ColumnPropNameInRow="HexNumber" msprop:Generator_ColumnPropNameInTable="HexNumberColumn" msprop:Generator_UserColumnName="HexNumber" type="xs:string" minOccurs="0" />
+              <xs:element name="Longitude" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnLongitude" msprop:Generator_ColumnPropNameInRow="Longitude" msprop:Generator_ColumnPropNameInTable="LongitudeColumn" msprop:Generator_UserColumnName="Longitude" type="xs:string" />
+              <xs:element name="Latitude" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnLatitude" msprop:Generator_ColumnPropNameInRow="Latitude" msprop:Generator_ColumnPropNameInTable="LatitudeColumn" msprop:Generator_UserColumnName="Latitude" type="xs:string" />
+              <xs:element name="Stone" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnStone" msprop:Generator_ColumnPropNameInRow="Stone" msprop:Generator_ColumnPropNameInTable="StoneColumn" msprop:Generator_UserColumnName="Stone" type="xs:string" minOccurs="0" />
+              <xs:element name="Fish" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnFish" msprop:Generator_ColumnPropNameInRow="Fish" msprop:Generator_ColumnPropNameInTable="FishColumn" msprop:Generator_UserColumnName="Fish" type="xs:string" minOccurs="0" />
+              <xs:element name="Crops" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnCrops" msprop:Generator_ColumnPropNameInRow="Crops" msprop:Generator_ColumnPropNameInTable="CropsColumn" msprop:Generator_UserColumnName="Crops" type="xs:string" minOccurs="0" />
+              <xs:element name="Wood" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnWood" msprop:Generator_ColumnPropNameInRow="Wood" msprop:Generator_ColumnPropNameInTable="WoodColumn" msprop:Generator_UserColumnName="Wood" type="xs:string" minOccurs="0" />
+              <xs:element name="Game" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnGame" msprop:Generator_ColumnPropNameInRow="Game" msprop:Generator_ColumnPropNameInTable="GameColumn" msprop:Generator_UserColumnName="Game" type="xs:string" minOccurs="0" />
+              <xs:element name="Herds" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnHerds" msprop:Generator_ColumnPropNameInRow="Herds" msprop:Generator_ColumnPropNameInTable="HerdsColumn" msprop:Generator_UserColumnName="Herds" type="xs:string" minOccurs="0" />
+              <xs:element name="Ore" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnOre" msprop:Generator_ColumnPropNameInRow="Ore" msprop:Generator_ColumnPropNameInTable="OreColumn" msprop:Generator_UserColumnName="Ore" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:SourceWorksheets" />
+      <xs:field xpath="mstns:WorksheetName" />
+    </xs:unique>
+    <xs:unique name="ResourceTypes_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ResourceTypes" />
+      <xs:field xpath="mstns:ResourceType" />
+    </xs:unique>
+    <xs:unique name="Resources_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Resources" />
+      <xs:field xpath="mstns:Resource" />
+    </xs:unique>
+    <xs:unique name="Salvages_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Salvages" />
+      <xs:field xpath="mstns:Salvage" />
+    </xs:unique>
+    <xs:unique name="Stocks_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Stocks" />
+      <xs:field xpath="mstns:Stock" />
+    </xs:unique>
+    <xs:unique name="StockIngredients_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:StockIngredients" />
+      <xs:field xpath="mstns:Stock" />
+      <xs:field xpath="mstns:Ingredient" />
+    </xs:unique>
+    <xs:unique name="Dictionary_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Dictionary" />
+      <xs:field xpath="mstns:Key" />
+    </xs:unique>
+    <xs:unique name="EffectLookups_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:EffectLookups" />
+      <xs:field xpath="mstns:Type" />
+      <xs:field xpath="mstns:Item" />
+    </xs:unique>
+    <xs:unique name="KeywordTypes_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:KeywordTypes" />
+      <xs:field xpath="mstns:KeywordType" />
+    </xs:unique>
+    <xs:unique name="WeaponTypes_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:WeaponTypes" />
+      <xs:field xpath="mstns:WeaponType" />
+    </xs:unique>
+    <xs:unique name="GearTypes_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:GearTypes" />
+      <xs:field xpath="mstns:GearType" />
+    </xs:unique>
+    <xs:unique name="Lookups_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Lookups" />
+      <xs:field xpath="mstns:Type" />
+      <xs:field xpath="mstns:Name" />
+    </xs:unique>
+    <xs:unique name="EntityTypes_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:EntityTypes" />
+      <xs:field xpath="mstns:BaseType" />
+      <xs:field xpath="mstns:EntityType" />
+    </xs:unique>
+    <xs:unique name="HexBulkRatings_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:HexBulkRatings" />
+      <xs:field xpath="mstns:Longitude" />
+      <xs:field xpath="mstns:Latitude" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="StockData" targetNamespace="http://tempuri.org/StockData.xsd" xmlns:mstns="http://tempuri.org/StockData.xsd" xmlns="http://tempuri.org/StockData.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="StockData" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="StockData" msprop:Generator_UserDSName="StockData">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Subvarieties" msprop:Generator_TableClassName="SubvarietiesDataTable" msprop:Generator_TableVarName="tableSubvarieties" msprop:Generator_TablePropName="Subvarieties" msprop:Generator_RowDeletingName="SubvarietiesRowDeleting" msprop:Generator_RowChangingName="SubvarietiesRowChanging" msprop:Generator_RowEvHandlerName="SubvarietiesRowChangeEventHandler" msprop:Generator_RowDeletedName="SubvarietiesRowDeleted" msprop:Generator_UserTableName="Subvarieties" msprop:Generator_RowChangedName="SubvarietiesRowChanged" msprop:Generator_RowEvArgName="SubvarietiesRowChangeEvent" msprop:Generator_RowClassName="SubvarietiesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Variety" msprop:Generator_ColumnVarNameInTable="columnVariety" msprop:Generator_ColumnPropNameInRow="Variety" msprop:Generator_ColumnPropNameInTable="VarietyColumn" msprop:Generator_UserColumnName="Variety" type="xs:string" />
+              <xs:element name="Subvariety" msprop:Generator_ColumnVarNameInTable="columnSubvariety" msprop:Generator_ColumnPropNameInRow="Subvariety" msprop:Generator_ColumnPropNameInTable="SubvarietyColumn" msprop:Generator_UserColumnName="Subvariety" type="xs:string" />
+              <xs:element name="BaseEncumbrance" msprop:Generator_ColumnVarNameInTable="columnBaseEncumbrance" msprop:Generator_ColumnPropNameInRow="BaseEncumbrance" msprop:Generator_ColumnPropNameInTable="BaseEncumbranceColumn" msprop:Generator_UserColumnName="BaseEncumbrance" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Prefixes" msprop:Generator_TableClassName="PrefixesDataTable" msprop:Generator_TableVarName="tablePrefixes" msprop:Generator_TablePropName="Prefixes" msprop:Generator_RowDeletingName="PrefixesRowDeleting" msprop:Generator_RowChangingName="PrefixesRowChanging" msprop:Generator_RowEvHandlerName="PrefixesRowChangeEventHandler" msprop:Generator_RowDeletedName="PrefixesRowDeleted" msprop:Generator_UserTableName="Prefixes" msprop:Generator_RowChangedName="PrefixesRowChanged" msprop:Generator_RowEvArgName="PrefixesRowChangeEvent" msprop:Generator_RowClassName="PrefixesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Variety" msprop:Generator_ColumnVarNameInTable="columnVariety" msprop:Generator_ColumnPropNameInRow="Variety" msprop:Generator_ColumnPropNameInTable="VarietyColumn" msprop:Generator_UserColumnName="Variety" type="xs:string" />
+              <xs:element name="Subvariety" msprop:Generator_ColumnVarNameInTable="columnSubvariety" msprop:Generator_ColumnPropNameInRow="Subvariety" msprop:Generator_ColumnPropNameInTable="SubvarietyColumn" msprop:Generator_UserColumnName="Subvariety" type="xs:string" />
+              <xs:element name="Factor" msprop:Generator_ColumnVarNameInTable="columnFactor" msprop:Generator_ColumnPropNameInRow="Factor" msprop:Generator_ColumnPropNameInTable="FactorColumn" msprop:Generator_UserColumnName="Factor" type="xs:string" />
+              <xs:element name="Prefix" msprop:Generator_ColumnVarNameInTable="columnPrefix" msprop:Generator_ColumnPropNameInRow="Prefix" msprop:Generator_ColumnPropNameInTable="PrefixColumn" msprop:Generator_UserColumnName="Prefix" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ResourceTypes" msprop:Generator_TableClassName="ResourceTypesDataTable" msprop:Generator_TableVarName="tableResourceTypes" msprop:Generator_TablePropName="ResourceTypes" msprop:Generator_RowDeletingName="ResourceTypesRowDeleting" msprop:Generator_RowChangingName="ResourceTypesRowChanging" msprop:Generator_RowEvHandlerName="ResourceTypesRowChangeEventHandler" msprop:Generator_RowDeletedName="ResourceTypesRowDeleted" msprop:Generator_UserTableName="ResourceTypes" msprop:Generator_RowChangedName="ResourceTypesRowChanged" msprop:Generator_RowEvArgName="ResourceTypesRowChangeEvent" msprop:Generator_RowClassName="ResourceTypesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ResourceType" msprop:Generator_ColumnVarNameInTable="columnResourceType" msprop:Generator_ColumnPropNameInRow="ResourceType" msprop:Generator_ColumnPropNameInTable="ResourceTypeColumn" msprop:Generator_UserColumnName="ResourceType" type="xs:string" />
+              <xs:element name="Variety" msprop:Generator_ColumnVarNameInTable="columnVariety" msprop:Generator_ColumnPropNameInRow="Variety" msprop:Generator_ColumnPropNameInTable="VarietyColumn" msprop:Generator_UserColumnName="Variety" type="xs:string" minOccurs="0" />
+              <xs:element name="Subvariety" msprop:Generator_ColumnVarNameInTable="columnSubvariety" msprop:Generator_ColumnPropNameInRow="Subvariety" msprop:Generator_ColumnPropNameInTable="SubvarietyColumn" msprop:Generator_UserColumnName="Subvariety" type="xs:string" minOccurs="0" />
+              <xs:element name="Tier" msprop:Generator_ColumnVarNameInTable="columnTier" msprop:Generator_ColumnPropNameInRow="Tier" msprop:Generator_ColumnPropNameInTable="TierColumn" msprop:Generator_UserColumnName="Tier" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Salvages" msprop:Generator_TableClassName="SalvagesDataTable" msprop:Generator_TableVarName="tableSalvages" msprop:Generator_TablePropName="Salvages" msprop:Generator_RowDeletingName="SalvagesRowDeleting" msprop:Generator_RowChangingName="SalvagesRowChanging" msprop:Generator_RowEvHandlerName="SalvagesRowChangeEventHandler" msprop:Generator_RowDeletedName="SalvagesRowDeleted" msprop:Generator_UserTableName="Salvages" msprop:Generator_RowChangedName="SalvagesRowChanged" msprop:Generator_RowEvArgName="SalvagesRowChangeEvent" msprop:Generator_RowClassName="SalvagesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Salvage" msprop:Generator_ColumnVarNameInTable="columnSalvage" msprop:Generator_ColumnPropNameInRow="Salvage" msprop:Generator_ColumnPropNameInTable="SalvageColumn" msprop:Generator_UserColumnName="Salvage" type="xs:string" />
+              <xs:element name="Variety" msprop:Generator_ColumnVarNameInTable="columnVariety" msprop:Generator_ColumnPropNameInRow="Variety" msprop:Generator_ColumnPropNameInTable="VarietyColumn" msprop:Generator_UserColumnName="Variety" type="xs:string" minOccurs="0" />
+              <xs:element name="Tier" msprop:Generator_ColumnVarNameInTable="columnTier" msprop:Generator_ColumnPropNameInRow="Tier" msprop:Generator_ColumnPropNameInTable="TierColumn" msprop:Generator_UserColumnName="Tier" type="xs:string" minOccurs="0" />
+              <xs:element name="Encumbrance" msprop:Generator_ColumnVarNameInTable="columnEncumbrance" msprop:Generator_ColumnPropNameInRow="Encumbrance" msprop:Generator_ColumnPropNameInTable="EncumbranceColumn" msprop:Generator_UserColumnName="Encumbrance" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Stocks" msprop:Generator_TableClassName="StocksDataTable" msprop:Generator_TableVarName="tableStocks" msprop:Generator_TablePropName="Stocks" msprop:Generator_RowDeletingName="StocksRowDeleting" msprop:Generator_RowChangingName="StocksRowChanging" msprop:Generator_RowEvHandlerName="StocksRowChangeEventHandler" msprop:Generator_RowDeletedName="StocksRowDeleted" msprop:Generator_UserTableName="Stocks" msprop:Generator_RowChangedName="StocksRowChanged" msprop:Generator_RowEvArgName="StocksRowChangeEvent" msprop:Generator_RowClassName="StocksRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Stock" msprop:Generator_ColumnVarNameInTable="columnStock" msprop:Generator_ColumnPropNameInRow="Stock" msprop:Generator_ColumnPropNameInTable="StockColumn" msprop:Generator_UserColumnName="Stock" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="StockItems" msprop:Generator_TableClassName="StockItemsDataTable" msprop:Generator_TableVarName="tableStockItems" msprop:Generator_TablePropName="StockItems" msprop:Generator_RowDeletingName="StockItemsRowDeleting" msprop:Generator_RowChangingName="StockItemsRowChanging" msprop:Generator_RowEvHandlerName="StockItemsRowChangeEventHandler" msprop:Generator_RowDeletedName="StockItemsRowDeleted" msprop:Generator_UserTableName="StockItems" msprop:Generator_RowChangedName="StockItemsRowChanged" msprop:Generator_RowEvArgName="StockItemsRowChangeEvent" msprop:Generator_RowClassName="StockItemsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Stock" msprop:Generator_ColumnVarNameInTable="columnStock" msprop:Generator_ColumnPropNameInRow="Stock" msprop:Generator_ColumnPropNameInTable="StockColumn" msprop:Generator_UserColumnName="Stock" type="xs:string" />
+              <xs:element name="Item" msprop:Generator_ColumnVarNameInTable="columnItem" msprop:Generator_ColumnPropNameInRow="Item" msprop:Generator_ColumnPropNameInTable="ItemColumn" msprop:Generator_UserColumnName="Item" type="xs:string" />
+              <xs:element name="ItemType" msprop:Generator_ColumnVarNameInTable="columnItemType" msprop:Generator_ColumnPropNameInRow="ItemType" msprop:Generator_ColumnPropNameInTable="ItemTypeColumn" msprop:Generator_UserColumnName="ItemType" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Subvarieties" />
+      <xs:field xpath="mstns:Variety" />
+      <xs:field xpath="mstns:Subvariety" />
+    </xs:unique>
+    <xs:unique name="Prefixes_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Prefixes" />
+      <xs:field xpath="mstns:Variety" />
+      <xs:field xpath="mstns:Subvariety" />
+      <xs:field xpath="mstns:Factor" />
+    </xs:unique>
+    <xs:unique name="ResourceTypes_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ResourceTypes" />
+      <xs:field xpath="mstns:ResourceType" />
+    </xs:unique>
+    <xs:unique name="Salvages_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Salvages" />
+      <xs:field xpath="mstns:Salvage" />
+    </xs:unique>
+    <xs:unique name="Stocks_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Stocks" />
+      <xs:field xpath="mstns:Stock" />
+    </xs:unique>
+    <xs:unique name="StockItems_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:StockItems" />
+      <xs:field xpath="mstns:Stock" />
+      <xs:field xpath="mstns:Item" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

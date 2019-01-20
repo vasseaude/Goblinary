@@ -1,0 +1,755 @@
+﻿
+/* main layout
+----------------------------------------------------------*/
+html {
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #fff;
+    border-top: solid 10px #3e3e42;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    margin: 0;
+    padding: 0;
+}
+header, #body, footer, .content-wrapper {
+    /*max-width: 1264px;*/
+    margin: 0 auto;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.content-wrapper > * {
+    /*padding-left: 5px;
+    padding-right: 5px;*/
+}
+#body {
+    /*background-color: #efeeef;*/
+    clear: both;
+    /*padding-bottom: 35px;*/
+}
+header .content-wrapper {
+    padding-top: 7px;
+}
+footer {
+    clear: both;
+}
+#DatabaseUpdatedLabel {
+	font-size: 1.2em;
+}
+footer .content-wrapper {
+    font-size: .8em;
+    margin-top: 5px;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #f7f3f7;
+    background-image: -ms-linear-gradient(bottom right, #FFFFFF 0%, #bbb 100%);
+    background-image: -moz-linear-gradient(bottom right, #FFFFFF 0%, #bbb 100%);
+    background-image: -o-linear-gradient(bottom right, #FFFFFF 0%, #bbb 100%);
+    background-image: -webkit-gradient(linear, right bottom, left top, color-stop(0, #FFFFFF), color-stop(1, #bbb));
+    background-image: -webkit-linear-gradient(bottom right, #FFFFFF 0%, #bbb 100%);
+    background-image: linear-gradient(to top left, #FFFFFF 0%, #bbb 100%);
+    color: #000;
+    border: solid 2px #bbb;
+}
+.characterFootnote {
+	font-size: .8em;
+    padding-top: 5px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: normal;
+    border: 0px;
+}
+
+/* header stuff
+----------------------------------------------------------*/
+.headerText {
+    padding: 0px;
+    margin: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: normal;
+    border: 0px;
+    font-size:smaller;
+}
+.headerMasterSearch {
+    margin: 0px;
+}
+.loginPanel, .searchPanel {
+    border: solid 2px #00a000;
+    padding: 5px;
+    background-color: #7dce7d;
+    color: #000;
+    border-radius: 5px;
+}
+.loginPanelPublicTest, .searchPanelPublicTest {
+    border: solid 2px #666690;
+    padding: 5px;
+    background-color: #ccccdd;
+    color: #000;
+    border-radius: 5px;
+}
+
+/* featured */
+.featured {
+    background-color: #fff;
+}
+    .featured .content-wrapper {
+        border-radius: 10px;
+        margin-bottom: 5px;
+        padding-top: 20px;
+        padding-bottom: 5px;
+        background-color: #7dce7d;
+        background-image: -ms-linear-gradient(bottom right, #ffffff 0%, #00a000 100%);
+        background-image: -moz-linear-gradient(bottom right, #ffffff 0%, #00a000 100%);
+        background-image: -o-linear-gradient(bottom right, #ffffff 0%, #00a000 100%);
+        background-image: -webkit-gradient(linear, right bottom, left top, color-stop(0, #ffffff), color-stop(1, #00a000));
+        background-image: -webkit-linear-gradient(bottom right, #ffffff 0%, #00a000 100%);
+        background-image: linear-gradient(to top left, #ffffff 0%, #00a000 100%);
+        color: #000;
+        border: solid 2px #00a000;
+    }
+        .featured hgroup.title h1, .featured hgroup.title h2 {
+            color: #fff;
+        }
+        .featured p {
+            /*font-size: 1.1em;*/
+        }
+
+/* page titles */
+hgroup.title {
+    margin-bottom: 10px;
+}
+hgroup.title h1, hgroup.title h2 {
+    display: inline;
+}
+hgroup.title h2 {
+    font-weight: normal;
+    margin-left: 3px;
+}
+
+/* features */
+section.feature {
+    width: 300px;
+    float: left;
+    padding: 10px;
+}
+
+/* content */
+article {
+    float: left;
+    width: 70%;
+}
+.label {
+    font-weight: 700;
+}
+
+/* site title
+----------------------------------------------------------*/
+.site-title {
+    color: #c8c8c8;
+    font-family: Rockwell, Consolas, "Courier New", Courier, monospace;
+    font-size: 2.3em;
+    margin: 0;
+}
+.site-title a, .site-title a:hover, .site-title a:active {
+    background: none;
+    color: #c8c8c8;
+    outline: none;
+    text-decoration: none;
+}
+.logo {
+    float: left;
+}
+.logo-image1 {
+    z-index: 20;
+    width: 140px;
+    height: 153px;
+}
+.logoDiv {
+    z-index: 20;
+    position:absolute;
+    margin-left: -40px;
+    margin-top: -18px;
+}
+.logo-image2 {
+    vertical-align: text-bottom;
+    height: 32px;
+    width: 200px;
+    margin-left:100px;
+}
+a.logo-link:hover {
+    text-decoration: none;
+    background-color: none;
+    background: none;
+}
+.nav {
+    float: left;
+    margin-left: 100px;
+    text-align: left;
+	display: block;
+}
+.searchPanel {
+    margin-left: 115px;
+    float: left;
+}
+.searchPanelPublicTest {
+    margin-left: 115px;
+    float: left;
+}
+.searchText {
+    padding: 0px;
+    margin: 0px;
+    font-size: medium;
+}
+.searchText2 {
+    padding: 0px;
+    margin: 0px;
+    font-size: .60em;
+}
+.loginPanel {
+    float: right;
+}
+.loginPanelPublicTest {
+    float: right;
+}
+.loginParagraph {
+    padding: 0 0 8px 0;
+    margin: 0px;
+}
+.currentCharacter {
+    padding-top: 8px;
+    margin: 0px 0 0 0;
+    line-height: normal;
+    border-top: dashed;
+    border-top-color: #000;
+    border-top-width: 1px;
+}
+
+/* login box
+----------------------------------------------------------*/
+#login {
+    display: block;
+    font-size: .85em;
+    margin: 0px;
+    text-align: right;
+}
+    #login a {
+        color: #000;
+        margin: 1px;
+        padding: 0px 6px;
+        text-decoration: none;
+        /*font-weight: bold;*/
+        background-color: #d3dce0;
+        border: 1px solid #787878;
+    }
+    #login a.username {
+        background: none;
+        margin-left: 0px;
+        text-decoration: underline;
+        border: none;
+    }
+    #login ul {
+        margin: 0;
+        padding-left: 0px;
+    }
+    #login li {
+        display: inline;
+        list-style: none;
+    }
+
+/* standard/basic elements
+----------------------------------------------------------*/
+a {
+    outline: none;
+    text-decoration: underline;
+}
+    a:hover {
+        background-color: #cbd6c7;
+        color: blue;
+    }
+header, footer, hgroup,
+nav, section {
+    display: block;
+}
+mark {
+    background-color: #b9eda6;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+.float-middle {
+    margin: 0 auto;
+}
+.clear-fix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+h1, h2, h3,
+h4, h5, h6 {
+    color: #000;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+h1 {
+    font-size: 2em;
+}
+h2 {
+    font-size: 1.75em;
+}
+h3 {
+    font-size: 1.2em;
+}
+h4 {
+    font-size: 1.1em;
+}
+h5, h6 {
+    font-size: 1em;
+}
+    h5 a:link, h5 a:visited, h5 a:active {
+        padding: 0;
+        text-decoration: none;
+    }
+
+/* Goblinary added elements
+----------------------------------------------------------*/
+
+.shareStatusRadioList label {
+	margin-right: 10px;
+}
+/* gridview divs */
+.GridViewDiv {
+    overflow-x: auto;
+}
+.GridViewDiv td, .GridViewDiv th, .GridViewDiv tr, .GridViewDiv thead, .GridViewDiv tbody, .GridViewDiv table {
+/* commented out for Task 290 */
+    /*width:1% !important;
+    white-space:nowrap !important;*/
+}
+.mobileWarning {
+    visibility:hidden;
+}
+#FeatsGridViewHeader {
+    white-space: normal;
+}
+.scrolling, .scrolling1, .scrolling2 {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+.noPad {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: normal;
+    border: 0px;
+}
+.typeDropDown {
+    font-size: 1.05em;
+}
+.detailsList {
+    margin: 0px;
+}
+.detailsListItem {
+}
+.detailsListField {
+    font-weight: bold;
+}
+.detailsListData {
+}
+.detailsListDataSmallList {
+    font-size: 10pt;
+    margin: 0px;
+    padding: 0px;
+}
+.Conditional_EffectCSS {
+        color: blue;
+        white-space: pre;
+}
+.Standard_EffectCSS {
+        color: green;
+        white-space: pre;
+}
+.Restriction_EffectCSS {
+        color: red;
+        white-space: pre;
+}
+.PerKeyword_EffectCSS {
+        color: purple;
+        white-space: pre;
+}
+.Inherent_ItemKeywordCSS {
+    font-style: italic;
+}
+.Inherent_ItemKeywordUpgradeCSS {
+    visibility: hidden;
+}
+.Upgrade_ItemKeywordCSS {
+}
+.Upgrade_ItemKeywordUpgradeCSS {
+}
+.Advanced_ItemKeywordCSS {
+    font-weight: bolder;
+}
+.Advanced_ItemKeywordUpgradeCSS {
+}
+.Basic_ItemKeywordCSS {
+}
+.Basic_ItemKeywordUpgradeCSS {
+}
+.detailsView {
+
+	font-family:Arial;
+	font-size: 10pt;
+	text-align: left;
+    border: 1px solid #000;
+    color: #000;
+    white-space: nowrap;
+}
+.detailsView td {
+    padding: 4px;
+}
+.detailsViewRowStyle {
+	background-color: #FFF;
+	vertical-align: top;
+    border: 1px solid #000;
+}
+.detailsViewAltRowStyle {
+	background-color: #F0F0F6;
+	vertical-align: top;
+    border: 1px solid #000;
+}
+td.detailsViewLeft {
+    font-weight: bold;
+    border: 1px solid #000;
+    padding-right: 2em;
+}
+tr.detailsViewHeader {
+	background-color: #e6EEEE;    
+    font-weight: bold;
+    border: 1px solid #000;
+    text-align: center;
+}
+.detailsViewDiv {
+    overflow-x: auto;
+}
+.abilityGridDiv {
+    /*overflow-x: auto;*/
+    /*float: left;*/
+    padding-top: 10px;
+}
+.statsDiv {
+    padding-top: 10px;
+}
+.abilityGrid {
+	font-family:Arial;
+	font-size: 10pt;
+	text-align: left;
+    border: 1px solid #000;
+    color: #000;
+    padding: 4px;
+    /*white-space: nowrap;*/
+}
+.abilityGrid td {
+    padding: 4px;
+    border: 1px solid #000;
+}
+.abilityGridRowStyle {
+	background-color: #FFF;
+}
+.abilityGridAltRowStyle {
+	background-color: #F0F0F6;
+}
+tr.abilityGridHeader th {
+	background-color: #e6EEEE;
+    padding-left: 4px;
+}
+.grid23 {
+    width: 23%;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.sideBySideGridTable td {
+    vertical-align: top;
+}
+.sideBySideGridTable {
+    /*width: 100%;*/
+}
+.widthHundredPercent {
+    width: 100%;
+}
+.sideBySideGridDiv {
+    width: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.sideBySideGridDiv td, .sideBySideGridDiv th, .sideBySideGridDiv tr, .sideBySideGridDiv thead, .sideBySideGridDiv tbody, .sideBySideGridDiv table {
+    /*width:1% !important;
+    white-space:nowrap !important;*/
+}
+.xOverflow {
+    overflow-x: auto;
+}
+.inlineGrid {
+    display: inline-block;
+    overflow-x: initial;
+}
+.vtop {
+    vertical-align: top;
+}
+.RecipeTreeViewDiv {
+    overflow-x: auto;
+}
+.RecipeTreeView table {
+    overflow: hidden;
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+.RecipeTreeView img {
+    margin: 0px !important;
+    padding: 0px !important;
+    display: block !important;
+    margin: 0 auto !important;
+    overflow: hidden !important;
+}
+.RecipeTreeView td div {
+    height: 100% !important;
+}
+.RecipeTreeView a {
+    color: #000;
+    background-color: inherit;
+    font-size: 1.2em;
+    text-decoration-line: none;
+}
+.IngredientNode {
+    padding: 2px 8px;
+    margin: 2px;
+    border: 01px inset black;
+}
+.RecipeNode {
+    background-color: #FFB2B2;
+}
+.ComponentNode {
+    background-color: #B2FFB2;
+}
+.StockNode {
+    background-color: #B2B2FF;
+}
+.characterListPanel {
+    float: left;
+    border: solid 2px #bbb;
+    padding: 5px;
+    background-color: #f7f3f7;
+    color: #000;
+    border-radius: 5px;
+    margin: 5px;
+}
+.currentCharacterListPanel {
+    background-color: #7dce7d;
+    border: solid 2px #00a000;
+}
+/* begin spinner css */
+.modal
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 99;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    -moz-opacity: 0.7;
+    min-height: 100%;
+    width: 100%;
+}
+.loading
+{
+    text-align: center;
+    border: 5px solid #67CFF5;
+    width: 256px;
+    height: 128px;
+    display: none;
+    position: fixed;
+    background-color: White;
+    z-index: 999;
+}
+.loading h3
+{
+    margin: 15px;
+}
+/* end spinner css */
+/* menu
+----------------------------------------------------------*/
+ul#menu {
+    font-size: 1.3em;
+    font-weight: 600;
+    margin: 0 0 5px;
+    padding: 0;
+    text-align: left;
+}
+
+    ul#menu li {
+        display: inline;
+        list-style: none;
+        padding-left: 15px;
+    }
+
+        ul#menu li a {
+            background: none;
+            color: #999;
+            text-decoration: none;
+        }
+
+        ul#menu li a:hover {
+            color: #333;
+            text-decoration: none;
+        }
+
+/* Other Pages
+----------------------------------------------------------*/
+
+/* login page */
+#loginForm {
+    border-right: solid 2px #c8c8c8;
+    float: left;
+    width: 55%;
+}
+    #loginForm .validation-error {
+        display: block;
+        margin-left: 15px;
+    }
+#socialLoginForm {
+    margin-left: 40px;
+    float: left;
+    width: 40%;
+}
+    #socialLoginForm h2 {
+        margin-bottom:  5px;
+    }
+fieldset.open-auth-providers {
+    margin-top: 15px;
+}
+    fieldset.open-auth-providers button {
+        margin-bottom: 12px;
+    }
+
+/* contact */
+.contact h3 {
+    font-size: 1.2em;
+}
+.contact p {
+    margin: 5px 0 0 10px;
+}
+.contact iframe {
+    border: 1px solid #333;
+    margin: 5px 0 0 10px;
+}
+
+/* forms */
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+    fieldset legend {
+        display: none;
+    }
+    fieldset ol {
+        padding: 0;
+        list-style: none;
+    }
+        fieldset ol li {
+            padding-bottom: 5px;
+        }
+    label.checkbox {
+        display: inline;
+    }
+    input, textarea {
+        border: 1px solid #e2e2e2;
+    }
+    textarea {
+        font-family: inherit;
+        width: 500px;
+    }
+        input:focus, textarea:focus {
+            border: 1px solid #7ac0da;
+        }
+
+        input[type="checkbox"] {
+            background: transparent;
+            border: inherit;
+            width: auto;
+        }
+    input[type="submit"],
+    input[type="button"],
+    button {
+        background-color: #d3dce0;
+        border: 1px solid #787878;
+        cursor: pointer;
+        font-size: .85em;
+        width: auto;
+    }
+    td input[type="submit"],
+    td input[type="button"],
+    td button {
+        font-size: 1em;
+        padding: 4px;
+        margin-right: 4px;
+    }
+
+/* info and errors */
+.message-info {
+    border: 1px solid;
+    clear: both;
+    padding: 10px 20px;
+}
+.message-error {
+    clear: both;
+    color: #e80c4d;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 20px 0 10px 0;
+}
+.message-success {
+    color: #7ac0da;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 20px 0 10px 0;
+}
+.error {
+    color: #e80c4d;
+}
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #e80c4d;
+    font-weight: bold;
+}
+.field-validation-valid {
+    display: none;
+}
+input.input-validation-error {
+    border: 1px solid #e80c4d;
+}
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+.validation-summary-errors {
+    color: #e80c4d;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+.validation-summary-valid {
+    display: none;
+}

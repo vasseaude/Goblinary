@@ -1,0 +1,1087 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="WikiData" targetNamespace="http://tempuri.org/WikiData.xsd" xmlns:mstns="http://tempuri.org/WikiData.xsd" xmlns="http://tempuri.org/WikiData.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="WikiData" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="WikiData" msprop:Generator_UserDSName="WikiData">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Advancements" msprop:Generator_TableClassName="AdvancementsDataTable" msprop:Generator_TableVarName="tableAdvancements" msprop:Generator_TablePropName="Advancements" msprop:Generator_RowDeletingName="AdvancementsRowDeleting" msprop:Generator_RowChangingName="AdvancementsRowChanging" msprop:Generator_RowEvHandlerName="AdvancementsRowChangeEventHandler" msprop:Generator_RowDeletedName="AdvancementsRowDeleted" msprop:Generator_UserTableName="Advancements" msprop:Generator_RowChangedName="AdvancementsRowChanged" msprop:Generator_RowEvArgName="AdvancementsRowChangeEvent" msprop:Generator_RowClassName="AdvancementsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="AdvancementRanks" msprop:Generator_TableClassName="AdvancementRanksDataTable" msprop:Generator_TableVarName="tableAdvancementRanks" msprop:Generator_TablePropName="AdvancementRanks" msprop:Generator_RowDeletingName="AdvancementRanksRowDeleting" msprop:Generator_RowChangingName="AdvancementRanksRowChanging" msprop:Generator_RowEvHandlerName="AdvancementRanksRowChangeEventHandler" msprop:Generator_RowDeletedName="AdvancementRanksRowDeleted" msprop:Generator_UserTableName="AdvancementRanks" msprop:Generator_RowChangedName="AdvancementRanksRowChanged" msprop:Generator_RowEvArgName="AdvancementRanksRowChangeEvent" msprop:Generator_RowClassName="AdvancementRanksRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Advancement_Name" msprop:Generator_ColumnVarNameInTable="columnAdvancement_Name" msprop:Generator_ColumnPropNameInRow="Advancement_Name" msprop:Generator_ColumnPropNameInTable="Advancement_NameColumn" msprop:Generator_UserColumnName="Advancement_Name" type="xs:string" />
+              <xs:element name="Rank" msprop:Generator_ColumnVarNameInTable="columnRank" msprop:Generator_ColumnPropNameInRow="Rank" msprop:Generator_ColumnPropNameInTable="RankColumn" msprop:Generator_UserColumnName="Rank" type="xs:int" />
+              <xs:element name="ExpCost" msprop:Generator_ColumnVarNameInTable="columnExpCost" msprop:Generator_ColumnPropNameInRow="ExpCost" msprop:Generator_ColumnPropNameInTable="ExpCostColumn" msprop:Generator_UserColumnName="ExpCost" type="xs:int" />
+              <xs:element name="CoinCost" msprop:Generator_ColumnVarNameInTable="columnCoinCost" msprop:Generator_ColumnPropNameInRow="CoinCost" msprop:Generator_ColumnPropNameInTable="CoinCostColumn" msprop:Generator_UserColumnName="CoinCost" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="AdvancementRankFacts" msprop:Generator_TableClassName="AdvancementRankFactsDataTable" msprop:Generator_TableVarName="tableAdvancementRankFacts" msprop:Generator_TablePropName="AdvancementRankFacts" msprop:Generator_RowDeletingName="AdvancementRankFactsRowDeleting" msprop:Generator_RowChangingName="AdvancementRankFactsRowChanging" msprop:Generator_RowEvHandlerName="AdvancementRankFactsRowChangeEventHandler" msprop:Generator_RowDeletedName="AdvancementRankFactsRowDeleted" msprop:Generator_UserTableName="AdvancementRankFacts" msprop:Generator_RowChangedName="AdvancementRankFactsRowChanged" msprop:Generator_RowEvArgName="AdvancementRankFactsRowChangeEvent" msprop:Generator_RowClassName="AdvancementRankFactsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Advancement_Name" msprop:Generator_ColumnVarNameInTable="columnAdvancement_Name" msprop:Generator_ColumnPropNameInRow="Advancement_Name" msprop:Generator_ColumnPropNameInTable="Advancement_NameColumn" msprop:Generator_UserColumnName="Advancement_Name" type="xs:string" />
+              <xs:element name="Advancement_Rank" msprop:Generator_ColumnVarNameInTable="columnAdvancement_Rank" msprop:Generator_ColumnPropNameInRow="Advancement_Rank" msprop:Generator_ColumnPropNameInTable="Advancement_RankColumn" msprop:Generator_UserColumnName="Advancement_Rank" type="xs:int" />
+              <xs:element name="FactType" msprop:Generator_ColumnVarNameInTable="columnFactType" msprop:Generator_ColumnPropNameInRow="FactType" msprop:Generator_ColumnPropNameInTable="FactTypeColumn" msprop:Generator_UserColumnName="FactType" type="xs:string" />
+              <xs:element name="FactNo" msprop:Generator_ColumnVarNameInTable="columnFactNo" msprop:Generator_ColumnPropNameInRow="FactNo" msprop:Generator_ColumnPropNameInTable="FactNoColumn" msprop:Generator_UserColumnName="FactNo" type="xs:int" />
+              <xs:element name="OptionNo" msprop:Generator_ColumnVarNameInTable="columnOptionNo" msprop:Generator_ColumnPropNameInRow="OptionNo" msprop:Generator_ColumnPropNameInTable="OptionNoColumn" msprop:Generator_UserColumnName="OptionNo" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Abilities" msprop:Generator_TableClassName="AbilitiesDataTable" msprop:Generator_TableVarName="tableAbilities" msprop:Generator_TablePropName="Abilities" msprop:Generator_RowDeletingName="AbilitiesRowDeleting" msprop:Generator_RowChangingName="AbilitiesRowChanging" msprop:Generator_RowEvHandlerName="AbilitiesRowChangeEventHandler" msprop:Generator_RowDeletedName="AbilitiesRowDeleted" msprop:Generator_UserTableName="Abilities" msprop:Generator_RowChangedName="AbilitiesRowChanged" msprop:Generator_RowEvArgName="AbilitiesRowChangeEvent" msprop:Generator_RowClassName="AbilitiesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="AchievementCategories" msprop:Generator_TableClassName="AchievementCategoriesDataTable" msprop:Generator_TableVarName="tableAchievementCategories" msprop:Generator_TablePropName="AchievementCategories" msprop:Generator_RowDeletingName="AchievementCategoriesRowDeleting" msprop:Generator_RowChangingName="AchievementCategoriesRowChanging" msprop:Generator_RowEvHandlerName="AchievementCategoriesRowChangeEventHandler" msprop:Generator_RowDeletedName="AchievementCategoriesRowDeleted" msprop:Generator_UserTableName="AchievementCategories" msprop:Generator_RowChangedName="AchievementCategoriesRowChanged" msprop:Generator_RowEvArgName="AchievementCategoriesRowChangeEvent" msprop:Generator_RowClassName="AchievementCategoriesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Achievements" msprop:Generator_TableClassName="AchievementsDataTable" msprop:Generator_TableVarName="tableAchievements" msprop:Generator_TablePropName="Achievements" msprop:Generator_RowDeletingName="AchievementsRowDeleting" msprop:Generator_RowChangingName="AchievementsRowChanging" msprop:Generator_RowEvHandlerName="AchievementsRowChangeEventHandler" msprop:Generator_RowDeletedName="AchievementsRowDeleted" msprop:Generator_UserTableName="Achievements" msprop:Generator_RowChangedName="AchievementsRowChanged" msprop:Generator_RowEvArgName="AchievementsRowChangeEvent" msprop:Generator_RowClassName="AchievementsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" />
+              <xs:element name="AchievementType" msprop:Generator_ColumnVarNameInTable="columnAchievementType" msprop:Generator_ColumnPropNameInRow="AchievementType" msprop:Generator_ColumnPropNameInTable="AchievementTypeColumn" msprop:Generator_UserColumnName="AchievementType" type="xs:string" />
+              <xs:element name="DisplayName" msprop:Generator_ColumnVarNameInTable="columnDisplayName" msprop:Generator_ColumnPropNameInRow="DisplayName" msprop:Generator_ColumnPropNameInTable="DisplayNameColumn" msprop:Generator_UserColumnName="DisplayName" type="xs:string" />
+              <xs:element name="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_UserColumnName="Description" type="xs:string" />
+              <xs:element name="AlwaysGainsInfluence" msprop:Generator_ColumnVarNameInTable="columnAlwaysGainsInfluence" msprop:Generator_ColumnPropNameInRow="AlwaysGainsInfluence" msprop:Generator_ColumnPropNameInTable="AlwaysGainsInfluenceColumn" msprop:Generator_UserColumnName="AlwaysGainsInfluence" type="xs:boolean" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="AchievementLevels" msprop:Generator_TableClassName="AchievementLevelsDataTable" msprop:Generator_TableVarName="tableAchievementLevels" msprop:Generator_TablePropName="AchievementLevels" msprop:Generator_RowDeletingName="AchievementLevelsRowDeleting" msprop:Generator_RowChangingName="AchievementLevelsRowChanging" msprop:Generator_RowEvHandlerName="AchievementLevelsRowChangeEventHandler" msprop:Generator_RowDeletedName="AchievementLevelsRowDeleted" msprop:Generator_UserTableName="AchievementLevels" msprop:Generator_RowChangedName="AchievementLevelsRowChanged" msprop:Generator_RowEvArgName="AchievementLevelsRowChangeEvent" msprop:Generator_RowClassName="AchievementLevelsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Achievement_Name" msprop:Generator_ColumnVarNameInTable="columnAchievement_Name" msprop:Generator_ColumnPropNameInRow="Achievement_Name" msprop:Generator_ColumnPropNameInTable="Achievement_NameColumn" msprop:Generator_UserColumnName="Achievement_Name" type="xs:string" />
+              <xs:element name="Level" msprop:Generator_ColumnVarNameInTable="columnLevel" msprop:Generator_ColumnPropNameInRow="Level" msprop:Generator_ColumnPropNameInTable="LevelColumn" msprop:Generator_UserColumnName="Level" type="xs:int" />
+              <xs:element name="AchievementLevelType" msprop:Generator_ColumnVarNameInTable="columnAchievementLevelType" msprop:Generator_ColumnPropNameInRow="AchievementLevelType" msprop:Generator_ColumnPropNameInTable="AchievementLevelTypeColumn" msprop:Generator_UserColumnName="AchievementLevelType" type="xs:string" />
+              <xs:element name="DisplayName" msprop:Generator_ColumnVarNameInTable="columnDisplayName" msprop:Generator_ColumnPropNameInRow="DisplayName" msprop:Generator_ColumnPropNameInTable="DisplayNameColumn" msprop:Generator_UserColumnName="DisplayName" type="xs:string" />
+              <xs:element name="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_UserColumnName="Description" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="AchievementLevelFacts" msprop:Generator_TableClassName="AchievementLevelFactsDataTable" msprop:Generator_TableVarName="tableAchievementLevelFacts" msprop:Generator_TablePropName="AchievementLevelFacts" msprop:Generator_RowDeletingName="AchievementLevelFactsRowDeleting" msprop:Generator_RowChangingName="AchievementLevelFactsRowChanging" msprop:Generator_RowEvHandlerName="AchievementLevelFactsRowChangeEventHandler" msprop:Generator_RowDeletedName="AchievementLevelFactsRowDeleted" msprop:Generator_UserTableName="AchievementLevelFacts" msprop:Generator_RowChangedName="AchievementLevelFactsRowChanged" msprop:Generator_RowEvArgName="AchievementLevelFactsRowChangeEvent" msprop:Generator_RowClassName="AchievementLevelFactsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Achievement_Name" msprop:Generator_ColumnVarNameInTable="columnAchievement_Name" msprop:Generator_ColumnPropNameInRow="Achievement_Name" msprop:Generator_ColumnPropNameInTable="Achievement_NameColumn" msprop:Generator_UserColumnName="Achievement_Name" type="xs:string" />
+              <xs:element name="Achievement_Level" msprop:Generator_ColumnVarNameInTable="columnAchievement_Level" msprop:Generator_ColumnPropNameInRow="Achievement_Level" msprop:Generator_ColumnPropNameInTable="Achievement_LevelColumn" msprop:Generator_UserColumnName="Achievement_Level" type="xs:int" />
+              <xs:element name="FactType" msprop:Generator_ColumnVarNameInTable="columnFactType" msprop:Generator_ColumnPropNameInRow="FactType" msprop:Generator_ColumnPropNameInTable="FactTypeColumn" msprop:Generator_UserColumnName="FactType" type="xs:string" />
+              <xs:element name="FactNo" msprop:Generator_ColumnVarNameInTable="columnFactNo" msprop:Generator_ColumnPropNameInRow="FactNo" msprop:Generator_ColumnPropNameInTable="FactNoColumn" msprop:Generator_UserColumnName="FactNo" type="xs:int" />
+              <xs:element name="OptionNo" msprop:Generator_ColumnVarNameInTable="columnOptionNo" msprop:Generator_ColumnPropNameInRow="OptionNo" msprop:Generator_ColumnPropNameInTable="OptionNoColumn" msprop:Generator_UserColumnName="OptionNo" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="AdvRankCatReqs" msprop:Generator_TableClassName="AdvRankCatReqsDataTable" msprop:Generator_TableVarName="tableAdvRankCatReqs" msprop:Generator_RowChangedName="AdvRankCatReqsRowChanged" msprop:Generator_TablePropName="AdvRankCatReqs" msprop:Generator_RowDeletingName="AdvRankCatReqsRowDeleting" msprop:Generator_RowChangingName="AdvRankCatReqsRowChanging" msprop:Generator_RowEvHandlerName="AdvRankCatReqsRowChangeEventHandler" msprop:Generator_RowDeletedName="AdvRankCatReqsRowDeleted" msprop:Generator_RowClassName="AdvRankCatReqsRow" msprop:Generator_UserTableName="AdvRankCatReqs" msprop:Generator_RowEvArgName="AdvRankCatReqsRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Advancement_Name" msprop:Generator_ColumnVarNameInTable="columnAdvancement_Name" msprop:Generator_ColumnPropNameInRow="Advancement_Name" msprop:Generator_ColumnPropNameInTable="Advancement_NameColumn" msprop:Generator_UserColumnName="Advancement_Name" type="xs:string" />
+              <xs:element name="Advancement_Rank" msprop:Generator_ColumnVarNameInTable="columnAdvancement_Rank" msprop:Generator_ColumnPropNameInRow="Advancement_Rank" msprop:Generator_ColumnPropNameInTable="Advancement_RankColumn" msprop:Generator_UserColumnName="Advancement_Rank" type="xs:int" />
+              <xs:element name="FactType" msprop:Generator_ColumnVarNameInTable="columnFactType" msprop:Generator_ColumnPropNameInRow="FactType" msprop:Generator_ColumnPropNameInTable="FactTypeColumn" msprop:Generator_UserColumnName="FactType" type="xs:string" />
+              <xs:element name="FactNo" msprop:Generator_ColumnVarNameInTable="columnFactNo" msprop:Generator_ColumnPropNameInRow="FactNo" msprop:Generator_ColumnPropNameInTable="FactNoColumn" msprop:Generator_UserColumnName="FactNo" type="xs:int" />
+              <xs:element name="OptionNo" msprop:Generator_ColumnVarNameInTable="columnOptionNo" msprop:Generator_ColumnPropNameInRow="OptionNo" msprop:Generator_ColumnPropNameInTable="OptionNoColumn" msprop:Generator_UserColumnName="OptionNo" type="xs:int" />
+              <xs:element name="RequiredCategory_Name" msprop:Generator_ColumnVarNameInTable="columnRequiredCategory_Name" msprop:Generator_ColumnPropNameInRow="RequiredCategory_Name" msprop:Generator_ColumnPropNameInTable="RequiredCategory_NameColumn" msprop:Generator_UserColumnName="RequiredCategory_Name" type="xs:string" />
+              <xs:element name="RequiredCategoryPoints" msprop:Generator_ColumnVarNameInTable="columnRequiredCategoryPoints" msprop:Generator_ColumnPropNameInRow="RequiredCategoryPoints" msprop:Generator_ColumnPropNameInTable="RequiredCategoryPointsColumn" msprop:Generator_UserColumnName="RequiredCategoryPoints" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="AdvRankAdvReqs" msprop:Generator_TableClassName="AdvRankAdvReqsDataTable" msprop:Generator_TableVarName="tableAdvRankAdvReqs" msprop:Generator_RowChangedName="AdvRankAdvReqsRowChanged" msprop:Generator_TablePropName="AdvRankAdvReqs" msprop:Generator_RowDeletingName="AdvRankAdvReqsRowDeleting" msprop:Generator_RowChangingName="AdvRankAdvReqsRowChanging" msprop:Generator_RowEvHandlerName="AdvRankAdvReqsRowChangeEventHandler" msprop:Generator_RowDeletedName="AdvRankAdvReqsRowDeleted" msprop:Generator_RowClassName="AdvRankAdvReqsRow" msprop:Generator_UserTableName="AdvRankAdvReqs" msprop:Generator_RowEvArgName="AdvRankAdvReqsRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Advancement_Name" msprop:Generator_ColumnVarNameInTable="columnAdvancement_Name" msprop:Generator_ColumnPropNameInRow="Advancement_Name" msprop:Generator_ColumnPropNameInTable="Advancement_NameColumn" msprop:Generator_UserColumnName="Advancement_Name" type="xs:string" />
+              <xs:element name="Advancement_Rank" msprop:Generator_ColumnVarNameInTable="columnAdvancement_Rank" msprop:Generator_ColumnPropNameInRow="Advancement_Rank" msprop:Generator_ColumnPropNameInTable="Advancement_RankColumn" msprop:Generator_UserColumnName="Advancement_Rank" type="xs:int" />
+              <xs:element name="FactType" msprop:Generator_ColumnVarNameInTable="columnFactType" msprop:Generator_ColumnPropNameInRow="FactType" msprop:Generator_ColumnPropNameInTable="FactTypeColumn" msprop:Generator_UserColumnName="FactType" type="xs:string" />
+              <xs:element name="FactNo" msprop:Generator_ColumnVarNameInTable="columnFactNo" msprop:Generator_ColumnPropNameInRow="FactNo" msprop:Generator_ColumnPropNameInTable="FactNoColumn" msprop:Generator_UserColumnName="FactNo" type="xs:int" />
+              <xs:element name="OptionNo" msprop:Generator_ColumnVarNameInTable="columnOptionNo" msprop:Generator_ColumnPropNameInRow="OptionNo" msprop:Generator_ColumnPropNameInTable="OptionNoColumn" msprop:Generator_UserColumnName="OptionNo" type="xs:int" />
+              <xs:element name="RequiredAdvancement_Name" msprop:Generator_ColumnVarNameInTable="columnRequiredAdvancement_Name" msprop:Generator_ColumnPropNameInRow="RequiredAdvancement_Name" msprop:Generator_ColumnPropNameInTable="RequiredAdvancement_NameColumn" msprop:Generator_UserColumnName="RequiredAdvancement_Name" type="xs:string" />
+              <xs:element name="RequiredAdvancement_Rank" msprop:Generator_ColumnVarNameInTable="columnRequiredAdvancement_Rank" msprop:Generator_ColumnPropNameInRow="RequiredAdvancement_Rank" msprop:Generator_ColumnPropNameInTable="RequiredAdvancement_RankColumn" msprop:Generator_UserColumnName="RequiredAdvancement_Rank" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="AdvRankAchReqs" msprop:Generator_TableClassName="AdvRankAchReqsDataTable" msprop:Generator_TableVarName="tableAdvRankAchReqs" msprop:Generator_RowChangedName="AdvRankAchReqsRowChanged" msprop:Generator_TablePropName="AdvRankAchReqs" msprop:Generator_RowDeletingName="AdvRankAchReqsRowDeleting" msprop:Generator_RowChangingName="AdvRankAchReqsRowChanging" msprop:Generator_RowEvHandlerName="AdvRankAchReqsRowChangeEventHandler" msprop:Generator_RowDeletedName="AdvRankAchReqsRowDeleted" msprop:Generator_RowClassName="AdvRankAchReqsRow" msprop:Generator_UserTableName="AdvRankAchReqs" msprop:Generator_RowEvArgName="AdvRankAchReqsRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Advancement_Name" msprop:Generator_ColumnVarNameInTable="columnAdvancement_Name" msprop:Generator_ColumnPropNameInRow="Advancement_Name" msprop:Generator_ColumnPropNameInTable="Advancement_NameColumn" msprop:Generator_UserColumnName="Advancement_Name" type="xs:string" />
+              <xs:element name="Advancement_Rank" msprop:Generator_ColumnVarNameInTable="columnAdvancement_Rank" msprop:Generator_ColumnPropNameInRow="Advancement_Rank" msprop:Generator_ColumnPropNameInTable="Advancement_RankColumn" msprop:Generator_UserColumnName="Advancement_Rank" type="xs:int" />
+              <xs:element name="FactType" msprop:Generator_ColumnVarNameInTable="columnFactType" msprop:Generator_ColumnPropNameInRow="FactType" msprop:Generator_ColumnPropNameInTable="FactTypeColumn" msprop:Generator_UserColumnName="FactType" type="xs:string" />
+              <xs:element name="FactNo" msprop:Generator_ColumnVarNameInTable="columnFactNo" msprop:Generator_ColumnPropNameInRow="FactNo" msprop:Generator_ColumnPropNameInTable="FactNoColumn" msprop:Generator_UserColumnName="FactNo" type="xs:int" />
+              <xs:element name="OptionNo" msprop:Generator_ColumnVarNameInTable="columnOptionNo" msprop:Generator_ColumnPropNameInRow="OptionNo" msprop:Generator_ColumnPropNameInTable="OptionNoColumn" msprop:Generator_UserColumnName="OptionNo" type="xs:int" />
+              <xs:element name="RequiredAchievement_Name" msprop:Generator_ColumnVarNameInTable="columnRequiredAchievement_Name" msprop:Generator_ColumnPropNameInRow="RequiredAchievement_Name" msprop:Generator_ColumnPropNameInTable="RequiredAchievement_NameColumn" msprop:Generator_UserColumnName="RequiredAchievement_Name" type="xs:string" />
+              <xs:element name="RequiredAchievement_Level" msprop:Generator_ColumnVarNameInTable="columnRequiredAchievement_Level" msprop:Generator_ColumnPropNameInRow="RequiredAchievement_Level" msprop:Generator_ColumnPropNameInTable="RequiredAchievement_LevelColumn" msprop:Generator_UserColumnName="RequiredAchievement_Level" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="AdvRankAbilReqs" msprop:Generator_TableClassName="AdvRankAbilReqsDataTable" msprop:Generator_TableVarName="tableAdvRankAbilReqs" msprop:Generator_RowChangedName="AdvRankAbilReqsRowChanged" msprop:Generator_TablePropName="AdvRankAbilReqs" msprop:Generator_RowDeletingName="AdvRankAbilReqsRowDeleting" msprop:Generator_RowChangingName="AdvRankAbilReqsRowChanging" msprop:Generator_RowEvHandlerName="AdvRankAbilReqsRowChangeEventHandler" msprop:Generator_RowDeletedName="AdvRankAbilReqsRowDeleted" msprop:Generator_RowClassName="AdvRankAbilReqsRow" msprop:Generator_UserTableName="AdvRankAbilReqs" msprop:Generator_RowEvArgName="AdvRankAbilReqsRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Advancement_Name" msprop:Generator_ColumnVarNameInTable="columnAdvancement_Name" msprop:Generator_ColumnPropNameInRow="Advancement_Name" msprop:Generator_ColumnPropNameInTable="Advancement_NameColumn" msprop:Generator_UserColumnName="Advancement_Name" type="xs:string" />
+              <xs:element name="Advancement_Rank" msprop:Generator_ColumnVarNameInTable="columnAdvancement_Rank" msprop:Generator_ColumnPropNameInRow="Advancement_Rank" msprop:Generator_ColumnPropNameInTable="Advancement_RankColumn" msprop:Generator_UserColumnName="Advancement_Rank" type="xs:int" />
+              <xs:element name="FactType" msprop:Generator_ColumnVarNameInTable="columnFactType" msprop:Generator_ColumnPropNameInRow="FactType" msprop:Generator_ColumnPropNameInTable="FactTypeColumn" msprop:Generator_UserColumnName="FactType" type="xs:string" />
+              <xs:element name="FactNo" msprop:Generator_ColumnVarNameInTable="columnFactNo" msprop:Generator_ColumnPropNameInRow="FactNo" msprop:Generator_ColumnPropNameInTable="FactNoColumn" msprop:Generator_UserColumnName="FactNo" type="xs:int" />
+              <xs:element name="OptionNo" msprop:Generator_ColumnVarNameInTable="columnOptionNo" msprop:Generator_ColumnPropNameInRow="OptionNo" msprop:Generator_ColumnPropNameInTable="OptionNoColumn" msprop:Generator_UserColumnName="OptionNo" type="xs:int" />
+              <xs:element name="RequiredAbility_Name" msprop:Generator_ColumnVarNameInTable="columnRequiredAbility_Name" msprop:Generator_ColumnPropNameInRow="RequiredAbility_Name" msprop:Generator_ColumnPropNameInTable="RequiredAbility_NameColumn" msprop:Generator_UserColumnName="RequiredAbility_Name" type="xs:string" />
+              <xs:element name="RequiredAbilityScore" msprop:Generator_ColumnVarNameInTable="columnRequiredAbilityScore" msprop:Generator_ColumnPropNameInRow="RequiredAbilityScore" msprop:Generator_ColumnPropNameInTable="RequiredAbilityScoreColumn" msprop:Generator_UserColumnName="RequiredAbilityScore" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="AdvRankAbilBonuses" msprop:Generator_TableClassName="AdvRankAbilBonusesDataTable" msprop:Generator_TableVarName="tableAdvRankAbilBonuses" msprop:Generator_RowChangedName="AdvRankAbilBonusesRowChanged" msprop:Generator_TablePropName="AdvRankAbilBonuses" msprop:Generator_RowDeletingName="AdvRankAbilBonusesRowDeleting" msprop:Generator_RowChangingName="AdvRankAbilBonusesRowChanging" msprop:Generator_RowEvHandlerName="AdvRankAbilBonusesRowChangeEventHandler" msprop:Generator_RowDeletedName="AdvRankAbilBonusesRowDeleted" msprop:Generator_RowClassName="AdvRankAbilBonusesRow" msprop:Generator_UserTableName="AdvRankAbilBonuses" msprop:Generator_RowEvArgName="AdvRankAbilBonusesRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Advancement_Name" msprop:Generator_ColumnVarNameInTable="columnAdvancement_Name" msprop:Generator_ColumnPropNameInRow="Advancement_Name" msprop:Generator_ColumnPropNameInTable="Advancement_NameColumn" msprop:Generator_UserColumnName="Advancement_Name" type="xs:string" />
+              <xs:element name="Advancement_Rank" msprop:Generator_ColumnVarNameInTable="columnAdvancement_Rank" msprop:Generator_ColumnPropNameInRow="Advancement_Rank" msprop:Generator_ColumnPropNameInTable="Advancement_RankColumn" msprop:Generator_UserColumnName="Advancement_Rank" type="xs:int" />
+              <xs:element name="FactType" msprop:Generator_ColumnVarNameInTable="columnFactType" msprop:Generator_ColumnPropNameInRow="FactType" msprop:Generator_ColumnPropNameInTable="FactTypeColumn" msprop:Generator_UserColumnName="FactType" type="xs:string" />
+              <xs:element name="FactNo" msprop:Generator_ColumnVarNameInTable="columnFactNo" msprop:Generator_ColumnPropNameInRow="FactNo" msprop:Generator_ColumnPropNameInTable="FactNoColumn" msprop:Generator_UserColumnName="FactNo" type="xs:int" />
+              <xs:element name="OptionNo" msprop:Generator_ColumnVarNameInTable="columnOptionNo" msprop:Generator_ColumnPropNameInRow="OptionNo" msprop:Generator_ColumnPropNameInTable="OptionNoColumn" msprop:Generator_UserColumnName="OptionNo" type="xs:int" />
+              <xs:element name="BonusAbilityName" msprop:Generator_ColumnVarNameInTable="columnBonusAbilityName" msprop:Generator_ColumnPropNameInRow="BonusAbilityName" msprop:Generator_ColumnPropNameInTable="BonusAbilityNameColumn" msprop:Generator_UserColumnName="BonusAbilityName" type="xs:string" />
+              <xs:element name="BonusAbilityScore" msprop:Generator_ColumnVarNameInTable="columnBonusAbilityScore" msprop:Generator_ColumnPropNameInRow="BonusAbilityScore" msprop:Generator_ColumnPropNameInTable="BonusAbilityScoreColumn" msprop:Generator_UserColumnName="BonusAbilityScore" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="AdvancementRankFactStrings" msprop:Generator_TableClassName="AdvancementRankFactStringsDataTable" msprop:Generator_TableVarName="tableAdvancementRankFactStrings" msprop:Generator_RowChangedName="AdvancementRankFactStringsRowChanged" msprop:Generator_TablePropName="AdvancementRankFactStrings" msprop:Generator_RowDeletingName="AdvancementRankFactStringsRowDeleting" msprop:Generator_RowChangingName="AdvancementRankFactStringsRowChanging" msprop:Generator_RowEvHandlerName="AdvancementRankFactStringsRowChangeEventHandler" msprop:Generator_RowDeletedName="AdvancementRankFactStringsRowDeleted" msprop:Generator_RowClassName="AdvancementRankFactStringsRow" msprop:Generator_UserTableName="AdvancementRankFactStrings" msprop:Generator_RowEvArgName="AdvancementRankFactStringsRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Advancement_Name" msprop:Generator_ColumnVarNameInTable="columnAdvancement_Name" msprop:Generator_ColumnPropNameInRow="Advancement_Name" msprop:Generator_ColumnPropNameInTable="Advancement_NameColumn" msprop:Generator_UserColumnName="Advancement_Name" type="xs:string" />
+              <xs:element name="Advancement_Rank" msprop:Generator_ColumnVarNameInTable="columnAdvancement_Rank" msprop:Generator_ColumnPropNameInRow="Advancement_Rank" msprop:Generator_ColumnPropNameInTable="Advancement_RankColumn" msprop:Generator_UserColumnName="Advancement_Rank" type="xs:int" />
+              <xs:element name="FactType" msprop:Generator_ColumnVarNameInTable="columnFactType" msprop:Generator_ColumnPropNameInRow="FactType" msprop:Generator_ColumnPropNameInTable="FactTypeColumn" msprop:Generator_UserColumnName="FactType" type="xs:string" />
+              <xs:element name="FactString" msprop:Generator_ColumnVarNameInTable="columnFactString" msprop:Generator_ColumnPropNameInRow="FactString" msprop:Generator_ColumnPropNameInTable="FactStringColumn" msprop:Generator_UserColumnName="FactString" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Feats" msprop:Generator_TableClassName="FeatsDataTable" msprop:Generator_TableVarName="tableFeats" msprop:Generator_RowChangedName="FeatsRowChanged" msprop:Generator_TablePropName="Feats" msprop:Generator_RowDeletingName="FeatsRowDeleting" msprop:Generator_RowChangingName="FeatsRowChanging" msprop:Generator_RowEvHandlerName="FeatsRowChangeEventHandler" msprop:Generator_RowDeletedName="FeatsRowDeleted" msprop:Generator_RowClassName="FeatsRow" msprop:Generator_UserTableName="Feats" msprop:Generator_RowEvArgName="FeatsRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" />
+              <xs:element name="FeatType" msprop:Generator_ColumnVarNameInTable="columnFeatType" msprop:Generator_ColumnPropNameInRow="FeatType" msprop:Generator_ColumnPropNameInTable="FeatTypeColumn" msprop:Generator_UserColumnName="FeatType" type="xs:string" />
+              <xs:element name="Role_Name" msprop:Generator_ColumnVarNameInTable="columnRole_Name" msprop:Generator_ColumnPropNameInRow="Role_Name" msprop:Generator_ColumnPropNameInTable="Role_NameColumn" msprop:Generator_UserColumnName="Role_Name" type="xs:string" />
+              <xs:element name="Advancement_Name" msprop:Generator_ColumnVarNameInTable="columnAdvancement_Name" msprop:Generator_ColumnPropNameInRow="Advancement_Name" msprop:Generator_ColumnPropNameInTable="Advancement_NameColumn" msprop:Generator_UserColumnName="Advancement_Name" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Roles" msprop:Generator_TableClassName="RolesDataTable" msprop:Generator_TableVarName="tableRoles" msprop:Generator_RowChangedName="RolesRowChanged" msprop:Generator_TablePropName="Roles" msprop:Generator_RowDeletingName="RolesRowDeleting" msprop:Generator_RowChangingName="RolesRowChanging" msprop:Generator_RowEvHandlerName="RolesRowChangeEventHandler" msprop:Generator_RowDeletedName="RolesRowDeleted" msprop:Generator_RowClassName="RolesRow" msprop:Generator_UserTableName="Roles" msprop:Generator_RowEvArgName="RolesRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="AttackForms" msprop:Generator_TableClassName="AttackFormsDataTable" msprop:Generator_TableVarName="tableAttackForms" msprop:Generator_RowChangedName="AttackFormsRowChanged" msprop:Generator_TablePropName="AttackForms" msprop:Generator_RowDeletingName="AttackFormsRowDeleting" msprop:Generator_RowChangingName="AttackFormsRowChanging" msprop:Generator_RowEvHandlerName="AttackFormsRowChangeEventHandler" msprop:Generator_RowDeletedName="AttackFormsRowDeleted" msprop:Generator_RowClassName="AttackFormsRow" msprop:Generator_UserTableName="AttackForms" msprop:Generator_RowEvArgName="AttackFormsRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="WeaponCategories" msprop:Generator_TableClassName="WeaponCategoriesDataTable" msprop:Generator_TableVarName="tableWeaponCategories" msprop:Generator_RowChangedName="WeaponCategoriesRowChanged" msprop:Generator_TablePropName="WeaponCategories" msprop:Generator_RowDeletingName="WeaponCategoriesRowDeleting" msprop:Generator_RowChangingName="WeaponCategoriesRowChanging" msprop:Generator_RowEvHandlerName="WeaponCategoriesRowChangeEventHandler" msprop:Generator_RowDeletedName="WeaponCategoriesRowDeleted" msprop:Generator_RowClassName="WeaponCategoriesRow" msprop:Generator_UserTableName="WeaponCategories" msprop:Generator_RowEvArgName="WeaponCategoriesRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SpecificWeapons" msprop:Generator_TableClassName="SpecificWeaponsDataTable" msprop:Generator_TableVarName="tableSpecificWeapons" msprop:Generator_RowChangedName="SpecificWeaponsRowChanged" msprop:Generator_TablePropName="SpecificWeapons" msprop:Generator_RowDeletingName="SpecificWeaponsRowDeleting" msprop:Generator_RowChangingName="SpecificWeaponsRowChanging" msprop:Generator_RowEvHandlerName="SpecificWeaponsRowChangeEventHandler" msprop:Generator_RowDeletedName="SpecificWeaponsRowDeleted" msprop:Generator_RowClassName="SpecificWeaponsRow" msprop:Generator_UserTableName="SpecificWeapons" msprop:Generator_RowEvArgName="SpecificWeaponsRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Schools" msprop:Generator_TableClassName="SchoolsDataTable" msprop:Generator_TableVarName="tableSchools" msprop:Generator_RowChangedName="SchoolsRowChanged" msprop:Generator_TablePropName="Schools" msprop:Generator_RowDeletingName="SchoolsRowDeleting" msprop:Generator_RowChangingName="SchoolsRowChanging" msprop:Generator_RowEvHandlerName="SchoolsRowChangeEventHandler" msprop:Generator_RowDeletedName="SchoolsRowDeleted" msprop:Generator_RowClassName="SchoolsRow" msprop:Generator_UserTableName="Schools" msprop:Generator_RowEvArgName="SchoolsRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="EffectChannels" msprop:Generator_TableClassName="EffectChannelsDataTable" msprop:Generator_TableVarName="tableEffectChannels" msprop:Generator_RowChangedName="EffectChannelsRowChanged" msprop:Generator_TablePropName="EffectChannels" msprop:Generator_RowDeletingName="EffectChannelsRowDeleting" msprop:Generator_RowChangingName="EffectChannelsRowChanging" msprop:Generator_RowEvHandlerName="EffectChannelsRowChangeEventHandler" msprop:Generator_RowDeletedName="EffectChannelsRowDeleted" msprop:Generator_RowClassName="EffectChannelsRow" msprop:Generator_UserTableName="EffectChannels" msprop:Generator_RowEvArgName="EffectChannelsRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ActiveFeats" msprop:Generator_TableClassName="ActiveFeatsDataTable" msprop:Generator_TableVarName="tableActiveFeats" msprop:Generator_RowChangedName="ActiveFeatsRowChanged" msprop:Generator_TablePropName="ActiveFeats" msprop:Generator_RowDeletingName="ActiveFeatsRowDeleting" msprop:Generator_RowChangingName="ActiveFeatsRowChanging" msprop:Generator_RowEvHandlerName="ActiveFeatsRowChangeEventHandler" msprop:Generator_RowDeletedName="ActiveFeatsRowDeleted" msprop:Generator_RowClassName="ActiveFeatsRow" msprop:Generator_UserTableName="ActiveFeats" msprop:Generator_RowEvArgName="ActiveFeatsRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Feat_Name" msprop:Generator_ColumnVarNameInTable="columnFeat_Name" msprop:Generator_ColumnPropNameInRow="Feat_Name" msprop:Generator_ColumnPropNameInTable="Feat_NameColumn" msprop:Generator_UserColumnName="Feat_Name" type="xs:string" />
+              <xs:element name="DamageFactor" msprop:Generator_ColumnVarNameInTable="columnDamageFactor" msprop:Generator_ColumnPropNameInRow="DamageFactor" msprop:Generator_ColumnPropNameInTable="DamageFactorColumn" msprop:Generator_UserColumnName="DamageFactor" type="xs:decimal" />
+              <xs:element name="AttackSeconds" msprop:Generator_ColumnVarNameInTable="columnAttackSeconds" msprop:Generator_ColumnPropNameInRow="AttackSeconds" msprop:Generator_ColumnPropNameInTable="AttackSecondsColumn" msprop:Generator_UserColumnName="AttackSeconds" type="xs:decimal" />
+              <xs:element name="StaminaCost" msprop:Generator_ColumnVarNameInTable="columnStaminaCost" msprop:Generator_ColumnPropNameInRow="StaminaCost" msprop:Generator_ColumnPropNameInTable="StaminaCostColumn" msprop:Generator_UserColumnName="StaminaCost" type="xs:int" />
+              <xs:element name="IsMelee" msprop:Generator_ColumnVarNameInTable="columnIsMelee" msprop:Generator_ColumnPropNameInRow="IsMelee" msprop:Generator_ColumnPropNameInTable="IsMeleeColumn" msprop:Generator_UserColumnName="IsMelee" type="xs:boolean" />
+              <xs:element name="Range" msprop:Generator_ColumnVarNameInTable="columnRange" msprop:Generator_ColumnPropNameInRow="Range" msprop:Generator_ColumnPropNameInTable="RangeColumn" msprop:Generator_UserColumnName="Range" type="xs:decimal" minOccurs="0" />
+              <xs:element name="WeaponCategory_Name" msprop:Generator_ColumnVarNameInTable="columnWeaponCategory_Name" msprop:Generator_ColumnPropNameInRow="WeaponCategory_Name" msprop:Generator_ColumnPropNameInTable="WeaponCategory_NameColumn" msprop:Generator_UserColumnName="WeaponCategory_Name" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="StandardAttacks" msprop:Generator_TableClassName="StandardAttacksDataTable" msprop:Generator_TableVarName="tableStandardAttacks" msprop:Generator_RowChangedName="StandardAttacksRowChanged" msprop:Generator_TablePropName="StandardAttacks" msprop:Generator_RowDeletingName="StandardAttacksRowDeleting" msprop:Generator_RowChangingName="StandardAttacksRowChanging" msprop:Generator_RowEvHandlerName="StandardAttacksRowChangeEventHandler" msprop:Generator_RowDeletedName="StandardAttacksRowDeleted" msprop:Generator_RowClassName="StandardAttacksRow" msprop:Generator_UserTableName="StandardAttacks" msprop:Generator_RowEvArgName="StandardAttacksRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Feat_Name" msprop:Generator_ColumnVarNameInTable="columnFeat_Name" msprop:Generator_ColumnPropNameInRow="Feat_Name" msprop:Generator_ColumnPropNameInTable="Feat_NameColumn" msprop:Generator_UserColumnName="Feat_Name" type="xs:string" />
+              <xs:element name="AttackForm_Name" msprop:Generator_ColumnVarNameInTable="columnAttackForm_Name" msprop:Generator_ColumnPropNameInRow="AttackForm_Name" msprop:Generator_ColumnPropNameInTable="AttackForm_NameColumn" msprop:Generator_UserColumnName="AttackForm_Name" type="xs:string" />
+              <xs:element name="CooldownSeconds" msprop:Generator_ColumnVarNameInTable="columnCooldownSeconds" msprop:Generator_ColumnPropNameInRow="CooldownSeconds" msprop:Generator_ColumnPropNameInTable="CooldownSecondsColumn" msprop:Generator_UserColumnName="CooldownSeconds" type="xs:decimal" />
+              <xs:element name="SpecificWeapon_Name" msprop:Generator_ColumnVarNameInTable="columnSpecificWeapon_Name" msprop:Generator_ColumnPropNameInRow="SpecificWeapon_Name" msprop:Generator_ColumnPropNameInTable="SpecificWeapon_NameColumn" msprop:Generator_UserColumnName="SpecificWeapon_Name" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PowerAttacks" msprop:Generator_TableClassName="PowerAttacksDataTable" msprop:Generator_TableVarName="tablePowerAttacks" msprop:Generator_RowChangedName="PowerAttacksRowChanged" msprop:Generator_TablePropName="PowerAttacks" msprop:Generator_RowDeletingName="PowerAttacksRowDeleting" msprop:Generator_RowChangingName="PowerAttacksRowChanging" msprop:Generator_RowEvHandlerName="PowerAttacksRowChangeEventHandler" msprop:Generator_RowDeletedName="PowerAttacksRowDeleted" msprop:Generator_RowClassName="PowerAttacksRow" msprop:Generator_UserTableName="PowerAttacks" msprop:Generator_RowEvArgName="PowerAttacksRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Feat_Name" msprop:Generator_ColumnVarNameInTable="columnFeat_Name" msprop:Generator_ColumnPropNameInRow="Feat_Name" msprop:Generator_ColumnPropNameInTable="Feat_NameColumn" msprop:Generator_UserColumnName="Feat_Name" type="xs:string" />
+              <xs:element name="PowerCost" msprop:Generator_ColumnVarNameInTable="columnPowerCost" msprop:Generator_ColumnPropNameInRow="PowerCost" msprop:Generator_ColumnPropNameInTable="PowerCostColumn" msprop:Generator_UserColumnName="PowerCost" type="xs:int" />
+              <xs:element name="Level" msprop:Generator_ColumnVarNameInTable="columnLevel" msprop:Generator_ColumnPropNameInRow="Level" msprop:Generator_ColumnPropNameInTable="LevelColumn" msprop:Generator_UserColumnName="Level" type="xs:int" />
+              <xs:element name="HasEndOfCombatCooldown" msprop:Generator_ColumnVarNameInTable="columnHasEndOfCombatCooldown" msprop:Generator_ColumnPropNameInRow="HasEndOfCombatCooldown" msprop:Generator_ColumnPropNameInTable="HasEndOfCombatCooldownColumn" msprop:Generator_UserColumnName="HasEndOfCombatCooldown" type="xs:boolean" />
+              <xs:element name="AttackBonus_Name" msprop:Generator_ColumnVarNameInTable="columnAttackBonus_Name" msprop:Generator_ColumnPropNameInRow="AttackBonus_Name" msprop:Generator_ColumnPropNameInTable="AttackBonus_NameColumn" msprop:Generator_UserColumnName="AttackBonus_Name" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Cantrips" msprop:Generator_TableClassName="CantripsDataTable" msprop:Generator_TableVarName="tableCantrips" msprop:Generator_RowChangedName="CantripsRowChanged" msprop:Generator_TablePropName="Cantrips" msprop:Generator_RowDeletingName="CantripsRowDeleting" msprop:Generator_RowChangingName="CantripsRowChanging" msprop:Generator_RowEvHandlerName="CantripsRowChangeEventHandler" msprop:Generator_RowDeletedName="CantripsRowDeleted" msprop:Generator_RowClassName="CantripsRow" msprop:Generator_UserTableName="Cantrips" msprop:Generator_RowEvArgName="CantripsRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Feat_Name" msprop:Generator_ColumnVarNameInTable="columnFeat_Name" msprop:Generator_ColumnPropNameInRow="Feat_Name" msprop:Generator_ColumnPropNameInTable="Feat_NameColumn" msprop:Generator_UserColumnName="Feat_Name" type="xs:string" />
+              <xs:element name="School_Name" msprop:Generator_ColumnVarNameInTable="columnSchool_Name" msprop:Generator_ColumnPropNameInRow="School_Name" msprop:Generator_ColumnPropNameInTable="School_NameColumn" msprop:Generator_UserColumnName="School_Name" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ChanneledFeats" msprop:Generator_TableClassName="ChanneledFeatsDataTable" msprop:Generator_TableVarName="tableChanneledFeats" msprop:Generator_RowChangedName="ChanneledFeatsRowChanged" msprop:Generator_TablePropName="ChanneledFeats" msprop:Generator_RowDeletingName="ChanneledFeatsRowDeleting" msprop:Generator_RowChangingName="ChanneledFeatsRowChanging" msprop:Generator_RowEvHandlerName="ChanneledFeatsRowChangeEventHandler" msprop:Generator_RowDeletedName="ChanneledFeatsRowDeleted" msprop:Generator_RowClassName="ChanneledFeatsRow" msprop:Generator_UserTableName="ChanneledFeats" msprop:Generator_RowEvArgName="ChanneledFeatsRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Feat_Name" msprop:Generator_ColumnVarNameInTable="columnFeat_Name" msprop:Generator_ColumnPropNameInRow="Feat_Name" msprop:Generator_ColumnPropNameInTable="Feat_NameColumn" msprop:Generator_UserColumnName="Feat_Name" type="xs:string" />
+              <xs:element name="Channel_Name" msprop:Generator_ColumnVarNameInTable="columnChannel_Name" msprop:Generator_ColumnPropNameInRow="Channel_Name" msprop:Generator_ColumnPropNameInTable="Channel_NameColumn" msprop:Generator_UserColumnName="Channel_Name" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="AttackBonuses" msprop:Generator_TableClassName="AttackBonusesDataTable" msprop:Generator_TableVarName="tableAttackBonuses" msprop:Generator_RowChangedName="AttackBonusesRowChanged" msprop:Generator_TablePropName="AttackBonuses" msprop:Generator_RowDeletingName="AttackBonusesRowDeleting" msprop:Generator_RowChangingName="AttackBonusesRowChanging" msprop:Generator_RowEvHandlerName="AttackBonusesRowChangeEventHandler" msprop:Generator_RowDeletedName="AttackBonusesRowDeleted" msprop:Generator_RowClassName="AttackBonusesRow" msprop:Generator_UserTableName="AttackBonuses" msprop:Generator_RowEvArgName="AttackBonusesRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Feat_Name" msprop:Generator_ColumnVarNameInTable="columnFeat_Name" msprop:Generator_ColumnPropNameInRow="Feat_Name" msprop:Generator_ColumnPropNameInTable="Feat_NameColumn" msprop:Generator_UserColumnName="Feat_Name" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="RoleAchievements" msprop:Generator_TableClassName="RoleAchievementsDataTable" msprop:Generator_TableVarName="tableRoleAchievements" msprop:Generator_RowChangedName="RoleAchievementsRowChanged" msprop:Generator_TablePropName="RoleAchievements" msprop:Generator_RowDeletingName="RoleAchievementsRowDeleting" msprop:Generator_RowChangingName="RoleAchievementsRowChanging" msprop:Generator_RowEvHandlerName="RoleAchievementsRowChangeEventHandler" msprop:Generator_RowDeletedName="RoleAchievementsRowDeleted" msprop:Generator_RowClassName="RoleAchievementsRow" msprop:Generator_UserTableName="RoleAchievements" msprop:Generator_RowEvArgName="RoleAchievementsRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Achievement_Name" msprop:Generator_ColumnVarNameInTable="columnAchievement_Name" msprop:Generator_ColumnPropNameInRow="Achievement_Name" msprop:Generator_ColumnPropNameInTable="Achievement_NameColumn" msprop:Generator_UserColumnName="Achievement_Name" type="xs:string" />
+              <xs:element name="Role_Name" msprop:Generator_ColumnVarNameInTable="columnRole_Name" msprop:Generator_ColumnPropNameInRow="Role_Name" msprop:Generator_ColumnPropNameInTable="Role_NameColumn" msprop:Generator_UserColumnName="Role_Name" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CraftAchievements" msprop:Generator_TableClassName="CraftAchievementsDataTable" msprop:Generator_TableVarName="tableCraftAchievements" msprop:Generator_RowChangedName="CraftAchievementsRowChanged" msprop:Generator_TablePropName="CraftAchievements" msprop:Generator_RowDeletingName="CraftAchievementsRowDeleting" msprop:Generator_RowChangingName="CraftAchievementsRowChanging" msprop:Generator_RowEvHandlerName="CraftAchievementsRowChangeEventHandler" msprop:Generator_RowDeletedName="CraftAchievementsRowDeleted" msprop:Generator_RowClassName="CraftAchievementsRow" msprop:Generator_UserTableName="CraftAchievements" msprop:Generator_RowEvArgName="CraftAchievementsRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Achievement_Name" msprop:Generator_ColumnVarNameInTable="columnAchievement_Name" msprop:Generator_ColumnPropNameInRow="Achievement_Name" msprop:Generator_ColumnPropNameInTable="Achievement_NameColumn" msprop:Generator_UserColumnName="Achievement_Name" type="xs:string" />
+              <xs:element name="Tier" msprop:Generator_ColumnVarNameInTable="columnTier" msprop:Generator_ColumnPropNameInRow="Tier" msprop:Generator_ColumnPropNameInTable="TierColumn" msprop:Generator_UserColumnName="Tier" type="xs:int" />
+              <xs:element name="Rarity" msprop:Generator_ColumnVarNameInTable="columnRarity" msprop:Generator_ColumnPropNameInRow="Rarity" msprop:Generator_ColumnPropNameInTable="RarityColumn" msprop:Generator_UserColumnName="Rarity" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CraftingAchievements" msprop:Generator_TableClassName="CraftingAchievementsDataTable" msprop:Generator_TableVarName="tableCraftingAchievements" msprop:Generator_RowChangedName="CraftingAchievementsRowChanged" msprop:Generator_TablePropName="CraftingAchievements" msprop:Generator_RowDeletingName="CraftingAchievementsRowDeleting" msprop:Generator_RowChangingName="CraftingAchievementsRowChanging" msprop:Generator_RowEvHandlerName="CraftingAchievementsRowChangeEventHandler" msprop:Generator_RowDeletedName="CraftingAchievementsRowDeleted" msprop:Generator_RowClassName="CraftingAchievementsRow" msprop:Generator_UserTableName="CraftingAchievements" msprop:Generator_RowEvArgName="CraftingAchievementsRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Achievement_Name" msprop:Generator_ColumnVarNameInTable="columnAchievement_Name" msprop:Generator_ColumnPropNameInRow="Achievement_Name" msprop:Generator_ColumnPropNameInTable="Achievement_NameColumn" msprop:Generator_UserColumnName="Achievement_Name" type="xs:string" />
+              <xs:element name="CraftingSkill_Name" msprop:Generator_ColumnVarNameInTable="columnCraftingSkill_Name" msprop:Generator_ColumnPropNameInRow="CraftingSkill_Name" msprop:Generator_ColumnPropNameInTable="CraftingSkill_NameColumn" msprop:Generator_UserColumnName="CraftingSkill_Name" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CraftingSkills" msprop:Generator_TableClassName="CraftingSkillsDataTable" msprop:Generator_TableVarName="tableCraftingSkills" msprop:Generator_RowChangedName="CraftingSkillsRowChanged" msprop:Generator_TablePropName="CraftingSkills" msprop:Generator_RowDeletingName="CraftingSkillsRowDeleting" msprop:Generator_RowChangingName="CraftingSkillsRowChanging" msprop:Generator_RowEvHandlerName="CraftingSkillsRowChangeEventHandler" msprop:Generator_RowDeletedName="CraftingSkillsRowDeleted" msprop:Generator_RowClassName="CraftingSkillsRow" msprop:Generator_UserTableName="CraftingSkills" msprop:Generator_RowEvArgName="CraftingSkillsRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Feat_Name" msprop:Generator_ColumnVarNameInTable="columnFeat_Name" msprop:Generator_ColumnPropNameInRow="Feat_Name" msprop:Generator_ColumnPropNameInTable="Feat_NameColumn" msprop:Generator_UserColumnName="Feat_Name" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="RefiningSkills" msprop:Generator_TableClassName="RefiningSkillsDataTable" msprop:Generator_TableVarName="tableRefiningSkills" msprop:Generator_RowChangedName="RefiningSkillsRowChanged" msprop:Generator_TablePropName="RefiningSkills" msprop:Generator_RowDeletingName="RefiningSkillsRowDeleting" msprop:Generator_RowChangingName="RefiningSkillsRowChanging" msprop:Generator_RowEvHandlerName="RefiningSkillsRowChangeEventHandler" msprop:Generator_RowDeletedName="RefiningSkillsRowDeleted" msprop:Generator_RowClassName="RefiningSkillsRow" msprop:Generator_UserTableName="RefiningSkills" msprop:Generator_RowEvArgName="RefiningSkillsRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Feat_Name" msprop:Generator_ColumnVarNameInTable="columnFeat_Name" msprop:Generator_ColumnPropNameInRow="Feat_Name" msprop:Generator_ColumnPropNameInTable="Feat_NameColumn" msprop:Generator_UserColumnName="Feat_Name" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="RefiningAchievements" msprop:Generator_TableClassName="RefiningAchievementsDataTable" msprop:Generator_TableVarName="tableRefiningAchievements" msprop:Generator_RowChangedName="RefiningAchievementsRowChanged" msprop:Generator_TablePropName="RefiningAchievements" msprop:Generator_RowDeletingName="RefiningAchievementsRowDeleting" msprop:Generator_RowChangingName="RefiningAchievementsRowChanging" msprop:Generator_RowEvHandlerName="RefiningAchievementsRowChangeEventHandler" msprop:Generator_RowDeletedName="RefiningAchievementsRowDeleted" msprop:Generator_RowClassName="RefiningAchievementsRow" msprop:Generator_UserTableName="RefiningAchievements" msprop:Generator_RowEvArgName="RefiningAchievementsRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Achievement_Name" msprop:Generator_ColumnVarNameInTable="columnAchievement_Name" msprop:Generator_ColumnPropNameInRow="Achievement_Name" msprop:Generator_ColumnPropNameInTable="Achievement_NameColumn" msprop:Generator_UserColumnName="Achievement_Name" type="xs:string" />
+              <xs:element name="RefiningSkill_Name" msprop:Generator_ColumnVarNameInTable="columnRefiningSkill_Name" msprop:Generator_ColumnPropNameInRow="RefiningSkill_Name" msprop:Generator_ColumnPropNameInTable="RefiningSkill_NameColumn" msprop:Generator_UserColumnName="RefiningSkill_Name" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CounterAchievementLevels" msprop:Generator_TableClassName="CounterAchievementLevelsDataTable" msprop:Generator_TableVarName="tableCounterAchievementLevels" msprop:Generator_RowChangedName="CounterAchievementLevelsRowChanged" msprop:Generator_TablePropName="CounterAchievementLevels" msprop:Generator_RowDeletingName="CounterAchievementLevelsRowDeleting" msprop:Generator_RowChangingName="CounterAchievementLevelsRowChanging" msprop:Generator_RowEvHandlerName="CounterAchievementLevelsRowChangeEventHandler" msprop:Generator_RowDeletedName="CounterAchievementLevelsRowDeleted" msprop:Generator_RowClassName="CounterAchievementLevelsRow" msprop:Generator_UserTableName="CounterAchievementLevels" msprop:Generator_RowEvArgName="CounterAchievementLevelsRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Achievement_Name" msprop:Generator_ColumnVarNameInTable="columnAchievement_Name" msprop:Generator_ColumnPropNameInRow="Achievement_Name" msprop:Generator_ColumnPropNameInTable="Achievement_NameColumn" msprop:Generator_UserColumnName="Achievement_Name" type="xs:string" />
+              <xs:element name="Achievement_Level" msprop:Generator_ColumnVarNameInTable="columnAchievement_Level" msprop:Generator_ColumnPropNameInRow="Achievement_Level" msprop:Generator_ColumnPropNameInTable="Achievement_LevelColumn" msprop:Generator_UserColumnName="Achievement_Level" type="xs:int" />
+              <xs:element name="CounterValue" msprop:Generator_ColumnVarNameInTable="columnCounterValue" msprop:Generator_ColumnPropNameInRow="CounterValue" msprop:Generator_ColumnPropNameInTable="CounterValueColumn" msprop:Generator_UserColumnName="CounterValue" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CraftAchievementLevels" msprop:Generator_TableClassName="CraftAchievementLevelsDataTable" msprop:Generator_TableVarName="tableCraftAchievementLevels" msprop:Generator_RowChangedName="CraftAchievementLevelsRowChanged" msprop:Generator_TablePropName="CraftAchievementLevels" msprop:Generator_RowDeletingName="CraftAchievementLevelsRowDeleting" msprop:Generator_RowChangingName="CraftAchievementLevelsRowChanging" msprop:Generator_RowEvHandlerName="CraftAchievementLevelsRowChangeEventHandler" msprop:Generator_RowDeletedName="CraftAchievementLevelsRowDeleted" msprop:Generator_RowClassName="CraftAchievementLevelsRow" msprop:Generator_UserTableName="CraftAchievementLevels" msprop:Generator_RowEvArgName="CraftAchievementLevelsRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Achievement_Name" msprop:Generator_ColumnVarNameInTable="columnAchievement_Name" msprop:Generator_ColumnPropNameInRow="Achievement_Name" msprop:Generator_ColumnPropNameInTable="Achievement_NameColumn" msprop:Generator_UserColumnName="Achievement_Name" type="xs:string" />
+              <xs:element name="Achievement_Level" msprop:Generator_ColumnVarNameInTable="columnAchievement_Level" msprop:Generator_ColumnPropNameInRow="Achievement_Level" msprop:Generator_ColumnPropNameInTable="Achievement_LevelColumn" msprop:Generator_UserColumnName="Achievement_Level" type="xs:int" />
+              <xs:element name="UpgradePlus" msprop:Generator_ColumnVarNameInTable="columnUpgradePlus" msprop:Generator_ColumnPropNameInRow="UpgradePlus" msprop:Generator_ColumnPropNameInTable="UpgradePlusColumn" msprop:Generator_UserColumnName="UpgradePlus" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="AchLevelCatBonuses" msprop:Generator_TableClassName="AchLevelCatBonusesDataTable" msprop:Generator_TableVarName="tableAchLevelCatBonuses" msprop:Generator_RowChangedName="AchLevelCatBonusesRowChanged" msprop:Generator_TablePropName="AchLevelCatBonuses" msprop:Generator_RowDeletingName="AchLevelCatBonusesRowDeleting" msprop:Generator_RowChangingName="AchLevelCatBonusesRowChanging" msprop:Generator_RowEvHandlerName="AchLevelCatBonusesRowChangeEventHandler" msprop:Generator_RowDeletedName="AchLevelCatBonusesRowDeleted" msprop:Generator_RowClassName="AchLevelCatBonusesRow" msprop:Generator_UserTableName="AchLevelCatBonuses" msprop:Generator_RowEvArgName="AchLevelCatBonusesRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Achievement_Name" msprop:Generator_ColumnVarNameInTable="columnAchievement_Name" msprop:Generator_ColumnPropNameInRow="Achievement_Name" msprop:Generator_ColumnPropNameInTable="Achievement_NameColumn" msprop:Generator_UserColumnName="Achievement_Name" type="xs:string" />
+              <xs:element name="Achievement_Level" msprop:Generator_ColumnVarNameInTable="columnAchievement_Level" msprop:Generator_ColumnPropNameInRow="Achievement_Level" msprop:Generator_ColumnPropNameInTable="Achievement_LevelColumn" msprop:Generator_UserColumnName="Achievement_Level" type="xs:int" />
+              <xs:element name="FactType" msprop:Generator_ColumnVarNameInTable="columnFactType" msprop:Generator_ColumnPropNameInRow="FactType" msprop:Generator_ColumnPropNameInTable="FactTypeColumn" msprop:Generator_UserColumnName="FactType" type="xs:string" />
+              <xs:element name="FactNo" msprop:Generator_ColumnVarNameInTable="columnFactNo" msprop:Generator_ColumnPropNameInRow="FactNo" msprop:Generator_ColumnPropNameInTable="FactNoColumn" msprop:Generator_UserColumnName="FactNo" type="xs:int" />
+              <xs:element name="OptionNo" msprop:Generator_ColumnVarNameInTable="columnOptionNo" msprop:Generator_ColumnPropNameInRow="OptionNo" msprop:Generator_ColumnPropNameInTable="OptionNoColumn" msprop:Generator_UserColumnName="OptionNo" type="xs:int" />
+              <xs:element name="BonusCategory_Name" msprop:Generator_ColumnVarNameInTable="columnBonusCategory_Name" msprop:Generator_ColumnPropNameInRow="BonusCategory_Name" msprop:Generator_ColumnPropNameInTable="BonusCategory_NameColumn" msprop:Generator_UserColumnName="BonusCategory_Name" type="xs:string" />
+              <xs:element name="BonusCategoryPoints" msprop:Generator_ColumnVarNameInTable="columnBonusCategoryPoints" msprop:Generator_ColumnPropNameInRow="BonusCategoryPoints" msprop:Generator_ColumnPropNameInTable="BonusCategoryPointsColumn" msprop:Generator_UserColumnName="BonusCategoryPoints" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="AchLevelAdvReqs" msprop:Generator_TableClassName="AchLevelAdvReqsDataTable" msprop:Generator_TableVarName="tableAchLevelAdvReqs" msprop:Generator_RowChangedName="AchLevelAdvReqsRowChanged" msprop:Generator_TablePropName="AchLevelAdvReqs" msprop:Generator_RowDeletingName="AchLevelAdvReqsRowDeleting" msprop:Generator_RowChangingName="AchLevelAdvReqsRowChanging" msprop:Generator_RowEvHandlerName="AchLevelAdvReqsRowChangeEventHandler" msprop:Generator_RowDeletedName="AchLevelAdvReqsRowDeleted" msprop:Generator_RowClassName="AchLevelAdvReqsRow" msprop:Generator_UserTableName="AchLevelAdvReqs" msprop:Generator_RowEvArgName="AchLevelAdvReqsRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Achievement_Name" msprop:Generator_ColumnVarNameInTable="columnAchievement_Name" msprop:Generator_ColumnPropNameInRow="Achievement_Name" msprop:Generator_ColumnPropNameInTable="Achievement_NameColumn" msprop:Generator_UserColumnName="Achievement_Name" type="xs:string" />
+              <xs:element name="Achievement_Level" msprop:Generator_ColumnVarNameInTable="columnAchievement_Level" msprop:Generator_ColumnPropNameInRow="Achievement_Level" msprop:Generator_ColumnPropNameInTable="Achievement_LevelColumn" msprop:Generator_UserColumnName="Achievement_Level" type="xs:int" />
+              <xs:element name="FactType" msprop:Generator_ColumnVarNameInTable="columnFactType" msprop:Generator_ColumnPropNameInRow="FactType" msprop:Generator_ColumnPropNameInTable="FactTypeColumn" msprop:Generator_UserColumnName="FactType" type="xs:string" />
+              <xs:element name="FactNo" msprop:Generator_ColumnVarNameInTable="columnFactNo" msprop:Generator_ColumnPropNameInRow="FactNo" msprop:Generator_ColumnPropNameInTable="FactNoColumn" msprop:Generator_UserColumnName="FactNo" type="xs:int" />
+              <xs:element name="OptionNo" msprop:Generator_ColumnVarNameInTable="columnOptionNo" msprop:Generator_ColumnPropNameInRow="OptionNo" msprop:Generator_ColumnPropNameInTable="OptionNoColumn" msprop:Generator_UserColumnName="OptionNo" type="xs:int" />
+              <xs:element name="RequiredAdvancement_Name" msprop:Generator_ColumnVarNameInTable="columnRequiredAdvancement_Name" msprop:Generator_ColumnPropNameInRow="RequiredAdvancement_Name" msprop:Generator_ColumnPropNameInTable="RequiredAdvancement_NameColumn" msprop:Generator_UserColumnName="RequiredAdvancement_Name" type="xs:string" />
+              <xs:element name="RequiredAdvancement_Rank" msprop:Generator_ColumnVarNameInTable="columnRequiredAdvancement_Rank" msprop:Generator_ColumnPropNameInRow="RequiredAdvancement_Rank" msprop:Generator_ColumnPropNameInTable="RequiredAdvancement_RankColumn" msprop:Generator_UserColumnName="RequiredAdvancement_Rank" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="AchievementLevelFactStrings" msprop:Generator_TableClassName="AchievementLevelFactStringsDataTable" msprop:Generator_TableVarName="tableAchievementLevelFactStrings" msprop:Generator_RowChangedName="AchievementLevelFactStringsRowChanged" msprop:Generator_TablePropName="AchievementLevelFactStrings" msprop:Generator_RowDeletingName="AchievementLevelFactStringsRowDeleting" msprop:Generator_RowChangingName="AchievementLevelFactStringsRowChanging" msprop:Generator_RowEvHandlerName="AchievementLevelFactStringsRowChangeEventHandler" msprop:Generator_RowDeletedName="AchievementLevelFactStringsRowDeleted" msprop:Generator_RowClassName="AchievementLevelFactStringsRow" msprop:Generator_UserTableName="AchievementLevelFactStrings" msprop:Generator_RowEvArgName="AchievementLevelFactStringsRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Achievement_Name" msprop:Generator_ColumnVarNameInTable="columnAchievement_Name" msprop:Generator_ColumnPropNameInRow="Achievement_Name" msprop:Generator_ColumnPropNameInTable="Achievement_NameColumn" msprop:Generator_UserColumnName="Achievement_Name" type="xs:string" />
+              <xs:element name="Achievement_Level" msprop:Generator_ColumnVarNameInTable="columnAchievement_Level" msprop:Generator_ColumnPropNameInRow="Achievement_Level" msprop:Generator_ColumnPropNameInTable="Achievement_LevelColumn" msprop:Generator_UserColumnName="Achievement_Level" type="xs:int" />
+              <xs:element name="FactType" msprop:Generator_ColumnVarNameInTable="columnFactType" msprop:Generator_ColumnPropNameInRow="FactType" msprop:Generator_ColumnPropNameInTable="FactTypeColumn" msprop:Generator_UserColumnName="FactType" type="xs:string" />
+              <xs:element name="FactString" msprop:Generator_ColumnVarNameInTable="columnFactString" msprop:Generator_ColumnPropNameInRow="FactString" msprop:Generator_ColumnPropNameInTable="FactStringColumn" msprop:Generator_UserColumnName="FactString" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="FeatRanks" msprop:Generator_TableClassName="FeatRanksDataTable" msprop:Generator_TableVarName="tableFeatRanks" msprop:Generator_RowChangedName="FeatRanksRowChanged" msprop:Generator_TablePropName="FeatRanks" msprop:Generator_RowDeletingName="FeatRanksRowDeleting" msprop:Generator_RowChangingName="FeatRanksRowChanging" msprop:Generator_RowEvHandlerName="FeatRanksRowChangeEventHandler" msprop:Generator_RowDeletedName="FeatRanksRowDeleted" msprop:Generator_RowClassName="FeatRanksRow" msprop:Generator_UserTableName="FeatRanks" msprop:Generator_RowEvArgName="FeatRanksRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Feat_Name" msprop:Generator_ColumnVarNameInTable="columnFeat_Name" msprop:Generator_ColumnPropNameInRow="Feat_Name" msprop:Generator_ColumnPropNameInTable="Feat_NameColumn" msprop:Generator_UserColumnName="Feat_Name" type="xs:string" />
+              <xs:element name="Rank" msprop:Generator_ColumnVarNameInTable="columnRank" msprop:Generator_ColumnPropNameInRow="Rank" msprop:Generator_ColumnPropNameInTable="RankColumn" msprop:Generator_UserColumnName="Rank" type="xs:int" />
+              <xs:element name="Advancement_Name" msprop:Generator_ColumnVarNameInTable="columnAdvancement_Name" msprop:Generator_ColumnPropNameInRow="Advancement_Name" msprop:Generator_ColumnPropNameInTable="Advancement_NameColumn" msprop:Generator_UserColumnName="Advancement_Name" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="EffectDescriptions" msprop:Generator_TableClassName="EffectDescriptionsDataTable" msprop:Generator_TableVarName="tableEffectDescriptions" msprop:Generator_RowChangedName="EffectDescriptionsRowChanged" msprop:Generator_TablePropName="EffectDescriptions" msprop:Generator_RowDeletingName="EffectDescriptionsRowDeleting" msprop:Generator_RowChangingName="EffectDescriptionsRowChanging" msprop:Generator_RowEvHandlerName="EffectDescriptionsRowChangeEventHandler" msprop:Generator_RowDeletedName="EffectDescriptionsRowDeleted" msprop:Generator_RowClassName="EffectDescriptionsRow" msprop:Generator_UserTableName="EffectDescriptions" msprop:Generator_RowEvArgName="EffectDescriptionsRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Text" msprop:Generator_ColumnVarNameInTable="columnText" msprop:Generator_ColumnPropNameInRow="Text" msprop:Generator_ColumnPropNameInTable="TextColumn" msprop:Generator_UserColumnName="Text" type="xs:string" />
+              <xs:element name="Effect_Name" msprop:Generator_ColumnVarNameInTable="columnEffect_Name" msprop:Generator_ColumnPropNameInRow="Effect_Name" msprop:Generator_ColumnPropNameInTable="Effect_NameColumn" msprop:Generator_UserColumnName="Effect_Name" type="xs:string" />
+              <xs:element name="FormattedText" msprop:Generator_ColumnVarNameInTable="columnFormattedText" msprop:Generator_ColumnPropNameInRow="FormattedText" msprop:Generator_ColumnPropNameInTable="FormattedTextColumn" msprop:Generator_UserColumnName="FormattedText" type="xs:string" />
+              <xs:element name="Descriptor" msprop:Generator_ColumnVarNameInTable="columnDescriptor" msprop:Generator_ColumnPropNameInRow="Descriptor" msprop:Generator_ColumnPropNameInTable="DescriptorColumn" msprop:Generator_UserColumnName="Descriptor" type="xs:string" minOccurs="0" />
+              <xs:element name="ConditionalPrefix" msprop:Generator_ColumnVarNameInTable="columnConditionalPrefix" msprop:Generator_ColumnPropNameInRow="ConditionalPrefix" msprop:Generator_ColumnPropNameInTable="ConditionalPrefixColumn" msprop:Generator_UserColumnName="ConditionalPrefix" type="xs:string" minOccurs="0" />
+              <xs:element name="Conditional_Name" msprop:Generator_ColumnVarNameInTable="columnConditional_Name" msprop:Generator_ColumnPropNameInRow="Conditional_Name" msprop:Generator_ColumnPropNameInTable="Conditional_NameColumn" msprop:Generator_UserColumnName="Conditional_Name" type="xs:string" minOccurs="0" />
+              <xs:element name="ConditionalSuffix" msprop:Generator_ColumnVarNameInTable="columnConditionalSuffix" msprop:Generator_ColumnPropNameInRow="ConditionalSuffix" msprop:Generator_ColumnPropNameInTable="ConditionalSuffixColumn" msprop:Generator_UserColumnName="ConditionalSuffix" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="EffectTerms" msprop:Generator_TableClassName="EffectTermsDataTable" msprop:Generator_TableVarName="tableEffectTerms" msprop:Generator_RowChangedName="EffectTermsRowChanged" msprop:Generator_TablePropName="EffectTerms" msprop:Generator_RowDeletingName="EffectTermsRowDeleting" msprop:Generator_RowChangingName="EffectTermsRowChanging" msprop:Generator_RowEvHandlerName="EffectTermsRowChangeEventHandler" msprop:Generator_RowDeletedName="EffectTermsRowDeleted" msprop:Generator_RowClassName="EffectTermsRow" msprop:Generator_UserTableName="EffectTerms" msprop:Generator_RowEvArgName="EffectTermsRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" />
+              <xs:element name="EffectType_Name" msprop:Generator_ColumnVarNameInTable="columnEffectType_Name" msprop:Generator_ColumnPropNameInRow="EffectType_Name" msprop:Generator_ColumnPropNameInTable="EffectType_NameColumn" msprop:Generator_UserColumnName="EffectType_Name" type="xs:string" />
+              <xs:element name="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_UserColumnName="Description" type="xs:string" />
+              <xs:element name="MathSpecifics" msprop:Generator_ColumnVarNameInTable="columnMathSpecifics" msprop:Generator_ColumnPropNameInRow="MathSpecifics" msprop:Generator_ColumnPropNameInTable="MathSpecificsColumn" msprop:Generator_UserColumnName="MathSpecifics" type="xs:string" minOccurs="0" />
+              <xs:element name="Channel_Name" msprop:Generator_ColumnVarNameInTable="columnChannel_Name" msprop:Generator_ColumnPropNameInRow="Channel_Name" msprop:Generator_ColumnPropNameInTable="Channel_NameColumn" msprop:Generator_UserColumnName="Channel_Name" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Effects" msprop:Generator_TableClassName="EffectsDataTable" msprop:Generator_TableVarName="tableEffects" msprop:Generator_RowChangedName="EffectsRowChanged" msprop:Generator_TablePropName="Effects" msprop:Generator_RowDeletingName="EffectsRowDeleting" msprop:Generator_RowChangingName="EffectsRowChanging" msprop:Generator_RowEvHandlerName="EffectsRowChangeEventHandler" msprop:Generator_RowDeletedName="EffectsRowDeleted" msprop:Generator_RowClassName="EffectsRow" msprop:Generator_UserTableName="Effects" msprop:Generator_RowEvArgName="EffectsRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" />
+              <xs:element name="EffectTerm_Name" msprop:Generator_ColumnVarNameInTable="columnEffectTerm_Name" msprop:Generator_ColumnPropNameInRow="EffectTerm_Name" msprop:Generator_ColumnPropNameInTable="EffectTerm_NameColumn" msprop:Generator_UserColumnName="EffectTerm_Name" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Conditionals" msprop:Generator_TableClassName="ConditionalsDataTable" msprop:Generator_TableVarName="tableConditionals" msprop:Generator_RowChangedName="ConditionalsRowChanged" msprop:Generator_TablePropName="Conditionals" msprop:Generator_RowDeletingName="ConditionalsRowDeleting" msprop:Generator_RowChangingName="ConditionalsRowChanging" msprop:Generator_RowEvHandlerName="ConditionalsRowChangeEventHandler" msprop:Generator_RowDeletedName="ConditionalsRowDeleted" msprop:Generator_RowClassName="ConditionalsRow" msprop:Generator_UserTableName="Conditionals" msprop:Generator_RowEvArgName="ConditionalsRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="EffectConditionals" msprop:Generator_TableClassName="EffectConditionalsDataTable" msprop:Generator_TableVarName="tableEffectConditionals" msprop:Generator_RowChangedName="EffectConditionalsRowChanged" msprop:Generator_TablePropName="EffectConditionals" msprop:Generator_RowDeletingName="EffectConditionalsRowDeleting" msprop:Generator_RowChangingName="EffectConditionalsRowChanging" msprop:Generator_RowEvHandlerName="EffectConditionalsRowChangeEventHandler" msprop:Generator_RowDeletedName="EffectConditionalsRowDeleted" msprop:Generator_RowClassName="EffectConditionalsRow" msprop:Generator_UserTableName="EffectConditionals" msprop:Generator_RowEvArgName="EffectConditionalsRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Conditional_Name" msprop:Generator_ColumnVarNameInTable="columnConditional_Name" msprop:Generator_ColumnPropNameInRow="Conditional_Name" msprop:Generator_ColumnPropNameInTable="Conditional_NameColumn" msprop:Generator_UserColumnName="Conditional_Name" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="FeatFacts" msprop:Generator_TableClassName="FeatFactsDataTable" msprop:Generator_TableVarName="tableFeatFacts" msprop:Generator_TablePropName="FeatFacts" msprop:Generator_RowDeletingName="FeatFactsRowDeleting" msprop:Generator_RowChangingName="FeatFactsRowChanging" msprop:Generator_RowEvHandlerName="FeatFactsRowChangeEventHandler" msprop:Generator_RowDeletedName="FeatFactsRowDeleted" msprop:Generator_UserTableName="FeatFacts" msprop:Generator_RowChangedName="FeatFactsRowChanged" msprop:Generator_RowEvArgName="FeatFactsRowChangeEvent" msprop:Generator_RowClassName="FeatFactsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Feat_Name" msprop:Generator_ColumnVarNameInTable="columnFeat_Name" msprop:Generator_ColumnPropNameInRow="Feat_Name" msprop:Generator_ColumnPropNameInTable="Feat_NameColumn" msprop:Generator_UserColumnName="Feat_Name" type="xs:string" />
+              <xs:element name="FactType" msprop:Generator_ColumnVarNameInTable="columnFactType" msprop:Generator_ColumnPropNameInRow="FactType" msprop:Generator_ColumnPropNameInTable="FactTypeColumn" msprop:Generator_UserColumnName="FactType" type="xs:string" />
+              <xs:element name="FactNo" msprop:Generator_ColumnVarNameInTable="columnFactNo" msprop:Generator_ColumnPropNameInRow="FactNo" msprop:Generator_ColumnPropNameInTable="FactNoColumn" msprop:Generator_UserColumnName="FactNo" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="FeatRankFacts" msprop:Generator_TableClassName="FeatRankFactsDataTable" msprop:Generator_TableVarName="tableFeatRankFacts" msprop:Generator_TablePropName="FeatRankFacts" msprop:Generator_RowDeletingName="FeatRankFactsRowDeleting" msprop:Generator_RowChangingName="FeatRankFactsRowChanging" msprop:Generator_RowEvHandlerName="FeatRankFactsRowChangeEventHandler" msprop:Generator_RowDeletedName="FeatRankFactsRowDeleted" msprop:Generator_UserTableName="FeatRankFacts" msprop:Generator_RowChangedName="FeatRankFactsRowChanged" msprop:Generator_RowEvArgName="FeatRankFactsRowChangeEvent" msprop:Generator_RowClassName="FeatRankFactsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Feat_Name" msprop:Generator_ColumnVarNameInTable="columnFeat_Name" msprop:Generator_ColumnPropNameInRow="Feat_Name" msprop:Generator_ColumnPropNameInTable="Feat_NameColumn" msprop:Generator_UserColumnName="Feat_Name" type="xs:string" />
+              <xs:element name="Feat_Rank" msprop:Generator_ColumnVarNameInTable="columnFeat_Rank" msprop:Generator_ColumnPropNameInRow="Feat_Rank" msprop:Generator_ColumnPropNameInTable="Feat_RankColumn" msprop:Generator_UserColumnName="Feat_Rank" type="xs:int" />
+              <xs:element name="FactType" msprop:Generator_ColumnVarNameInTable="columnFactType" msprop:Generator_ColumnPropNameInRow="FactType" msprop:Generator_ColumnPropNameInTable="FactTypeColumn" msprop:Generator_UserColumnName="FactType" type="xs:string" />
+              <xs:element name="FactNo" msprop:Generator_ColumnVarNameInTable="columnFactNo" msprop:Generator_ColumnPropNameInRow="FactNo" msprop:Generator_ColumnPropNameInTable="FactNoColumn" msprop:Generator_UserColumnName="FactNo" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="FeatEffects" msprop:Generator_TableClassName="FeatEffectsDataTable" msprop:Generator_TableVarName="tableFeatEffects" msprop:Generator_TablePropName="FeatEffects" msprop:Generator_RowDeletingName="FeatEffectsRowDeleting" msprop:Generator_RowChangingName="FeatEffectsRowChanging" msprop:Generator_RowEvHandlerName="FeatEffectsRowChangeEventHandler" msprop:Generator_RowDeletedName="FeatEffectsRowDeleted" msprop:Generator_UserTableName="FeatEffects" msprop:Generator_RowChangedName="FeatEffectsRowChanged" msprop:Generator_RowEvArgName="FeatEffectsRowChangeEvent" msprop:Generator_RowClassName="FeatEffectsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Feat_Name" msprop:Generator_ColumnVarNameInTable="columnFeat_Name" msprop:Generator_ColumnPropNameInRow="Feat_Name" msprop:Generator_ColumnPropNameInTable="Feat_NameColumn" msprop:Generator_UserColumnName="Feat_Name" type="xs:string" />
+              <xs:element name="FactType" msprop:Generator_ColumnVarNameInTable="columnFactType" msprop:Generator_ColumnPropNameInRow="FactType" msprop:Generator_ColumnPropNameInTable="FactTypeColumn" msprop:Generator_UserColumnName="FactType" type="xs:string" />
+              <xs:element name="FactNo" msprop:Generator_ColumnVarNameInTable="columnFactNo" msprop:Generator_ColumnPropNameInRow="FactNo" msprop:Generator_ColumnPropNameInTable="FactNoColumn" msprop:Generator_UserColumnName="FactNo" type="xs:int" />
+              <xs:element name="EffectDescription_Text" msprop:Generator_ColumnVarNameInTable="columnEffectDescription_Text" msprop:Generator_ColumnPropNameInRow="EffectDescription_Text" msprop:Generator_ColumnPropNameInTable="EffectDescription_TextColumn" msprop:Generator_UserColumnName="EffectDescription_Text" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="FeatRankEffects" msprop:Generator_TableClassName="FeatRankEffectsDataTable" msprop:Generator_TableVarName="tableFeatRankEffects" msprop:Generator_TablePropName="FeatRankEffects" msprop:Generator_RowDeletingName="FeatRankEffectsRowDeleting" msprop:Generator_RowChangingName="FeatRankEffectsRowChanging" msprop:Generator_RowEvHandlerName="FeatRankEffectsRowChangeEventHandler" msprop:Generator_RowDeletedName="FeatRankEffectsRowDeleted" msprop:Generator_UserTableName="FeatRankEffects" msprop:Generator_RowChangedName="FeatRankEffectsRowChanged" msprop:Generator_RowEvArgName="FeatRankEffectsRowChangeEvent" msprop:Generator_RowClassName="FeatRankEffectsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Feat_Name" msprop:Generator_ColumnVarNameInTable="columnFeat_Name" msprop:Generator_ColumnPropNameInRow="Feat_Name" msprop:Generator_ColumnPropNameInTable="Feat_NameColumn" msprop:Generator_UserColumnName="Feat_Name" type="xs:string" />
+              <xs:element name="Feat_Rank" msprop:Generator_ColumnVarNameInTable="columnFeat_Rank" msprop:Generator_ColumnPropNameInRow="Feat_Rank" msprop:Generator_ColumnPropNameInTable="Feat_RankColumn" msprop:Generator_UserColumnName="Feat_Rank" type="xs:int" />
+              <xs:element name="FactType" msprop:Generator_ColumnVarNameInTable="columnFactType" msprop:Generator_ColumnPropNameInRow="FactType" msprop:Generator_ColumnPropNameInTable="FactTypeColumn" msprop:Generator_UserColumnName="FactType" type="xs:string" />
+              <xs:element name="FactNo" msprop:Generator_ColumnVarNameInTable="columnFactNo" msprop:Generator_ColumnPropNameInRow="FactNo" msprop:Generator_ColumnPropNameInTable="FactNoColumn" msprop:Generator_UserColumnName="FactNo" type="xs:int" />
+              <xs:element name="EffectDescription_Text" msprop:Generator_ColumnVarNameInTable="columnEffectDescription_Text" msprop:Generator_ColumnPropNameInRow="EffectDescription_Text" msprop:Generator_ColumnPropNameInTable="EffectDescription_TextColumn" msprop:Generator_UserColumnName="EffectDescription_Text" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="FeatRankKeyword" msprop:Generator_TableClassName="FeatRankKeywordDataTable" msprop:Generator_TableVarName="tableFeatRankKeyword" msprop:Generator_TablePropName="FeatRankKeyword" msprop:Generator_RowDeletingName="FeatRankKeywordRowDeleting" msprop:Generator_RowChangingName="FeatRankKeywordRowChanging" msprop:Generator_RowEvHandlerName="FeatRankKeywordRowChangeEventHandler" msprop:Generator_RowDeletedName="FeatRankKeywordRowDeleted" msprop:Generator_UserTableName="FeatRankKeyword" msprop:Generator_RowChangedName="FeatRankKeywordRowChanged" msprop:Generator_RowEvArgName="FeatRankKeywordRowChangeEvent" msprop:Generator_RowClassName="FeatRankKeywordRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Feat_Name" msprop:Generator_ColumnVarNameInTable="columnFeat_Name" msprop:Generator_ColumnPropNameInRow="Feat_Name" msprop:Generator_ColumnPropNameInTable="Feat_NameColumn" msprop:Generator_UserColumnName="Feat_Name" type="xs:string" />
+              <xs:element name="Feat_Rank" msprop:Generator_ColumnVarNameInTable="columnFeat_Rank" msprop:Generator_ColumnPropNameInRow="Feat_Rank" msprop:Generator_ColumnPropNameInTable="Feat_RankColumn" msprop:Generator_UserColumnName="Feat_Rank" type="xs:int" />
+              <xs:element name="FactType" msprop:Generator_ColumnVarNameInTable="columnFactType" msprop:Generator_ColumnPropNameInRow="FactType" msprop:Generator_ColumnPropNameInTable="FactTypeColumn" msprop:Generator_UserColumnName="FactType" type="xs:string" />
+              <xs:element name="FactNo" msprop:Generator_ColumnVarNameInTable="columnFactNo" msprop:Generator_ColumnPropNameInRow="FactNo" msprop:Generator_ColumnPropNameInTable="FactNoColumn" msprop:Generator_UserColumnName="FactNo" type="xs:int" />
+              <xs:element name="KeywordType_Name" msprop:Generator_ColumnVarNameInTable="columnKeywordType_Name" msprop:Generator_ColumnPropNameInRow="KeywordType_Name" msprop:Generator_ColumnPropNameInTable="KeywordType_NameColumn" msprop:Generator_UserColumnName="KeywordType_Name" type="xs:string" />
+              <xs:element name="Keyword_Name" msprop:Generator_ColumnVarNameInTable="columnKeyword_Name" msprop:Generator_ColumnPropNameInRow="Keyword_Name" msprop:Generator_ColumnPropNameInTable="Keyword_NameColumn" msprop:Generator_UserColumnName="Keyword_Name" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="KeywordTypes" msprop:Generator_TableClassName="KeywordTypesDataTable" msprop:Generator_TableVarName="tableKeywordTypes" msprop:Generator_TablePropName="KeywordTypes" msprop:Generator_RowDeletingName="KeywordTypesRowDeleting" msprop:Generator_RowChangingName="KeywordTypesRowChanging" msprop:Generator_RowEvHandlerName="KeywordTypesRowChangeEventHandler" msprop:Generator_RowDeletedName="KeywordTypesRowDeleted" msprop:Generator_UserTableName="KeywordTypes" msprop:Generator_RowChangedName="KeywordTypesRowChanged" msprop:Generator_RowEvArgName="KeywordTypesRowChangeEvent" msprop:Generator_RowClassName="KeywordTypesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Keywords" msprop:Generator_TableClassName="KeywordsDataTable" msprop:Generator_TableVarName="tableKeywords" msprop:Generator_TablePropName="Keywords" msprop:Generator_RowDeletingName="KeywordsRowDeleting" msprop:Generator_RowChangingName="KeywordsRowChanging" msprop:Generator_RowEvHandlerName="KeywordsRowChangeEventHandler" msprop:Generator_RowDeletedName="KeywordsRowDeleted" msprop:Generator_UserTableName="Keywords" msprop:Generator_RowChangedName="KeywordsRowChanged" msprop:Generator_RowEvArgName="KeywordsRowChangeEvent" msprop:Generator_RowClassName="KeywordsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Type_Name" msprop:Generator_ColumnVarNameInTable="columnType_Name" msprop:Generator_ColumnPropNameInRow="Type_Name" msprop:Generator_ColumnPropNameInTable="Type_NameColumn" msprop:Generator_UserColumnName="Type_Name" type="xs:string" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" />
+              <xs:element name="Value_Name" msprop:Generator_ColumnVarNameInTable="columnValue_Name" msprop:Generator_ColumnPropNameInRow="Value_Name" msprop:Generator_ColumnPropNameInTable="Value_NameColumn" msprop:Generator_UserColumnName="Value_Name" type="xs:string" />
+              <xs:element name="Notes" msprop:Generator_ColumnVarNameInTable="columnNotes" msprop:Generator_ColumnPropNameInRow="Notes" msprop:Generator_ColumnPropNameInTable="NotesColumn" msprop:Generator_UserColumnName="Notes" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="KeywordValues" msprop:Generator_TableClassName="KeywordValuesDataTable" msprop:Generator_TableVarName="tableKeywordValues" msprop:Generator_TablePropName="KeywordValues" msprop:Generator_RowDeletingName="KeywordValuesRowDeleting" msprop:Generator_RowChangingName="KeywordValuesRowChanging" msprop:Generator_RowEvHandlerName="KeywordValuesRowChangeEventHandler" msprop:Generator_RowDeletedName="KeywordValuesRowDeleted" msprop:Generator_UserTableName="KeywordValues" msprop:Generator_RowChangedName="KeywordValuesRowChanged" msprop:Generator_RowEvArgName="KeywordValuesRowChangeEvent" msprop:Generator_RowClassName="KeywordValuesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" />
+              <xs:element name="Value" msprop:Generator_ColumnVarNameInTable="columnValue" msprop:Generator_ColumnPropNameInRow="Value" msprop:Generator_ColumnPropNameInTable="ValueColumn" msprop:Generator_UserColumnName="Value" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Advancements" />
+      <xs:field xpath="mstns:Name" />
+    </xs:unique>
+    <xs:unique name="AdvancementRanks_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:AdvancementRanks" />
+      <xs:field xpath="mstns:Advancement_Name" />
+      <xs:field xpath="mstns:Rank" />
+    </xs:unique>
+    <xs:unique name="AdvancementRankFacts_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:AdvancementRankFacts" />
+      <xs:field xpath="mstns:Advancement_Name" />
+      <xs:field xpath="mstns:Advancement_Rank" />
+      <xs:field xpath="mstns:FactType" />
+      <xs:field xpath="mstns:FactNo" />
+      <xs:field xpath="mstns:OptionNo" />
+    </xs:unique>
+    <xs:unique name="Abilities_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Abilities" />
+      <xs:field xpath="mstns:Name" />
+    </xs:unique>
+    <xs:unique name="AchievementCategories_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:AchievementCategories" />
+      <xs:field xpath="mstns:Name" />
+    </xs:unique>
+    <xs:unique name="Achievements_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Achievements" />
+      <xs:field xpath="mstns:Name" />
+    </xs:unique>
+    <xs:unique name="AchievementLevels_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:AchievementLevels" />
+      <xs:field xpath="mstns:Achievement_Name" />
+      <xs:field xpath="mstns:Level" />
+    </xs:unique>
+    <xs:unique name="AchievementLevelFacts_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:AchievementLevelFacts" />
+      <xs:field xpath="mstns:Achievement_Name" />
+      <xs:field xpath="mstns:Achievement_Level" />
+      <xs:field xpath="mstns:FactType" />
+      <xs:field xpath="mstns:FactNo" />
+      <xs:field xpath="mstns:OptionNo" />
+    </xs:unique>
+    <xs:unique name="AdvRankCatReqs_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:AdvRankCatReqs" />
+      <xs:field xpath="mstns:Advancement_Name" />
+      <xs:field xpath="mstns:Advancement_Rank" />
+      <xs:field xpath="mstns:FactType" />
+      <xs:field xpath="mstns:FactNo" />
+      <xs:field xpath="mstns:OptionNo" />
+    </xs:unique>
+    <xs:unique name="AdvRankAdvReqs_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:AdvRankAdvReqs" />
+      <xs:field xpath="mstns:Advancement_Name" />
+      <xs:field xpath="mstns:Advancement_Rank" />
+      <xs:field xpath="mstns:FactType" />
+      <xs:field xpath="mstns:FactNo" />
+      <xs:field xpath="mstns:OptionNo" />
+    </xs:unique>
+    <xs:unique name="AdvRankAchReqs_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:AdvRankAchReqs" />
+      <xs:field xpath="mstns:Advancement_Name" />
+      <xs:field xpath="mstns:Advancement_Rank" />
+      <xs:field xpath="mstns:FactType" />
+      <xs:field xpath="mstns:FactNo" />
+      <xs:field xpath="mstns:OptionNo" />
+    </xs:unique>
+    <xs:unique name="AdvRankAbilReqs_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:AdvRankAbilReqs" />
+      <xs:field xpath="mstns:Advancement_Name" />
+      <xs:field xpath="mstns:Advancement_Rank" />
+      <xs:field xpath="mstns:FactType" />
+      <xs:field xpath="mstns:FactNo" />
+      <xs:field xpath="mstns:OptionNo" />
+    </xs:unique>
+    <xs:unique name="AdvRankAbilBonuses_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:AdvRankAbilBonuses" />
+      <xs:field xpath="mstns:Advancement_Name" />
+      <xs:field xpath="mstns:Advancement_Rank" />
+      <xs:field xpath="mstns:FactType" />
+      <xs:field xpath="mstns:FactNo" />
+      <xs:field xpath="mstns:OptionNo" />
+    </xs:unique>
+    <xs:unique name="AdvancementRankFactStrings_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:AdvancementRankFactStrings" />
+      <xs:field xpath="mstns:Advancement_Name" />
+      <xs:field xpath="mstns:Advancement_Rank" />
+      <xs:field xpath="mstns:FactType" />
+    </xs:unique>
+    <xs:unique name="Feats_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Feats" />
+      <xs:field xpath="mstns:Name" />
+    </xs:unique>
+    <xs:unique name="FeatsKey1">
+      <xs:selector xpath=".//mstns:Feats" />
+      <xs:field xpath="mstns:Name" />
+      <xs:field xpath="mstns:Advancement_Name" />
+    </xs:unique>
+    <xs:unique name="Roles_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Roles" />
+      <xs:field xpath="mstns:Name" />
+    </xs:unique>
+    <xs:unique name="AttackForms_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:AttackForms" />
+      <xs:field xpath="mstns:Name" />
+    </xs:unique>
+    <xs:unique name="WeaponCategories_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:WeaponCategories" />
+      <xs:field xpath="mstns:Name" />
+    </xs:unique>
+    <xs:unique name="SpecificWeapons_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:SpecificWeapons" />
+      <xs:field xpath="mstns:Name" />
+    </xs:unique>
+    <xs:unique name="Schools_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Schools" />
+      <xs:field xpath="mstns:Name" />
+    </xs:unique>
+    <xs:unique name="EffectChannels_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:EffectChannels" />
+      <xs:field xpath="mstns:Name" />
+    </xs:unique>
+    <xs:unique name="ActiveFeats_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ActiveFeats" />
+      <xs:field xpath="mstns:Feat_Name" />
+    </xs:unique>
+    <xs:unique name="StandardAttacks_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:StandardAttacks" />
+      <xs:field xpath="mstns:Feat_Name" />
+    </xs:unique>
+    <xs:unique name="PowerAttacks_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:PowerAttacks" />
+      <xs:field xpath="mstns:Feat_Name" />
+    </xs:unique>
+    <xs:unique name="Cantrips_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Cantrips" />
+      <xs:field xpath="mstns:Feat_Name" />
+    </xs:unique>
+    <xs:unique name="ChanneledFeats_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ChanneledFeats" />
+      <xs:field xpath="mstns:Feat_Name" />
+    </xs:unique>
+    <xs:unique name="AttackBonuses_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:AttackBonuses" />
+      <xs:field xpath="mstns:Feat_Name" />
+    </xs:unique>
+    <xs:unique name="RoleAchievements_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:RoleAchievements" />
+      <xs:field xpath="mstns:Achievement_Name" />
+    </xs:unique>
+    <xs:unique name="CraftAchievements_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CraftAchievements" />
+      <xs:field xpath="mstns:Achievement_Name" />
+    </xs:unique>
+    <xs:unique name="CraftingAchievements_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CraftingAchievements" />
+      <xs:field xpath="mstns:Achievement_Name" />
+    </xs:unique>
+    <xs:unique name="CraftingSkills_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CraftingSkills" />
+      <xs:field xpath="mstns:Feat_Name" />
+    </xs:unique>
+    <xs:unique name="RefiningSkills_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:RefiningSkills" />
+      <xs:field xpath="mstns:Feat_Name" />
+    </xs:unique>
+    <xs:unique name="RefiningAchievements_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:RefiningAchievements" />
+      <xs:field xpath="mstns:Achievement_Name" />
+    </xs:unique>
+    <xs:unique name="CounterAchievementLevels_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CounterAchievementLevels" />
+      <xs:field xpath="mstns:Achievement_Name" />
+      <xs:field xpath="mstns:Achievement_Level" />
+    </xs:unique>
+    <xs:unique name="CraftAchievementLevels_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CraftAchievementLevels" />
+      <xs:field xpath="mstns:Achievement_Name" />
+      <xs:field xpath="mstns:Achievement_Level" />
+    </xs:unique>
+    <xs:unique name="AchLevelCatBonuses_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:AchLevelCatBonuses" />
+      <xs:field xpath="mstns:Achievement_Name" />
+      <xs:field xpath="mstns:Achievement_Level" />
+      <xs:field xpath="mstns:FactType" />
+      <xs:field xpath="mstns:FactNo" />
+      <xs:field xpath="mstns:OptionNo" />
+    </xs:unique>
+    <xs:unique name="AchLevelAdvReqs_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:AchLevelAdvReqs" />
+      <xs:field xpath="mstns:Achievement_Name" />
+      <xs:field xpath="mstns:Achievement_Level" />
+      <xs:field xpath="mstns:FactType" />
+      <xs:field xpath="mstns:FactNo" />
+      <xs:field xpath="mstns:OptionNo" />
+    </xs:unique>
+    <xs:unique name="AchievementLevelFactStrings_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:AchievementLevelFactStrings" />
+      <xs:field xpath="mstns:Achievement_Name" />
+      <xs:field xpath="mstns:Achievement_Level" />
+      <xs:field xpath="mstns:FactType" />
+    </xs:unique>
+    <xs:unique name="FeatRanks_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:FeatRanks" />
+      <xs:field xpath="mstns:Feat_Name" />
+      <xs:field xpath="mstns:Rank" />
+    </xs:unique>
+    <xs:unique name="EffectDescriptions_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:EffectDescriptions" />
+      <xs:field xpath="mstns:Text" />
+    </xs:unique>
+    <xs:unique name="EffectTerms_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:EffectTerms" />
+      <xs:field xpath="mstns:Name" />
+    </xs:unique>
+    <xs:unique name="Effects_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Effects" />
+      <xs:field xpath="mstns:Name" />
+    </xs:unique>
+    <xs:unique name="Conditionals_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Conditionals" />
+      <xs:field xpath="mstns:Name" />
+    </xs:unique>
+    <xs:unique name="EffectConditionals_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:EffectConditionals" />
+      <xs:field xpath="mstns:Conditional_Name" />
+    </xs:unique>
+    <xs:unique name="FeatFacts_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:FeatFacts" />
+      <xs:field xpath="mstns:Feat_Name" />
+      <xs:field xpath="mstns:FactType" />
+      <xs:field xpath="mstns:FactNo" />
+    </xs:unique>
+    <xs:unique name="FeatRankFacts_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:FeatRankFacts" />
+      <xs:field xpath="mstns:Feat_Name" />
+      <xs:field xpath="mstns:Feat_Rank" />
+      <xs:field xpath="mstns:FactType" />
+      <xs:field xpath="mstns:FactNo" />
+    </xs:unique>
+    <xs:unique name="FeatEffects_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:FeatEffects" />
+      <xs:field xpath="mstns:Feat_Name" />
+      <xs:field xpath="mstns:FactType" />
+      <xs:field xpath="mstns:FactNo" />
+    </xs:unique>
+    <xs:unique name="FeatRankEffects_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:FeatRankEffects" />
+      <xs:field xpath="mstns:Feat_Name" />
+      <xs:field xpath="mstns:Feat_Rank" />
+      <xs:field xpath="mstns:FactType" />
+      <xs:field xpath="mstns:FactNo" />
+    </xs:unique>
+    <xs:unique name="FeatRankKeyword_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:FeatRankKeyword" />
+      <xs:field xpath="mstns:Feat_Name" />
+      <xs:field xpath="mstns:Feat_Rank" />
+      <xs:field xpath="mstns:FactType" />
+      <xs:field xpath="mstns:FactNo" />
+    </xs:unique>
+    <xs:unique name="KeywordTypes_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:KeywordTypes" />
+      <xs:field xpath="mstns:Name" />
+    </xs:unique>
+    <xs:unique name="Keywords_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Keywords" />
+      <xs:field xpath="mstns:Type_Name" />
+      <xs:field xpath="mstns:Name" />
+    </xs:unique>
+    <xs:unique name="KeywordValues_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:KeywordValues" />
+      <xs:field xpath="mstns:Name" />
+    </xs:unique>
+    <xs:keyref name="FK_KeywordValues_Keywords" refer="KeywordValues_Constraint1" msprop:rel_Generator_UserChildTable="Keywords" msprop:rel_Generator_ChildPropName="GetKeywordsRows" msprop:rel_Generator_UserRelationName="FK_KeywordValues_Keywords" msprop:rel_Generator_RelationVarName="relationFK_KeywordValues_Keywords" msprop:rel_Generator_UserParentTable="KeywordValues" msprop:rel_Generator_ParentPropName="KeywordValuesRow" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:Keywords" />
+      <xs:field xpath="mstns:Value_Name" />
+    </xs:keyref>
+    <xs:keyref name="FK_KeywordTypes_Keywords" refer="KeywordTypes_Constraint1" msprop:rel_Generator_UserChildTable="Keywords" msprop:rel_Generator_ChildPropName="GetKeywordsRows" msprop:rel_Generator_UserRelationName="FK_KeywordTypes_Keywords" msprop:rel_Generator_ParentPropName="KeywordTypesRow" msprop:rel_Generator_RelationVarName="relationFK_KeywordTypes_Keywords" msprop:rel_Generator_UserParentTable="KeywordTypes" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:Keywords" />
+      <xs:field xpath="mstns:Type_Name" />
+    </xs:keyref>
+    <xs:keyref name="FK_Keywords_FeatRankKeyword" refer="Keywords_Constraint1" msprop:rel_Generator_UserChildTable="FeatRankKeyword" msprop:rel_Generator_ChildPropName="GetFeatRankKeywordRows" msprop:rel_Generator_UserRelationName="FK_Keywords_FeatRankKeyword" msprop:rel_Generator_RelationVarName="relationFK_Keywords_FeatRankKeyword" msprop:rel_Generator_UserParentTable="Keywords" msprop:rel_Generator_ParentPropName="KeywordsRowParent" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:FeatRankKeyword" />
+      <xs:field xpath="mstns:KeywordType_Name" />
+      <xs:field xpath="mstns:Keyword_Name" />
+    </xs:keyref>
+    <xs:keyref name="FK_FeatRankFacts_FeatRankKeyword" refer="FeatRankFacts_Constraint1" msprop:rel_Generator_UserChildTable="FeatRankKeyword" msprop:rel_Generator_ChildPropName="GetFeatRankKeywordRows" msprop:rel_Generator_UserRelationName="FK_FeatRankFacts_FeatRankKeyword" msprop:rel_Generator_ParentPropName="FeatRankFactsRowParent" msprop:rel_Generator_RelationVarName="relationFK_FeatRankFacts_FeatRankKeyword" msprop:rel_Generator_UserParentTable="FeatRankFacts" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:FeatRankKeyword" />
+      <xs:field xpath="mstns:Feat_Name" />
+      <xs:field xpath="mstns:Feat_Rank" />
+      <xs:field xpath="mstns:FactType" />
+      <xs:field xpath="mstns:FactNo" />
+    </xs:keyref>
+    <xs:keyref name="FK_EffectDescriptions_FeatRankEffects" refer="EffectDescriptions_Constraint1" msprop:rel_Generator_UserChildTable="FeatRankEffects" msprop:rel_Generator_ChildPropName="GetFeatRankEffectsRows" msprop:rel_Generator_UserRelationName="FK_EffectDescriptions_FeatRankEffects" msprop:rel_Generator_ParentPropName="EffectDescriptionsRow" msprop:rel_Generator_RelationVarName="relationFK_EffectDescriptions_FeatRankEffects" msprop:rel_Generator_UserParentTable="EffectDescriptions" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:FeatRankEffects" />
+      <xs:field xpath="mstns:EffectDescription_Text" />
+    </xs:keyref>
+    <xs:keyref name="FK_FeatRankFacts_FeatRankEffects" refer="FeatRankFacts_Constraint1" msprop:rel_Generator_UserChildTable="FeatRankEffects" msprop:rel_Generator_ChildPropName="GetFeatRankEffectsRows" msprop:rel_Generator_UserRelationName="FK_FeatRankFacts_FeatRankEffects" msprop:rel_Generator_ParentPropName="FeatRankFactsRowParent" msprop:rel_Generator_RelationVarName="relationFK_FeatRankFacts_FeatRankEffects" msprop:rel_Generator_UserParentTable="FeatRankFacts" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:FeatRankEffects" />
+      <xs:field xpath="mstns:Feat_Name" />
+      <xs:field xpath="mstns:Feat_Rank" />
+      <xs:field xpath="mstns:FactType" />
+      <xs:field xpath="mstns:FactNo" />
+    </xs:keyref>
+    <xs:keyref name="FK_EffectDescriptions_FeatEffects" refer="EffectDescriptions_Constraint1" msprop:rel_Generator_UserChildTable="FeatEffects" msprop:rel_Generator_ChildPropName="GetFeatEffectsRows" msprop:rel_Generator_UserRelationName="FK_EffectDescriptions_FeatEffects" msprop:rel_Generator_ParentPropName="EffectDescriptionsRow" msprop:rel_Generator_RelationVarName="relationFK_EffectDescriptions_FeatEffects" msprop:rel_Generator_UserParentTable="EffectDescriptions" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:FeatEffects" />
+      <xs:field xpath="mstns:EffectDescription_Text" />
+    </xs:keyref>
+    <xs:keyref name="FK_FeatFacts_FeatEffects" refer="FeatFacts_Constraint1" msprop:rel_Generator_UserChildTable="FeatEffects" msprop:rel_Generator_ChildPropName="GetFeatEffectsRows" msprop:rel_Generator_UserRelationName="FK_FeatFacts_FeatEffects" msprop:rel_Generator_ParentPropName="FeatFactsRowParent" msprop:rel_Generator_RelationVarName="relationFK_FeatFacts_FeatEffects" msprop:rel_Generator_UserParentTable="FeatFacts" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:FeatEffects" />
+      <xs:field xpath="mstns:Feat_Name" />
+      <xs:field xpath="mstns:FactType" />
+      <xs:field xpath="mstns:FactNo" />
+    </xs:keyref>
+    <xs:keyref name="FK_FeatRanks_FeatRankFacts" refer="FeatRanks_Constraint1" msprop:rel_Generator_UserChildTable="FeatRankFacts" msprop:rel_Generator_ChildPropName="GetFeatRankFactsRows" msprop:rel_Generator_UserRelationName="FK_FeatRanks_FeatRankFacts" msprop:rel_Generator_ParentPropName="FeatRanksRowParent" msprop:rel_Generator_RelationVarName="relationFK_FeatRanks_FeatRankFacts" msprop:rel_Generator_UserParentTable="FeatRanks" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:FeatRankFacts" />
+      <xs:field xpath="mstns:Feat_Name" />
+      <xs:field xpath="mstns:Feat_Rank" />
+    </xs:keyref>
+    <xs:keyref name="FK_Feats_FeatFacts" refer="Feats_Constraint1" msprop:rel_Generator_UserChildTable="FeatFacts" msprop:rel_Generator_ChildPropName="GetFeatFactsRows" msprop:rel_Generator_UserRelationName="FK_Feats_FeatFacts" msprop:rel_Generator_ParentPropName="FeatsRow" msprop:rel_Generator_RelationVarName="relationFK_Feats_FeatFacts" msprop:rel_Generator_UserParentTable="Feats" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:FeatFacts" />
+      <xs:field xpath="mstns:Feat_Name" />
+    </xs:keyref>
+    <xs:keyref name="FK_Conditionals_EffectConditionals" refer="Conditionals_Constraint1" msprop:rel_Generator_UserChildTable="EffectConditionals" msprop:rel_Generator_ChildPropName="GetEffectConditionalsRows" msprop:rel_Generator_UserRelationName="FK_Conditionals_EffectConditionals" msprop:rel_Generator_RelationVarName="relationFK_Conditionals_EffectConditionals" msprop:rel_Generator_UserParentTable="Conditionals" msprop:rel_Generator_ParentPropName="ConditionalsRow" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:EffectConditionals" />
+      <xs:field xpath="mstns:Conditional_Name" />
+    </xs:keyref>
+    <xs:keyref name="FK_Effects_EffectConditionals" refer="Effects_Constraint1" msprop:rel_Generator_UserChildTable="EffectConditionals" msprop:rel_Generator_ChildPropName="GetEffectConditionalsRows" msprop:rel_Generator_UserRelationName="FK_Effects_EffectConditionals" msprop:rel_Generator_RelationVarName="relationFK_Effects_EffectConditionals" msprop:rel_Generator_UserParentTable="Effects" msprop:rel_Generator_ParentPropName="EffectsRow" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:EffectConditionals" />
+      <xs:field xpath="mstns:Conditional_Name" />
+    </xs:keyref>
+    <xs:keyref name="FK_EffectTerms_Effects" refer="EffectTerms_Constraint1" msprop:rel_Generator_UserChildTable="Effects" msprop:rel_Generator_ChildPropName="GetEffectsRows" msprop:rel_Generator_UserRelationName="FK_EffectTerms_Effects" msprop:rel_Generator_RelationVarName="relationFK_EffectTerms_Effects" msprop:rel_Generator_UserParentTable="EffectTerms" msprop:rel_Generator_ParentPropName="EffectTermsRow" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:Effects" />
+      <xs:field xpath="mstns:EffectTerm_Name" />
+    </xs:keyref>
+    <xs:keyref name="FK_EffectChannels_EffectTerms" refer="EffectChannels_Constraint1" msprop:rel_Generator_UserChildTable="EffectTerms" msprop:rel_Generator_ChildPropName="GetEffectTermsRows" msprop:rel_Generator_UserRelationName="FK_EffectChannels_EffectTerms" msprop:rel_Generator_RelationVarName="relationFK_EffectChannels_EffectTerms" msprop:rel_Generator_UserParentTable="EffectChannels" msprop:rel_Generator_ParentPropName="EffectChannelsRow" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:EffectTerms" />
+      <xs:field xpath="mstns:Channel_Name" />
+    </xs:keyref>
+    <xs:keyref name="FK_Effects_EffectDescriptions" refer="Effects_Constraint1" msprop:rel_Generator_UserChildTable="EffectDescriptions" msprop:rel_Generator_ChildPropName="GetEffectDescriptionsRows" msprop:rel_Generator_UserRelationName="FK_Effects_EffectDescriptions" msprop:rel_Generator_ParentPropName="EffectsRow" msprop:rel_Generator_RelationVarName="relationFK_Effects_EffectDescriptions" msprop:rel_Generator_UserParentTable="Effects" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:EffectDescriptions" />
+      <xs:field xpath="mstns:Effect_Name" />
+    </xs:keyref>
+    <xs:keyref name="FK_Conditionals_EffectDescriptions" refer="Conditionals_Constraint1" msprop:rel_Generator_UserChildTable="EffectDescriptions" msprop:rel_Generator_ChildPropName="GetEffectDescriptionsRows" msprop:rel_Generator_UserRelationName="FK_Conditionals_EffectDescriptions" msprop:rel_Generator_ParentPropName="ConditionalsRow" msprop:rel_Generator_RelationVarName="relationFK_Conditionals_EffectDescriptions" msprop:rel_Generator_UserParentTable="Conditionals" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:EffectDescriptions" />
+      <xs:field xpath="mstns:Conditional_Name" />
+    </xs:keyref>
+    <xs:keyref name="FK_Feats_FeatRanks" refer="Feats_Constraint1" msprop:rel_Generator_UserChildTable="FeatRanks" msprop:rel_Generator_ChildPropName="GetFeatRanksRowsByFK_Feats_FeatRanks" msprop:rel_Generator_UserRelationName="FK_Feats_FeatRanks" msprop:rel_Generator_RelationVarName="relationFK_Feats_FeatRanks" msprop:rel_Generator_UserParentTable="Feats" msprop:rel_Generator_ParentPropName="FeatsRowByFK_Feats_FeatRanks" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:FeatRanks" />
+      <xs:field xpath="mstns:Feat_Name" />
+    </xs:keyref>
+    <xs:keyref name="FK_Feats_FeatRanks1" refer="FeatsKey1" msprop:rel_Generator_UserChildTable="FeatRanks" msprop:rel_Generator_ChildPropName="GetFeatRanksRowsByFK_Feats_FeatRanks1" msprop:rel_Generator_UserRelationName="FK_Feats_FeatRanks1" msprop:rel_Generator_RelationVarName="relationFK_Feats_FeatRanks1" msprop:rel_Generator_UserParentTable="Feats" msprop:rel_Generator_ParentPropName="FeatsRowParentByFK_Feats_FeatRanks1" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:FeatRanks" />
+      <xs:field xpath="mstns:Feat_Name" />
+      <xs:field xpath="mstns:Advancement_Name" />
+    </xs:keyref>
+    <xs:keyref name="FK_AdvancementRanks_FeatRanks" refer="AdvancementRanks_Constraint1" msprop:rel_Generator_UserChildTable="FeatRanks" msprop:rel_Generator_ChildPropName="GetFeatRanksRows" msprop:rel_Generator_UserRelationName="FK_AdvancementRanks_FeatRanks" msprop:rel_Generator_RelationVarName="relationFK_AdvancementRanks_FeatRanks" msprop:rel_Generator_UserParentTable="AdvancementRanks" msprop:rel_Generator_ParentPropName="AdvancementRanksRowParent" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:FeatRanks" />
+      <xs:field xpath="mstns:Advancement_Name" />
+      <xs:field xpath="mstns:Rank" />
+    </xs:keyref>
+    <xs:keyref name="FK_AchievementLevels_AchievementLevelFactStrings" refer="AchievementLevels_Constraint1" msprop:rel_Generator_UserChildTable="AchievementLevelFactStrings" msprop:rel_Generator_ChildPropName="GetAchievementLevelFactStringsRows" msprop:rel_Generator_UserRelationName="FK_AchievementLevels_AchievementLevelFactStrings" msprop:rel_Generator_RelationVarName="relationFK_AchievementLevels_AchievementLevelFactStrings" msprop:rel_Generator_UserParentTable="AchievementLevels" msprop:rel_Generator_ParentPropName="AchievementLevelsRowParent" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:AchievementLevelFactStrings" />
+      <xs:field xpath="mstns:Achievement_Name" />
+      <xs:field xpath="mstns:Achievement_Level" />
+    </xs:keyref>
+    <xs:keyref name="FK_AchievementLevelFacts_AchLevelAdvReqs" refer="AchievementLevelFacts_Constraint1" msprop:rel_Generator_UserChildTable="AchLevelAdvReqs" msprop:rel_Generator_ChildPropName="GetAchLevelAdvReqsRows" msprop:rel_Generator_UserRelationName="FK_AchievementLevelFacts_AchLevelAdvReqs" msprop:rel_Generator_RelationVarName="relationFK_AchievementLevelFacts_AchLevelAdvReqs" msprop:rel_Generator_UserParentTable="AchievementLevelFacts" msprop:rel_Generator_ParentPropName="AchievementLevelFactsRowParent" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:AchLevelAdvReqs" />
+      <xs:field xpath="mstns:Achievement_Name" />
+      <xs:field xpath="mstns:Achievement_Level" />
+      <xs:field xpath="mstns:FactType" />
+      <xs:field xpath="mstns:FactNo" />
+      <xs:field xpath="mstns:OptionNo" />
+    </xs:keyref>
+    <xs:keyref name="FK_AdvancementRanks_AchLevelAdvReqs" refer="AdvancementRanks_Constraint1" msprop:rel_Generator_UserChildTable="AchLevelAdvReqs" msprop:rel_Generator_ChildPropName="GetAchLevelAdvReqsRows" msprop:rel_Generator_UserRelationName="FK_AdvancementRanks_AchLevelAdvReqs" msprop:rel_Generator_RelationVarName="relationFK_AdvancementRanks_AchLevelAdvReqs" msprop:rel_Generator_UserParentTable="AdvancementRanks" msprop:rel_Generator_ParentPropName="AdvancementRanksRowParent" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:AchLevelAdvReqs" />
+      <xs:field xpath="mstns:RequiredAdvancement_Name" />
+      <xs:field xpath="mstns:RequiredAdvancement_Rank" />
+    </xs:keyref>
+    <xs:keyref name="FK_AchievementLevelFacts_AchLevelCatBonuses" refer="AchievementLevelFacts_Constraint1" msprop:rel_Generator_UserChildTable="AchLevelCatBonuses" msprop:rel_Generator_ChildPropName="GetAchLevelCatBonusesRows" msprop:rel_Generator_UserRelationName="FK_AchievementLevelFacts_AchLevelCatBonuses" msprop:rel_Generator_RelationVarName="relationFK_AchievementLevelFacts_AchLevelCatBonuses" msprop:rel_Generator_UserParentTable="AchievementLevelFacts" msprop:rel_Generator_ParentPropName="AchievementLevelFactsRowParent" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:AchLevelCatBonuses" />
+      <xs:field xpath="mstns:Achievement_Name" />
+      <xs:field xpath="mstns:Achievement_Level" />
+      <xs:field xpath="mstns:FactType" />
+      <xs:field xpath="mstns:FactNo" />
+      <xs:field xpath="mstns:OptionNo" />
+    </xs:keyref>
+    <xs:keyref name="FK_AchievementCategories_AchLevelCatBonuses" refer="AchievementCategories_Constraint1" msprop:rel_Generator_UserChildTable="AchLevelCatBonuses" msprop:rel_Generator_ChildPropName="GetAchLevelCatBonusesRows" msprop:rel_Generator_UserRelationName="FK_AchievementCategories_AchLevelCatBonuses" msprop:rel_Generator_RelationVarName="relationFK_AchievementCategories_AchLevelCatBonuses" msprop:rel_Generator_UserParentTable="AchievementCategories" msprop:rel_Generator_ParentPropName="AchievementCategoriesRow" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:AchLevelCatBonuses" />
+      <xs:field xpath="mstns:BonusCategory_Name" />
+    </xs:keyref>
+    <xs:keyref name="FK_AchievementLevels_CraftAchievementLevels" refer="AchievementLevels_Constraint1" msprop:rel_Generator_UserChildTable="CraftAchievementLevels" msprop:rel_Generator_ChildPropName="GetCraftAchievementLevelsRows" msprop:rel_Generator_UserRelationName="FK_AchievementLevels_CraftAchievementLevels" msprop:rel_Generator_RelationVarName="relationFK_AchievementLevels_CraftAchievementLevels" msprop:rel_Generator_UserParentTable="AchievementLevels" msprop:rel_Generator_ParentPropName="AchievementLevelsRowParent" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:CraftAchievementLevels" />
+      <xs:field xpath="mstns:Achievement_Name" />
+      <xs:field xpath="mstns:Achievement_Level" />
+    </xs:keyref>
+    <xs:keyref name="FK_AchievementLevels_CounterAchievementLevels" refer="AchievementLevels_Constraint1" msprop:rel_Generator_UserChildTable="CounterAchievementLevels" msprop:rel_Generator_ChildPropName="GetCounterAchievementLevelsRows" msprop:rel_Generator_UserRelationName="FK_AchievementLevels_CounterAchievementLevels" msprop:rel_Generator_RelationVarName="relationFK_AchievementLevels_CounterAchievementLevels" msprop:rel_Generator_UserParentTable="AchievementLevels" msprop:rel_Generator_ParentPropName="AchievementLevelsRowParent" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:CounterAchievementLevels" />
+      <xs:field xpath="mstns:Achievement_Name" />
+      <xs:field xpath="mstns:Achievement_Level" />
+    </xs:keyref>
+    <xs:keyref name="FK_CraftAchievements_RefiningAchievement" refer="CraftAchievements_Constraint1" msprop:rel_Generator_UserChildTable="RefiningAchievements" msprop:rel_Generator_ChildPropName="GetRefiningAchievementsRows" msprop:rel_Generator_UserRelationName="FK_CraftAchievements_RefiningAchievement" msprop:rel_Generator_RelationVarName="relationFK_CraftAchievements_RefiningAchievement" msprop:rel_Generator_UserParentTable="CraftAchievements" msprop:rel_Generator_ParentPropName="CraftAchievementsRow" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:RefiningAchievements" />
+      <xs:field xpath="mstns:Achievement_Name" />
+    </xs:keyref>
+    <xs:keyref name="FK_RefiningSkills_RefiningAchievement" refer="RefiningSkills_Constraint1" msprop:rel_Generator_UserChildTable="RefiningAchievements" msprop:rel_Generator_ChildPropName="GetRefiningAchievementsRows" msprop:rel_Generator_UserRelationName="FK_RefiningSkills_RefiningAchievement" msprop:rel_Generator_RelationVarName="relationFK_RefiningSkills_RefiningAchievement" msprop:rel_Generator_UserParentTable="RefiningSkills" msprop:rel_Generator_ParentPropName="RefiningSkillsRow" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:RefiningAchievements" />
+      <xs:field xpath="mstns:RefiningSkill_Name" />
+    </xs:keyref>
+    <xs:keyref name="FK_ChanneledFeats_RefiningSkills" refer="ChanneledFeats_Constraint1" msprop:rel_Generator_UserChildTable="RefiningSkills" msprop:rel_Generator_ChildPropName="GetRefiningSkillsRows" msprop:rel_Generator_UserRelationName="FK_ChanneledFeats_RefiningSkills" msprop:rel_Generator_RelationVarName="relationFK_ChanneledFeats_RefiningSkills" msprop:rel_Generator_UserParentTable="ChanneledFeats" msprop:rel_Generator_ParentPropName="ChanneledFeatsRow" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:RefiningSkills" />
+      <xs:field xpath="mstns:Feat_Name" />
+    </xs:keyref>
+    <xs:keyref name="FK_ChanneledFeats_CraftingSkills" refer="ChanneledFeats_Constraint1" msprop:rel_Generator_UserChildTable="CraftingSkills" msprop:rel_Generator_ChildPropName="GetCraftingSkillsRows" msprop:rel_Generator_UserRelationName="FK_ChanneledFeats_CraftingSkills" msprop:rel_Generator_RelationVarName="relationFK_ChanneledFeats_CraftingSkills" msprop:rel_Generator_UserParentTable="ChanneledFeats" msprop:rel_Generator_ParentPropName="ChanneledFeatsRow" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:CraftingSkills" />
+      <xs:field xpath="mstns:Feat_Name" />
+    </xs:keyref>
+    <xs:keyref name="FK_CraftAchievements_CraftingAchievement" refer="CraftAchievements_Constraint1" msprop:rel_Generator_UserChildTable="CraftingAchievements" msprop:rel_Generator_ChildPropName="GetCraftingAchievementsRows" msprop:rel_Generator_UserRelationName="FK_CraftAchievements_CraftingAchievement" msprop:rel_Generator_RelationVarName="relationFK_CraftAchievements_CraftingAchievement" msprop:rel_Generator_UserParentTable="CraftAchievements" msprop:rel_Generator_ParentPropName="CraftAchievementsRow" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:CraftingAchievements" />
+      <xs:field xpath="mstns:Achievement_Name" />
+    </xs:keyref>
+    <xs:keyref name="FK_CraftingSkills_CraftingAchievement" refer="CraftingSkills_Constraint1" msprop:rel_Generator_UserChildTable="CraftingAchievements" msprop:rel_Generator_ChildPropName="GetCraftingAchievementRows" msprop:rel_Generator_UserRelationName="FK_CraftingSkills_CraftingAchievement" msprop:rel_Generator_ParentPropName="CraftingSkillsRow" msprop:rel_Generator_RelationVarName="relationFK_CraftingSkills_CraftingAchievement" msprop:rel_Generator_UserParentTable="CraftingSkills" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:CraftingAchievements" />
+      <xs:field xpath="mstns:CraftingSkill_Name" />
+    </xs:keyref>
+    <xs:keyref name="FK_Achievements_CraftAchievements" refer="Achievements_Constraint1" msprop:rel_Generator_UserChildTable="CraftAchievements" msprop:rel_Generator_ChildPropName="GetCraftAchievementsRows" msprop:rel_Generator_UserRelationName="FK_Achievements_CraftAchievements" msprop:rel_Generator_RelationVarName="relationFK_Achievements_CraftAchievements" msprop:rel_Generator_UserParentTable="Achievements" msprop:rel_Generator_ParentPropName="AchievementsRow" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:CraftAchievements" />
+      <xs:field xpath="mstns:Achievement_Name" />
+    </xs:keyref>
+    <xs:keyref name="FK_Roles_RoleAchievements" refer="Roles_Constraint1" msprop:rel_Generator_UserChildTable="RoleAchievements" msprop:rel_Generator_ChildPropName="GetRoleAchievementsRows" msprop:rel_Generator_UserRelationName="FK_Roles_RoleAchievements" msprop:rel_Generator_RelationVarName="relationFK_Roles_RoleAchievements" msprop:rel_Generator_UserParentTable="Roles" msprop:rel_Generator_ParentPropName="RolesRow" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:RoleAchievements" />
+      <xs:field xpath="mstns:Role_Name" />
+    </xs:keyref>
+    <xs:keyref name="FK_Achievements_RoleAchievements" refer="Achievements_Constraint1" msprop:rel_Generator_UserChildTable="RoleAchievements" msprop:rel_Generator_ChildPropName="GetRoleAchievementsRows" msprop:rel_Generator_UserRelationName="FK_Achievements_RoleAchievements" msprop:rel_Generator_RelationVarName="relationFK_Achievements_RoleAchievements" msprop:rel_Generator_UserParentTable="Achievements" msprop:rel_Generator_ParentPropName="AchievementsRow" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:RoleAchievements" />
+      <xs:field xpath="mstns:Achievement_Name" />
+    </xs:keyref>
+    <xs:keyref name="FK_ChanneledFeats_AttackBonuses" refer="ChanneledFeats_Constraint1" msprop:rel_Generator_UserChildTable="AttackBonuses" msprop:rel_Generator_ChildPropName="GetAttackBonusesRows" msprop:rel_Generator_UserRelationName="FK_ChanneledFeats_AttackBonuses" msprop:rel_Generator_RelationVarName="relationFK_ChanneledFeats_AttackBonuses" msprop:rel_Generator_UserParentTable="ChanneledFeats" msprop:rel_Generator_ParentPropName="ChanneledFeatsRow" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:AttackBonuses" />
+      <xs:field xpath="mstns:Feat_Name" />
+    </xs:keyref>
+    <xs:keyref name="FK_Feats_ChanneledFeats" refer="Feats_Constraint1" msprop:rel_Generator_UserChildTable="ChanneledFeats" msprop:rel_Generator_ChildPropName="GetChanneledFeatsRows" msprop:rel_Generator_UserRelationName="FK_Feats_ChanneledFeats" msprop:rel_Generator_RelationVarName="relationFK_Feats_ChanneledFeats" msprop:rel_Generator_UserParentTable="Feats" msprop:rel_Generator_ParentPropName="FeatsRow" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:ChanneledFeats" />
+      <xs:field xpath="mstns:Feat_Name" />
+    </xs:keyref>
+    <xs:keyref name="FK_EffectChannels_ChanneledFeats" refer="EffectChannels_Constraint1" msprop:rel_Generator_UserChildTable="ChanneledFeats" msprop:rel_Generator_ChildPropName="GetChanneledFeatsRows" msprop:rel_Generator_UserRelationName="FK_EffectChannels_ChanneledFeats" msprop:rel_Generator_RelationVarName="relationFK_EffectChannels_ChanneledFeats" msprop:rel_Generator_UserParentTable="EffectChannels" msprop:rel_Generator_ParentPropName="EffectChannelsRow" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:ChanneledFeats" />
+      <xs:field xpath="mstns:Channel_Name" />
+    </xs:keyref>
+    <xs:keyref name="FK_StandardAttacks_Cantrips" refer="StandardAttacks_Constraint1" msprop:rel_Generator_UserChildTable="Cantrips" msprop:rel_Generator_ChildPropName="GetCantripsRows" msprop:rel_Generator_UserRelationName="FK_StandardAttacks_Cantrips" msprop:rel_Generator_RelationVarName="relationFK_StandardAttacks_Cantrips" msprop:rel_Generator_UserParentTable="StandardAttacks" msprop:rel_Generator_ParentPropName="StandardAttacksRow" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:Cantrips" />
+      <xs:field xpath="mstns:Feat_Name" />
+    </xs:keyref>
+    <xs:keyref name="FK_Schools_Cantrips" refer="Schools_Constraint1" msprop:rel_Generator_UserChildTable="Cantrips" msprop:rel_Generator_ChildPropName="GetCantripsRows" msprop:rel_Generator_UserRelationName="FK_Schools_Cantrips" msprop:rel_Generator_RelationVarName="relationFK_Schools_Cantrips" msprop:rel_Generator_UserParentTable="Schools" msprop:rel_Generator_ParentPropName="SchoolsRow" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:Cantrips" />
+      <xs:field xpath="mstns:School_Name" />
+    </xs:keyref>
+    <xs:keyref name="FK_ActiveFeats_PowerAttacks" refer="ActiveFeats_Constraint1" msprop:rel_Generator_UserChildTable="PowerAttacks" msprop:rel_Generator_ChildPropName="GetPowerAttacksRows" msprop:rel_Generator_UserRelationName="FK_ActiveFeats_PowerAttacks" msprop:rel_Generator_RelationVarName="relationFK_ActiveFeats_PowerAttacks" msprop:rel_Generator_UserParentTable="ActiveFeats" msprop:rel_Generator_ParentPropName="ActiveFeatsRow" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:PowerAttacks" />
+      <xs:field xpath="mstns:Feat_Name" />
+    </xs:keyref>
+    <xs:keyref name="FK_AttackBonuses_PowerAttacks" refer="AttackBonuses_Constraint1" msprop:rel_Generator_UserChildTable="PowerAttacks" msprop:rel_Generator_ChildPropName="GetPowerAttacksRows" msprop:rel_Generator_UserRelationName="FK_AttackBonuses_PowerAttacks" msprop:rel_Generator_ParentPropName="AttackBonusesRow" msprop:rel_Generator_RelationVarName="relationFK_AttackBonuses_PowerAttacks" msprop:rel_Generator_UserParentTable="AttackBonuses" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:PowerAttacks" />
+      <xs:field xpath="mstns:AttackBonus_Name" />
+    </xs:keyref>
+    <xs:keyref name="FK_ActiveFeats_StandardAttacks" refer="ActiveFeats_Constraint1" msprop:rel_Generator_UserChildTable="StandardAttacks" msprop:rel_Generator_ChildPropName="GetStandardAttacksRows" msprop:rel_Generator_UserRelationName="FK_ActiveFeats_StandardAttacks" msprop:rel_Generator_RelationVarName="relationFK_ActiveFeats_StandardAttacks" msprop:rel_Generator_UserParentTable="ActiveFeats" msprop:rel_Generator_ParentPropName="ActiveFeatsRow" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:StandardAttacks" />
+      <xs:field xpath="mstns:Feat_Name" />
+    </xs:keyref>
+    <xs:keyref name="FK_AttackForms_StandardAttacks" refer="AttackForms_Constraint1" msprop:rel_Generator_UserChildTable="StandardAttacks" msprop:rel_Generator_ChildPropName="GetStandardAttacksRows" msprop:rel_Generator_UserRelationName="FK_AttackForms_StandardAttacks" msprop:rel_Generator_RelationVarName="relationFK_AttackForms_StandardAttacks" msprop:rel_Generator_UserParentTable="AttackForms" msprop:rel_Generator_ParentPropName="AttackFormsRow" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:StandardAttacks" />
+      <xs:field xpath="mstns:AttackForm_Name" />
+    </xs:keyref>
+    <xs:keyref name="FK_SpecificWeapons_StandardAttacks" refer="SpecificWeapons_Constraint1" msprop:rel_Generator_UserChildTable="StandardAttacks" msprop:rel_Generator_ChildPropName="GetStandardAttacksRows" msprop:rel_Generator_UserRelationName="FK_SpecificWeapons_StandardAttacks" msprop:rel_Generator_RelationVarName="relationFK_SpecificWeapons_StandardAttacks" msprop:rel_Generator_UserParentTable="SpecificWeapons" msprop:rel_Generator_ParentPropName="SpecificWeaponsRow" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:StandardAttacks" />
+      <xs:field xpath="mstns:SpecificWeapon_Name" />
+    </xs:keyref>
+    <xs:keyref name="FK_Feats_ActiveFeats" refer="Feats_Constraint1" msprop:rel_Generator_UserChildTable="ActiveFeats" msprop:rel_Generator_ChildPropName="GetActiveFeatsRows" msprop:rel_Generator_UserRelationName="FK_Feats_ActiveFeats" msprop:rel_Generator_RelationVarName="relationFK_Feats_ActiveFeats" msprop:rel_Generator_UserParentTable="Feats" msprop:rel_Generator_ParentPropName="FeatsRow" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:ActiveFeats" />
+      <xs:field xpath="mstns:Feat_Name" />
+    </xs:keyref>
+    <xs:keyref name="FK_WeaponCategories_ActiveFeats" refer="WeaponCategories_Constraint1" msprop:rel_Generator_UserChildTable="ActiveFeats" msprop:rel_Generator_ChildPropName="GetActiveFeatsRows" msprop:rel_Generator_UserRelationName="FK_WeaponCategories_ActiveFeats" msprop:rel_Generator_RelationVarName="relationFK_WeaponCategories_ActiveFeats" msprop:rel_Generator_UserParentTable="WeaponCategories" msprop:rel_Generator_ParentPropName="WeaponCategoriesRow" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:ActiveFeats" />
+      <xs:field xpath="mstns:WeaponCategory_Name" />
+    </xs:keyref>
+    <xs:keyref name="FK_Advancements_Feats" refer="Constraint1" msprop:rel_Generator_UserChildTable="Feats" msprop:rel_Generator_ChildPropName="GetFeatsRows" msprop:rel_Generator_UserRelationName="FK_Advancements_Feats" msprop:rel_Generator_RelationVarName="relationFK_Advancements_Feats" msprop:rel_Generator_UserParentTable="Advancements" msprop:rel_Generator_ParentPropName="AdvancementsRow" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:Feats" />
+      <xs:field xpath="mstns:Advancement_Name" />
+    </xs:keyref>
+    <xs:keyref name="FK_Roles_Feats" refer="Roles_Constraint1" msprop:rel_Generator_UserChildTable="Feats" msprop:rel_Generator_ChildPropName="GetFeatsRows" msprop:rel_Generator_UserRelationName="FK_Roles_Feats" msprop:rel_Generator_ParentPropName="RolesRow" msprop:rel_Generator_RelationVarName="relationFK_Roles_Feats" msprop:rel_Generator_UserParentTable="Roles" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:Feats" />
+      <xs:field xpath="mstns:Role_Name" />
+    </xs:keyref>
+    <xs:keyref name="FK_AdvancementRanks_AdvancementRankFactStrings" refer="AdvancementRanks_Constraint1" msprop:rel_Generator_UserChildTable="AdvancementRankFactStrings" msprop:rel_Generator_ChildPropName="GetAdvancementRankFactStringsRows" msprop:rel_Generator_UserRelationName="FK_AdvancementRanks_AdvancementRankFactStrings" msprop:rel_Generator_RelationVarName="relationFK_AdvancementRanks_AdvancementRankFactStrings" msprop:rel_Generator_UserParentTable="AdvancementRanks" msprop:rel_Generator_ParentPropName="AdvancementRanksRowParent" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:AdvancementRankFactStrings" />
+      <xs:field xpath="mstns:Advancement_Name" />
+      <xs:field xpath="mstns:Advancement_Rank" />
+    </xs:keyref>
+    <xs:keyref name="FK_Abilities_AdvRankAbilBonus" refer="Abilities_Constraint1" msprop:rel_Generator_UserChildTable="AdvRankAbilBonuses" msprop:rel_Generator_ChildPropName="GetAdvRankAbilBonusesRows" msprop:rel_Generator_UserRelationName="FK_Abilities_AdvRankAbilBonus" msprop:rel_Generator_RelationVarName="relationFK_Abilities_AdvRankAbilBonus" msprop:rel_Generator_UserParentTable="Abilities" msprop:rel_Generator_ParentPropName="AbilitiesRow" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:AdvRankAbilBonuses" />
+      <xs:field xpath="mstns:BonusAbilityName" />
+    </xs:keyref>
+    <xs:keyref name="FK_AdvancementRankFacts_AdvRankAbilBonus" refer="AdvancementRankFacts_Constraint1" msprop:rel_Generator_UserChildTable="AdvRankAbilBonuses" msprop:rel_Generator_ChildPropName="GetAdvRankAbilBonusesRows" msprop:rel_Generator_UserRelationName="FK_AdvancementRankFacts_AdvRankAbilBonus" msprop:rel_Generator_RelationVarName="relationFK_AdvancementRankFacts_AdvRankAbilBonus" msprop:rel_Generator_UserParentTable="AdvancementRankFacts" msprop:rel_Generator_ParentPropName="AdvancementRankFactsRowParent" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:AdvRankAbilBonuses" />
+      <xs:field xpath="mstns:Advancement_Name" />
+      <xs:field xpath="mstns:Advancement_Rank" />
+      <xs:field xpath="mstns:FactType" />
+      <xs:field xpath="mstns:FactNo" />
+      <xs:field xpath="mstns:OptionNo" />
+    </xs:keyref>
+    <xs:keyref name="FK_Abilities_AdvRankAbilReq" refer="Abilities_Constraint1" msprop:rel_Generator_UserChildTable="AdvRankAbilReqs" msprop:rel_Generator_ChildPropName="GetAdvRankAbilReqsRows" msprop:rel_Generator_UserRelationName="FK_Abilities_AdvRankAbilReq" msprop:rel_Generator_RelationVarName="relationFK_Abilities_AdvRankAbilReq" msprop:rel_Generator_UserParentTable="Abilities" msprop:rel_Generator_ParentPropName="AbilitiesRow" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:AdvRankAbilReqs" />
+      <xs:field xpath="mstns:RequiredAbility_Name" />
+    </xs:keyref>
+    <xs:keyref name="FK_AdvancementRankFacts_AdvRankAbilReq" refer="AdvancementRankFacts_Constraint1" msprop:rel_Generator_UserChildTable="AdvRankAbilReqs" msprop:rel_Generator_ChildPropName="GetAdvRankAbilReqsRows" msprop:rel_Generator_UserRelationName="FK_AdvancementRankFacts_AdvRankAbilReq" msprop:rel_Generator_RelationVarName="relationFK_AdvancementRankFacts_AdvRankAbilReq" msprop:rel_Generator_UserParentTable="AdvancementRankFacts" msprop:rel_Generator_ParentPropName="AdvancementRankFactsRowParent" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:AdvRankAbilReqs" />
+      <xs:field xpath="mstns:Advancement_Name" />
+      <xs:field xpath="mstns:Advancement_Rank" />
+      <xs:field xpath="mstns:FactType" />
+      <xs:field xpath="mstns:FactNo" />
+      <xs:field xpath="mstns:OptionNo" />
+    </xs:keyref>
+    <xs:keyref name="FK_AchievementLevels_AdvRankAchReq" refer="AchievementLevels_Constraint1" msprop:rel_Generator_UserChildTable="AdvRankAchReqs" msprop:rel_Generator_ChildPropName="GetAdvRankAchReqsRows" msprop:rel_Generator_UserRelationName="FK_AchievementLevels_AdvRankAchReq" msprop:rel_Generator_RelationVarName="relationFK_AchievementLevels_AdvRankAchReq" msprop:rel_Generator_UserParentTable="AchievementLevels" msprop:rel_Generator_ParentPropName="AchievementLevelsRowParent" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:AdvRankAchReqs" />
+      <xs:field xpath="mstns:RequiredAchievement_Name" />
+      <xs:field xpath="mstns:RequiredAchievement_Level" />
+    </xs:keyref>
+    <xs:keyref name="FK_AdvancementRankFacts_AdvRankAchReq" refer="AdvancementRankFacts_Constraint1" msprop:rel_Generator_UserChildTable="AdvRankAchReqs" msprop:rel_Generator_ChildPropName="GetAdvRankAchReqsRows" msprop:rel_Generator_UserRelationName="FK_AdvancementRankFacts_AdvRankAchReq" msprop:rel_Generator_RelationVarName="relationFK_AdvancementRankFacts_AdvRankAchReq" msprop:rel_Generator_UserParentTable="AdvancementRankFacts" msprop:rel_Generator_ParentPropName="AdvancementRankFactsRowParent" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:AdvRankAchReqs" />
+      <xs:field xpath="mstns:Advancement_Name" />
+      <xs:field xpath="mstns:Advancement_Rank" />
+      <xs:field xpath="mstns:FactType" />
+      <xs:field xpath="mstns:FactNo" />
+      <xs:field xpath="mstns:OptionNo" />
+    </xs:keyref>
+    <xs:keyref name="FK_AdvancementRanks_AdvRankAdvReq" refer="AdvancementRanks_Constraint1" msprop:rel_Generator_UserChildTable="AdvRankAdvReqs" msprop:rel_Generator_ChildPropName="GetAdvRankAdvReqsRows" msprop:rel_Generator_UserRelationName="FK_AdvancementRanks_AdvRankAdvReq" msprop:rel_Generator_RelationVarName="relationFK_AdvancementRanks_AdvRankAdvReq" msprop:rel_Generator_UserParentTable="AdvancementRanks" msprop:rel_Generator_ParentPropName="AdvancementRanksRowParent" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:AdvRankAdvReqs" />
+      <xs:field xpath="mstns:RequiredAdvancement_Name" />
+      <xs:field xpath="mstns:RequiredAdvancement_Rank" />
+    </xs:keyref>
+    <xs:keyref name="FK_AdvancementRankFacts_AdvRankAdvReq" refer="AdvancementRankFacts_Constraint1" msprop:rel_Generator_UserChildTable="AdvRankAdvReqs" msprop:rel_Generator_ChildPropName="GetAdvRankAdvReqsRows" msprop:rel_Generator_UserRelationName="FK_AdvancementRankFacts_AdvRankAdvReq" msprop:rel_Generator_RelationVarName="relationFK_AdvancementRankFacts_AdvRankAdvReq" msprop:rel_Generator_UserParentTable="AdvancementRankFacts" msprop:rel_Generator_ParentPropName="AdvancementRankFactsRowParent" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:AdvRankAdvReqs" />
+      <xs:field xpath="mstns:Advancement_Name" />
+      <xs:field xpath="mstns:Advancement_Rank" />
+      <xs:field xpath="mstns:FactType" />
+      <xs:field xpath="mstns:FactNo" />
+      <xs:field xpath="mstns:OptionNo" />
+    </xs:keyref>
+    <xs:keyref name="FK_AchievementCategories_AdvRankCatReq" refer="AchievementCategories_Constraint1" msprop:rel_Generator_UserChildTable="AdvRankCatReqs" msprop:rel_Generator_ChildPropName="GetAdvRankCatReqsRows" msprop:rel_Generator_UserRelationName="FK_AchievementCategories_AdvRankCatReq" msprop:rel_Generator_RelationVarName="relationFK_AchievementCategories_AdvRankCatReq" msprop:rel_Generator_UserParentTable="AchievementCategories" msprop:rel_Generator_ParentPropName="AchievementCategoriesRow" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:AdvRankCatReqs" />
+      <xs:field xpath="mstns:RequiredCategory_Name" />
+    </xs:keyref>
+    <xs:keyref name="FK_AdvancementRankFacts_AdvRankCatReq" refer="AdvancementRankFacts_Constraint1" msprop:rel_Generator_UserChildTable="AdvRankCatReqs" msprop:rel_Generator_ChildPropName="GetAdvRankCatReqsRows" msprop:rel_Generator_UserRelationName="FK_AdvancementRankFacts_AdvRankCatReq" msprop:rel_Generator_RelationVarName="relationFK_AdvancementRankFacts_AdvRankCatReq" msprop:rel_Generator_UserParentTable="AdvancementRankFacts" msprop:rel_Generator_ParentPropName="AdvancementRankFactsRowParent" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:AdvRankCatReqs" />
+      <xs:field xpath="mstns:Advancement_Name" />
+      <xs:field xpath="mstns:Advancement_Rank" />
+      <xs:field xpath="mstns:FactType" />
+      <xs:field xpath="mstns:FactNo" />
+      <xs:field xpath="mstns:OptionNo" />
+    </xs:keyref>
+    <xs:keyref name="FK_AchievementLevels_AchievementLevelFacts" refer="AchievementLevels_Constraint1" msprop:rel_Generator_UserChildTable="AchievementLevelFacts" msprop:rel_Generator_ChildPropName="GetAchievementLevelFactsRows" msprop:rel_Generator_UserRelationName="FK_AchievementLevels_AchievementLevelFacts" msprop:rel_Generator_ParentPropName="AchievementLevelsRowParent" msprop:rel_Generator_RelationVarName="relationFK_AchievementLevels_AchievementLevelFacts" msprop:rel_Generator_UserParentTable="AchievementLevels" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:AchievementLevelFacts" />
+      <xs:field xpath="mstns:Achievement_Name" />
+      <xs:field xpath="mstns:Achievement_Level" />
+    </xs:keyref>
+    <xs:keyref name="FK_Achievements_AchievementLevels" refer="Achievements_Constraint1" msprop:rel_Generator_UserChildTable="AchievementLevels" msprop:rel_Generator_ChildPropName="GetAchievementLevelsRows" msprop:rel_Generator_UserRelationName="FK_Achievements_AchievementLevels" msprop:rel_Generator_ParentPropName="AchievementsRow" msprop:rel_Generator_RelationVarName="relationFK_Achievements_AchievementLevels" msprop:rel_Generator_UserParentTable="Achievements" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:AchievementLevels" />
+      <xs:field xpath="mstns:Achievement_Name" />
+    </xs:keyref>
+    <xs:keyref name="FK_AdvancementRanks_AdvancementRankFacts" refer="AdvancementRanks_Constraint1" msprop:rel_Generator_UserChildTable="AdvancementRankFacts" msprop:rel_Generator_ChildPropName="GetAdvancementRankFactsRows" msprop:rel_Generator_UserRelationName="FK_AdvancementRanks_AdvancementRankFacts" msprop:rel_Generator_ParentPropName="AdvancementRanksRowParent" msprop:rel_Generator_RelationVarName="relationFK_AdvancementRanks_AdvancementRankFacts" msprop:rel_Generator_UserParentTable="AdvancementRanks" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:AdvancementRankFacts" />
+      <xs:field xpath="mstns:Advancement_Name" />
+      <xs:field xpath="mstns:Advancement_Rank" />
+    </xs:keyref>
+    <xs:keyref name="FK_Advancements_AdvancementRanks" refer="Constraint1" msprop:rel_Generator_UserChildTable="AdvancementRanks" msprop:rel_Generator_ChildPropName="GetAdvancementRanksRows" msprop:rel_Generator_UserRelationName="FK_Advancements_AdvancementRanks" msprop:rel_Generator_ParentPropName="AdvancementsRow" msprop:rel_Generator_RelationVarName="relationFK_Advancements_AdvancementRanks" msprop:rel_Generator_UserParentTable="Advancements" msdata:DeleteRule="SetDefault">
+      <xs:selector xpath=".//mstns:AdvancementRanks" />
+      <xs:field xpath="mstns:Advancement_Name" />
+    </xs:keyref>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,15 @@
+G:\Projects\Goblinary\WikiData\Goblinary.WikiData.SqlServer\bin\Debug\Goblinary.WikiData.SqlServer.dll
+G:\Projects\Goblinary\WikiData\Goblinary.WikiData.SqlServer\bin\Debug\Goblinary.WikiData.SqlServer.pdb
+G:\Projects\Goblinary\WikiData\Goblinary.WikiData.SqlServer\bin\Debug\EntityFramework.dll
+G:\Projects\Goblinary\WikiData\Goblinary.WikiData.SqlServer\bin\Debug\EntityFramework.SqlServer.dll
+G:\Projects\Goblinary\WikiData\Goblinary.WikiData.SqlServer\bin\Debug\Goblinary.Common.dll
+G:\Projects\Goblinary\WikiData\Goblinary.WikiData.SqlServer\bin\Debug\Goblinary.WikiData.Model.dll
+G:\Projects\Goblinary\WikiData\Goblinary.WikiData.SqlServer\bin\Debug\Goblinary.Common.pdb
+G:\Projects\Goblinary\WikiData\Goblinary.WikiData.SqlServer\bin\Debug\Goblinary.WikiData.Model.pdb
+G:\Projects\Goblinary\WikiData\Goblinary.WikiData.SqlServer\bin\Debug\EntityFramework.xml
+G:\Projects\Goblinary\WikiData\Goblinary.WikiData.SqlServer\bin\Debug\EntityFramework.SqlServer.xml
+G:\Projects\Goblinary\WikiData\Goblinary.WikiData.SqlServer\obj\Debug\Goblinary.WikiData.SqlServer.csprojResolveAssemblyReference.cache
+G:\Projects\Goblinary\WikiData\Goblinary.WikiData.SqlServer\obj\Debug\Goblinary.WikiData.SqlServer.Migrations.Alpha.resources
+G:\Projects\Goblinary\WikiData\Goblinary.WikiData.SqlServer\obj\Debug\Goblinary.WikiData.SqlServer.csproj.GenerateResource.Cache
+G:\Projects\Goblinary\WikiData\Goblinary.WikiData.SqlServer\obj\Debug\Goblinary.WikiData.SqlServer.dll
+G:\Projects\Goblinary\WikiData\Goblinary.WikiData.SqlServer\obj\Debug\Goblinary.WikiData.SqlServer.pdb

@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C707F889-556C-4BBB-BCBB-813AF2ECF707}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Goblinary.WikiData.Model</RootNamespace>
+    <AssemblyName>Goblinary.WikiData.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ability.cs" />
+    <Compile Include="Achievement.cs" />
+    <Compile Include="AchievementGroup.cs" />
+    <Compile Include="AchievementRank.cs" />
+    <Compile Include="AchievementRankCategoryBonus.cs" />
+    <Compile Include="AchievementRankFeatRequirement.cs" />
+    <Compile Include="AchievementRankFlagRequirement.cs" />
+    <Compile Include="AdvancementFeat.cs" />
+    <Compile Include="BulkResource.cs" />
+    <Compile Include="Condition.cs" />
+    <Compile Include="Effect.cs" />
+    <Compile Include="EffectDescription.cs" />
+    <Compile Include="EffectTerm.cs" />
+    <Compile Include="EntityList.cs" />
+    <Compile Include="EntityType.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="Feat.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FeatRankTrainerLevel.cs" />
+    <Compile Include="Hex.cs" />
+    <Compile Include="HexBulkRating.cs" />
+    <Compile Include="IEntity.cs" />
+    <Compile Include="ItemTypes.cs" />
+    <Compile Include="Keyword.cs" />
+    <Compile Include="KeywordType.cs" />
+    <Compile Include="Lookups.cs" />
+    <Compile Include="RecipeOutputItem.cs" />
+    <Compile Include="Role.cs" />
+    <Compile Include="Stock.cs" />
+    <Compile Include="StockItemStock.cs" />
+    <Compile Include="Structure.cs" />
+    <Compile Include="Trainer.cs" />
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <Compile Include="Recipe.cs" />
+    <Compile Include="FeatEffect.cs" />
+    <Compile Include="FeatRank.cs" />
+    <Compile Include="FeatRankAbilityBonus.cs" />
+    <Compile Include="FeatRankAbilityRequirement.cs" />
+    <Compile Include="FeatRankAchievementRequirement.cs" />
+    <Compile Include="FeatRankCategoryRequirement.cs" />
+    <Compile Include="FeatRankEffect.cs" />
+    <Compile Include="FeatRankFeatRequirement.cs" />
+    <Compile Include="FeatRankKeyword.cs" />
+    <Compile Include="Item.cs" />
+    <Compile Include="IAchievementRank.cs" />
+    <Compile Include="IAchievementRankFact.cs" />
+    <Compile Include="IEffectReference.cs" />
+    <Compile Include="IFeatRankFact.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Goblinary.Common\Goblinary.Common.csproj">
+      <Project>{693b2be8-641d-4776-b47f-412e594169fd}</Project>
+      <Name>Goblinary.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
