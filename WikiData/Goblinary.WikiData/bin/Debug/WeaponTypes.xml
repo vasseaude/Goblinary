@@ -1,0 +1,168 @@
+﻿<?xml version="1.0"?>
+<LookupDataSet xmlns="http://tempuri.org/LookupDataSet.xsd">
+    <WeaponTypes>
+        <WeaponType>Battle Focus</WeaponType>
+        <WeaponCategory>Focus</WeaponCategory>
+        <AttackBonus>Divine</AttackBonus>
+    </WeaponTypes>
+    <WeaponTypes>
+        <WeaponType>Elemental Focus</WeaponType>
+        <WeaponCategory>Focus</WeaponCategory>
+        <AttackBonus>Divine</AttackBonus>
+    </WeaponTypes>
+    <WeaponTypes>
+        <WeaponType>Occult Focus</WeaponType>
+        <WeaponCategory>Focus</WeaponCategory>
+        <AttackBonus>Divine</AttackBonus>
+    </WeaponTypes>
+    <WeaponTypes>
+        <WeaponType>Dagger</WeaponType>
+        <WeaponCategory>Light Knife</WeaponCategory>
+        <AttackBonus>Light Melee</AttackBonus>
+    </WeaponTypes>
+    <WeaponTypes>
+        <WeaponType>Starknife</WeaponType>
+        <WeaponCategory>Light Knife</WeaponCategory>
+        <AttackBonus>Light Melee</AttackBonus>
+    </WeaponTypes>
+    <WeaponTypes>
+        <WeaponType>Longbow</WeaponType>
+        <WeaponCategory>Longbow</WeaponCategory>
+        <AttackBonus>Ranged</AttackBonus>
+    </WeaponTypes>
+    <WeaponTypes>
+        <WeaponType>Charged Staff</WeaponType>
+        <WeaponCategory>Mage Staff</WeaponCategory>
+        <AttackBonus>Arcane</AttackBonus>
+    </WeaponTypes>
+    <WeaponTypes>
+        <WeaponType>Diminishing Staff</WeaponType>
+        <WeaponCategory>Mage Staff</WeaponCategory>
+        <AttackBonus>Arcane</AttackBonus>
+    </WeaponTypes>
+    <WeaponTypes>
+        <WeaponType>Psychic Staff</WeaponType>
+        <WeaponCategory>Mage Staff</WeaponCategory>
+        <AttackBonus>Arcane</AttackBonus>
+    </WeaponTypes>
+    <WeaponTypes>
+        <WeaponType>Quickening Staff</WeaponType>
+        <WeaponCategory>Mage Staff</WeaponCategory>
+        <AttackBonus>Arcane</AttackBonus>
+    </WeaponTypes>
+    <WeaponTypes>
+        <WeaponType>Somatic Staff</WeaponType>
+        <WeaponCategory>Mage Staff</WeaponCategory>
+        <AttackBonus>Arcane</AttackBonus>
+    </WeaponTypes>
+    <WeaponTypes>
+        <WeaponType>Charged Wand</WeaponType>
+        <WeaponCategory>Mage Wand</WeaponCategory>
+        <AttackBonus>Arcane</AttackBonus>
+    </WeaponTypes>
+    <WeaponTypes>
+        <WeaponType>Diminishing Wand</WeaponType>
+        <WeaponCategory>Mage Wand</WeaponCategory>
+        <AttackBonus>Arcane</AttackBonus>
+    </WeaponTypes>
+    <WeaponTypes>
+        <WeaponType>Psychic Wand</WeaponType>
+        <WeaponCategory>Mage Wand</WeaponCategory>
+        <AttackBonus>Arcane</AttackBonus>
+    </WeaponTypes>
+    <WeaponTypes>
+        <WeaponType>Quickening Wand</WeaponType>
+        <WeaponCategory>Mage Wand</WeaponCategory>
+        <AttackBonus>Arcane</AttackBonus>
+    </WeaponTypes>
+    <WeaponTypes>
+        <WeaponType>Somatic Wand</WeaponType>
+        <WeaponCategory>Mage Wand</WeaponCategory>
+        <AttackBonus>Arcane</AttackBonus>
+    </WeaponTypes>
+    <WeaponTypes>
+        <WeaponType>Battleaxe</WeaponType>
+        <WeaponCategory>One-Handed Axe</WeaponCategory>
+        <AttackBonus>Heavy Melee</AttackBonus>
+    </WeaponTypes>
+    <WeaponTypes>
+        <WeaponType>Club</WeaponType>
+        <WeaponCategory>One-Handed Blunt</WeaponCategory>
+        <AttackBonus>Light Melee</AttackBonus>
+    </WeaponTypes>
+    <WeaponTypes>
+        <WeaponType>Light Hammer</WeaponType>
+        <WeaponCategory>One-Handed Blunt</WeaponCategory>
+        <AttackBonus>Heavy Melee</AttackBonus>
+    </WeaponTypes>
+    <WeaponTypes>
+        <WeaponType>Light Mace</WeaponType>
+        <WeaponCategory>One-Handed Blunt</WeaponCategory>
+        <AttackBonus>Heavy Melee</AttackBonus>
+    </WeaponTypes>
+    <WeaponTypes>
+        <WeaponType>Rapier</WeaponType>
+        <WeaponCategory>One-Handed Fencing</WeaponCategory>
+        <AttackBonus>Light Melee</AttackBonus>
+    </WeaponTypes>
+    <WeaponTypes>
+        <WeaponType>Short Sword</WeaponType>
+        <WeaponCategory>One-Handed Fencing</WeaponCategory>
+        <AttackBonus>Light Melee</AttackBonus>
+    </WeaponTypes>
+    <WeaponTypes>
+        <WeaponType>Longsword</WeaponType>
+        <WeaponCategory>One-Handed Sword</WeaponCategory>
+        <AttackBonus>Heavy Melee</AttackBonus>
+    </WeaponTypes>
+    <WeaponTypes>
+        <WeaponType>Spear</WeaponType>
+        <WeaponCategory>Piercing Polearm</WeaponCategory>
+        <AttackBonus>Heavy Melee</AttackBonus>
+    </WeaponTypes>
+    <WeaponTypes>
+        <WeaponType>Trident</WeaponType>
+        <WeaponCategory>Piercing Polearm</WeaponCategory>
+        <AttackBonus>Heavy Melee</AttackBonus>
+    </WeaponTypes>
+    <WeaponTypes>
+        <WeaponType>Buckler</WeaponType>
+        <WeaponCategory>Shield</WeaponCategory>
+        <AttackBonus>Light Melee</AttackBonus>
+    </WeaponTypes>
+    <WeaponTypes>
+        <WeaponType>Heavy Shield</WeaponType>
+        <WeaponCategory>Shield</WeaponCategory>
+        <AttackBonus>Heavy Melee</AttackBonus>
+    </WeaponTypes>
+    <WeaponTypes>
+        <WeaponType>Light Shield</WeaponType>
+        <WeaponCategory>Shield</WeaponCategory>
+        <AttackBonus>Heavy Melee</AttackBonus>
+    </WeaponTypes>
+    <WeaponTypes>
+        <WeaponType>Shortbow</WeaponType>
+        <WeaponCategory>Shortbow</WeaponCategory>
+        <AttackBonus>Ranged</AttackBonus>
+    </WeaponTypes>
+    <WeaponTypes>
+        <WeaponType>Greatclub</WeaponType>
+        <WeaponCategory>Two-Handed Blunt</WeaponCategory>
+        <AttackBonus>Heavy Melee</AttackBonus>
+    </WeaponTypes>
+    <WeaponTypes>
+        <WeaponType>Falchion</WeaponType>
+        <WeaponCategory>Two-Handed Sword</WeaponCategory>
+        <AttackBonus>Heavy Melee</AttackBonus>
+    </WeaponTypes>
+    <WeaponTypes>
+        <WeaponType>Greatsword</WeaponType>
+        <WeaponCategory>Two-Handed Sword</WeaponCategory>
+        <AttackBonus>Heavy Melee</AttackBonus>
+    </WeaponTypes>
+    <WeaponTypes>
+        <WeaponType>Scimitar</WeaponType>
+        <WeaponCategory>Two-Handed Sword</WeaponCategory>
+        <AttackBonus>Heavy Melee</AttackBonus>
+    </WeaponTypes>
+</LookupDataSet>

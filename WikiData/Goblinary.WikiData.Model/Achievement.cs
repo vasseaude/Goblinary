@@ -4,38 +4,31 @@
 	using System.Collections.Generic;
 	using System.ComponentModel.DataAnnotations;
 	using System.ComponentModel.DataAnnotations.Schema;
-	using System.Linq;
-	using System.Text;
-	using System.Threading.Tasks;
-
-	using Goblinary.Common;
+	using Common;
 
 	public abstract class Achievement : IEntity
 	{
-		public Achievement()
-		{
-			this.CreateRanks();
-		}
+        public Achievement() => CreateRanks();
 
-		protected virtual void CreateRanks()
+        protected virtual void CreateRanks()
 		{
-			this.CreateRanks<AchievementRank>(new List<AchievementRank>());
+			CreateRanks<AchievementRank>(new List<AchievementRank>());
 		}
 
 		protected virtual void CreateRanks<T>(IList<T> ranks)
 			where T : AchievementRank
 		{
-			this.Ranks = new VariantList<AchievementRank, T>(ranks);
+			Ranks = new VariantList<AchievementRank, T>(ranks);
 		}
 
 		[Key]
 		public string Name { get; set; }
 		[Required]
-		public string BaseType_Name { get; set; }
+		public string BaseTypeName { get; set; }
 		[Required]
-		public string AchievementType_Name { get; set; }
+		public string AchievementTypeName { get; set; }
 		[Required]
-		public string AchievementGroup_Name { get; set; }
+		public string AchievementGroupName { get; set; }
 
 		[ForeignKey("BaseType_Name, AchievementType_Name")]
 		public virtual EntityType AchievementType { get; set; }

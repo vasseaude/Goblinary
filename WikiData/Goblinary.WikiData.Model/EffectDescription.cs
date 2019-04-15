@@ -4,16 +4,13 @@
 	using System.Collections.Generic;
 	using System.ComponentModel.DataAnnotations;
 	using System.ComponentModel.DataAnnotations.Schema;
-	using System.Linq;
-	using System.Text;
-	using System.Threading.Tasks;
 
 	public class EffectDescription
 	{
 		public EffectDescription()
 		{
-			this.FeatEffects = new List<FeatEffect>();
-			this.FeatRankEffects = new List<FeatRankEffect>();
+			FeatEffects = new List<FeatEffect>();
+			FeatRankEffects = new List<FeatRankEffect>();
 		}
 
 		[Key]
@@ -21,25 +18,25 @@
 		[Required]
 		public string FormattedDescription { get; set; }
 		[Required]
-		public string Effect_Name { get; set; }
+		public string EffectName { get; set; }
 		public string Magnitude { get; set; }
 		public string Duration { get; set; }
 		public string Chance { get; set; }
 		public string Distance { get; set; }
 		public string Target { get; set; }
 		public string Discriminator { get; set; }
-		public string Condition_Name { get; set; }
+		public string ConditionName { get; set; }
 		public string ConditionTarget { get; set; }
 
 		[ForeignKey("Effect_Name")]
-		public virtual Effect Effect { get; set; }
+		public Effect Effect { get; set; }
 		[ForeignKey("Condition_Name")]
-		public virtual Condition Condition { get; set; }
+		public Condition Condition { get; set; }
 
 		[InverseProperty("EffectDescription")]
-		public virtual List<FeatEffect> FeatEffects { get; set; }
+		public List<FeatEffect> FeatEffects { get; set; }
 		[InverseProperty("EffectDescription")]
-		public virtual List<FeatRankEffect> FeatRankEffects { get; set; }
+		public List<FeatRankEffect> FeatRankEffects { get; set; }
 
 		public static Func<EffectDescription, string> ToStringMethod { get; set; }
 		public override string ToString()

@@ -1,26 +1,20 @@
 ﻿namespace Goblinary.WikiData.Model
 {
-	using System;
 	using System.Collections.Generic;
 	using System.ComponentModel.DataAnnotations;
 	using System.ComponentModel.DataAnnotations.Schema;
-	using System.Linq;
-	using System.Text;
-	using System.Threading.Tasks;
-
-	using Goblinary.Common;
 
 	public class GearType
 	{
 		public GearType()
 		{
-			this.Gear = new List<Gear>();
+			Gear = new List<Gear>();
 		}
 
 		[Key]
 		public string Name { get; set; }
-		public string WeaponCategory_Name { get; set; }
-		public string AttackBonus_Name { get; set; }
+		public string WeaponCategoryName { get; set; }
+		public string AttackBonusName { get; set; }
 
 		[ForeignKey("WeaponCategory_Name")]
 		public virtual WeaponCategory WeaponCategory { get; set; }
@@ -35,15 +29,15 @@
 	{
 		public WeaponType()
 		{
-			this.Weapons = new List<Weapon>();
+			Weapons = new List<Weapon>();
 		}
 
 		[Key]
 		public string Name { get; set; }
 		[Required]
-		public string WeaponCategory_Name { get; set; }
+		public string WeaponCategoryName { get; set; }
 		[Required]
-		public string AttackBonus_Name { get; set; }
+		public string AttackBonusName { get; set; }
 
 		[ForeignKey("WeaponCategory_Name")]
 		public virtual WeaponCategory WeaponCategory { get; set; }

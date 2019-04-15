@@ -846,6 +846,8 @@ namespace Goblinary.WikiData {
             private global::System.Data.DataColumn columnIngredient4;
             
             private global::System.Data.DataColumn columnQty4;
+
+            private global::System.Data.DataColumn columnAzoth;
             
             private global::System.Data.DataColumn columnOutput;
             
@@ -1013,7 +1015,17 @@ namespace Goblinary.WikiData {
                     return this.columnQty4;
                 }
             }
-            
+
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn AzothColumn
+            {
+                get
+                {
+                    return this.columnAzoth;
+                }
+            }
+
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn OutputColumn {
@@ -1235,6 +1247,7 @@ namespace Goblinary.WikiData {
                 this.columnQty3 = base.Columns["Qty3"];
                 this.columnIngredient4 = base.Columns["Ingredient4"];
                 this.columnQty4 = base.Columns["Qty4"];
+                this.columnAzoth = base.Columns["Azoth"];
                 this.columnOutput = base.Columns["Output"];
                 this.columnUpgrade = base.Columns["Upgrade"];
                 this.columnQty = base.Columns["Qty"];
@@ -1279,6 +1292,8 @@ namespace Goblinary.WikiData {
                 base.Columns.Add(this.columnIngredient4);
                 this.columnQty4 = new global::System.Data.DataColumn("Qty4", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnQty4);
+                this.columnAzoth = new global::System.Data.DataColumn("Azoth", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAzoth);
                 this.columnOutput = new global::System.Data.DataColumn("Output", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnOutput);
                 this.columnUpgrade = new global::System.Data.DataColumn("Upgrade", typeof(string), null, global::System.Data.MappingType.Element);

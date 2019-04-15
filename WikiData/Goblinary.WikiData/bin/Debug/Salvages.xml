@@ -1,0 +1,429 @@
+﻿<?xml version="1.0"?>
+<LookupDataSet xmlns="http://tempuri.org/LookupDataSet.xsd">
+    <Salvages>
+        <Salvage>Bag of Bitter Stuff (Goblinoid)</Salvage>
+        <Variety>Chemical</Variety>
+        <Tier>1</Tier>
+        <Encumbrance>0.1</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Bag of Dangerous Stuff (Goblinoid)</Salvage>
+        <Variety>Chemical</Variety>
+        <Tier>1</Tier>
+        <Encumbrance>0.1</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Bag of Dreamy Stuff (Goblinoid)</Salvage>
+        <Variety>Chemical</Variety>
+        <Tier>1</Tier>
+        <Encumbrance>0.1</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Bag of Fiery Stuff (Goblinoid)</Salvage>
+        <Variety>Chemical</Variety>
+        <Tier>1</Tier>
+        <Encumbrance>0.1</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Bag of Healthy Stuff (Goblinoid)</Salvage>
+        <Variety>Chemical</Variety>
+        <Tier>1</Tier>
+        <Encumbrance>0.1</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Bag of Itchy Stuff (Goblinoid)</Salvage>
+        <Variety>Chemical</Variety>
+        <Tier>1</Tier>
+        <Encumbrance>0.1</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Bag of Smelly Stuff (Goblinoid)</Salvage>
+        <Variety>Chemical</Variety>
+        <Tier>1</Tier>
+        <Encumbrance>0.1</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Bag of Sticky Stuff (Goblinoid)</Salvage>
+        <Variety>Chemical</Variety>
+        <Tier>1</Tier>
+        <Encumbrance>0.1</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Blood Crystals (Animal)</Salvage>
+        <Variety>Chemical</Variety>
+        <Tier>1</Tier>
+        <Encumbrance>0.1</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Crude Knockout Gas (Bandit)</Salvage>
+        <Variety>Chemical</Variety>
+        <Tier>1</Tier>
+        <Encumbrance>0.1</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Energized Flora (Animal)</Salvage>
+        <Variety>Chemical</Variety>
+        <Tier>1</Tier>
+        <Encumbrance>0.1</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Painful Stanching Fluid (Cultist)</Salvage>
+        <Variety>Chemical</Variety>
+        <Tier>1</Tier>
+        <Encumbrance>0.1</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Secret Giant Mushrooms (Giant)</Salvage>
+        <Variety>Chemical</Variety>
+        <Tier>1</Tier>
+        <Encumbrance>0.1</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Sleep Stones (Animal)</Salvage>
+        <Variety>Chemical</Variety>
+        <Tier>1</Tier>
+        <Encumbrance>0.1</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Target Marking Paint (Bandit)</Salvage>
+        <Variety>Chemical</Variety>
+        <Tier>1</Tier>
+        <Encumbrance>0.1</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Bridge Burning Kit (Goblinoid)</Salvage>
+        <Variety>Chemical</Variety>
+        <Tier>2</Tier>
+        <Encumbrance>0.1</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Crawling Crystals (Animal)</Salvage>
+        <Variety>Chemical</Variety>
+        <Tier>2</Tier>
+        <Encumbrance>0.1</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Crude Longsleep (Bandit)</Salvage>
+        <Variety>Chemical</Variety>
+        <Tier>2</Tier>
+        <Encumbrance>0.1</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Diversion Kit (Goblinoid)</Salvage>
+        <Variety>Chemical</Variety>
+        <Tier>2</Tier>
+        <Encumbrance>0.1</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Field Medical Kit (Goblinoid)</Salvage>
+        <Variety>Chemical</Variety>
+        <Tier>2</Tier>
+        <Encumbrance>0.1</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Galtroot Liquor (Raider)</Salvage>
+        <Variety>Chemical</Variety>
+        <Tier>2</Tier>
+        <Encumbrance>0.1</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Improperly Made Sunrod (Bandit)</Salvage>
+        <Variety>Chemical</Variety>
+        <Tier>2</Tier>
+        <Encumbrance>0.1</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Invigorating Balm (Animal)</Salvage>
+        <Variety>Chemical</Variety>
+        <Tier>2</Tier>
+        <Encumbrance>0.1</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Purgative Kit (Goblinoid)</Salvage>
+        <Variety>Chemical</Variety>
+        <Tier>2</Tier>
+        <Encumbrance>0.1</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Relaxation Kit (Goblinoid)</Salvage>
+        <Variety>Chemical</Variety>
+        <Tier>2</Tier>
+        <Encumbrance>0.1</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Secret Giant Moss (Giant)</Salvage>
+        <Variety>Chemical</Variety>
+        <Tier>2</Tier>
+        <Encumbrance>0.1</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Soothing Blue Mud (Goblinoid)</Salvage>
+        <Variety>Chemical</Variety>
+        <Tier>2</Tier>
+        <Encumbrance>0.1</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Sticky Pine Resin (Bandit)</Salvage>
+        <Variety>Chemical</Variety>
+        <Tier>2</Tier>
+        <Encumbrance>0.1</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Toxic Kit (Goblinoid)</Salvage>
+        <Variety>Chemical</Variety>
+        <Tier>2</Tier>
+        <Encumbrance>0.1</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Tunnel Marking Kit (Goblinoid)</Salvage>
+        <Variety>Chemical</Variety>
+        <Tier>2</Tier>
+        <Encumbrance>0.1</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Unusual Spices (Animal)</Salvage>
+        <Variety>Chemical</Variety>
+        <Tier>2</Tier>
+        <Encumbrance>0.1</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Weird Cultist Drugs (Cultist)</Salvage>
+        <Variety>Chemical</Variety>
+        <Tier>2</Tier>
+        <Encumbrance>0.1</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Secret Giant Peppers (Giant)</Salvage>
+        <Variety>Chemical</Variety>
+        <Tier>3</Tier>
+        <Encumbrance>0.1</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Secret Giant Tree (Giant)</Salvage>
+        <Variety>Chemical</Variety>
+        <Tier>3</Tier>
+        <Encumbrance>0.1</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Peasant Rags (Animal)</Salvage>
+        <Variety>Cloth</Variety>
+        <Tier>1</Tier>
+        <Encumbrance>1</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Torn Acolyte Robes (Humanoid)</Salvage>
+        <Variety>Cloth</Variety>
+        <Tier>1</Tier>
+        <Encumbrance>1</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Torn Peasant Clothes (Humanoid)</Salvage>
+        <Variety>Cloth</Variety>
+        <Tier>1</Tier>
+        <Encumbrance>1</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Cotton Nesting (Animal)</Salvage>
+        <Variety>Cloth</Variety>
+        <Tier>2</Tier>
+        <Encumbrance>1</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Torn Adept Robes (Humanoid)</Salvage>
+        <Variety>Cloth</Variety>
+        <Tier>2</Tier>
+        <Encumbrance>1</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Torn Merchant Clothes (Humanoid)</Salvage>
+        <Variety>Cloth</Variety>
+        <Tier>2</Tier>
+        <Encumbrance>1</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Torn Master Robes</Salvage>
+        <Variety>Cloth</Variety>
+        <Tier>3</Tier>
+        <Encumbrance>1</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Torn Noble Clothes (Humanoid)</Salvage>
+        <Variety>Cloth</Variety>
+        <Tier>3</Tier>
+        <Encumbrance>1</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Fragment of Battle (Humanoid)</Salvage>
+        <Variety>Essence</Variety>
+        <Tier>1</Tier>
+        <Encumbrance>0.1</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Fragment of Learning (Humanoid)</Salvage>
+        <Variety>Essence</Variety>
+        <Tier>1</Tier>
+        <Encumbrance>0.1</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Fragment of Secrets (Humanoid)</Salvage>
+        <Variety>Essence</Variety>
+        <Tier>1</Tier>
+        <Encumbrance>0.1</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Curio of Defiance (Humanoid)</Salvage>
+        <Variety>Essence</Variety>
+        <Tier>2</Tier>
+        <Encumbrance>0.1</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Curio of Peace (Humanoid)</Salvage>
+        <Variety>Essence</Variety>
+        <Tier>2</Tier>
+        <Encumbrance>0.1</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Curio of Vengeance (Humanoid)</Salvage>
+        <Variety>Essence</Variety>
+        <Tier>2</Tier>
+        <Encumbrance>0.1</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Relic of Arcana (Humanoid)</Salvage>
+        <Variety>Essence</Variety>
+        <Tier>3</Tier>
+        <Encumbrance>0.1</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Relic of Divinity (Humanoid)</Salvage>
+        <Variety>Essence</Variety>
+        <Tier>3</Tier>
+        <Encumbrance>0.1</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Relic of Inspiration (Humanoid)</Salvage>
+        <Variety>Essence</Variety>
+        <Tier>3</Tier>
+        <Encumbrance>0.1</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Basic Armor Scraps (Humanoid)</Salvage>
+        <Variety>Leather</Variety>
+        <Tier>1</Tier>
+        <Encumbrance>1.33</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Dead Prey (Animal)</Salvage>
+        <Variety>Leather</Variety>
+        <Tier>1</Tier>
+        <Encumbrance>1</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Goblin Armor Scraps (Goblinoid)</Salvage>
+        <Variety>Leather</Variety>
+        <Tier>1</Tier>
+        <Encumbrance>1.33</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Advanced Armor Scraps (Humanoid)</Salvage>
+        <Variety>Leather</Variety>
+        <Tier>2</Tier>
+        <Encumbrance>1.33</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Dead Predator (Animal)</Salvage>
+        <Variety>Leather</Variety>
+        <Tier>2</Tier>
+        <Encumbrance>1</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Hobgoblin Armor Scraps (Goblinoid)</Salvage>
+        <Variety>Leather</Variety>
+        <Tier>2</Tier>
+        <Encumbrance>1.33</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Master Armor Scraps (Humanoid)</Salvage>
+        <Variety>Leather</Variety>
+        <Tier>3</Tier>
+        <Encumbrance>1.33</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Broken Basic Weapons (Humanoid)</Salvage>
+        <Variety>Metal</Variety>
+        <Tier>1</Tier>
+        <Encumbrance>1.33</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Broken Goblin Weapons (Goblinoid)</Salvage>
+        <Variety>Metal</Variety>
+        <Tier>1</Tier>
+        <Encumbrance>1.33</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Nonstandard Silver Bits (Humanoid)</Salvage>
+        <Variety>Metal</Variety>
+        <Tier>1</Tier>
+        <Encumbrance>0.5</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Broken Advanced Weapons (Humanoid)</Salvage>
+        <Variety>Metal</Variety>
+        <Tier>2</Tier>
+        <Encumbrance>1.33</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Broken Hobgoblin Weapons (Humanoid)</Salvage>
+        <Variety>Metal</Variety>
+        <Tier>2</Tier>
+        <Encumbrance>1.33</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Nonstandard Gold Bits (Humanoid)</Salvage>
+        <Variety>Metal</Variety>
+        <Tier>2</Tier>
+        <Encumbrance>0.5</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Broken Master Weapon (Humanoid)</Salvage>
+        <Variety>Metal</Variety>
+        <Tier>3</Tier>
+        <Encumbrance>1.33</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Nonstandard Platinum Bits (Humanoid)</Salvage>
+        <Variety>Metal</Variety>
+        <Tier>3</Tier>
+        <Encumbrance>0.5</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Destroyed Peasant Furniture (Humanoid)</Salvage>
+        <Variety>Wood</Variety>
+        <Tier>1</Tier>
+        <Encumbrance>1.33</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Shattered Merchant Furniture (Humanoid)</Salvage>
+        <Variety>Wood</Variety>
+        <Tier>2</Tier>
+        <Encumbrance>1.33</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Cracked Noble Furniture (Humanoid)</Salvage>
+        <Variety>Wood</Variety>
+        <Tier>3</Tier>
+        <Encumbrance>1.33</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Victory Marker</Salvage>
+        <Variety>Unknown</Variety>
+        <Tier>1</Tier>
+        <Encumbrance>0.1</Encumbrance>
+   </Salvages>
+    <Salvages>
+        <Salvage>Reference Book</Salvage>
+        <Variety>Unknown</Variety>
+        <Tier>1</Tier>
+        <Encumbrance>0.1</Encumbrance>
+   </Salvages>
+</LookupDataSet>

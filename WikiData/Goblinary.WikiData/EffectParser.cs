@@ -10,12 +10,12 @@
 	{
 		static EffectParser()
 		{
-			elementNames = new Dictionary<string, string>();
-			Regex patternParser = new Regex(elementPattern);
+			ElementNames = new Dictionary<string, string>();
+			var patternParser = new Regex(elementPattern);
 			foreach (Match m in patternParser.Matches(entryPattern))
 			{
-				string elementName = m.Value.XRegexReplaceSimple(elementPattern, "${ElementName}");
-				elementNames[elementName] = "${" + elementName + "}";
+				var elementName = m.Value.XRegexReplaceSimple(elementPattern, "${ElementName}");
+				ElementNames[elementName] = "${" + elementName + "}";
 			}
 		}
 
@@ -36,12 +36,12 @@
 				+ @")?"
 				+ @"( (?<PerKeyword>per Keyword))?"
 			+ @")$";
-		private static Dictionary<string, string> elementNames;
+		private static readonly Dictionary<string, string> ElementNames;
 
 		public static List<Dictionary<string, string>> Parse(string effectsText)
 		{
-			List<Dictionary<string, string>> effects = new List<Dictionary<string, string>>();
-			string remainder = effectsText
+			var effects = new List<Dictionary<string, string>>();
+			var remainder = effectsText
 				.XRegexReplaceSimple("[Rr]ounds?", "Rounds")
 				.XRegexReplaceSimple("[Ss]econds?s?", "Seconds")
 				.XRegexReplaceSimple("[Mm]eters?", "Meters")
@@ -49,14 +49,14 @@
 				.XRegexReplaceSimple("[Tt]arget", "Target");
 			while (remainder != "")
 			{
-				string entry = remainder.XRegexReplace(textPattern, "${Entry}", RegexReplaceEmptyResultBehaviors.ThrowError);
-				Dictionary<string, string> elements = new Dictionary<string, string>();
-				foreach (string elementName in elementNames.Keys)
+				var entry = remainder.XRegexReplace(textPattern, "${Entry}", RegexReplaceEmptyResultBehaviors.ThrowError);
+				var elements = new Dictionary<string, string>();
+				foreach (var elementName in ElementNames.Keys)
 				{
-					elements[elementName] = entry.XRegexReplace(entryPattern, elementNames[elementName], RegexReplaceEmptyResultBehaviors.Ignore);
+					elements[elementName] = entry.XRegexReplace(entryPattern, ElementNames[elementName]);
 				}
 				effects.Add(elements);
-				remainder = remainder.XRegexReplace(textPattern, "${Remainder}", RegexReplaceEmptyResultBehaviors.Ignore);
+				remainder = remainder.XRegexReplace(textPattern, "${Remainder}");
 			}
 			return effects;
 		}

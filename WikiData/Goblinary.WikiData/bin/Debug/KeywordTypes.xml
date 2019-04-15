@@ -1,0 +1,27 @@
+﻿<?xml version="1.0"?>
+<LookupDataSet xmlns="http://tempuri.org/LookupDataSet.xsd">
+    <KeywordTypes>
+        <KeywordType>Armor</KeywordType>
+        <SourceFeatType>ArmorFeat</SourceFeatType>
+        <MatchingFeatType></MatchingFeatType>
+        <MatchingItemType>Armor</MatchingItemType>
+    </KeywordTypes>
+    <KeywordTypes>
+        <KeywordType>Gear</KeywordType>
+        <SourceFeatType>Utility</SourceFeatType>
+        <MatchingFeatType></MatchingFeatType>
+        <MatchingItemType>Gear</MatchingItemType>
+    </KeywordTypes>
+    <KeywordTypes>
+        <KeywordType>Implement</KeywordType>
+        <SourceFeatType>Expendable</SourceFeatType>
+        <MatchingFeatType>Feature</MatchingFeatType>
+        <MatchingItemType></MatchingItemType>
+    </KeywordTypes>
+    <KeywordTypes>
+        <KeywordType>Weapon</KeywordType>
+        <SourceFeatType>Attack</SourceFeatType>
+        <MatchingFeatType></MatchingFeatType>
+        <MatchingItemType>Weapon</MatchingItemType>
+    </KeywordTypes>
+</LookupDataSet>

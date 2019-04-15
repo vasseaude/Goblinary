@@ -1,0 +1,795 @@
+﻿<?xml version="1.0"?>
+<LookupDataSet xmlns="http://tempuri.org/LookupDataSet.xsd">
+    <ResourceTypes>
+        <ResourceType>Adamantine Ore</ResourceType>
+        <Variety>Metal</Variety>
+        <Tier>3</Tier>
+        <BaseEncumbrance>0.5</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Alder Bark</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>3</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Alkanet Root</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>3</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Anagogic Essence</ResourceType>
+        <Variety>Essence</Variety>
+        <Tier>2</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Animal Pelt</ResourceType>
+        <Variety>Leather</Variety>
+        <Tier>1</Tier>
+        <BaseEncumbrance>0.25</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Anise Seeds</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>3</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Antimony</ResourceType>
+        <Variety>Mineral</Variety>
+        <Tier>2</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Antithesis Essence</ResourceType>
+        <Variety>Essence</Variety>
+        <Tier>1</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Aqua Fortis</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>3</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Aqua Mortis</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>3</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Arnica Root</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>2</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Ash Sapling</ResourceType>
+        <Variety>Wood</Variety>
+        <Tier>3</Tier>
+        <BaseEncumbrance>0.5</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Beast Pelt</ResourceType>
+        <Variety>Leather</Variety>
+        <Tier>1</Tier>
+        <BaseEncumbrance>0.25</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Belladonna Berries</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>1</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Black Lotus Petals</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>3</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Black Opal</ResourceType>
+        <Variety>Gem</Variety>
+        <Tier>3</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Black Pearl</ResourceType>
+        <Variety>Gem</Variety>
+        <Tier>3</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Blood Nettle</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>1</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Bloodflower Gum</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>1</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Bloodstone</ResourceType>
+        <Variety>Gem</Variety>
+        <Tier>1</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Blue Sapphire</ResourceType>
+        <Variety>Gem</Variety>
+        <Tier>3</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Brimstone</ResourceType>
+        <Variety>Mineral</Variety>
+        <Tier>1</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Buckthorn Berries</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>1</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Cabble-Weed</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>1</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Centaury Leaves</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>2</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Chervil Flowers</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>2</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Chickweed</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>1</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Childstealer Ivy</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>3</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Chrysoprase</ResourceType>
+        <Variety>Gem</Variety>
+        <Tier>1</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Cinnabar</ResourceType>
+        <Variety>Mineral</Variety>
+        <Tier>1</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Coal</ResourceType>
+        <Variety>Mineral</Variety>
+        <Tier>1</Tier>
+        <BaseEncumbrance>0.5</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Coltsfoot Leaves</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>1</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Comfrey Leaves</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>1</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Copper Ore</ResourceType>
+        <Variety>Metal</Variety>
+        <Tier>1</Tier>
+        <BaseEncumbrance>0.5</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Coriander Fruit</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>2</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Cotton</ResourceType>
+        <Variety>Cloth</Variety>
+        <Tier>2</Tier>
+        <BaseEncumbrance>0.25</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Cowbane</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>2</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Creature Pelt</ResourceType>
+        <Variety>Leather</Variety>
+        <Tier>2</Tier>
+        <BaseEncumbrance>0.25</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Cryptic Essence</ResourceType>
+        <Variety>Essence</Variety>
+        <Tier>3</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Cypress Oil</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>2</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Dawnflower Oil</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>2</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Deep Blue Spinel</ResourceType>
+        <Variety>Gem</Variety>
+        <Tier>2</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Dragon Skin</ResourceType>
+        <Variety>Leather</Variety>
+        <Tier>3</Tier>
+        <BaseEncumbrance>0.25</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Dragoon Leaves</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>1</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Dreamglow Mushrooms</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>1</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Dweomer Essence</ResourceType>
+        <Variety>Essence</Variety>
+        <Tier>3</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Ebonroot</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>3</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Emerald</ResourceType>
+        <Variety>Gem</Variety>
+        <Tier>3</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Eraser Poppy Seeds</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>3</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Esoteric Essence</ResourceType>
+        <Variety>Essence</Variety>
+        <Tier>1</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Fennel Seeds</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>1</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Fire Opal</ResourceType>
+        <Variety>Gem</Variety>
+        <Tier>3</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Flayleaf</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>3</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Foxfire</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>1</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Foxglove</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>2</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Freshwater Pearl</ResourceType>
+        <Variety>Gem</Variety>
+        <Tier>1</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Fumbleroot</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>2</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Galtroot</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>3</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Gentian</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>1</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Ghostwood Log</ResourceType>
+        <Variety>Wood</Variety>
+        <Tier>3</Tier>
+        <BaseEncumbrance>0.5</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Gold Ore</ResourceType>
+        <Variety>Metal</Variety>
+        <Tier>2</Tier>
+        <BaseEncumbrance>0.5</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Golden Yellow Topaz</ResourceType>
+        <Variety>Gem</Variety>
+        <Tier>2</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Greenweed</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>1</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Ground Ivy</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>2</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Hemlock</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>2</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Hemp</ResourceType>
+        <Variety>Cloth</Variety>
+        <Tier>1</Tier>
+        <BaseEncumbrance>0.25</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Henbane</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>1</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Horehound</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>2</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Hyssop Oil</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>1</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Indigo Leaves</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>2</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Iron Ore</ResourceType>
+        <Variety>Metal</Variety>
+        <Tier>1</Tier>
+        <BaseEncumbrance>0.5</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Jade</ResourceType>
+        <Variety>Gem</Variety>
+        <Tier>2</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Jet</ResourceType>
+        <Variety>Gem</Variety>
+        <Tier>2</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Juniper Berries</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>1</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Kermes Beetles</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>3</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Lamp Oil</ResourceType>
+        <Variety>Mineral</Variety>
+        <Tier>1</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Large Diamond</ResourceType>
+        <Variety>Gem</Variety>
+        <Tier>3</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Laurel Leaves</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>1</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Lodestone</ResourceType>
+        <Variety>Metal</Variety>
+        <Tier>2</Tier>
+        <BaseEncumbrance>0.5</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Madder Root</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>3</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Mandrake</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>3</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Maple Sapling</ResourceType>
+        <Variety>Wood</Variety>
+        <Tier>2</Tier>
+        <BaseEncumbrance>0.5</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Meteoric Iron Ore</ResourceType>
+        <Variety>Metal</Variety>
+        <Tier>2</Tier>
+        <BaseEncumbrance>0.5</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Monster Pelt</ResourceType>
+        <Variety>Leather</Variety>
+        <Tier>2</Tier>
+        <BaseEncumbrance>0.25</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Moonstone</ResourceType>
+        <Variety>Gem</Variety>
+        <Tier>1</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Mugwort Root</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>3</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Murder Moss</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>3</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Nettle</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>2</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Neversleep Sap</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>1</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Oak Log</ResourceType>
+        <Variety>Wood</Variety>
+        <Tier>2</Tier>
+        <BaseEncumbrance>0.5</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Oil of Vitriol</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>3</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Onyx</ResourceType>
+        <Variety>Gem</Variety>
+        <Tier>1</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Orchil Lichen</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>3</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Ordered Essence</ResourceType>
+        <Variety>Essence</Variety>
+        <Tier>1</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Paraffin Wax</ResourceType>
+        <Variety>Mineral</Variety>
+        <Tier>2</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Pine Log</ResourceType>
+        <Variety>Wood</Variety>
+        <Tier>1</Tier>
+        <BaseEncumbrance>0.5</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Pitcher Plant Sap</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>2</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Platinum Ore</ResourceType>
+        <Variety>Metal</Variety>
+        <Tier>3</Tier>
+        <BaseEncumbrance>0.5</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Quicklime</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>3</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Quicksilver</ResourceType>
+        <Variety>Mineral</Variety>
+        <Tier>2</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Red Garnet</ResourceType>
+        <Variety>Gem</Variety>
+        <Tier>2</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Red Heartwood</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>3</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Resonant Essence</ResourceType>
+        <Variety>Essence</Variety>
+        <Tier>2</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Ruby</ResourceType>
+        <Variety>Gem</Variety>
+        <Tier>3</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Sablecap Mushroom</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>3</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Sal Ammoniac</ResourceType>
+        <Variety>Mineral</Variety>
+        <Tier>1</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Saltpeter</ResourceType>
+        <Variety>Mineral</Variety>
+        <Tier>2</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Seething Essence</ResourceType>
+        <Variety>Essence</Variety>
+        <Tier>2</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Shadow Skin</ResourceType>
+        <Variety>Leather</Variety>
+        <Tier>3</Tier>
+        <BaseEncumbrance>0.25</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Silk</ResourceType>
+        <Variety>Cloth</Variety>
+        <Tier>3</Tier>
+        <BaseEncumbrance>0.25</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Silver Ore</ResourceType>
+        <Variety>Metal</Variety>
+        <Tier>1</Tier>
+        <BaseEncumbrance>0.5</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Silver Pearl</ResourceType>
+        <Variety>Gem</Variety>
+        <Tier>2</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Sleepmelt Leaves</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>2</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Small Diamond</ResourceType>
+        <Variety>Gem</Variety>
+        <Tier>2</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Smoke Peppers</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>1</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Synthesis Essence</ResourceType>
+        <Variety>Essence</Variety>
+        <Tier>3</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Tansy Leaves</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>1</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Tigereye</ResourceType>
+        <Variety>Gem</Variety>
+        <Tier>1</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Tormentil</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>2</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Truesilver Ore</ResourceType>
+        <Variety>Metal</Variety>
+        <Tier>3</Tier>
+        <BaseEncumbrance>0.5</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Valerian Root</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>1</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Vervain Leaves</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>2</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Weld Leaves</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>1</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Weltwood Bark</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>3</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Willow Bark</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>3</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Woad Leaves</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>2</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Wolfsbane</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>3</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Wool</ResourceType>
+        <Variety>Cloth</Variety>
+        <Tier>1</Tier>
+        <BaseEncumbrance>0.25</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Wormwood</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>3</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>YarResourceType Flowers</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>2</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Yellowcap Mushrooms</ResourceType>
+        <Variety>Herb</Variety>
+        <Tier>2</Tier>
+        <BaseEncumbrance>0.04</BaseEncumbrance>
+    </ResourceTypes>
+    <ResourceTypes>
+        <ResourceType>Yew Sapling</ResourceType>
+        <Variety>Wood</Variety>
+        <Tier>1</Tier>
+        <BaseEncumbrance>0.5</BaseEncumbrance>
+    </ResourceTypes>
+</LookupDataSet>

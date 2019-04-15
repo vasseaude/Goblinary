@@ -1,10 +1,7 @@
 ﻿namespace Goblinary.Common
 {
 	using System;
-	using System.Collections.Generic;
-	using System.Linq;
-	using System.Text;
-	using System.Threading.Tasks;
+
 
 	public enum PresentationTypes
 	{
@@ -12,13 +9,13 @@
 		Wrapper,
 	}
 
-	[AttributeUsage(AttributeTargets.All, AllowMultiple = false)]
+	[AttributeUsage(AttributeTargets.All)]
 	public class PresentationAttribute : Attribute
 	{
 		public PresentationAttribute(PresentationTypes presentationType)
 		{
-			this.PresentationType = presentationType;
-			this.DisplayOrder = int.MaxValue;
+			PresentationType = presentationType;
+			DisplayOrder = int.MaxValue;
 		}
 
 		public PresentationAttribute()
@@ -26,7 +23,7 @@
 		{
 		}
 
-		public PresentationTypes PresentationType { get; private set; }
+		public PresentationTypes PresentationType { get; }
 		public string DisplayName { get; set; }
 		public int DisplayOrder { get; set; }
 	}

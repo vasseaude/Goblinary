@@ -1,0 +1,1758 @@
+﻿<?xml version="1.0"?>
+<LookupDataSet xmlns="http://tempuri.org/LookupDataSet.xsd">
+    <StockIngredients>
+        <Stock>Adamantine Ore</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Adamantine Ore</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Adamantine Ore</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Broken Master Weapon (Humanoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Anagogic Essence</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Anagogic Essence</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Anagogic Essence</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Curio of Peace (Humanoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Anagogic Essence</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Curio of Vengeance (Humanoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Anagogic Essence</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Unusual Spices (Animal)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Animal Pelt</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Animal Pelt</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Animal Pelt</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Basic Armor Scraps (Humanoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Animal Pelt</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Dead Prey (Animal)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Animal Pelt</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Goblin Armor Scraps (Goblinoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Antithesis Essence</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Antithesis Essence</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Antithesis Essence</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Energized Flora (Animal)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Antithesis Essence</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Fragment of Battle (Humanoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Antithesis Essence</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Fragment of Secrets (Humanoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Ash Log</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Ash Sapling</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Ash Log</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Cracked Noble Furniture (Humanoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Beast Pelt</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Beast Pelt</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Beast Pelt</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Basic Armor Scraps (Humanoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Beast Pelt</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Dead Prey (Animal)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Beast Pelt</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Goblin Armor Scraps (Goblinoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Black</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Ebonroot</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Black</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Sablecap Mushroom</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Blue</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Indigo Leaves</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Blue</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Woad Leaves</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Blue</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Soothing Blue Mud (Goblinoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Coal</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Coal</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Copper Ore</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Copper Ore</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Copper Ore</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Broken Basic Weapons (Humanoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Copper Ore</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Broken Goblin Weapons (Goblinoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Cotton</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Cotton</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Cotton</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Cotton Nesting (Animal)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Cotton</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Torn Adept Robes (Humanoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Cotton</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Torn Merchant Clothes (Humanoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Creature Pelt</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Creature Pelt</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Creature Pelt</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Advanced Armor Scraps (Humanoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Creature Pelt</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Dead Predator (Animal)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Creature Pelt</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Hobgoblin Armor Scraps (Goblinoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Cryptic Essence</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Cryptic Essence</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Cryptic Essence</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Relic of Divinity (Humanoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Cryptic Essence</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Relic of Inspiration (Humanoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Decorative</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Bloodstone</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Decorative</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Freshwater Pearl</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Decorative</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Tigereye</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Diamond</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Small Diamond</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Dragon Skin</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Dragon Skin</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Dragon Skin</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Master Armor Scraps (Humanoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Dweomer Essence</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Dweomer Essence</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Dweomer Essence</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Relic of Arcana (Humanoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Dweomer Essence</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Relic of Inspiration (Humanoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Esoteric Essence</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Esoteric Essence</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Esoteric Essence</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Fragment of Learning (Humanoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Esoteric Essence</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Fragment of Secrets (Humanoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Esoteric Essence</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Sleep Stones (Animal)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Fancy</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Black Opal</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Fancy</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Black Pearl</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Fancy</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Fire Opal</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Ghostwood Log</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Ghostwood Log</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Ghostwood Log</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Cracked Noble Furniture (Humanoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Gold Ore</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Gold Ore</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Gold Ore</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Nonstandard Gold Bits (Humanoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Greater Consonant</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Golden Yellow Topaz</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Greater Consonant</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Jade</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Greater Numinous</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Deep Blue Spinel</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Greater Numinous</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Silver Pearl</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Greater Vital</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Jet</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Greater Vital</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Red Garnet</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Green</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Greenweed</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Green</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Bag of Itchy Stuff (Goblinoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Hemp</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Hemp</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Hemp</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Peasant Rags (Animal)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Hemp</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Torn Acolyte Robes (Humanoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Hemp</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Torn Peasant Clothes (Humanoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Iron Ore</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Iron Ore</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Iron Ore</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Broken Basic Weapons (Humanoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Iron Ore</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Broken Goblin Weapons (Goblinoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Jewel</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Blue Sapphire</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Jewel</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Emerald</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Jewel</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Large Diamond</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Jewel</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Ruby</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Lesser Consonant</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Chrysoprase</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Lesser Consonant</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Tigereye</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Lesser Numinous</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Freshwater Pearl</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Lesser Numinous</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Moonstone</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Lesser Vital</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Bloodstone</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Lesser Vital</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Onyx</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Lodestone</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Lodestone</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Lodestone</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Broken Advanced Weapons (Humanoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Lodestone</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Broken Hobgoblin Weapons (Humanoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Maple Log</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Maple Sapling</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Maple Log</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Shattered Merchant Furniture (Humanoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Meteoric Iron Ore</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Meteoric Iron Ore</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Meteoric Iron Ore</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Broken Advanced Weapons (Humanoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Meteoric Iron Ore</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Broken Hobgoblin Weapons (Humanoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Acidic</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Saltpeter</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Acidic</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Sleepmelt Leaves</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Acidic</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Yellowcap Mushrooms</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Acidic</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Tunnel Marking Kit (Goblinoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Adhesive</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Pitcher Plant Sap</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Adhesive</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Bridge Burning Kit (Goblinoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Adhesive</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Sticky Pine Resin (Bandit)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Antiseptic</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Centaury Leaves</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Antiseptic</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Chervil Flowers</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Antiseptic</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Coriander Fruit</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Antiseptic</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Ground Ivy</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Antiseptic</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Horehound</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Antiseptic</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Tormentil</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Antiseptic</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Vervain Leaves</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Antiseptic</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Field Medical Kit (Goblinoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Antiseptic</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Galtroot Liquor (Raider)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Antiseptic</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Sticky Pine Resin (Bandit)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Aromatic</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Coriander Fruit</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Aromatic</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Dawnflower Oil</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Aromatic</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Pitcher Plant Sap</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Aromatic</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Diversion Kit (Goblinoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Aromatic</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Unusual Spices (Animal)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Cathartic</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Cypress Oil</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Cathartic</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Horehound</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Cathartic</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Purgative Kit (Goblinoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Deadly</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Foxglove</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Deadly</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Fumbleroot</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Deadly</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Hemlock</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Deadly</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Quicksilver</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Deadly</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Crude Longsleep (Bandit)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Deadly</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Toxic Kit (Goblinoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Flammable</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Antimony</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Flammable</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Paraffin Wax</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Flammable</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Saltpeter</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Flammable</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Bridge Burning Kit (Goblinoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Flammable</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Improperly Made Sunrod (Bandit)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Hallucinogenic</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Cowbane</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Hallucinogenic</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Yellowcap Mushrooms</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Hallucinogenic</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Relaxation Kit (Goblinoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Irritant</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Antimony</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Irritant</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Quicksilver</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Irritant</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Crawling Crystals (Animal)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Irritant</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Diversion Kit (Goblinoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Irritant</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Secret Giant Moss (Giant)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Luminous</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Dawnflower Oil</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Luminous</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Improperly Made Sunrod (Bandit)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Luminous</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Tunnel Marking Kit (Goblinoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Sanguine</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Arnica Root</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Sanguine</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Nettle</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Sanguine</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Vervain Leaves</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Sanguine</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Yarrow Flowers</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Sanguine</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Secret Giant Moss (Giant)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Sanguine</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Toxic Kit (Goblinoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Sedative</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Arnica Root</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Sedative</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Centaury Leaves</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Sedative</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Fumbleroot</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Sedative</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Crude Longsleep (Bandit)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Sedative</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Relaxation Kit (Goblinoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Soothing</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Chervil Flowers</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Soothing</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Cowbane</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Soothing</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Ground Ivy</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Soothing</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Hemlock</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Soothing</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Nettle</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Soothing</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Paraffin Wax</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Soothing</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Soothing Blue Mud (Goblinoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Soothing</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Weird Cultist Drugs (Cultist)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Stimulant</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Foxglove</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Stimulant</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Sleepmelt Leaves</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Stimulant</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Galtroot Liquor (Raider)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Stimulant</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Invigorating Balm (Animal)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Stimulant</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Purgative Kit (Goblinoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Stimulant</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Weird Cultist Drugs (Cultist)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Tonic</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Cypress Oil</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Tonic</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Tormentil</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Tonic</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Yarrow Flowers</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Moderate Tonic</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Field Medical Kit (Goblinoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Monster Pelt</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Monster Pelt</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Monster Pelt</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Advanced Armor Scraps (Humanoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Monster Pelt</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Dead Predator (Animal)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Monster Pelt</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Hobgoblin Armor Scraps (Goblinoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Oak Log</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Oak Log</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Oak Log</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Shattered Merchant Furniture (Humanoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Ordered Essence</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Ordered Essence</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Ordered Essence</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Blood Crystals (Animal)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Ordered Essence</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Fragment of Battle (Humanoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Ordered Essence</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Fragment of Learning (Humanoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Ornamental</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Jade</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Ornamental</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Jet</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Ornamental</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Silver Pearl</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Pine Log</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Pine Log</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Pine Log</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Destroyed Peasant Furniture (Humanoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Platinum Ore</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Platinum Ore</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Platinum Ore</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Nonstandard Platinum Bits (Humanoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Precious</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Deep Blue Spinel</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Precious</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Golden Yellow Topaz</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Precious</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Red Garnet</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Precious</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Small Diamond</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Purple</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Alkanet Root</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Purple</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Kermes Beetles</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Purple</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Orchil Lichen</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Red</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Alkanet Root</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Red</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Kermes Beetles</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Red</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Madder Root</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Red</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Red Heartwood</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Resonant Essence</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Resonant Essence</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Resonant Essence</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Curio of Defiance (Humanoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Resonant Essence</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Curio of Peace (Humanoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Resonant Essence</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Invigorating Balm (Animal)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Seething Essence</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Seething Essence</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Seething Essence</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Crawling Crystals (Animal)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Seething Essence</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Curio of Defiance (Humanoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Seething Essence</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Curio of Vengeance (Humanoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Semi-Precious</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Chrysoprase</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Semi-Precious</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Moonstone</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Semi-Precious</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Onyx</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Shadow Skin</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Shadow Skin</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Shadow Skin</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Master Armor Scraps (Humanoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Silk</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Silk</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Silk</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Torn Master Robes</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Silk</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Torn Noble Clothes (Humanoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Silver Ore</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Silver Ore</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Silver Ore</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Nonstandard Silver Bits (Humanoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Strong Acidic</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Aqua Fortis</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Strong Acidic</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Eraser Poppy Seeds</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Strong Acidic</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Oil of Vitriol</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Strong Acidic</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Secret Giant Peppers (Giant)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Strong Adhesive</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Childstealer Ivy</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Strong Antiseptic</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Alder Bark</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Strong Antiseptic</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Anise Seeds</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Strong Antiseptic</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Mugwort Root</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Strong Antiseptic</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Oil of Vitriol</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Strong Aromatic</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Aqua Fortis</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Strong Aromatic</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Wormwood</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Strong Cathartic</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Anise Seeds</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Strong Cathartic</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Black Lotus Petals</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Strong Cathartic</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Mugwort Root</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Strong Cathartic</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Secret Giant Tree (Giant)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Strong Deadly</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Black Lotus Petals</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Strong Deadly</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Mandrake</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Strong Deadly</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Weltwood Bark</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Strong Deadly</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Wolfsbane</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Strong Flammable</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Aqua Mortis</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Strong Flammable</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Quicklime</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Strong Hallucinogenic</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Aqua Mortis</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Strong Hallucinogenic</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Flayleaf</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Strong Hallucinogenic</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Murder Moss</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Strong Irritant</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Murder Moss</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Strong Irritant</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Weltwood Bark</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Strong Luminous</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Quicklime</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Strong Sanguine</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Willow Bark</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Strong Sanguine</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Wolfsbane</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Strong Sanguine</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Secret Giant Peppers (Giant)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Strong Sedative</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Childstealer Ivy</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Strong Sedative</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Eraser Poppy Seeds</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Strong Sedative</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Flayleaf</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Strong Soothing</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Alder Bark</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Strong Soothing</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Mandrake</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Strong Soothing</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Willow Bark</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Strong Stimulant</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Galtroot</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Strong Tonic</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Galtroot</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Strong Tonic</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Wormwood</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Strong Tonic</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Secret Giant Tree (Giant)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Superior Consonant</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Emerald</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Superior Consonant</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Fire Opal</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Superior Diamond</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Large Diamond</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Superior Numinous</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Black Pearl</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Superior Numinous</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Blue Sapphire</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Superior Vital</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Black Opal</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Superior Vital</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Ruby</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Synthesis Essence</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Synthesis Essence</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Synthesis Essence</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Relic of Arcana (Humanoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Synthesis Essence</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Relic of Divinity (Humanoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Truesilver Ore</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Truesilver Ore</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Truesilver Ore</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Broken Master Weapon (Humanoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Victory Marker</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Victory Marker</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Acidic</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Cinnabar</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Acidic</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Foxfire</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Acidic</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Sal Ammoniac</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Acidic</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Smoke Peppers</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Acidic</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Bag of Dangerous Stuff (Goblinoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Acidic</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Painful Stanching Fluid (Cultist)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Adhesive</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Bloodflower Gum</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Adhesive</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Neversleep Sap</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Adhesive</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Bag of Sticky Stuff (Goblinoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Adhesive</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Target Marking Paint (Bandit)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Antiseptic</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Chickweed</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Antiseptic</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Fennel Seeds</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Antiseptic</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Hyssop Oil</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Antiseptic</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Laurel Leaves</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Antiseptic</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Bag of Smelly Stuff (Goblinoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Antiseptic</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Painful Stanching Fluid (Cultist)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Aromatic</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Brimstone</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Aromatic</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Tansy Leaves</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Aromatic</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Bag of Smelly Stuff (Goblinoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Aromatic</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Crude Knockout Gas (Bandit)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Cathartic</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Coltsfoot Leaves</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Cathartic</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Hyssop Oil</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Cathartic</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Juniper Berries</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Cathartic</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Bag of Bitter Stuff (Goblinoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Deadly</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Belladonna Berries</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Deadly</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Blood Nettle</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Deadly</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Cinnabar</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Deadly</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Lamp Oil</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Deadly</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Bag of Dangerous Stuff (Goblinoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Flammable</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Brimstone</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Flammable</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Lamp Oil</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Flammable</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Sal Ammoniac</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Flammable</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Bag of Fiery Stuff (Goblinoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Hallucinogenic</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Blood Nettle</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Hallucinogenic</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Dreamglow Mushrooms</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Hallucinogenic</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Henbane</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Hallucinogenic</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Bag of Dreamy Stuff (Goblinoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Hallucinogenic</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Secret Giant Mushrooms (Giant)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Irritant</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Cabble-Weed</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Irritant</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Smoke Peppers</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Irritant</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Tansy Leaves</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Irritant</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Bag of Itchy Stuff (Goblinoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Luminous</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Dreamglow Mushrooms</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Luminous</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Foxfire</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Luminous</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Bag of Fiery Stuff (Goblinoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Luminous</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Target Marking Paint (Bandit)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Sanguine</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Bloodflower Gum</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Sanguine</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Comfrey Leaves</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Sanguine</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Gentian</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Sanguine</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Bag of Healthy Stuff (Goblinoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Sanguine</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Blood Crystals (Animal)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Sanguine</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Secret Giant Mushrooms (Giant)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Sedative</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Cabble-Weed</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Sedative</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Fennel Seeds</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Sedative</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Valerian Root</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Sedative</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Bag of Dreamy Stuff (Goblinoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Sedative</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Crude Knockout Gas (Bandit)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Sedative</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Sleep Stones (Animal)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Soothing</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Belladonna Berries</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Soothing</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Chickweed</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Soothing</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Comfrey Leaves</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Soothing</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Gentian</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Soothing</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Henbane</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Soothing</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Juniper Berries</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Soothing</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Valerian Root</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Soothing</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Bag of Sticky Stuff (Goblinoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Stimulant</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Dragoon Leaves</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Stimulant</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Neversleep Sap</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Stimulant</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Bag of Bitter Stuff (Goblinoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Stimulant</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Energized Flora (Animal)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Tonic</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Coltsfoot Leaves</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Tonic</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Dragoon Leaves</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Tonic</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Laurel Leaves</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Weak Tonic</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Bag of Healthy Stuff (Goblinoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Wool</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Wool</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Wool</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Peasant Rags (Animal)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Wool</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Torn Acolyte Robes (Humanoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Wool</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Torn Peasant Clothes (Humanoid)</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Yellow</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Buckthorn Berries</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Yellow</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Greenweed</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Yellow</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Weld Leaves</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Yew Log</Stock>
+        <IngredientType>Resource</IngredientType>
+        <Ingredient>Yew Sapling</Ingredient>
+    </StockIngredients>
+    <StockIngredients>
+        <Stock>Yew Log</Stock>
+        <IngredientType>Salvage</IngredientType>
+        <Ingredient>Destroyed Peasant Furniture (Humanoid)</Ingredient>
+    </StockIngredients>
+</LookupDataSet>

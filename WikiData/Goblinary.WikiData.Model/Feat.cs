@@ -6,34 +6,29 @@
 	using System.ComponentModel.DataAnnotations;
 	using System.ComponentModel.DataAnnotations.Schema;
 	using System.Linq;
-	using System.Reflection;
-	using System.Text;
-	using System.Threading.Tasks;
-
-	using Goblinary.Common;
 
 	public abstract class Feat
 	{
-		public Feat()
+	    protected Feat()
 		{
-			this.Ranks = new EntityList<FeatRank>();
-			this.Effects = new EntityList<FeatEffect>();
-			this.AchievementRanks = new EntityList<CraftAchievementRank>();
-			this.HoldingUpgrades = new EntityList<HoldingUpgrade>();
-			this.OutpostWorkerFeats = new EntityList<OutpostWorkerFeat>();
+			Ranks = new EntityList<FeatRank>();
+			Effects = new EntityList<FeatEffect>();
+			AchievementRanks = new EntityList<CraftAchievementRank>();
+			HoldingUpgrades = new EntityList<HoldingUpgrade>();
+			OutpostWorkerFeats = new EntityList<OutpostWorkerFeat>();
 		}
 
 		[Key]
 		public string Name { get; set; }
 		[Required]
-		public string BaseType_Name { get; set; }
+		public string BaseTypeName { get; set; }
 		[Required]
-		public string FeatType_Name { get; set; }
+		public string FeatTypeName { get; set; }
 		[Required]
 		[DisplayName("Role")]
-		public string Role_Name { get; set; }
+		public string RoleName { get; set; }
 		[DisplayName("Advancement Feat")]
-		public string AdvancementFeat_Name { get; set; }
+		public string AdvancementFeatName { get; set; }
 
 		[ForeignKey("BaseType_Name, FeatType_Name")]
 		public virtual EntityType FeatType { get; set; }
@@ -43,40 +38,27 @@
 		public virtual AdvancementFeat AdvancementFeat { get; set; }
 
 		[InverseProperty("Feat")]
-		public virtual EntityList<FeatRank> Ranks { get; private set; }
+		public virtual EntityList<FeatRank> Ranks { get; }
 		[InverseProperty("Feat")]
-		public virtual EntityList<FeatEffect> Effects { get; private set; }
+		public virtual EntityList<FeatEffect> Effects { get; }
 		[InverseProperty("Feat")]
-		public virtual EntityList<CraftAchievementRank> AchievementRanks { get; private set; }
+		public virtual EntityList<CraftAchievementRank> AchievementRanks { get; }
 		[InverseProperty("CraftingFacilityFeat")]
-		public virtual EntityList<HoldingUpgrade> HoldingUpgrades { get; private set; }
+		public virtual EntityList<HoldingUpgrade> HoldingUpgrades { get; }
 		[InverseProperty("WorkerFeat")]
-		public virtual EntityList<OutpostWorkerFeat> OutpostWorkerFeats { get; private set; }
+		public virtual EntityList<OutpostWorkerFeat> OutpostWorkerFeats { get; }
 
-		private List<FeatRankKeyword> keywords;
+		private List<FeatRankKeyword> _keywords;
 		[NotMapped]
-		public List<FeatRankKeyword> Keywords
-		{
-			get
-			{
-				if (this.keywords == null)
-				{
-					this.keywords = (
-							from r in this.Ranks
-							from k in r.Keywords
-							orderby k.Feat_Rank, k.Keyword_Name
-							select k
-						).ToList();
-				}
-				return this.keywords;
-			}
-		}
+		public List<FeatRankKeyword> Keywords => _keywords ?? (_keywords = (
+		                                             from r in Ranks
+		                                             from k in r.Keywords
+		                                             orderby k.Feat_Rank, k.KeywordName
+		                                             select k
+		                                         ).ToList());
 
-		public static Func<Feat, string> ToStringMethod { get; set; }
-		public override string ToString()
-		{
-			return ToStringMethod != null ? ToStringMethod(this) : base.ToString();
-		}
+	    public static Func<Feat, string> ToStringMethod { get; set; }
+		public override string ToString() => ToStringMethod != null ? ToStringMethod(this) : base.ToString();
 	}
 
 	public abstract class ActiveFeat : Feat
@@ -90,37 +72,19 @@
 		[Required]
 		public string Range { get; set; }
 		[Required]
-		public string WeaponCategory_Name { get; set; }
+		public string WeaponCategoryName { get; set; }
 
 		[ForeignKey("WeaponCategory_Name")]
 		public virtual WeaponCategory WeaponCategory { get; set; }
 
 		[NotMapped]
-		public decimal? StaminaCostPerDamageFactor
-		{
-			get
-			{
-				return this.DamageFactor.HasValue && this.DamageFactor > 0 ? this.StaminaCost / this.DamageFactor : null;
-			}
-		}
+		public decimal? StaminaCostPerDamageFactor => DamageFactor.HasValue && DamageFactor > 0 ? StaminaCost / DamageFactor : null;
 
-		[NotMapped]
-		public decimal? DamageFactorPerAttackSeconds
-		{
-			get
-			{
-				return this.AttackSeconds.HasValue && this.AttackSeconds > 0 ? this.DamageFactor / this.AttackSeconds : null;
-			}
-		}
+	    [NotMapped]
+		public decimal? DamageFactorPerAttackSeconds => AttackSeconds.HasValue && AttackSeconds > 0 ? DamageFactor / AttackSeconds : null;
 
-		[NotMapped]
-		public decimal? NetStaminaCost
-		{
-			get
-			{
-				return this.StaminaCost - this.AttackSeconds * 10;
-			}
-		}
+	    [NotMapped]
+		public decimal? NetStaminaCost => StaminaCost - AttackSeconds * 10;
 	}
 
 	public abstract class StandardAttack : ActiveFeat
@@ -128,20 +92,14 @@
 		[Required]
 		public decimal? CooldownSeconds { get; set; }
 		[Required]
-		public string WeaponForm_Name { get; set; }
-		public string SpecificWeapon_Name { get; set; }
+		public string WeaponFormName { get; set; }
+		public string SpecificWeaponName { get; set; }
 
 		[ForeignKey("SpecificWeapon_Name")]
 		public virtual WeaponType SpecificWeapon { get; set; }
 
 		[NotMapped]
-		public decimal? DamageFactorPerCooldownSeconds
-		{
-			get
-			{
-				return this.CooldownSeconds.HasValue && this.CooldownSeconds > 0 ? this.DamageFactor / this.CooldownSeconds : null;
-			}
-		}
+		public decimal? DamageFactorPerCooldownSeconds => CooldownSeconds.HasValue && CooldownSeconds > 0 ? DamageFactor / CooldownSeconds : null;
 	}
 
 	public abstract class Attack : StandardAttack { }
@@ -149,7 +107,7 @@
 	public class Cantrip : Attack
 	{
 		[Required]
-		public string School_Name { get; set; }
+		public string SchoolName { get; set; }
 	}
 
 	public class Orison : Attack { }
@@ -167,37 +125,19 @@
 		[Required]
 		public bool? HasEndOfCombatCooldown { get; set; }
 		[Required]
-		public string AttackBonus_Name { get; set; }
+		public string AttackBonusName { get; set; }
 	}
 
 	public abstract class Expendable : PowerAttack
 	{
 		[NotMapped]
-		public int? ExpCost
-		{
-			get
-			{
-				return this.Ranks[0].ExpCost;
-			}
-		}
+		public int? ExpCost => Ranks[0].ExpCost;
 
-		[NotMapped]
-		public List<FeatRankAbilityBonus> AbilityBonuses
-		{
-			get
-			{
-				return this.Ranks[0].AbilityBonuses;
-			}
-		}
+	    [NotMapped]
+		public List<FeatRankAbilityBonus> AbilityBonuses => Ranks[0].AbilityBonuses;
 
-		[NotMapped]
-		public List<FeatRankAbilityRequirement> AbilityRequirements
-		{
-			get
-			{
-				return this.Ranks[0].AbilityRequirements;
-			}
-		}
+	    [NotMapped]
+		public List<FeatRankAbilityRequirement> AbilityRequirements => Ranks[0].AbilityRequirements;
 	}
 
 	public class TrophyCharmManeuver : Expendable { }
@@ -218,7 +158,7 @@
 	{
 		[Required]
 		[DisplayName("Channel")]
-		public string Channel_Name { get; set; }
+		public string ChannelName { get; set; }
 	}
 
 	public abstract class PassiveFeat : ChanneledFeat { }

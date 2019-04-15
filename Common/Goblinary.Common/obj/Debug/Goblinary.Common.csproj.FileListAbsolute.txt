@@ -3,3 +3,9 @@ G:\Projects\Goblinary\Common\Goblinary.Common\bin\Debug\Goblinary.Common.pdb
 G:\Projects\Goblinary\Common\Goblinary.Common\obj\Debug\Goblinary.Common.dll
 G:\Projects\Goblinary\Common\Goblinary.Common\obj\Debug\Goblinary.Common.pdb
 G:\Projects\Goblinary\Common\Goblinary.Common\obj\Debug\Goblinary.Common.csprojResolveAssemblyReference.cache
+D:\Users\Snapshot\documents\GitHub\Goblinary\Common\Goblinary.Common\bin\Debug\Goblinary.Common.dll
+D:\Users\Snapshot\documents\GitHub\Goblinary\Common\Goblinary.Common\bin\Debug\Goblinary.Common.pdb
+D:\Users\Snapshot\documents\GitHub\Goblinary\Common\Goblinary.Common\obj\Debug\Goblinary.Common.csprojAssemblyReference.cache
+D:\Users\Snapshot\documents\GitHub\Goblinary\Common\Goblinary.Common\obj\Debug\Goblinary.Common.csproj.CoreCompileInputs.cache
+D:\Users\Snapshot\documents\GitHub\Goblinary\Common\Goblinary.Common\obj\Debug\Goblinary.Common.dll
+D:\Users\Snapshot\documents\GitHub\Goblinary\Common\Goblinary.Common\obj\Debug\Goblinary.Common.pdb

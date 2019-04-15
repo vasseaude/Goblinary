@@ -3,6 +3,9 @@
   <SourceWorksheets>
     <WorksheetName>Wiki Template Key</WorksheetName>
     <Action>Ignore</Action>
+    <TargetTableName />
+    <Type />
+    <ColumnNames />
   </SourceWorksheets>
   <SourceWorksheets>
     <WorksheetName>Physical Attacks</WorksheetName>
@@ -145,6 +148,20 @@
     <ColumnNames>IsWorking|Name|Tier|BaseQuality|Encumbrance|Description|InherentKeywords|UpgradeKeywords|ItemCategory|LastUpdated|Template</ColumnNames>
   </SourceWorksheets>
   <SourceWorksheets>
+    <WorksheetName>Ammo</WorksheetName>
+    <Action>Ignore</Action>
+    <TargetTableName />
+    <Type />
+    <ColumnNames />
+  </SourceWorksheets>
+  <SourceWorksheets>
+    <WorksheetName>Ammo Container</WorksheetName>
+    <Action>Ignore</Action>
+    <TargetTableName />
+    <Type />
+    <ColumnNames />
+  </SourceWorksheets>
+  <SourceWorksheets>
     <WorksheetName>Armor</WorksheetName>
     <Action>Straight</Action>
     <TargetTableName>Items</TargetTableName>
@@ -163,7 +180,14 @@
     <Action>Straight</Action>
     <TargetTableName>Recipes</TargetTableName>
     <Type>RefiningRecipe</Type>
-    <ColumnNames>Name|FeatName|FeatRank|Tier|Ingredient1|Qty1|Ingredient2|Qty2|Ingredient3|Qty3|Ingredient4|Qty4|Output|Upgrade|Qty|BaseCraftingSeconds|Quality|Variety|AchievementType|LastUpdated|Template</ColumnNames>
+    <ColumnNames>Name|FeatName|FeatRank|Tier|Ingredient1|Qty1|Ingredient2|Qty2|Ingredient3|Qty3|Ingredient4|Qty4|Azoth|Output|Upgrade|Qty|BaseCraftingSeconds|Quality|Variety|AchievementType|LastUpdated|Template</ColumnNames>
+  </SourceWorksheets>
+  <SourceWorksheets>
+    <WorksheetName>Recipes (Enchanting Refining)</WorksheetName>
+    <Action>Ignore</Action>
+    <TargetTableName />
+    <Type />
+    <ColumnNames />
   </SourceWorksheets>
   <SourceWorksheets>
     <WorksheetName>Recipes (Crafting)</WorksheetName>
@@ -174,11 +198,38 @@
   </SourceWorksheets>
   <SourceWorksheets>
     <WorksheetName>Recipes (Settlement)</WorksheetName>
-    <Action>Ignore</Action>
+    <Action>Straight</Action>
+    <TargetTableName>Recipes</TargetTableName>
+    <Type>CraftingRecipe</Type>
+    <ColumnNames>Name|FeatName|FeatRank|Tier|Ingredient1|Qty1|Ingredient2|Qty2|Ingredient3|Qty3|Ingredient4|Qty4|Output|Qty|BaseCraftingSeconds|Category|BaseQuality|AchievementType|LastUpdated|Template</ColumnNames>
   </SourceWorksheets>
   <SourceWorksheets>
     <WorksheetName>Recipes (Codex)</WorksheetName>
     <Action>Ignore</Action>
+    <TargetTableName>Recipes</TargetTableName>
+    <Type>CraftingRecipe</Type>
+    <ColumnNames>Name|FeatName|FeatRank|Tier|Ingredient1|Qty1|Ingredient2|Qty2|Ingredient3|Qty3|Ingredient4|Qty4|Output|Qty|BaseCraftingSeconds|Category|BaseQuality|AchievementType|LastUpdated</ColumnNames>
+  </SourceWorksheets>
+  <SourceWorksheets>
+    <WorksheetName>Recipes (Aeon Stones)</WorksheetName>
+    <Action>Ignore</Action>
+    <TargetTableName />
+    <Type />
+    <ColumnNames />
+  </SourceWorksheets>
+  <SourceWorksheets>
+    <WorksheetName>Recipes (Enchanting)</WorksheetName>
+    <Action>Ignore</Action>
+    <TargetTableName />
+    <Type />
+    <ColumnNames />
+  </SourceWorksheets>
+  <SourceWorksheets>
+    <WorksheetName>Enchantments</WorksheetName>
+    <Action>Ignore</Action>
+    <TargetTableName />
+    <Type />
+    <ColumnNames />
   </SourceWorksheets>
   <SourceWorksheets>
     <WorksheetName>Keywords</WorksheetName>
@@ -195,55 +246,81 @@
   <SourceWorksheets>
     <WorksheetName>Attack Advancement</WorksheetName>
     <Action>Advancement</Action>
+    <TargetTableName />
+    <ColumnNames />
   </SourceWorksheets>
   <SourceWorksheets>
     <WorksheetName>Cantrip Advancement</WorksheetName>
     <Action>Advancement</Action>
+    <TargetTableName />
+    <ColumnNames />
   </SourceWorksheets>
   <SourceWorksheets>
     <WorksheetName>Orison Advancement</WorksheetName>
     <Action>Advancement</Action>
+    <TargetTableName />
+    <ColumnNames />
   </SourceWorksheets>
   <SourceWorksheets>
     <WorksheetName>Utility Advancement</WorksheetName>
     <Action>Advancement</Action>
+    <TargetTableName />
+    <ColumnNames />
   </SourceWorksheets>
   <SourceWorksheets>
     <WorksheetName>Defensive Advancement</WorksheetName>
     <Action>Advancement</Action>
+    <TargetTableName />
+    <ColumnNames />
   </SourceWorksheets>
   <SourceWorksheets>
     <WorksheetName>Reactive Advancement</WorksheetName>
     <Action>Advancement</Action>
+    <TargetTableName />
+    <ColumnNames />
   </SourceWorksheets>
   <SourceWorksheets>
     <WorksheetName>Feature Advancement</WorksheetName>
     <Action>Advancement</Action>
+    <TargetTableName />
+    <ColumnNames />
   </SourceWorksheets>
   <SourceWorksheets>
     <WorksheetName>Armor Advancement</WorksheetName>
     <Action>Advancement</Action>
+    <TargetTableName />
+    <ColumnNames />
   </SourceWorksheets>
   <SourceWorksheets>
     <WorksheetName>Bonuses Advancement</WorksheetName>
     <Action>Advancement</Action>
+    <TargetTableName />
+    <ColumnNames />
   </SourceWorksheets>
   <SourceWorksheets>
     <WorksheetName>Skills Advancement</WorksheetName>
     <Action>Advancement</Action>
+    <TargetTableName />
+    <ColumnNames />
   </SourceWorksheets>
   <SourceWorksheets>
     <WorksheetName>Points Advancement</WorksheetName>
     <Action>Advancement</Action>
+    <TargetTableName />
+    <ColumnNames />
   </SourceWorksheets>
   <SourceWorksheets>
     <WorksheetName>Proficiencies</WorksheetName>
     <Action>Advancement</Action>
+    <TargetTableName />
     <Type>ProficiencyFeat</Type>
+    <ColumnNames />
   </SourceWorksheets>
   <SourceWorksheets>
     <WorksheetName>Expendables Advancement</WorksheetName>
     <Action>Advancement</Action>
+    <TargetTableName />
+    <ColumnNames />
   </SourceWorksheets>
   <SourceWorksheets>
     <WorksheetName>Interaction Achievements</WorksheetName>
@@ -339,10 +416,14 @@
   <SourceWorksheets>
     <WorksheetName>Trainers</WorksheetName>
     <Action>Trainers</Action>
+    <TargetTableName />
+    <ColumnNames />
   </SourceWorksheets>
   <SourceWorksheets>
     <WorksheetName>Feats on Muliple Trainers</WorksheetName>
     <Action>MultiTrainers</Action>
+    <TargetTableName />
+    <ColumnNames />
   </SourceWorksheets>
   <SourceWorksheets>
     <WorksheetName>Bulk Resources</WorksheetName>
@@ -354,10 +435,57 @@
   <SourceWorksheets>
     <WorksheetName>Settlement Structures</WorksheetName>
     <Action>Ignore</Action>
+    <TargetTableName>SettlementStructures</TargetTableName>
+    <Type>SettlementStructure</Type>
+    <ColumnNames>Name|Version|Level|Size|Security|Civilization|Morale|Bulk Food|Bulk Ore|Bulk Stone|Bulk Wood|Trade Goods|Coin|Training</ColumnNames>
+  </SourceWorksheets>
+  <SourceWorksheets>
+    <WorksheetName>Settlements</WorksheetName>
+    <Action>Ignore</Action>
+    <TargetTableName />
+    <Type />
+    <ColumnNames />
   </SourceWorksheets>
   <SourceWorksheets>
     <WorksheetName>Hexes</WorksheetName>
     <Action>Ignore</Action>
+    <TargetTableName />
+    <ColumnNames />
+  </SourceWorksheets>
+  <SourceWorksheets>
+    <WorksheetName>Raw</WorksheetName>
+    <Action>Ignore</Action>
+    <TargetTableName />
+    <Type />
+    <ColumnNames />
+  </SourceWorksheets>
+  <SourceWorksheets>
+    <WorksheetName>Enchanting Raw</WorksheetName>
+    <Action>Ignore</Action>
+    <TargetTableName />
+    <Type />
+    <ColumnNames />
+  </SourceWorksheets>
+  <SourceWorksheets>
+    <WorksheetName>Salvage</WorksheetName>
+    <Action>Ignore</Action>
+    <TargetTableName />
+    <Type />
+    <ColumnNames />
+  </SourceWorksheets>
+  <SourceWorksheets>
+    <WorksheetName>Enchanting Salvage</WorksheetName>
+    <Action>Ignore</Action>
+    <TargetTableName />
+    <Type />
+    <ColumnNames />
+  </SourceWorksheets>
+  <SourceWorksheets>
+    <WorksheetName>Traits</WorksheetName>
+    <Action>Ignore</Action>
+    <TargetTableName />
+    <Type />
+    <ColumnNames />
   </SourceWorksheets>
   <ResourceTypes>
     <ResourceType>Adamantine Ore</ResourceType>
@@ -1134,7 +1262,7 @@
     <BaseEncumbrance>0.04</BaseEncumbrance>
   </ResourceTypes>
   <ResourceTypes>
-    <ResourceType>Yarrow Flowers</ResourceType>
+    <ResourceType>YarResourceType Flowers</ResourceType>
     <Variety>Herb</Variety>
     <Tier>2</Tier>
     <BaseEncumbrance>0.04</BaseEncumbrance>
@@ -1992,9 +2120,9 @@
     <Encumbrance>0.16</Encumbrance>
   </Resources>
   <Resources>
-    <Resource>Dilute Yarrow Flowers</Resource>
+    <Resource>Dilute YarResource Flowers</Resource>
     <Prefix>Dilute</Prefix>
-    <ResourceType>Yarrow Flowers</ResourceType>
+    <ResourceType>YarResource Flowers</ResourceType>
     <EncumbranceFactor>4</EncumbranceFactor>
     <Encumbrance>0.16</Encumbrance>
   </Resources>
@@ -2594,9 +2722,9 @@
     <Encumbrance>0.12</Encumbrance>
   </Resources>
   <Resources>
-    <Resource>Fair Yarrow Flowers</Resource>
+    <Resource>Fair YarResource Flowers</Resource>
     <Prefix>Fair</Prefix>
-    <ResourceType>Yarrow Flowers</ResourceType>
+    <ResourceType>YarResource Flowers</ResourceType>
     <EncumbranceFactor>3</EncumbranceFactor>
     <Encumbrance>0.12</Encumbrance>
   </Resources>
@@ -3378,9 +3506,9 @@
     <Encumbrance>0.08</Encumbrance>
   </Resources>
   <Resources>
-    <Resource>Infused Yarrow Flowers</Resource>
+    <Resource>Infused YarResource Flowers</Resource>
     <Prefix>Infused</Prefix>
-    <ResourceType>Yarrow Flowers</ResourceType>
+    <ResourceType>YarResource Flowers</ResourceType>
     <EncumbranceFactor>2</EncumbranceFactor>
     <Encumbrance>0.08</Encumbrance>
   </Resources>
@@ -4449,9 +4577,9 @@
     <Encumbrance>0.04</Encumbrance>
   </Resources>
   <Resources>
-    <Resource>Potent Yarrow Flowers</Resource>
+    <Resource>Potent YarResource Flowers</Resource>
     <Prefix>Potent</Prefix>
-    <ResourceType>Yarrow Flowers</ResourceType>
+    <ResourceType>YarResource Flowers</ResourceType>
     <EncumbranceFactor>1</EncumbranceFactor>
     <Encumbrance>0.04</Encumbrance>
   </Resources>
@@ -5263,144 +5391,6 @@
   </Salvages>
   <Salvages>
     <Salvage>Victory Marker</Salvage>
-    <Variety>Unknown</Variety>
-    <Tier>1</Tier>
-    <Encumbrance>0.1</Encumbrance>
-  </Salvages>
-  <Salvages>
-    <Salvage>Fighter Codex</Salvage>
-    <Variety>Unknown</Variety>
-    <Tier>1</Tier>
-    <Encumbrance>0.1</Encumbrance>
-  </Salvages>
-  <Salvages>
-    <Salvage>Rogue Codex</Salvage>
-    <Variety>Unknown</Variety>
-    <Tier>1</Tier>
-    <Encumbrance>0.1</Encumbrance>
-  </Salvages>
-  <Salvages>
-    <Salvage>Wizard Codex</Salvage>
-    <Variety>Unknown</Variety>
-    <Tier>1</Tier>
-    <Encumbrance>0.1</Encumbrance>
-  </Salvages>
-  <Salvages>
-    <Salvage>Cleric Codex</Salvage>
-    <Variety>Unknown</Variety>
-    <Tier>1</Tier>
-    <Encumbrance>0.1</Encumbrance>
-  </Salvages>
-  <Salvages>
-    <Salvage>Freeholder Codex</Salvage>
-    <Variety>Unknown</Variety>
-    <Tier>1</Tier>
-    <Encumbrance>0.1</Encumbrance>
-  </Salvages>
-  <Salvages>
-    <Salvage>Expert Codex</Salvage>
-    <Variety>Unknown</Variety>
-    <Tier>1</Tier>
-    <Encumbrance>0.1</Encumbrance>
-  </Salvages>
-  <Salvages>
-    <Salvage>Alchemist Codex</Salvage>
-    <Variety>Unknown</Variety>
-    <Tier>1</Tier>
-    <Encumbrance>0.1</Encumbrance>
-  </Salvages>
-  <Salvages>
-    <Salvage>Armorsmith Codex</Salvage>
-    <Variety>Unknown</Variety>
-    <Tier>1</Tier>
-    <Encumbrance>0.1</Encumbrance>
-  </Salvages>
-  <Salvages>
-    <Salvage>Artificer Codex</Salvage>
-    <Variety>Unknown</Variety>
-    <Tier>1</Tier>
-    <Encumbrance>0.1</Encumbrance>
-  </Salvages>
-  <Salvages>
-    <Salvage>Bowyer Codex</Salvage>
-    <Variety>Unknown</Variety>
-    <Tier>1</Tier>
-    <Encumbrance>0.1</Encumbrance>
-  </Salvages>
-  <Salvages>
-    <Salvage>Engineer Codex</Salvage>
-    <Variety>Unknown</Variety>
-    <Tier>1</Tier>
-    <Encumbrance>0.1</Encumbrance>
-  </Salvages>
-  <Salvages>
-    <Salvage>Iconographer Codex</Salvage>
-    <Variety>Unknown</Variety>
-    <Tier>1</Tier>
-    <Encumbrance>0.1</Encumbrance>
-  </Salvages>
-  <Salvages>
-    <Salvage>Jeweler Codex</Salvage>
-    <Variety>Unknown</Variety>
-    <Tier>1</Tier>
-    <Encumbrance>0.1</Encumbrance>
-  </Salvages>
-  <Salvages>
-    <Salvage>Leatherworker Codex</Salvage>
-    <Variety>Unknown</Variety>
-    <Tier>1</Tier>
-    <Encumbrance>0.1</Encumbrance>
-  </Salvages>
-  <Salvages>
-    <Salvage>Tailor Codex</Salvage>
-    <Variety>Unknown</Variety>
-    <Tier>1</Tier>
-    <Encumbrance>0.1</Encumbrance>
-  </Salvages>
-  <Salvages>
-    <Salvage>Weaponsmith Codex</Salvage>
-    <Variety>Unknown</Variety>
-    <Tier>1</Tier>
-    <Encumbrance>0.1</Encumbrance>
-  </Salvages>
-  <Salvages>
-    <Salvage>Apothecary Codex</Salvage>
-    <Variety>Unknown</Variety>
-    <Tier>1</Tier>
-    <Encumbrance>0.1</Encumbrance>
-  </Salvages>
-  <Salvages>
-    <Salvage>Gemcutter Codex</Salvage>
-    <Variety>Unknown</Variety>
-    <Tier>1</Tier>
-    <Encumbrance>0.1</Encumbrance>
-  </Salvages>
-  <Salvages>
-    <Salvage>Sage Codex</Salvage>
-    <Variety>Unknown</Variety>
-    <Tier>1</Tier>
-    <Encumbrance>0.1</Encumbrance>
-  </Salvages>
-  <Salvages>
-    <Salvage>Sawyer Codex</Salvage>
-    <Variety>Unknown</Variety>
-    <Tier>1</Tier>
-    <Encumbrance>0.1</Encumbrance>
-  </Salvages>
-  <Salvages>
-    <Salvage>Smelter Codex</Salvage>
-    <Variety>Unknown</Variety>
-    <Tier>1</Tier>
-    <Encumbrance>0.1</Encumbrance>
-  </Salvages>
-  <Salvages>
-    <Salvage>Tanner Codex</Salvage>
-    <Variety>Unknown</Variety>
-    <Tier>1</Tier>
-    <Encumbrance>0.1</Encumbrance>
-  </Salvages>
-  <Salvages>
-    <Salvage>Weaver Codex</Salvage>
     <Variety>Unknown</Variety>
     <Tier>1</Tier>
     <Encumbrance>0.1</Encumbrance>
@@ -7551,8 +7541,12 @@
     <Ingredient>Destroyed Peasant Furniture (Humanoid)</Ingredient>
   </StockIngredients>
   <Dictionary>
+    <Key>PFO Wiki - Official Data</Key>
+    <Value>11AQ0GcchezxiXRtFLVAT3BOCudR_Ie5XNVvENacDTvU</Value>
+  </Dictionary>
+  <Dictionary>
     <Key>Copy of PFO Wiki - Official Data</Key>
-    <Value>18QNdLr8gIx2_r771zVcksKROwQvj4EIC1sPsxh4TrTk</Value>
+    <Value>1bkqTiK7-MCtO_xM9X5vQSJg3M5y9TELCkOjGWNusE0M</Value>
   </Dictionary>
   <Dictionary>
     <Key>Nihimon's Resources, Salvages, and Stocks Data</Key>
@@ -7611,39 +7605,43 @@
     <Item>Sonic</Item>
   </EffectLookups>
   <EffectLookups>
-    <Type>Blast Melee, Long</Type>
-    <Item>Long Blast Melee</Item>
+    <Type>"Blast Melee</Type>
+    <Item> Long"</Item>
   </EffectLookups>
   <EffectLookups>
-    <Type>Blast, Long</Type>
-    <Item>Long Blast</Item>
+    <Type>"Blast</Type>
+    <Item> Long"</Item>
   </EffectLookups>
   <EffectLookups>
-    <Type>Blast, Melee, Short</Type>
-    <Item>Short Blast Melee</Item>
+    <Type>"Blast</Type>
+    <Item> Melee</Item>
   </EffectLookups>
   <EffectLookups>
-    <Type>Blast, Short</Type>
-    <Item>Short Blast</Item>
+    <Type>"Blast</Type>
+    <Item> Short"</Item>
   </EffectLookups>
   <KeywordTypes>
     <KeywordType>Armor</KeywordType>
     <SourceFeatType>ArmorFeat</SourceFeatType>
+    <MatchingFeatType />
     <MatchingItemType>Armor</MatchingItemType>
   </KeywordTypes>
   <KeywordTypes>
     <KeywordType>Gear</KeywordType>
     <SourceFeatType>Utility</SourceFeatType>
+    <MatchingFeatType />
     <MatchingItemType>Gear</MatchingItemType>
   </KeywordTypes>
   <KeywordTypes>
     <KeywordType>Implement</KeywordType>
     <SourceFeatType>Expendable</SourceFeatType>
     <MatchingFeatType>Feature</MatchingFeatType>
+    <MatchingItemType />
   </KeywordTypes>
   <KeywordTypes>
     <KeywordType>Weapon</KeywordType>
     <SourceFeatType>Attack</SourceFeatType>
+    <MatchingFeatType />
     <MatchingItemType>Weapon</MatchingItemType>
   </KeywordTypes>
   <WeaponTypes>
@@ -7814,22 +7812,32 @@
   <GearTypes>
     <GearType>Neck</GearType>
     <ItemType>Gear</ItemType>
+    <WeaponCategory />
+    <AttackBonus />
   </GearTypes>
   <GearTypes>
     <GearType>Head</GearType>
     <ItemType>Gear</ItemType>
+    <WeaponCategory />
+    <AttackBonus />
   </GearTypes>
   <GearTypes>
     <GearType>Back</GearType>
     <ItemType>Gear</ItemType>
+    <WeaponCategory />
+    <AttackBonus />
   </GearTypes>
   <GearTypes>
     <GearType>Waist</GearType>
     <ItemType>Gear</ItemType>
+    <WeaponCategory />
+    <AttackBonus />
   </GearTypes>
   <GearTypes>
     <GearType>Fingers</GearType>
     <ItemType>Gear</ItemType>
+    <WeaponCategory />
+    <AttackBonus />
   </GearTypes>
   <GearTypes>
     <GearType>Hands</GearType>
@@ -7846,26 +7854,38 @@
   <GearTypes>
     <GearType>Ammo Containers</GearType>
     <ItemType>AmmoContainer</ItemType>
+    <WeaponCategory />
+    <AttackBonus />
   </GearTypes>
   <GearTypes>
     <GearType>Holdout Weapon</GearType>
     <ItemType>Implement</ItemType>
+    <WeaponCategory />
+    <AttackBonus />
   </GearTypes>
   <GearTypes>
     <GearType>Holy Symbol</GearType>
     <ItemType>Implement</ItemType>
+    <WeaponCategory />
+    <AttackBonus />
   </GearTypes>
   <GearTypes>
     <GearType>Rogue Kit</GearType>
     <ItemType>Implement</ItemType>
+    <WeaponCategory />
+    <AttackBonus />
   </GearTypes>
   <GearTypes>
     <GearType>Spellbook</GearType>
     <ItemType>Implement</ItemType>
+    <WeaponCategory />
+    <AttackBonus />
   </GearTypes>
   <GearTypes>
     <GearType>Toolkit</GearType>
     <ItemType>Implement</ItemType>
+    <WeaponCategory />
+    <AttackBonus />
   </GearTypes>
   <GearTypes>
     <GearType>Trophy Charm</GearType>
@@ -8114,6 +8134,18 @@
   <Lookups>
     <Type>Condition</Type>
     <Name>Two-Handed Melee</Name>
+  </Lookups>
+  <Lookups>
+    <Type>DevelopmentIndex</Type>
+    <Name>Security</Name>
+  </Lookups>
+  <Lookups>
+    <Type>DevelopmentIndex</Type>
+    <Name>Morale</Name>
+  </Lookups>
+  <Lookups>
+    <Type>DevelopmentIndex</Type>
+    <Name>Civilization</Name>
   </Lookups>
   <EntityTypes>
     <BaseType>Feat</BaseType>
@@ -8457,6 +8489,13 @@
   </EntityTypes>
   <EntityTypes>
     <BaseType>Item</BaseType>
+    <EntityType>SettlementStructureKit</EntityType>
+    <ParentType>Equipment</ParentType>
+    <Modifier>Final</Modifier>
+    <DisplayName>Settlement Structure Kit</DisplayName>
+  </EntityTypes>
+  <EntityTypes>
+    <BaseType>Item</BaseType>
     <EntityType>HoldingKit</EntityType>
     <ParentType>Equipment</ParentType>
     <Modifier>Final</Modifier>
@@ -8558,56 +8597,11 @@
     <Modifier>Final</Modifier>
     <DisplayName>Outpost</DisplayName>
   </EntityTypes>
-  <ArmorTypes>
-    <armortype>Heavy</armortype>
-    <spellpenalty>-100</spellpenalty>
-  </ArmorTypes>
-  <ArmorTypes>
-    <armortype>Medium</armortype>
-    <spellpenalty>-50</spellpenalty>
-  </ArmorTypes>
-  <ArmorTypes>
-    <armortype>Light</armortype>
-    <spellpenalty>-20</spellpenalty>
-  </ArmorTypes>
-  <ArmorTypes>
-    <armortype>Clothing</armortype>
-    <spellpenalty>0</spellpenalty>
-  </ArmorTypes>
-  <EffectTypes>
-    <effecttype>AoE</effecttype>
-    <description>Area of effect actions attack all targets within the AoE template.</description>
-  </EffectTypes>
-  <EffectTypes>
-    <effecttype>Blocker</effecttype>
-    <description>Blockers apply crowd control effects which typically cause the target to be unable to perform some actions.</description>
-  </EffectTypes>
-  <EffectTypes>
-    <effecttype>Healing</effecttype>
-    <description>Healing effects restore damage or remove debilitating effects.</description>
-  </EffectTypes>
-  <EffectTypes>
-    <effecttype>Misc. Buff</effecttype>
-    <description>Miscellaneous buffs apply a beneficial effect to the bearer for a certain amount of time; reapplications of the effect reset the time but do not add to it.</description>
-  </EffectTypes>
-  <EffectTypes>
-    <effecttype>Misc. Debuff</effecttype>
-    <description>Miscellaneous debuffs apply a detrimental effect to the bearer for a certain amount of time; reapplications of the effect reset the time but do not add to it.</description>
-  </EffectTypes>
-  <EffectTypes>
-    <effecttype>Misc. Effect</effecttype>
-    <description>Miscellaneous effects do variable things for the attack not covered by the other types.</description>
-  </EffectTypes>
-  <EffectTypes>
-    <effecttype>Misc. Restriction</effecttype>
-    <description>Miscellaneous restrictions make the attack less effective or more dangerous to use in some way.</description>
-  </EffectTypes>
-  <EffectTypes>
-    <effecttype>Stacking Debuff</effecttype>
-    <description>Stacking debuffs have an effect proportional to the number of stacks, and stacks are removed over time at a rate based on the bearer’s Recovery stat (i.e., lose stacks from all debuffs equal to Base Recovery plus that specific type of Recovery each round).</description>
-  </EffectTypes>
-  <EffectTypes>
-    <effecttype>State</effecttype>
-    <description>States are essentially Miscellaneous Debuffs that don’t have an innate effect: they simply set up other attacks to have a greater effect.</description>
-  </EffectTypes>
+  <EntityTypes>
+    <BaseType>Structure</BaseType>
+    <EntityType>SettlementStructure</EntityType>
+    <ParentType>Structure</ParentType>
+    <Modifier>Final</Modifier>
+    <DisplayName>Settlement Structure</DisplayName>
+  </EntityTypes>
 </LookupDataSet>

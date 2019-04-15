@@ -1,0 +1,490 @@
+<?xml version="1.0"?>
+<LookupDataSet xmlns="http://tempuri.org/LookupDataSet.xsd">
+    <SourceWorksheets>
+        <WorksheetName>Wiki Template Key</WorksheetName>
+        <Action>Ignore</Action>
+        <TargetTableName></TargetTableName>
+        <Type></Type>
+        <ColumnNames></ColumnNames>
+    </SourceWorksheets>
+    <SourceWorksheets>
+        <WorksheetName>Physical Attacks</WorksheetName>
+        <Action>Straight</Action>
+        <TargetTableName>FeatRanks</TargetTableName>
+        <Type>PhysicalAttack</Type>
+        <ColumnNames>IsWorking|FeatName|DamageFactor|AttackSeconds|StaminaCost|StandardEffects|RestrictionEffects|ConditionalEffects|Range|Form|CooldownSeconds|WeaponCategory|Role|Keyword1|Keyword2|Keyword3|Keyword4|Keyword5|Keyword6|SpecificWeapon|AdvancementLink|LastUpdated|Template</ColumnNames>
+    </SourceWorksheets>
+    <SourceWorksheets>
+        <WorksheetName>Cantrips</WorksheetName>
+        <Action>Straight</Action>
+        <TargetTableName>FeatRanks</TargetTableName>
+        <Type>Cantrip</Type>
+        <ColumnNames>IsWorking|FeatName|DamageFactor|AttackSeconds|StaminaCost|StandardEffects|RestrictionEffects|ConditionalEffects|Range|Form|CooldownSeconds|WeaponCategory|Role|Keyword1|Keyword2|Keyword3|Keyword4|Keyword5|Keyword6|SpecificWeapon|AdvancementLink|School|LastUpdated|Template</ColumnNames>
+    </SourceWorksheets>
+    <SourceWorksheets>
+        <WorksheetName>Orisons</WorksheetName>
+        <Action>Straight</Action>
+        <TargetTableName>FeatRanks</TargetTableName>
+        <Type>Orison</Type>
+        <ColumnNames>IsWorking|FeatName|DamageFactor|AttackSeconds|StaminaCost|StandardEffects|RestrictionEffects|ConditionalEffects|Range|Form|CooldownSeconds|WeaponCategory|Role|Keyword1|Keyword2|Keyword3|Keyword4|Keyword5|Keyword6|SpecificWeapon|AdvancementLink|LastUpdated|Template</ColumnNames>
+    </SourceWorksheets>
+    <SourceWorksheets>
+        <WorksheetName>Utilities</WorksheetName>
+        <Action>Straight</Action>
+        <TargetTableName>FeatRanks</TargetTableName>
+        <Type>Utility</Type>
+        <ColumnNames>IsWorking|FeatName|DamageFactor|AttackSeconds|StaminaCost|StandardEffects|RestrictionEffects|ConditionalEffects|Range|Form|CooldownSeconds|WeaponCategory|Role|Keyword1|Keyword2|Keyword3|Keyword4|Keyword5|Keyword6|SpecificWeapon|AdvancementLink|LastUpdated|Template</ColumnNames>
+    </SourceWorksheets>
+    <SourceWorksheets>
+        <WorksheetName>Trophy Charm</WorksheetName>
+        <Action>Straight</Action>
+        <TargetTableName>FeatRanks</TargetTableName>
+        <Type>TrophyCharmManeuver</Type>
+        <ColumnNames>IsWorking|FeatName|DamageFactor|AttackSeconds|StaminaCost|PowerCost|Level|HasCooldown|StandardEffects|RestrictionEffects|ConditionalEffects|WeaponCategory|Keyword1|Keyword2|Keyword3|Keyword4|Keyword5|Keyword6|Keyword7|Keyword8|Keyword9|AttackBonus|Range|AdvancementLink|LastUpdated|Template</ColumnNames>
+    </SourceWorksheets>
+    <SourceWorksheets>
+        <WorksheetName>Rogue Kit</WorksheetName>
+        <Action>Straight</Action>
+        <TargetTableName>FeatRanks</TargetTableName>
+        <Type>RogueKitManeuver</Type>
+        <ColumnNames>IsWorking|FeatName|DamageFactor|AttackSeconds|StaminaCost|PowerCost|Level|HasCooldown|StandardEffects|RestrictionEffects|ConditionalEffects|WeaponCategory|Keyword1|Keyword2|Keyword3|Keyword4|Keyword5|Keyword6|Keyword7|Keyword8|Keyword9|AttackBonus|Range|AdvancementLink|LastUpdated|Template</ColumnNames>
+    </SourceWorksheets>
+    <SourceWorksheets>
+        <WorksheetName>Spellbook</WorksheetName>
+        <Action>Straight</Action>
+        <TargetTableName>FeatRanks</TargetTableName>
+        <Type>SpellbookSpell</Type>
+        <ColumnNames>IsWorking|FeatName|DamageFactor|AttackSeconds|StaminaCost|PowerCost|Level|HasCooldown|StandardEffects|RestrictionEffects|ConditionalEffects|WeaponCategory|Keyword1|Keyword2|Keyword3|Keyword4|Keyword5|Keyword6|Keyword7|Keyword8|Keyword9|AttackBonus|Range|AdvancementLink|LastUpdated|Template</ColumnNames>
+    </SourceWorksheets>
+    <SourceWorksheets>
+        <WorksheetName>Holy Symbol</WorksheetName>
+        <Action>Straight</Action>
+        <TargetTableName>FeatRanks</TargetTableName>
+        <Type>HolySymbolSpell</Type>
+        <ColumnNames>IsWorking|FeatName|DamageFactor|AttackSeconds|StaminaCost|PowerCost|Level|HasCooldown|StandardEffects|RestrictionEffects|ConditionalEffects|WeaponCategory|Keyword1|Keyword2|Keyword3|Keyword4|Keyword5|Keyword6|Keyword7|Keyword8|Keyword9|AttackBonus|Range|AdvancementLink|LastUpdated|Template</ColumnNames>
+    </SourceWorksheets>
+    <SourceWorksheets>
+        <WorksheetName>Holdout Weapon</WorksheetName>
+        <Action>Straight</Action>
+        <TargetTableName>FeatRanks</TargetTableName>
+        <Type>HoldoutWeaponManeuver</Type>
+        <ColumnNames>IsWorking|FeatName|DamageFactor|AttackSeconds|StaminaCost|PowerCost|Level|HasCooldown|StandardEffects|RestrictionEffects|ConditionalEffects|WeaponCategory|Keyword1|Keyword2|Keyword3|Keyword4|Keyword5|Keyword6|Keyword7|Keyword8|Keyword9|AttackBonus|Range|AdvancementLink|LastUpdated|Template</ColumnNames>
+    </SourceWorksheets>
+    <SourceWorksheets>
+        <WorksheetName>Toolkit</WorksheetName>
+        <Action>Straight</Action>
+        <TargetTableName>FeatRanks</TargetTableName>
+        <Type>ToolkitManeuver</Type>
+        <ColumnNames>IsWorking|FeatName|DamageFactor|AttackSeconds|StaminaCost|PowerCost|Level|HasCooldown|StandardEffects|RestrictionEffects|ConditionalEffects|WeaponCategory|Keyword1|Keyword2|Keyword3|Keyword4|Keyword5|Keyword6|Keyword7|Keyword8|Keyword9|AttackBonus|Range|AdvancementLink|LastUpdated|Template</ColumnNames>
+    </SourceWorksheets>
+    <SourceWorksheets>
+        <WorksheetName>Consumables</WorksheetName>
+        <Action>Straight</Action>
+        <TargetTableName>FeatRanks</TargetTableName>
+        <Type>Consumable</Type>
+        <ColumnNames>IsWorking|FeatName|DamageFactor|AttackSeconds|StaminaCost|PowerCost|Level|HasCooldown|StandardEffects|RestrictionEffects|ConditionalEffects|WeaponCategory|Keyword1|Keyword2|Keyword3|Keyword4|Keyword5|Keyword6|Keyword7|Keyword8|Keyword9|AttackBonus|Range|LastUpdated|Template</ColumnNames>
+    </SourceWorksheets>
+    <SourceWorksheets>
+        <WorksheetName>Camps</WorksheetName>
+        <Action>Straight</Action>
+        <TargetTableName>Camps</TargetTableName>
+        <Type>Camp</Type>
+        <ColumnNames>Name|Description|DisplayName|Encumbrance|IconFileName|Quality|Tier|Category|HousingData|HouseEntityDefn|Cooldown|NoLoot|Upgradable|AccountRedeem</ColumnNames>
+    </SourceWorksheets>
+    <SourceWorksheets>
+        <WorksheetName>Camps 2</WorksheetName>
+        <Action>Straight</Action>
+        <TargetTableName>CampUpgrades</TargetTableName>
+        <Type>CampUpgrade</Type>
+        <ColumnNames>Name|PowerChannelDuration|PowerRegeneration|PowerCooldown|BuildingDuration|ConstructionData|BaseType</ColumnNames>
+    </SourceWorksheets>
+    <SourceWorksheets>
+        <WorksheetName>Defensive (Passive)</WorksheetName>
+        <Action>Straight</Action>
+        <TargetTableName>FeatRanks</TargetTableName>
+        <Type>Defensive</Type>
+        <ColumnNames>FeatName|Rank|Role|Channel|Effect|AdvancementLink|LastUpdated|Template</ColumnNames>
+    </SourceWorksheets>
+    <SourceWorksheets>
+        <WorksheetName>Reactive (Passive)</WorksheetName>
+        <Action>Straight</Action>
+        <TargetTableName>FeatRanks</TargetTableName>
+        <Type>Reactive</Type>
+        <ColumnNames>FeatName|Rank|Role|Channel|Effect|AdvancementLink|LastUpdated|Template</ColumnNames>
+    </SourceWorksheets>
+    <SourceWorksheets>
+        <WorksheetName>Feature (Passive)</WorksheetName>
+        <Action>Straight</Action>
+        <TargetTableName>FeatRanks</TargetTableName>
+        <Type>Feature</Type>
+        <ColumnNames>FeatName|Rank|Role|Channel|Effect|Keywords|AdvancementLink|LastUpdated|Template</ColumnNames>
+    </SourceWorksheets>
+    <SourceWorksheets>
+        <WorksheetName>Armor (Passive)</WorksheetName>
+        <Action>Straight</Action>
+        <TargetTableName>FeatRanks</TargetTableName>
+        <Type>ArmorFeat</Type>
+        <ColumnNames>FeatName|Rank|Role|Channel|Effect|Keywords|KeywordEffects|AdvancementLink|LastUpdated|Template</ColumnNames>
+    </SourceWorksheets>
+    <SourceWorksheets>
+        <WorksheetName>Upgrade (Passive)</WorksheetName>
+        <Action>Straight</Action>
+        <TargetTableName>FeatRanks</TargetTableName>
+        <Type>Upgrade</Type>
+        <ColumnNames>FeatName|Rank|Role|Channel|Effect|AdvancementLink|LastUpdated|Template</ColumnNames>
+    </SourceWorksheets>
+    <SourceWorksheets>
+        <WorksheetName>Weapons (Standard)</WorksheetName>
+        <Action>Straight</Action>
+        <TargetTableName>Items</TargetTableName>
+        <Type>Weapon</Type>
+        <ColumnNames>IsWorking|Name|Tier|BaseQuality|Encumbrance|Description|InherentKeywords|UpgradeKeywords|ItemCategory|LastUpdated|Template</ColumnNames>
+    </SourceWorksheets>
+    <SourceWorksheets>
+        <WorksheetName>Weapons (Caster)</WorksheetName>
+        <Action>Straight</Action>
+        <TargetTableName>Items</TargetTableName>
+        <Type>Weapon</Type>
+        <ColumnNames>IsWorking|Name|Tier|BaseQuality|Encumbrance|Description|InherentKeywords|UpgradeKeywords|ItemCategory|LastUpdated|Template</ColumnNames>
+    </SourceWorksheets>
+	<SourceWorksheets>
+        <WorksheetName>Ammo</WorksheetName>
+        <Action>Ignore</Action>
+        <TargetTableName></TargetTableName>
+        <Type></Type>
+        <ColumnNames></ColumnNames>
+    </SourceWorksheets>
+	<SourceWorksheets>
+        <WorksheetName>Ammo Container</WorksheetName>
+        <Action>Ignore</Action>
+        <TargetTableName></TargetTableName>
+        <Type></Type>
+        <ColumnNames></ColumnNames>
+    </SourceWorksheets>
+    <SourceWorksheets>
+        <WorksheetName>Armor</WorksheetName>
+        <Action>Straight</Action>
+        <TargetTableName>Items</TargetTableName>
+        <Type>Armor</Type>
+        <ColumnNames>Name|Weight|Tier|BaseQuality|Encumbrance|Description|InherentKeywords|UpgradeKeywords|ItemCategory|MainRole|LastUpdated|Template</ColumnNames>
+    </SourceWorksheets>
+    <SourceWorksheets>
+        <WorksheetName>Misc Gear</WorksheetName>
+        <Action>Straight</Action>
+        <TargetTableName>Items</TargetTableName>
+        <Type>Gear</Type>
+        <ColumnNames>Name|Slot|Tier|BaseQuality|Encumbrance|Description|InherentKeywords|ItemCategory|LastUpdated</ColumnNames>
+    </SourceWorksheets>
+    <SourceWorksheets>
+        <WorksheetName>Recipes (Refining)</WorksheetName>
+        <Action>Straight</Action>
+        <TargetTableName>Recipes</TargetTableName>
+        <Type>RefiningRecipe</Type>
+        <ColumnNames>Name|FeatName|FeatRank|Tier|Ingredient1|Qty1|Ingredient2|Qty2|Ingredient3|Qty3|Ingredient4|Qty4|Azoth|Output|Upgrade|Qty|BaseCraftingSeconds|Quality|Variety|AchievementType|LastUpdated|Template</ColumnNames>
+    </SourceWorksheets>
+	<SourceWorksheets>
+        <WorksheetName>Recipes (Enchanting Refining)</WorksheetName>
+        <Action>Ignore</Action>
+        <TargetTableName></TargetTableName>
+        <Type></Type>
+        <ColumnNames></ColumnNames>
+    </SourceWorksheets>
+    <SourceWorksheets>
+        <WorksheetName>Recipes (Crafting)</WorksheetName>
+        <Action>Straight</Action>
+        <TargetTableName>Recipes</TargetTableName>
+        <Type>CraftingRecipe</Type>
+        <ColumnNames>Name|FeatName|FeatRank|Tier|Ingredient1|Qty1|Ingredient2|Qty2|Ingredient3|Qty3|Ingredient4|Qty4|Output|Qty|BaseCraftingSeconds|Category|BaseQuality|AchievementType|LastUpdated|Template</ColumnNames>
+    </SourceWorksheets>
+    <SourceWorksheets>
+        <WorksheetName>Recipes (Settlement)</WorksheetName>
+        <Action>Straight</Action>
+        <TargetTableName>Recipes</TargetTableName>
+        <Type>CraftingRecipe</Type>
+        <ColumnNames>Name|FeatName|FeatRank|Tier|Ingredient1|Qty1|Ingredient2|Qty2|Ingredient3|Qty3|Ingredient4|Qty4|Output|Qty|BaseCraftingSeconds|Category|BaseQuality|AchievementType|LastUpdated|Template</ColumnNames>
+    </SourceWorksheets>
+    <SourceWorksheets>
+        <WorksheetName>Recipes (Codex)</WorksheetName>
+        <Action>Ignore</Action>
+        <TargetTableName>Recipes</TargetTableName>
+        <Type>CraftingRecipe</Type>
+        <ColumnNames>Name|FeatName|FeatRank|Tier|Ingredient1|Qty1|Ingredient2|Qty2|Ingredient3|Qty3|Ingredient4|Qty4|Output|Qty|BaseCraftingSeconds|Category|BaseQuality|AchievementType|LastUpdated</ColumnNames>
+    </SourceWorksheets>
+    <SourceWorksheets>
+        <WorksheetName>Recipes (Aeon Stones)</WorksheetName>
+        <Action>Ignore</Action>
+        <TargetTableName></TargetTableName>
+        <Type></Type>
+        <ColumnNames></ColumnNames>
+    </SourceWorksheets>
+	<SourceWorksheets>
+        <WorksheetName>Recipes (Enchanting)</WorksheetName>
+        <Action>Ignore</Action>
+        <TargetTableName></TargetTableName>
+        <Type></Type>
+        <ColumnNames></ColumnNames>
+    </SourceWorksheets>
+	<SourceWorksheets>
+        <WorksheetName>Enchantments</WorksheetName>
+        <Action>Ignore</Action>
+        <TargetTableName></TargetTableName>
+        <Type></Type>
+        <ColumnNames></ColumnNames>
+    </SourceWorksheets>
+    <SourceWorksheets>
+        <WorksheetName>Keywords</WorksheetName>
+        <Action>Straight</Action>
+        <TargetTableName>Keywords</TargetTableName>
+        <ColumnNames>Keyword|Value|Gear|Notes</ColumnNames>
+    </SourceWorksheets>
+    <SourceWorksheets>
+        <WorksheetName>Effects Glossary</WorksheetName>
+        <Action>Straight</Action>
+        <TargetTableName>EffectTerms</TargetTableName>
+        <ColumnNames>Term|EffectType|Description|MathSpecifics|Channel</ColumnNames>
+    </SourceWorksheets>
+    <SourceWorksheets>
+        <WorksheetName>Attack Advancement</WorksheetName>
+        <Action>Advancement</Action>
+        <TargetTableName></TargetTableName>
+        <ColumnNames></ColumnNames>
+    </SourceWorksheets>
+    <SourceWorksheets>
+        <WorksheetName>Cantrip Advancement</WorksheetName>
+        <Action>Advancement</Action>
+        <TargetTableName></TargetTableName>
+        <ColumnNames></ColumnNames>
+    </SourceWorksheets>
+    <SourceWorksheets>
+        <WorksheetName>Orison Advancement</WorksheetName>
+        <Action>Advancement</Action>
+        <TargetTableName></TargetTableName>
+        <ColumnNames></ColumnNames>
+    </SourceWorksheets>
+    <SourceWorksheets>
+        <WorksheetName>Utility Advancement</WorksheetName>
+        <Action>Advancement</Action>
+        <TargetTableName></TargetTableName>
+        <ColumnNames></ColumnNames>
+    </SourceWorksheets>
+    <SourceWorksheets>
+        <WorksheetName>Defensive Advancement</WorksheetName>
+        <Action>Advancement</Action>
+        <TargetTableName></TargetTableName>
+        <ColumnNames></ColumnNames>
+    </SourceWorksheets>
+    <SourceWorksheets>
+        <WorksheetName>Reactive Advancement</WorksheetName>
+        <Action>Advancement</Action>
+        <TargetTableName></TargetTableName>
+        <ColumnNames></ColumnNames>
+    </SourceWorksheets>
+    <SourceWorksheets>
+        <WorksheetName>Feature Advancement</WorksheetName>
+        <Action>Advancement</Action>
+        <TargetTableName></TargetTableName>
+        <ColumnNames></ColumnNames>
+    </SourceWorksheets>
+    <SourceWorksheets>
+        <WorksheetName>Armor Advancement</WorksheetName>
+        <Action>Advancement</Action>
+        <TargetTableName></TargetTableName>
+        <ColumnNames></ColumnNames>
+    </SourceWorksheets>
+    <SourceWorksheets>
+        <WorksheetName>Bonuses Advancement</WorksheetName>
+        <Action>Advancement</Action>
+        <TargetTableName></TargetTableName>
+        <ColumnNames></ColumnNames>
+    </SourceWorksheets>
+    <SourceWorksheets>
+        <WorksheetName>Skills Advancement</WorksheetName>
+        <Action>Advancement</Action>
+        <TargetTableName></TargetTableName>
+        <ColumnNames></ColumnNames>
+    </SourceWorksheets>
+    <SourceWorksheets>
+        <WorksheetName>Points Advancement</WorksheetName>
+        <Action>Advancement</Action>
+        <TargetTableName></TargetTableName>
+        <ColumnNames></ColumnNames>
+    </SourceWorksheets>
+    <SourceWorksheets>
+        <WorksheetName>Proficiencies</WorksheetName>
+        <Action>Advancement</Action>
+        <TargetTableName></TargetTableName>
+        <Type>ProficiencyFeat</Type>
+        <ColumnNames></ColumnNames>
+    </SourceWorksheets>
+    <SourceWorksheets>
+        <WorksheetName>Expendables Advancement</WorksheetName>
+        <Action>Advancement</Action>
+        <TargetTableName></TargetTableName>
+        <ColumnNames></ColumnNames>
+    </SourceWorksheets>
+    <SourceWorksheets>
+        <WorksheetName>Interaction Achievements</WorksheetName>
+        <Action>Straight</Action>
+        <TargetTableName>AchievementRanks</TargetTableName>
+        <Type>InteractionAchievement</Type>
+        <ColumnNames>SlotName|Rank|InfluenceGain|Adventure|Arcane|Crafting|Divine|Martial|Social|Subterfuge|DisplayName|Description|Designation|CounterValue|Keyword</ColumnNames>
+    </SourceWorksheets>
+    <SourceWorksheets>
+        <WorksheetName>NPC KIll Achievements</WorksheetName>
+        <Action>Straight</Action>
+        <TargetTableName>AchievementRanks</TargetTableName>
+        <Type>NPCKillAchievement</Type>
+        <ColumnNames>SlotName|Rank|InfluenceGain|Adventure|Arcane|Crafting|Divine|Martial|Social|Subterfuge|DisplayName|Description|Designation|CounterValue|Keyword</ColumnNames>
+    </SourceWorksheets>
+    <SourceWorksheets>
+        <WorksheetName>Meta Achievements</WorksheetName>
+        <Action>Ignore</Action>
+        <TargetTableName>AchievementRanks</TargetTableName>
+        <Type>MetaAchievement</Type>
+        <ColumnNames>SlotName|Rank|Adventure|Arcane|Crafting|Divine|Martial|Social|Subterfuge|DisplayName|Description|FlagReqList</ColumnNames>
+    </SourceWorksheets>
+    <SourceWorksheets>
+        <WorksheetName>Player Kill Achievements</WorksheetName>
+        <Action>Straight</Action>
+        <TargetTableName>AchievementRanks</TargetTableName>
+        <Type>PlayerKillAchievement</Type>
+        <ColumnNames>SlotName|Rank|InfluenceGain|Adventure|Arcane|Crafting|Divine|Martial|Social|Subterfuge|DisplayName|Description|Designation|CounterValue</ColumnNames>
+    </SourceWorksheets>
+    <SourceWorksheets>
+        <WorksheetName>Settlement Location Achievements</WorksheetName>
+        <Action>Straight</Action>
+        <TargetTableName>AchievementRanks</TargetTableName>
+        <Type>SettlementLocationAchievement</Type>
+        <ColumnNames>SlotName|Rank|InfluenceGain|Adventure|Arcane|Crafting|Divine|Martial|Social|Subterfuge|DisplayName|Description|Designation|Keyword</ColumnNames>
+    </SourceWorksheets>
+    <SourceWorksheets>
+        <WorksheetName>Feat Achievements</WorksheetName>
+        <Action>Straight</Action>
+        <TargetTableName>AchievementRanks</TargetTableName>
+        <Type>FeatAchievement</Type>
+        <ColumnNames>SlotName|Rank|InfluenceGain|Adventure|Arcane|Crafting|Divine|Martial|Social|Subterfuge|DisplayName|Description|FeatReqList</ColumnNames>
+    </SourceWorksheets>
+    <SourceWorksheets>
+        <WorksheetName>Special Location Achievements</WorksheetName>
+        <Action>Straight</Action>
+        <TargetTableName>AchievementRanks</TargetTableName>
+        <Type>SpecialLocationAchievement</Type>
+        <ColumnNames>SlotName|Rank|InfluenceGain|Adventure|Arcane|Crafting|Divine|Martial|Social|Subterfuge|DisplayName|Description|Designation|Keyword</ColumnNames>
+    </SourceWorksheets>
+    <SourceWorksheets>
+        <WorksheetName>Weapon Kill Achievements</WorksheetName>
+        <Action>Straight</Action>
+        <TargetTableName>AchievementRanks</TargetTableName>
+        <Type>WeaponKillAchievement</Type>
+        <ColumnNames>SlotName|Rank|InfluenceGain|Adventure|Arcane|Crafting|Divine|Martial|Social|Subterfuge|DisplayName|Description|Designation|CounterValue</ColumnNames>
+    </SourceWorksheets>
+    <SourceWorksheets>
+        <WorksheetName>Crafting Achievements</WorksheetName>
+        <Action>Straight</Action>
+        <TargetTableName>AchievementRanks</TargetTableName>
+        <Type>CraftingAchievement</Type>
+        <ColumnNames>SlotName|DisplayName|Description|Rank|InfluenceGain|Adventure|Arcane|Crafting|Divine|Martial|Social|Subterfuge|Designation|Keyword|CraftingPlus|CraftingFeat|CraftingTier|CraftingRarity</ColumnNames>
+    </SourceWorksheets>
+    <SourceWorksheets>
+        <WorksheetName>Refining Achievements</WorksheetName>
+        <Action>Straight</Action>
+        <TargetTableName>AchievementRanks</TargetTableName>
+        <Type>RefiningAchievement</Type>
+        <ColumnNames>SlotName|DisplayName|Description|Rank|InfluenceGain|Adventure|Arcane|Crafting|Divine|Martial|Social|Subterfuge|Designation|Keyword|CraftingPlus|CraftingFeat|CraftingTier|CraftingRarity</ColumnNames>
+    </SourceWorksheets>
+    <SourceWorksheets>
+        <WorksheetName>Holdings</WorksheetName>
+        <Action>Straight</Action>
+        <TargetTableName>HoldingUpgrades</TargetTableName>
+        <Type>HoldingUpgrade</Type>
+        <ColumnNames>Name|Upgrade|Training|CraftingFacility|ResourceBonus|InfluenceCost|Upkeep|OtherBonus|PvPPeakGuards|NonPvPPeakGuards|GuardSurgeSize|GuardRespawnsPerMinute|PvPGuardRespawns|NonPvPGuardRespawns|NonPvPRespawnFill|MinPvPTime|GuardEntityNames</ColumnNames>
+    </SourceWorksheets>
+    <SourceWorksheets>
+        <WorksheetName>Outposts</WorksheetName>
+        <Action>Straight</Action>
+        <TargetTableName>Outposts</TargetTableName>
+        <Type>Outpost</Type>
+        <ColumnNames>Name|ResourceGeneration|WorkerSkills|ConstructionData|BaseType</ColumnNames>
+    </SourceWorksheets>
+    <SourceWorksheets>
+        <WorksheetName>Outpost Upgrades</WorksheetName>
+        <Action>Straight</Action>
+        <TargetTableName>OutpostUpgrades</TargetTableName>
+        <Type>OutpostUpgrade</Type>
+        <ColumnNames>Name|Upgrade|EffortBonus|InfluenceCost|OtherBonus|PvPPeakGuards|GuardSurgeSize|GuardRespawnsPerMinute|PvPGuardRespawns|MinPvPTime|GuardEntityNames</ColumnNames>
+    </SourceWorksheets>
+    <SourceWorksheets>
+        <WorksheetName>Trainers</WorksheetName>
+        <Action>Trainers</Action>
+        <TargetTableName></TargetTableName>
+        <ColumnNames></ColumnNames>
+    </SourceWorksheets>
+    <SourceWorksheets>
+        <WorksheetName>Feats on Muliple Trainers</WorksheetName>
+        <Action>MultiTrainers</Action>
+        <TargetTableName></TargetTableName>
+        <ColumnNames></ColumnNames>
+    </SourceWorksheets>
+    <SourceWorksheets>
+        <WorksheetName>Bulk Resources</WorksheetName>
+        <Action>Straight</Action>
+        <TargetTableName>Hexes</TargetTableName>
+        <Type>Hex</Type>
+        <ColumnNames>Longitude|Latitude|Region|TerrainType|HexType|Stone|Fish|Crops|Wood|Game|Herds|Ore</ColumnNames>
+    </SourceWorksheets>
+    <SourceWorksheets>
+        <WorksheetName>Settlement Structures</WorksheetName>
+        <Action>Ignore</Action>
+        <TargetTableName>SettlementStructures</TargetTableName>
+        <Type>SettlementStructure</Type>
+        <ColumnNames>Name|Version|Level|Size|Security|Civilization|Morale|Bulk Food|Bulk Ore|Bulk Stone|Bulk Wood|Trade Goods|Coin|Training</ColumnNames>
+    </SourceWorksheets>
+	<SourceWorksheets>
+        <WorksheetName>Settlements</WorksheetName>
+        <Action>Ignore</Action>
+        <TargetTableName></TargetTableName>
+        <Type></Type>
+        <ColumnNames></ColumnNames>
+    </SourceWorksheets>
+    <SourceWorksheets>
+        <WorksheetName>Hexes</WorksheetName>
+        <Action>Ignore</Action>
+        <TargetTableName></TargetTableName>
+        <ColumnNames></ColumnNames>
+    </SourceWorksheets>
+		<SourceWorksheets>
+        <WorksheetName>Raw</WorksheetName>
+        <Action>Ignore</Action>
+        <TargetTableName></TargetTableName>
+        <Type></Type>
+        <ColumnNames></ColumnNames>
+    </SourceWorksheets>
+		<SourceWorksheets>
+        <WorksheetName>Enchanting Raw</WorksheetName>
+        <Action>Ignore</Action>
+        <TargetTableName></TargetTableName>
+        <Type></Type>
+        <ColumnNames></ColumnNames>
+    </SourceWorksheets>
+	<SourceWorksheets>
+        <WorksheetName>Salvage</WorksheetName>
+        <Action>Ignore</Action>
+        <TargetTableName></TargetTableName>
+        <Type></Type>
+        <ColumnNames></ColumnNames>
+    </SourceWorksheets>
+		<SourceWorksheets>
+        <WorksheetName>Enchanting Salvage</WorksheetName>
+        <Action>Ignore</Action>
+        <TargetTableName></TargetTableName>
+        <Type></Type>
+        <ColumnNames></ColumnNames>
+    </SourceWorksheets>
+		<SourceWorksheets>
+        <WorksheetName>Traits</WorksheetName>
+        <Action>Ignore</Action>
+        <TargetTableName></TargetTableName>
+        <Type></Type>
+        <ColumnNames></ColumnNames>
+    </SourceWorksheets>
+</LookupDataSet>

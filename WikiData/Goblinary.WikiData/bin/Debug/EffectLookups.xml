@@ -1,0 +1,76 @@
+﻿<?xml version="1.0"?>
+<LookupDataSet xmlns="http://tempuri.org/LookupDataSet.xsd">
+    <EffectLookups>
+        <Type>Defense</Type>
+        <Item>Fortitude</Item>
+    </EffectLookups>
+    <EffectLookups>
+        <Type>Defense</Type>
+        <Item>Reflex</Item>
+    </EffectLookups>
+    <EffectLookups>
+        <Type>Defense</Type>
+        <Item>Will</Item>
+    </EffectLookups>
+    <EffectLookups>
+        <Type>Energy</Type>
+        <Item>Acid</Item>
+    </EffectLookups>
+    <EffectLookups>
+        <Type>Energy</Type>
+        <Item>Cold</Item>
+    </EffectLookups>
+    <EffectLookups>
+        <Type>Energy</Type>
+        <Item>Electric</Item>
+    </EffectLookups>
+    <EffectLookups>
+        <Type>Energy</Type>
+        <Item>Fire</Item>
+    </EffectLookups>
+    <EffectLookups>
+        <Type>Energy</Type>
+        <Item>Force</Item>
+    </EffectLookups>
+    <EffectLookups>
+        <Type>Energy</Type>
+        <Item>Holy</Item>
+    </EffectLookups>
+    <EffectLookups>
+        <Type>Energy</Type>
+        <Item>Negative</Item>
+    </EffectLookups>
+    <EffectLookups>
+        <Type>Energy</Type>
+        <Item>Physical</Item>
+    </EffectLookups>
+    <EffectLookups>
+        <Type>Energy</Type>
+        <Item>Psychic</Item>
+    </EffectLookups>
+    <EffectLookups>
+        <Type>Energy</Type>
+        <Item>Sonic</Item>
+    </EffectLookups>
+    <EffectLookups>
+        <Type>"Blast Melee</Type>
+        <Item> Long"</Item>
+        <undefined>Long Blast Melee</undefined>
+    </EffectLookups>
+    <EffectLookups>
+        <Type>"Blast</Type>
+        <Item> Long"</Item>
+        <undefined>Long Blast</undefined>
+    </EffectLookups>
+    <EffectLookups>
+        <Type>"Blast</Type>
+        <Item> Melee</Item>
+        <undefined> Short"</undefined>
+        <undefined>Short Blast Melee</undefined>
+    </EffectLookups>
+    <EffectLookups>
+        <Type>"Blast</Type>
+        <Item> Short"</Item>
+        <undefined>Short Blast</undefined>
+    </EffectLookups>
+</LookupDataSet>

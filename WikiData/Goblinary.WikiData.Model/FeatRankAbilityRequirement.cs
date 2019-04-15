@@ -1,17 +1,13 @@
 ﻿namespace Goblinary.WikiData.Model
 {
 	using System;
-	using System.Collections.Generic;
 	using System.ComponentModel.DataAnnotations;
 	using System.ComponentModel.DataAnnotations.Schema;
-	using System.Linq;
-	using System.Text;
-	using System.Threading.Tasks;
 
 	public class FeatRankAbilityRequirement : IFeatRankRequirement
 	{
 		[Key, Column(Order = 1)]
-		public string Feat_Name { get; set; }
+		public string FeatName { get; set; }
 		[Key, Column(Order = 2)]
 		public int? Feat_Rank { get; set; }
 		[Key, Column(Order = 3)]
@@ -19,7 +15,7 @@
 		[Key, Column(Order = 4)]
 		public int? OptionNo { get; set; }
 		[Required]
-		public string Ability_Name { get; set; }
+		public string AbilityName { get; set; }
 		[Required]
 		public int? Value { get; set; }
 
@@ -32,8 +28,8 @@
 		[NotMapped]
 		string IFeatRankFact.FactName
 		{
-			get { return this.Ability_Name; }
-			set { this.Ability_Name = value; }
+			get => AbilityName;
+		    set => AbilityName = value;
 		}
 
 		public static Func<FeatRankAbilityRequirement, string> ToStringMethod { get; set; }

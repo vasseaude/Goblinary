@@ -1,22 +1,16 @@
 ﻿namespace Goblinary.WikiData.Model
 {
-	using System;
 	using System.Collections.Generic;
 	using System.ComponentModel.DataAnnotations;
 	using System.ComponentModel.DataAnnotations.Schema;
-	using System.Linq;
-	using System.Text;
-	using System.Threading.Tasks;
-
-	using Goblinary.Common;
 
 	public class WeaponCategory
 	{
 		public WeaponCategory()
 		{
-			this.GearTypes = new List<GearType>();
-			this.WeaponTypes = new List<WeaponType>();
-			this.ActiveFeats = new List<ActiveFeat>();
+			GearTypes = new List<GearType>();
+			WeaponTypes = new List<WeaponType>();
+			ActiveFeats = new List<ActiveFeat>();
 		}
 
 		[Key]
@@ -35,8 +29,8 @@
 	{
 		public AttackBonus()
 		{
-			this.GearTypes = new List<GearType>();
-			this.WeaponTypes = new List<WeaponType>();
+			GearTypes = new List<GearType>();
+			WeaponTypes = new List<WeaponType>();
 		}
 
 		[Key]

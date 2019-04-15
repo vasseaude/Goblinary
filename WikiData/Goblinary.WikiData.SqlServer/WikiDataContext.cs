@@ -1,24 +1,15 @@
 namespace Goblinary.WikiData.SqlServer
 {
-	using System;
-	using System.ComponentModel.DataAnnotations;
 	using System.Data.Entity;
-	using System.Data.Entity.Core.Metadata.Edm;
-	using System.Data.Entity.Infrastructure;
-	using System.Data.Entity.Migrations;
 	using System.Data.Entity.ModelConfiguration.Conventions;
-	using System.Data.SqlClient;
-	using System.Diagnostics;
-	using System.Linq;
-
-	using Goblinary.WikiData.Model;
+	using Model;
 
 	public class WikiDataContext : DbContext
 	{
 		public WikiDataContext(string nameOrConnectionString)
 			: base(nameOrConnectionString)
 		{
-			this.Configuration.LazyLoadingEnabled = true;
+			Configuration.LazyLoadingEnabled = true;
 		}
 
 		public WikiDataContext()

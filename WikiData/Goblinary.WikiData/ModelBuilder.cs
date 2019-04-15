@@ -10,10 +10,10 @@
     using System.Threading.Tasks;
     using System.Web;
 
-    using Goblinary.Common;
-    using Goblinary.WikiData;
-    using Goblinary.WikiData.Model;
-    using Goblinary.WikiData.SqlServer;
+    using Common;
+    using WikiData;
+    using Model;
+    using SqlServer;
     using System.Data.Entity.Validation;
 
     public class ModelBuilder
@@ -22,44 +22,33 @@
 		{
 			public static List<FactData> GetFacts(string factsText)
 			{
-				List<FactData> facts = new List<FactData>();
-				int factNo = 1;
-				foreach (string fact in factsText.Replace("personality", "Personality").Replace(" or ", "|").Replace(", ", ",").Split(','))
+				var facts = new List<FactData>();
+				var factNo = 1;
+				foreach (var fact in factsText.Replace("personality", "Personality").Replace(" or ", "|").Replace(", ", ",").Split(','))
 					if (fact != "")
 					{
-						int optionNo = 1;
-						foreach (string option in fact.Split('|'))
-						{
-							if (option != "")
-							{
-								string[] parts = option.Split('=');
-								facts.Add(new FactData(factNo, optionNo++, parts[0].Trim(), parts[1].Trim()));
-							}
-						}
-						factNo++;
+						var optionNo = 1;
+					    facts.AddRange(from option in fact.Split('|') where option != "" select option.Split('=') into parts select new FactData(factNo, optionNo++, parts[0].Trim(), parts[1].Trim()));
+					    factNo++;
 					}
 				return facts;
 			}
 
 			public static List<FactData> GetFacts(WorkDataSet.AchievementRanksRow source, IEnumerable<string> categories)
 			{
-				List<FactData> facts = new List<FactData>();
-				int factNo = 1;
-				int optionNo = 1;
-				foreach (string category in categories)
-					if (source[category].ToString() != "")
-						facts.Add(new FactData(factNo++, optionNo, category, source[category].ToString()));
-				return facts;
+			    var factNo = 1;
+				var optionNo = 1;
+			    return (from category in categories where source[category].ToString() != "" select new FactData(factNo++, optionNo, category, source[category].ToString())).ToList();
 			}
 
 			private FactData() { }
 
 			private FactData(int factNo, int optionNo, string name, string value)
 			{
-				this.FactNo = factNo;
-				this.OptionNo = optionNo;
-				this.Name = name;
-				this.Value = value;
+				FactNo = factNo;
+				OptionNo = optionNo;
+				Name = name;
+				Value = value;
 			}
 
 			public int FactNo { get; private set; }
@@ -72,8 +61,8 @@
 		{
 			this.lookupDataSet = lookupDataSet;
 			this.workDataSet = workDataSet;
-			this.assembly = Assembly.GetAssembly(typeof(Feat));
-			this.categories = new List<string> { "Adventure", "Arcane", "Crafting", "Divine", "Martial", "Social", "Subterfuge" };
+			assembly = Assembly.GetAssembly(typeof(Feat));
+			categories = new List<string> { "Adventure", "Arcane", "Crafting", "Divine", "Martial", "Social", "Subterfuge" };
 		}
 
 		private LookupDataSet lookupDataSet;
@@ -88,108 +77,108 @@
 
 		public void Build()
 		{
-			this.BuildLookups();
-			this.BuildEntityTypes();
-			this.BuildRoles();
-			this.BuildKeywordTypes();
-			this.BuildItemTypes();
-			this.BuildStocks();
-			this.BuildEffects();
-			this.BuildConditions();
-			this.BuildKeywords();
-			this.BuildFeats();
-			this.BuildAchievements();
-			this.BuildItems();
-			this.BuildRecipes();
-			this.BuildFeatRankTrainerLevels();
-			this.BuildHexes();
-			this.BuildStructures();
+			BuildLookups();
+			BuildEntityTypes();
+			BuildRoles();
+			BuildKeywordTypes();
+			BuildItemTypes();
+			BuildStocks();
+			BuildEffects();
+			BuildConditions();
+			BuildKeywords();
+			BuildFeats();
+			BuildAchievements();
+			BuildItems();
+			BuildRecipes();
+			BuildFeatRankTrainerLevels();
+			BuildHexes();
+			BuildStructures();
 
-			this.ValidateForeignKeys();
+			ValidateForeignKeys();
 
-			this.SaveData<BulkRating>();
-			this.SaveData<BulkResource>();
-			this.SaveData<AdvancementFeat>();
-			this.SaveData<EntityType>();
-			this.SaveData<EntityTypeMapping>();
-			this.SaveData<Ability>();
-			this.SaveData<Role>();
-			this.SaveData<EffectTerm>();
-			this.SaveData<Effect>();
-			this.SaveData<Condition>();
-			this.SaveData<EffectDescription>();
-			this.SaveData<KeywordType>();
-			this.SaveData<Keyword>();
-			this.SaveData<WeaponCategory>();
-			this.SaveData<AttackBonus>();
-			this.SaveData<WeaponType>();
-			this.SaveData<GearType>();
-			this.SaveData<Feat>();
-			this.SaveData<AchievementGroup>();
-			this.SaveData<Achievement>();
-			this.SaveData<FeatEffect>();
-			this.SaveData<FeatRank>();
-			this.SaveData<Trainer>();
-			this.SaveData<FeatRankTrainerLevel>();
-			this.SaveData<AchievementRank>();
-			this.SaveData<FeatRankEffect>();
-			this.SaveData<FeatRankKeyword>();
-			this.SaveData<FeatRankAbilityBonus>();
-			this.SaveData<FeatRankAbilityRequirement>();
-			this.SaveData<FeatRankAchievementRequirement>();
-			this.SaveData<FeatRankCategoryRequirement>();
-			this.SaveData<FeatRankFeatRequirement>();
-			this.SaveData<AchievementRankCategoryBonus>();
-			this.SaveData<AchievementRankFeatRequirement>();
-			this.SaveData<AchievementRankFlagRequirement>();
-			this.SaveData<Stock>();
-			this.SaveData<Camp>();
-			this.SaveData<Holding>();
-			this.SaveData<Outpost>();
-			this.SaveData<CampUpgrade>();
-			this.SaveData<Item>();
-			this.SaveData<StockItemStock>();
-			this.SaveData<RecipeOutputItem>();
-			this.SaveData<RecipeOutputItemUpgrade>();
-			this.SaveData<RecipeOutputItemUpgradeKeyword>();
-			this.SaveData<Recipe>();
-			this.SaveData<RecipeIngredient>();
-			this.SaveData<Hex>();
-			this.SaveData<HexBulkRating>();
-			this.SaveData<HoldingUpgrade>();
-			this.SaveData<HoldingUpgradeBulkResourceBonus>();
-			this.SaveData<HoldingUpgradeBulkResourceRequirement>();
-			this.SaveData<HoldingUpgradeTrainerLevel>();
-			this.SaveData<OutpostUpgrade>();
-			this.SaveData<OutpostBulkResource>();
-			this.SaveData<OutpostWorkerFeat>();
+			SaveData<BulkRating>();
+			SaveData<BulkResource>();
+			SaveData<AdvancementFeat>();
+			SaveData<EntityType>();
+			SaveData<EntityTypeMapping>();
+			SaveData<Ability>();
+			SaveData<Role>();
+			SaveData<EffectTerm>();
+			SaveData<Effect>();
+			SaveData<Condition>();
+			SaveData<EffectDescription>();
+			SaveData<KeywordType>();
+			SaveData<Keyword>();
+			SaveData<WeaponCategory>();
+			SaveData<AttackBonus>();
+			SaveData<WeaponType>();
+			SaveData<GearType>();
+			SaveData<Feat>();
+			SaveData<AchievementGroup>();
+			SaveData<Achievement>();
+			SaveData<FeatEffect>();
+			SaveData<FeatRank>();
+			SaveData<Trainer>();
+			SaveData<FeatRankTrainerLevel>();
+			SaveData<AchievementRank>();
+			SaveData<FeatRankEffect>();
+			SaveData<FeatRankKeyword>();
+			SaveData<FeatRankAbilityBonus>();
+			SaveData<FeatRankAbilityRequirement>();
+			SaveData<FeatRankAchievementRequirement>();
+			SaveData<FeatRankCategoryRequirement>();
+			SaveData<FeatRankFeatRequirement>();
+			SaveData<AchievementRankCategoryBonus>();
+			SaveData<AchievementRankFeatRequirement>();
+			SaveData<AchievementRankFlagRequirement>();
+			SaveData<Stock>();
+			SaveData<Camp>();
+			SaveData<Holding>();
+			SaveData<Outpost>();
+			SaveData<CampUpgrade>();
+			SaveData<Item>();
+			SaveData<StockItemStock>();
+			SaveData<RecipeOutputItem>();
+			SaveData<RecipeOutputItemUpgrade>();
+			SaveData<RecipeOutputItemUpgradeKeyword>();
+			SaveData<Recipe>();
+			SaveData<RecipeIngredient>();
+			SaveData<Hex>();
+			SaveData<HexBulkRating>();
+			SaveData<HoldingUpgrade>();
+			SaveData<HoldingUpgradeBulkResourceBonus>();
+			SaveData<HoldingUpgradeBulkResourceRequirement>();
+			SaveData<HoldingUpgradeTrainerLevel>();
+			SaveData<OutpostUpgrade>();
+			SaveData<OutpostBulkResource>();
+			SaveData<OutpostWorkerFeat>();
 		}
 
 		private void ValidateForeignKeys()
 		{
 			foreach (var req in (
-					from frar in this.GetEntityList<FeatRankAchievementRequirement>()
-					from a in this.GetEntityList<Achievement>()
-					where a.Name.ToLower() == frar.Achievement_Name.ToLower()
-						&& a.Name != frar.Achievement_Name
+					from frar in GetEntityList<FeatRankAchievementRequirement>()
+					from a in GetEntityList<Achievement>()
+					where string.Equals(a.Name, frar.AchievementName, StringComparison.CurrentCultureIgnoreCase)
+						&& a.Name != frar.AchievementName
 					select new
 					{
 						Req = frar,
-						Name = a.Name
+					    a.Name
 					}
 				))
 			{
-				req.Req.Achievement_Name = req.Name;
+				req.Req.AchievementName = req.Name;
 			}
 			foreach (var req in (
-					from frfr in this.GetEntityList<FeatRankFeatRequirement>()
-					from f in this.GetEntityList<Feat>()
-					where f.Name.ToLower() == frfr.RequiredFeat_Name.ToLower()
+					from frfr in GetEntityList<FeatRankFeatRequirement>()
+					from f in GetEntityList<Feat>()
+					where string.Equals(f.Name, frfr.RequiredFeat_Name, StringComparison.CurrentCultureIgnoreCase)
 						&& f.Name != frfr.RequiredFeat_Name
 					select new
 					{
 						Req = frfr,
-						Name = f.Name
+					    f.Name
 					}
 				))
 			{
@@ -202,7 +191,7 @@
 			Console.WriteLine("Saving {0} data", typeof(T).Name);
 			using (var context = new WikiDataContext())
 			{
-				var list = this.GetEntityList<T>();
+				var list = GetEntityList<T>();
 				context.Set<T>().AddRange(list);
 				using (var transaction = context.Database.BeginTransaction())
 				{
@@ -225,10 +214,10 @@
                         }
                         throw;
                     }
-                    catch (Exception ex)
+                    catch (Exception)
 					{
 						transaction.Rollback();
-						throw ex;
+						throw;
 					}
 				}
 			}
@@ -238,14 +227,14 @@
 
 		private void BuildLookups()
 		{
-			List<Ability> abilityList = this.GetEntityList<Ability>();
-			List<AttackBonus> attackBonusList = this.GetEntityList<AttackBonus>();
-			List<WeaponCategory> weaponCategoryList = this.GetEntityList<WeaponCategory>();
-			List<BulkRating> bulkRatings = this.GetEntityList<BulkRating>();
-			List<BulkResource> bulkResources = this.GetEntityList<BulkResource>();
-			List<Condition> conditions = this.GetEntityList<Condition>();
+			var abilityList = GetEntityList<Ability>();
+			var attackBonusList = GetEntityList<AttackBonus>();
+			var weaponCategoryList = GetEntityList<WeaponCategory>();
+			var bulkRatings = GetEntityList<BulkRating>();
+			var bulkResources = GetEntityList<BulkResource>();
+			var conditions = GetEntityList<Condition>();
 
-			foreach (var lookup in this.lookupDataSet.Lookups)
+			foreach (var lookup in lookupDataSet.Lookups)
 			{
 				switch (lookup.Type)
 				{
@@ -267,7 +256,10 @@
 					case "Condition":
 						conditions.Add(new Condition { Name = lookup.Name });
 						break;
-					default:
+                    case "DevelopmentIndex":
+                        //TODO add this
+                        break;
+                    default:
 						throw new Exception(string.Format("Unexpected Lookup Type: {0}", lookup.Type));
 				}
 			}
@@ -275,224 +267,176 @@
 
 		private void BuildEntityTypes()
 		{
-			List<EntityType> entityTypes = this.GetEntityList<EntityType>();
-			List<EntityTypeMapping> mappings = this.GetEntityList<EntityTypeMapping>();
+			var entityTypes = GetEntityList<EntityType>();
+			var mappings = GetEntityList<EntityTypeMapping>();
 
-			foreach (var entityType in this.lookupDataSet.EntityTypes)
+			foreach (var entityType in lookupDataSet.EntityTypes)
 			{
 				entityTypes.Add(
 					new EntityType
 					{
-						BaseType_Name = entityType.BaseType,
+						BaseTypeName = entityType.BaseType,
 						Name = entityType.EntityType,
-						ParentType_Name = entityType.IsParentTypeNull() ? null : entityType.ParentType,
+						ParentTypeName = entityType.IsParentTypeNull() ? null : entityType.ParentType,
 						Modifier = entityType.Modifier,
 						DisplayName = entityType.DisplayName
 					});
-				if (entityType.Modifier == "Final")
-				{
-					string parent = entityType.EntityType;
-					while (parent != null)
-					{
-						mappings.Add(new EntityTypeMapping
-						{
-							BaseType_Name = entityType.BaseType,
-							ChildType_Name = entityType.EntityType,
-							ParentType_Name = parent
-						});
-						parent = (
-							from ft in this.lookupDataSet.EntityTypes
-							where ft.EntityType == parent
-							select ft.IsParentTypeNull() ? null : ft.ParentType).First();
-					}
-				}
+			    if (entityType.Modifier != "Final") continue;
+			    var parent = entityType.EntityType;
+			    while (parent != null)
+			    {
+			        mappings.Add(new EntityTypeMapping
+			        {
+			            BaseTypeName = entityType.BaseType,
+			            ChildTypeName = entityType.EntityType,
+			            ParentTypeName = parent
+			        });
+			        parent = (
+			            from ft in lookupDataSet.EntityTypes
+			            where ft.EntityType == parent
+			            select ft.IsParentTypeNull() ? null : ft.ParentType).First();
+			    }
 			}
 		}
 
 		private void BuildRoles()
 		{
-			List<Role> roles = this.GetEntityList<Role>();
-
-			foreach (var role in (
-					from fr in this.workDataSet.FeatRanks
-					where !fr.IsRoleNull()
-					select fr.Role
-				).Union(
-					from i in this.workDataSet.Items
-					where !i.IsMainRoleNull()
-					select i.MainRole
-				).Distinct())
-			{
-				roles.Add(new Role
-				{
-					Name = role
-				});
-			}
+			var roles = GetEntityList<Role>();
+		    roles.AddRange((from fr in workDataSet.FeatRanks where !fr.IsRoleNull() select fr.Role).Union(from i in workDataSet.Items where !i.IsMainRoleNull() select i.MainRole)
+		        .Distinct()
+		        .Select(role => new Role
+		        {
+		            Name = role
+		        }));
 		}
 
 		private void BuildKeywordTypes()
 		{
-			List<KeywordType> keywordTypeList = this.GetEntityList<KeywordType>();
-			foreach (var keywordType in this.lookupDataSet.KeywordTypes)
-			{
-				keywordTypeList.Add(new KeywordType
-				{
-					Name = keywordType.KeywordType,
-					SourceFeatType_Name = keywordType.SourceFeatType,
-					MatchingFeatType_Name = keywordType.IsMatchingFeatTypeNull() ? null : keywordType.MatchingFeatType,
-					MatchingItemType_Name = keywordType.IsMatchingItemTypeNull() ? null : keywordType.MatchingItemType
-				});
-			}
+			var keywordTypeList = GetEntityList<KeywordType>();
+		    keywordTypeList.AddRange(lookupDataSet.KeywordTypes.Select(keywordType => new KeywordType
+		    {
+		        Name = keywordType.KeywordType,
+		        SourceFeatTypeName = keywordType.SourceFeatType,
+		        MatchingFeatTypeName = keywordType.IsMatchingFeatTypeNull() ? null : keywordType.MatchingFeatType,
+		        MatchingItemTypeName = keywordType.IsMatchingItemTypeNull() ? null : keywordType.MatchingItemType
+		    }));
 		}
 
 		private void BuildItemTypes()
 		{
-			List<WeaponType> weaponTypeList = this.GetEntityList<WeaponType>();
-			foreach (var weaponType in this.lookupDataSet.WeaponTypes)
-			{
-				weaponTypeList.Add(new WeaponType
-				{
-					Name = weaponType.WeaponType,
-					WeaponCategory_Name = weaponType.WeaponCategory,
-					AttackBonus_Name = weaponType.AttackBonus
-				});
-			}
+			var weaponTypeList = GetEntityList<WeaponType>();
+		    weaponTypeList.AddRange(lookupDataSet.WeaponTypes.Select(weaponType => new WeaponType
+		    {
+		        Name = weaponType.WeaponType,
+		        WeaponCategoryName = weaponType.WeaponCategory,
+		        AttackBonusName = weaponType.AttackBonus
+		    }));
 
-			List<GearType> gearTypeList = this.GetEntityList<GearType>();
-			foreach (var gearType in this.lookupDataSet.GearTypes.Where(x => x.ItemType == "Gear"))
-			{
-				gearTypeList.Add(new GearType
-				{
-					Name = gearType.GearType,
-					WeaponCategory_Name = gearType.IsWeaponCategoryNull() ? null : gearType.WeaponCategory,
-					AttackBonus_Name = gearType.IsAttackBonusNull() ? null : gearType.AttackBonus
-				});
-			}
+		    var gearTypeList = GetEntityList<GearType>();
+		    gearTypeList.AddRange(lookupDataSet.GearTypes.Where(x => x.ItemType == "Gear")
+		        .Select(gearType => new GearType
+		        {
+		            Name = gearType.GearType,
+		            WeaponCategoryName = gearType.IsWeaponCategoryNull() ? null : gearType.WeaponCategory,
+		            AttackBonusName = gearType.IsAttackBonusNull() ? null : gearType.AttackBonus
+		        }));
 		}
 
 		private void BuildStocks()
 		{
-			List<Stock> stockList = this.GetEntityList<Stock>();
-			foreach (var stock in this.lookupDataSet.Stocks)
-			{
-				stockList.Add(new Stock { Name = stock.Stock });
-			}
-			stockList.Add(new Stock { Name = "Scrap Paper" });
+			var stockList = GetEntityList<Stock>();
+		    stockList.AddRange(lookupDataSet.Stocks.Select(stock => new Stock {Name = stock.Stock}));
+		    stockList.Add(new Stock { Name = "Scrap Paper" });
 
-			List<StockItemStock> stockItemStockList = this.GetEntityList<StockItemStock>();
-			foreach (var stockIngredient in
-				from si in this.lookupDataSet.StockIngredients
-				from rt in this.lookupDataSet.ResourceTypes
-					.Where(x => x.ResourceType == si.Ingredient)
-					.DefaultIfEmpty()
-				from r in this.lookupDataSet.Resources
-					.Where(x => rt != null && x.ResourceType == rt.ResourceType)
-					.DefaultIfEmpty()
-				select new
-				{
-					Stock = si.Stock,
-					Item = r != null ? r.Resource : si.Ingredient
-				})
-			{
-				stockItemStockList.Add(new StockItemStock
-				{
-					Stock_Name = stockIngredient.Stock,
-					StockItem_Name = stockIngredient.Item
-				});
-			}
+			var stockItemStockList = GetEntityList<StockItemStock>();
+		    stockItemStockList.AddRange((from si in lookupDataSet.StockIngredients
+		        from rt in lookupDataSet.ResourceTypes.Where(x => x.ResourceType == si.Ingredient)
+		            .DefaultIfEmpty()
+		        from r in lookupDataSet.Resources.Where(x => rt != null && x.ResourceType == rt.ResourceType)
+		            .DefaultIfEmpty()
+		        select new
+		        {
+		            si.Stock,
+		            Item = r != null ? r.Resource : si.Ingredient
+		        }).Select(stockIngredient => new StockItemStock
+		    {
+		        StockName = stockIngredient.Stock,
+		        StockItemName = stockIngredient.Item
+		    }));
 		}
 
 		private void BuildEffects()
 		{
-			string pattern = @"^(?<pre>.*)\[(?<type>.*)\](?<post>.*)$";
-			List<EffectTerm> effectTermList = this.GetEntityList<EffectTerm>();
-			List<Effect> effectList = this.GetEntityList<Effect>();
-			foreach (var effectTerm in this.workDataSet.EffectTerms)
+			var pattern = @"^(?<pre>.*)\[(?<type>.*)\](?<post>.*)$";
+			var effectTermList = GetEntityList<EffectTerm>();
+			var effectList = GetEntityList<Effect>();
+			foreach (var effectTerm in workDataSet.EffectTerms)
 			{
 				effectTermList.Add(new EffectTerm
 				{
 					Term = effectTerm.Term,
-					EffectType_Name = effectTerm.EffectType,
+					EffectTypeName = effectTerm.EffectType,
 					Description = effectTerm.Description,
 					MathSpecifics = effectTerm.IsMathSpecificsNull() ? "" : effectTerm.MathSpecifics,
-					Channel_Name = effectTerm.IsChannelNull() ? "" : effectTerm.Channel
+					ChannelName = effectTerm.IsChannelNull() ? "" : effectTerm.Channel
 				});
 				if (Regex.IsMatch(effectTerm.Term, pattern))
 				{
-					string type = Regex.Replace(effectTerm.Term, pattern, "${type}");
-					foreach (var lookup in
-						from el in this.lookupDataSet.EffectLookups
-						where el.Type == type
-						select el)
-					{
-						string effectName = Regex.Replace(effectTerm.Term, pattern, "${pre}" + lookup.Item + "${post}");
-						effectList.Add(this.CreateEffect(effectName, effectTerm.Term));
-					}
+				    var type = Regex.Replace(effectTerm.Term, pattern, "${type}");
+				    effectList.AddRange((from el in lookupDataSet.EffectLookups where el.Type == type select el).Select(lookup => Regex.Replace(effectTerm.Term, pattern, "${pre}" + lookup.Item + "${post}")).Select(effectName => CreateEffect(effectName, effectTerm.Term)));
 				}
 				else if (effectTerm.Term.StartsWith("Blast"))
 				{
-					foreach (var lookup in
-						from el in this.lookupDataSet.EffectLookups
-						where el.Type == effectTerm.Term
-						select el)
-					{
-						effectList.Add(this.CreateEffect(lookup.Item, effectTerm.Term));
-					}
+				    effectList.AddRange((from el in lookupDataSet.EffectLookups where el.Type == effectTerm.Term select el).Select(lookup => CreateEffect(lookup.Item, effectTerm.Term)));
 				}
 				else
 				{
-					effectList.Add(this.CreateEffect(effectTerm.Term, effectTerm.Term));
+					effectList.Add(CreateEffect(effectTerm.Term, effectTerm.Term));
 				}
 			}
 		}
 
 		private void BuildConditions()
 		{
-			List<Condition> conditionList = this.GetEntityList<Condition>();
-			List<Effect> effectList = this.GetEntityList<Effect>();
-			foreach (var effect in effectList.Distinct())
-			{
-				conditionList.Add(new EffectCondition { Name = effect.Name, Effect_Name = effect.Name });
-			}
+			var conditionList = GetEntityList<Condition>();
+			var effectList = GetEntityList<Effect>();
+		    conditionList.AddRange(effectList.Distinct().Select(effect => new EffectCondition {Name = effect.Name, EffectName = effect.Name}).Cast<Condition>());
 		}
 
 		private void BuildKeywords()
 		{
-			List<Keyword> keywordList = this.GetEntityList<Keyword>();
-			foreach (var keyword in this.workDataSet.Keywords)
-			{
-				keywordList.Add(new Keyword
-				{
-					KeywordType_Name = keyword.Gear,
-					Name = keyword.Keyword,
-					Value_Name = keyword.Value,
-					Notes = keyword.Notes
-				});
-			}
+			var keywordList = GetEntityList<Keyword>();
+		    keywordList.AddRange(workDataSet.Keywords.Select(keyword => new Keyword
+		    {
+		        KeywordTypeName = keyword.Gear,
+		        Name = keyword.Keyword,
+		        ValueName = keyword.Value,
+		        Notes = keyword.Notes
+		    }));
 		}
 
 		private void BuildFeats()
 		{
-			List<Feat> featList = this.GetEntityList<Feat>();
-			List<FeatEffect> featEffectList = this.GetEntityList<FeatEffect>();
-			List<FeatRank> featRankList = this.GetEntityList<FeatRank>();
-			List<FeatRankEffect> featRankEffectList = this.GetEntityList<FeatRankEffect>();
-			List<FeatRankAbilityBonus> featRankAbilityBonusList = this.GetEntityList<FeatRankAbilityBonus>();
-			List<FeatRankAbilityRequirement> featRankAbilityRequirementList = this.GetEntityList<FeatRankAbilityRequirement>();
-			List<FeatRankAchievementRequirement> featRankAchievementRequirementList = this.GetEntityList<FeatRankAchievementRequirement>();
-			List<FeatRankCategoryRequirement> featRankCategoryRequirementList = this.GetEntityList<FeatRankCategoryRequirement>();
-			List<FeatRankFeatRequirement> featRankFeatRequirementList = this.GetEntityList<FeatRankFeatRequirement>();
-			List<FeatRankKeyword> featRankKeywordList = this.GetEntityList<FeatRankKeyword>();
+			var featList = GetEntityList<Feat>();
+			var featEffectList = GetEntityList<FeatEffect>();
+			var featRankList = GetEntityList<FeatRank>();
+			var featRankEffectList = GetEntityList<FeatRankEffect>();
+			var featRankAbilityBonusList = GetEntityList<FeatRankAbilityBonus>();
+			var featRankAbilityRequirementList = GetEntityList<FeatRankAbilityRequirement>();
+			var featRankAchievementRequirementList = GetEntityList<FeatRankAchievementRequirement>();
+			var featRankCategoryRequirementList = GetEntityList<FeatRankCategoryRequirement>();
+			var featRankFeatRequirementList = GetEntityList<FeatRankFeatRequirement>();
+			var featRankKeywordList = GetEntityList<FeatRankKeyword>();
 
 			Feat feat = null;
 			string[] keywordList = null;
 			string keywordTypeName = null;
 			List<string> priorKeywords = null;
-			List<string> missingKeywords = new List<string>();
+			var missingKeywords = new List<string>();
 
 			// Kludge: Fix CrossBow
 			foreach (var source in
-					from ar in this.workDataSet.AdvancementRanks
+					from ar in workDataSet.AdvancementRanks
 					where ar.SlotName.Contains("CrossBow")
 					select ar
 				)
@@ -500,7 +444,7 @@
 				source.SlotName = source.SlotName.Replace("CrossBow", "Crossbow");
 			}
 			foreach (var source in
-					from a in this.workDataSet.Advancements
+					from a in workDataSet.Advancements
 					where a.SlotName.Contains("CrossBow")
 					select a
 				)
@@ -508,7 +452,7 @@
 				source.SlotName = source.SlotName.Replace("CrossBow", "Crossbow");
 			}
 			foreach (var source in
-					from fr in this.workDataSet.FeatRanks
+					from fr in workDataSet.FeatRanks
 					where !fr.IsAdvancementLinkNull() && fr.AdvancementLink.Contains("CrossBow")
 					select fr
 				)
@@ -522,11 +466,11 @@
 
 			var featQuery =
 				 (
-					from ar in this.workDataSet.AdvancementRanks
-					from a in this.workDataSet.Advancements
+					from ar in workDataSet.AdvancementRanks
+					from a in workDataSet.Advancements
 						.Where(x => x.SlotName == ar.SlotName)
 						.DefaultIfEmpty()
-					from fr in this.workDataSet.FeatRanks
+					from fr in workDataSet.FeatRanks
 						.Where(x => !x.IsAdvancementLinkNull() && x.AdvancementLink == a.SlotName && (x.Rank == ar.Rank || x.Rank == "-1"))
 						.DefaultIfEmpty()
 					orderby fr != null ? fr.FeatName : a.SlotName,
@@ -540,8 +484,8 @@
 						FeatRanksRow = fr
 					}
 				).Union(
-					from fr in this.workDataSet.FeatRanks
-					from a in this.workDataSet.Advancements
+					from fr in workDataSet.FeatRanks
+					from a in workDataSet.Advancements
 						.Where(x => !fr.IsAdvancementLinkNull() && x.SlotName == fr.AdvancementLink)
 						.DefaultIfEmpty()
 					where a == null
@@ -558,15 +502,11 @@
 
 			#endregion Feat Query
 
-			this.workDataSet.MissingFeats.Clear();
-			foreach (FeatData source in featQuery)
+			workDataSet.MissingFeats.Clear();
+			foreach (var source in featQuery)
 			{
 				Console.WriteLine("Building Feat '{0}' Rank {1}.", source.FeatName, source.AdvancementRanksRow != null ? source.AdvancementRanksRow.Rank : source.FeatRanksRow.Rank);
-				if (source.FeatType == "Upgrade"
-					&& source.AdvancementRanksRow != null
-					&& source.AdvancementRanksRow.AdvancementsRow != null
-					&& !source.AdvancementRanksRow.AdvancementsRow.IsTypeNull()
-					&& source.AdvancementRanksRow.AdvancementsRow.Type == "ProficiencyFeat")
+				if (source.FeatType == "Upgrade" && source.AdvancementRanksRow?.AdvancementsRow != null && !source.AdvancementRanksRow.AdvancementsRow.IsTypeNull() && source.AdvancementRanksRow.AdvancementsRow.Type == "ProficiencyFeat")
 				{
 					source.FeatType = "ProficiencyFeat";
 				}
@@ -574,7 +514,7 @@
 				{
 					if (!missingKeywords.Contains(source.FeatName))
 					{
-						this.workDataSet.MissingFeats.AddMissingFeatsRow(source.FeatName, source.Worksheet);
+						workDataSet.MissingFeats.AddMissingFeatsRow(source.FeatName, source.Worksheet);
 						missingKeywords.Add(source.FeatName);
 					}
 					continue;
@@ -585,35 +525,34 @@
 
 					keywordList = null;
 					priorKeywords = new List<string>();
-					feat = this.CreateEntity<Feat>(source.FeatType);
+					feat = CreateEntity<Feat>(source.FeatType);
 					feat.Name = source.FeatName;
-					feat.BaseType_Name = "Feat";
-					feat.FeatType_Name = source.FeatType;
-					feat.Role_Name = source.FeatRanksRow != null && !source.FeatRanksRow.IsRoleNull() ? source.FeatRanksRow.Role : "General";
+					feat.BaseTypeName = "Feat";
+					feat.FeatTypeName = source.FeatType;
+					feat.RoleName = source.FeatRanksRow != null && !source.FeatRanksRow.IsRoleNull() ? source.FeatRanksRow.Role : "General";
 					if (source.FeatRanksRow != null && !source.FeatRanksRow.IsAdvancementLinkNull())
 					{
-						feat.AdvancementFeat_Name = source.FeatRanksRow.AdvancementLink;
+						feat.AdvancementFeatName = source.FeatRanksRow.AdvancementLink;
 					}
 					else if (source.FeatRanksRow == null && source.FeatType != "Consumable" && source.AdvancementRanksRow != null)
 					{
-						feat.AdvancementFeat_Name = source.AdvancementRanksRow.SlotName;
+						feat.AdvancementFeatName = source.AdvancementRanksRow.SlotName;
 					}
-					if (feat is ActiveFeat)
+					if (feat is ActiveFeat activeFeat)
 					{
-						ActiveFeat activeFeat = (ActiveFeat)feat;
-						activeFeat.DamageFactor = decimal.Parse(source.FeatRanksRow.DamageFactor);
+					    activeFeat.DamageFactor = decimal.Parse(source.FeatRanksRow.DamageFactor);
 						activeFeat.AttackSeconds = decimal.Parse(source.FeatRanksRow.AttackSeconds);
 						activeFeat.StaminaCost = int.Parse(source.FeatRanksRow.StaminaCost);
 						activeFeat.Range = source.FeatRanksRow.Range;
-						activeFeat.WeaponCategory_Name = source.FeatRanksRow.WeaponCategory;
+						activeFeat.WeaponCategoryName = source.FeatRanksRow.WeaponCategory;
 						if (!source.FeatRanksRow.IsStandardEffectsNull())
-							featEffectList.AddRange(this.GetFeatEffects(activeFeat, "Standard", source.FeatRanksRow.StandardEffects));
+							featEffectList.AddRange(GetFeatEffects(activeFeat, "Standard", source.FeatRanksRow.StandardEffects));
 						if (!source.FeatRanksRow.IsRestrictionEffectsNull())
-							featEffectList.AddRange(this.GetFeatEffects(activeFeat, "Restriction", source.FeatRanksRow.RestrictionEffects));
+							featEffectList.AddRange(GetFeatEffects(activeFeat, "Restriction", source.FeatRanksRow.RestrictionEffects));
 						if (!source.FeatRanksRow.IsConditionalEffectsNull())
-							featEffectList.AddRange(this.GetFeatEffects(activeFeat, "Conditional", source.FeatRanksRow.ConditionalEffects));
-						List<string> tempKeywordList = new List<string>();
-						for (int i = 1; i <= 9; i++)
+							featEffectList.AddRange(GetFeatEffects(activeFeat, "Conditional", source.FeatRanksRow.ConditionalEffects));
+						var tempKeywordList = new List<string>();
+						for (var i = 1; i <= 9; i++)
 						{
 							if (source.FeatRanksRow["Keyword" + i.ToString()] != DBNull.Value)
 								tempKeywordList.Add(source.FeatRanksRow["Keyword" + i.ToString()].ToString().Replace(", ", ","));
@@ -621,9 +560,9 @@
 								break;
 						}
 						keywordList = tempKeywordList.ToArray();
-						if (feat is StandardAttack)
+						if (activeFeat is StandardAttack standardAttack)
 						{
-							if (feat is Attack)
+							if (standardAttack is Attack)
 							{
 								keywordTypeName = "Weapon";
 							}
@@ -631,29 +570,28 @@
 							{
 								keywordTypeName = "Gear";
 							}
-							StandardAttack standardAttack = (StandardAttack)feat;
-							standardAttack.CooldownSeconds = decimal.Parse(source.FeatRanksRow.CooldownSeconds);
-							standardAttack.WeaponForm_Name = source.FeatRanksRow.Form.Trim();
+						    standardAttack.CooldownSeconds = decimal.Parse(source.FeatRanksRow.CooldownSeconds);
+							standardAttack.WeaponFormName = source.FeatRanksRow.Form.Trim();
 							if (!source.FeatRanksRow.IsSpecificWeaponNull())
 							{
-								standardAttack.SpecificWeapon_Name = source.FeatRanksRow.SpecificWeapon;
+								standardAttack.SpecificWeaponName = source.FeatRanksRow.SpecificWeapon;
 							}
-							if (feat is Cantrip)
+							if (standardAttack is Cantrip)
 							{
-								((Cantrip)feat).School_Name = source.FeatRanksRow.School;
+								((Cantrip)standardAttack).SchoolName = source.FeatRanksRow.School;
 							}
 						}
-						else if (feat is PowerAttack)
+						else if (activeFeat is PowerAttack)
 						{
-							if (feat is Expendable)
+							if (activeFeat is Expendable)
 							{
 								keywordTypeName = "Implement";
 							}
-							PowerAttack powerAttackFeat = (PowerAttack)feat;
+							var powerAttackFeat = (PowerAttack)activeFeat;
 							powerAttackFeat.PowerCost = int.Parse(source.FeatRanksRow.PowerCost);
 							powerAttackFeat.Level = int.Parse(source.FeatRanksRow.Level);
 							powerAttackFeat.HasEndOfCombatCooldown = source.FeatRanksRow.HasCooldown.ToLower() == "yes";
-							powerAttackFeat.AttackBonus_Name = source.FeatRanksRow.AttackBonus;
+							powerAttackFeat.AttackBonusName = source.FeatRanksRow.AttackBonus;
 						}
 					}
 					else if (feat is ArmorFeat)
@@ -661,7 +599,7 @@
 						keywordTypeName = "Armor";
 						if (!source.FeatRanksRow.IsKeywordEffectsNull())
 						{
-							featEffectList.AddRange(this.GetFeatEffects((ArmorFeat)feat, "PerKeyword", source.FeatRanksRow.KeywordEffects));
+							featEffectList.AddRange(GetFeatEffects((ArmorFeat)feat, "PerKeyword", source.FeatRanksRow.KeywordEffects));
 						}
 					}
 					else if (feat is Feature)
@@ -670,7 +608,7 @@
 					}
 					if (feat is ChanneledFeat)
 					{
-						((ChanneledFeat)feat).Channel_Name = source.FeatRanksRow.Channel;
+						((ChanneledFeat)feat).ChannelName = source.FeatRanksRow.Channel;
 					}
 					featList.Add(feat);
 
@@ -680,25 +618,25 @@
 				{
 					#region Build Feat Ranks
 
-					FeatRank featRank = new FeatRank();
-					featRank.Feat_Name = feat.Name;
+					var featRank = new FeatRank();
+					featRank.FeatName = feat.Name;
 					featRank.Rank = int.Parse(source.AdvancementRanksRow.Rank);
 					featRank.ExpCost = int.Parse(source.AdvancementRanksRow.ExpCost);
 					featRank.CoinCost = int.Parse(source.AdvancementRanksRow.CoinCost);
 					List<string> keywords = null;
-					bool addPriorKeywords = false;
+					var addPriorKeywords = false;
 					if (source.FeatRanksRow != null && !source.FeatRanksRow.IsEffectNull())
-						featRankEffectList.AddRange(this.GetFeatRankEffects(featRank, source.FeatRanksRow.Effect));
+						featRankEffectList.AddRange(GetFeatRankEffects(featRank, source.FeatRanksRow.Effect));
 					if (!source.AdvancementRanksRow.IsAbilityBonusNull())
-						featRankAbilityBonusList.AddRange(this.GetFeatRankFacts<FeatRankAbilityBonus>(featRank, source.AdvancementRanksRow.AbilityBonus));
+						featRankAbilityBonusList.AddRange(GetFeatRankFacts<FeatRankAbilityBonus>(featRank, source.AdvancementRanksRow.AbilityBonus));
 					if (!source.AdvancementRanksRow.IsAbilityReqNull())
-						featRankAbilityRequirementList.AddRange(this.GetFeatRankFacts<FeatRankAbilityRequirement>(featRank, source.AdvancementRanksRow.AbilityReq));
+						featRankAbilityRequirementList.AddRange(GetFeatRankFacts<FeatRankAbilityRequirement>(featRank, source.AdvancementRanksRow.AbilityReq));
 					if (!source.AdvancementRanksRow.IsAchievementReqNull())
-						featRankAchievementRequirementList.AddRange(this.GetFeatRankFacts<FeatRankAchievementRequirement>(featRank, source.AdvancementRanksRow.AchievementReq));
+						featRankAchievementRequirementList.AddRange(GetFeatRankFacts<FeatRankAchievementRequirement>(featRank, source.AdvancementRanksRow.AchievementReq));
 					if (!source.AdvancementRanksRow.IsCategoryReqNull())
-						featRankCategoryRequirementList.AddRange(this.GetFeatRankFacts<FeatRankCategoryRequirement>(featRank, source.AdvancementRanksRow.CategoryReq));
+						featRankCategoryRequirementList.AddRange(GetFeatRankFacts<FeatRankCategoryRequirement>(featRank, source.AdvancementRanksRow.CategoryReq));
 					if (!source.AdvancementRanksRow.IsFeatReqNull())
-						featRankFeatRequirementList.AddRange(this.GetFeatRankFacts<FeatRankFeatRequirement>(featRank, source.AdvancementRanksRow.FeatReq));
+						featRankFeatRequirementList.AddRange(GetFeatRankFacts<FeatRankFeatRequirement>(featRank, source.AdvancementRanksRow.FeatReq));
 					if (keywordList != null)
 					{
 						if (feat is Expendable)
@@ -714,22 +652,22 @@
 					{
 						addPriorKeywords = true;
 						keywords = new List<string>(source.FeatRanksRow.Keywords.Replace(", ", ",").Split(','));
-						foreach (string priorKeyword in priorKeywords)
+						foreach (var priorKeyword in priorKeywords)
 							keywords.Remove(priorKeyword);
 					}
 					if (keywords != null)
 					{
-						int keywordNo = 1;
-						foreach (string keyword in keywords)
+						var keywordNo = 1;
+						foreach (var keyword in keywords)
 						{
 							featRankKeywordList.Add(
 								new FeatRankKeyword
 								{
-									Feat_Name = featRank.Feat_Name,
+									FeatName = featRank.FeatName,
 									Feat_Rank = featRank.Rank,
 									KeywordNo = keywordNo++,
-									KeywordType_Name = keywordTypeName,
-									Keyword_Name = keyword
+									KeywordTypeName = keywordTypeName,
+									KeywordName = keyword
 								});
 							if (addPriorKeywords)
 								priorKeywords.Add(keyword);
@@ -741,28 +679,21 @@
 				}
 			}
 
-			List<AdvancementFeat> advancementFeatList = this.GetEntityList<AdvancementFeat>();
-			foreach (var advancementFeat in (
-					from f in featList
-					where f.AdvancementFeat_Name != null
-					select f.AdvancementFeat_Name
-				).Distinct())
-			{
-				advancementFeatList.Add(new AdvancementFeat { Name = advancementFeat });
-			}
+			var advancementFeatList = GetEntityList<AdvancementFeat>();
+		    advancementFeatList.AddRange((from f in featList where f.AdvancementFeatName != null select f.AdvancementFeatName).Distinct().Select(advancementFeat => new AdvancementFeat {Name = advancementFeat}));
 		}
 
 		private void BuildAchievements()
 		{
-			List<Achievement> achievementList = this.GetEntityList<Achievement>();
-			List<AchievementRank> achievementRankList = this.GetEntityList<AchievementRank>();
-			List<AchievementRankCategoryBonus> achievementRankCategoryBonusList = this.GetEntityList<AchievementRankCategoryBonus>();
-			List<AchievementRankFeatRequirement> achievementRankFeatRequirementList = this.GetEntityList<AchievementRankFeatRequirement>();
-			List<AchievementRankFlagRequirement> achievementRankFlagRequirementList = this.GetEntityList<AchievementRankFlagRequirement>();
+			var achievementList = GetEntityList<Achievement>();
+			var achievementRankList = GetEntityList<AchievementRank>();
+			var achievementRankCategoryBonusList = GetEntityList<AchievementRankCategoryBonus>();
+			var achievementRankFeatRequirementList = GetEntityList<AchievementRankFeatRequirement>();
+			var achievementRankFlagRequirementList = GetEntityList<AchievementRankFlagRequirement>();
 
 			Achievement achievement = null;
 			foreach (var source in
-					from al in this.workDataSet.AchievementRanks
+					from al in workDataSet.AchievementRanks
 					orderby al.SlotName, int.Parse(al.Rank)
 					select al
 				)
@@ -770,15 +701,15 @@
 				Console.WriteLine("Building Achievement '{0}' Rank {1}.", source.SlotName, source.Rank);
 				if (achievement == null || achievement.Name != source.SlotName)
 				{
-					achievement = this.CreateEntity<Achievement>(source.Type);
+					achievement = CreateEntity<Achievement>(source.Type);
 					achievement.Name = source.SlotName;
-					achievement.BaseType_Name = "Achievement";
-					achievement.AchievementType_Name = source.Type;
-					achievement.AchievementGroup_Name = source.DisplayName.XRegexReplace(@"^(?<FriendlyName>[^\(0-9]*).*$", "${FriendlyName}").Trim();
+					achievement.BaseTypeName = "Achievement";
+					achievement.AchievementTypeName = source.Type;
+					achievement.AchievementGroupName = source.DisplayName.XRegexReplace(@"^(?<FriendlyName>[^\(0-9]*).*$", "${FriendlyName}").Trim();
 					achievementList.Add(achievement);
 				}
-				AchievementRank achievementRank = this.CreateEntity<AchievementRank>(source.Type + "Rank");
-				achievementRank.Achievement_Name = achievement.Name;
+				var achievementRank = CreateEntity<AchievementRank>(source.Type + "Rank");
+				achievementRank.AchievementName = achievement.Name;
 				achievementRank.Rank = int.Parse(source.Rank);
 				achievementRank.DisplayName = source.DisplayName;
 				achievementRank.InfluenceGain = source.InfluenceGain;
@@ -797,70 +728,66 @@
 				}
 				if (achievementRank is CounterAchievementRank)
 				{
-					((CounterAchievementRank)achievementRank).Counter_Name = source.Designation;
+					((CounterAchievementRank)achievementRank).CounterName = source.Designation;
 					((CounterAchievementRank)achievementRank).Value = int.Parse(source.CounterValue);
 				}
 				if (achievementRank is FlagAchievementRank)
 				{
-					((FlagAchievementRank)achievementRank).Flag_Name = source.Designation;
+					((FlagAchievementRank)achievementRank).FlagName = source.Designation;
 				}
 				if (achievementRank is CategoryBonusAchievementRank)
 				{
-					achievementRankCategoryBonusList.AddRange(this.GetAchievementRankFacts<AchievementRankCategoryBonus>(achievementRank, FactData.GetFacts(source, this.categories)));
+					achievementRankCategoryBonusList.AddRange(GetAchievementRankFacts<AchievementRankCategoryBonus>(achievementRank, FactData.GetFacts(source, categories)));
 				}
 				if (achievementRank is CraftAchievementRank)
 				{
-					((CraftAchievementRank)achievementRank).Feat_Name = source.CraftingFeat;
+					((CraftAchievementRank)achievementRank).FeatName = source.CraftingFeat;
 					((CraftAchievementRank)achievementRank).Tier = int.Parse(source.CraftingTier);
-					((CraftAchievementRank)achievementRank).Rarity_Name = source.CraftingRarity;
+					((CraftAchievementRank)achievementRank).RarityName = source.CraftingRarity;
 					((CraftAchievementRank)achievementRank).Upgrade = int.Parse(source.CraftingPlus);
 				}
 				if (!source.IsFeatReqListNull())
 				{
-					achievementRankFeatRequirementList.AddRange(this.GetAchievementRankFacts<AchievementRankFeatRequirement>(achievementRank, FactData.GetFacts(source.FeatReqList)));
+					achievementRankFeatRequirementList.AddRange(GetAchievementRankFacts<AchievementRankFeatRequirement>(achievementRank, FactData.GetFacts(source.FeatReqList)));
 				}
 				if (!source.IsFlagReqListNull())
 				{
-					achievementRankFlagRequirementList.AddRange(this.GetAchievementRankFacts<AchievementRankFlagRequirement>(achievementRank, FactData.GetFacts(source.FlagReqList)));
+					achievementRankFlagRequirementList.AddRange(GetAchievementRankFacts<AchievementRankFlagRequirement>(achievementRank, FactData.GetFacts(source.FlagReqList)));
 				}
 				achievementRankList.Add(achievementRank);
 			}
 
-			List<AchievementGroup> achievementGroupList = this.GetEntityList<AchievementGroup>();
-			foreach (var achievementGroupName in (
-						from ar in this.workDataSet.AchievementRanks
-						from a in achievementList
-						where a.Name == ar.SlotName
-						select new
-						{
-							Name = a.AchievementGroup_Name,
-							AchievementType_Name = ar.Type
-						}
-					).Distinct().ToList()
-				)
-			{
-				achievementGroupList.Add(new AchievementGroup
-				{
-					Name = achievementGroupName.Name,
-					BaseType_Name = "Achievement",
-					AchievementType_Name = achievementGroupName.AchievementType_Name
-				});
-			}
+			var achievementGroupList = GetEntityList<AchievementGroup>();
+		    achievementGroupList.AddRange((from ar in workDataSet.AchievementRanks
+		            from a in achievementList
+		            where a.Name == ar.SlotName
+		            select new
+		            {
+		                Name = a.AchievementGroupName,
+		                AchievementType_Name = ar.Type
+		            }).Distinct()
+		        .ToList()
+		        .Select(achievementGroupName => new AchievementGroup
+		        {
+		            Name = achievementGroupName.Name,
+		            BaseTypeName = "Achievement",
+		            AchievementTypeName = achievementGroupName.AchievementType_Name
+		        }));
 		}
 
 		private void BuildItems()
 		{
-			List<Item> itemList = this.GetEntityList<Item>();
+			var itemList = GetEntityList<Item>();
 
 			#region Build Recipe Items
 
 			string itemName = null;
 			foreach (var source in
-				from r in this.workDataSet.Recipes
-				from i in this.workDataSet.Items
+				from r in workDataSet.Recipes
+				from i in workDataSet.Items
 					.Where(x => x.Name == r.Output.XRegexReplace(@"^(?<OutputItem>.*?)( Utility \((Boot|Glove)\))?$", "${OutputItem}", RegexReplaceEmptyResultBehaviors.ThrowError))
 					.DefaultIfEmpty()
-				from gt in this.lookupDataSet.GearTypes
+				from gt in lookupDataSet.GearTypes
 					.Where(x => i != null && i.Type == "Gear" && x.GearType == i.Slot)
 					.DefaultIfEmpty()
 				orderby r.Output.XRegexReplace(@"^(?<OutputItem>.*?)( Utility \((Boot|Glove)\))?$", "${OutputItem}", RegexReplaceEmptyResultBehaviors.ThrowError)
@@ -868,7 +795,7 @@
 				{
 					GearType = gt,
 					Item = i,
-					Type = r.Type,
+				    r.Type,
 					Name = r.Output.XRegexReplace(@"^(?<OutputItem>.*?)( Utility \((Boot|Glove)\))?$", "${OutputItem}", RegexReplaceEmptyResultBehaviors.ThrowError),
 					Category = r.IsCategoryNull() ? null : r.Category,
 					Variety = r.IsVarietyNull() ? "Essence" : r.Variety, // Divine Charms are the only known Output from Crafting Recipes that count as Components and they're of Variety "Essence"
@@ -887,7 +814,7 @@
 				}
 				itemName = source.Name;
 				Console.WriteLine("Building Item '{0}'.", source.Name);
-				string type = "ConsumableItem";
+				var type = "ConsumableItem";
 				if (source.GearType != null)
 				{
 					type = source.GearType.ItemType;
@@ -915,7 +842,7 @@
 				if (type == "ConsumableItem")
 				{
 					var consumableFeat = (
-							from f in this.GetEntityList<Feat>()
+							from f in GetEntityList<Feat>()
 							where f.Name == itemName
 							select f
 						).FirstOrDefault();
@@ -924,7 +851,7 @@
 						continue;
 					}
 				}
-				Item item = this.CreateEntity<Item>(type);
+				var item = CreateEntity<Item>(type);
 				item.Name = source.Name;
 				item.BaseType_Name = "Item";
 				item.ItemType_Name = type;
@@ -933,44 +860,44 @@
 				item.Description = source.Description;
 				if (item is Equipment)
 				{
-					((Equipment)item).ItemCategory_Name = source.Category;
+					((Equipment)item).ItemCategoryName = source.Category;
 					switch (item.ItemType_Name)
 					{
 						case "Armor":
-							((Armor)item).ArmorType_Name = source.ArmorType;
-							((Armor)item).MainRole_Name = source.MainRole;
+							((Armor)item).ArmorTypeName = source.ArmorType;
+							((Armor)item).MainRoleName = source.MainRole;
 							break;
 						case "Weapon":
-							((Weapon)item).WeaponType_Name = source.Description.XRegexReplace("^Tier [1-3] (?<WeaponType>[^;]*);.*$", "${WeaponType}", RegexReplaceEmptyResultBehaviors.ThrowError);
+							((Weapon)item).WeaponTypeName = source.Description.XRegexReplace("^Tier [1-3] (?<WeaponType>[^;]*);.*$", "${WeaponType}", RegexReplaceEmptyResultBehaviors.ThrowError);
 							break;
 						case "Gear":
-							((Gear)item).GearType_Name = source.GearType != null ? source.GearType.GearType : source.Category;
+							((Gear)item).GearTypeName = source.GearType != null ? source.GearType.GearType : source.Category;
 							break;
 						case "Implement":
-							((Implement)item).ImplementType_Name = source.GearType.GearType;
+							((Implement)item).ImplementTypeName = source.GearType.GearType;
 							break;
 						case "AmmoContainer":
-							((AmmoContainer)item).AmmoContainerType_Name = source.Name.XRegexReplace(@"^.* (?<Type>Charge Gem|Bullet Pouch|Quiver)$", "${Type}", RegexReplaceEmptyResultBehaviors.ThrowError);
+							((AmmoContainer)item).AmmoContainerTypeName = source.Name.XRegexReplace(@"^.* (?<Type>Charge Gem|Bullet Pouch|Quiver)$", "${Type}", RegexReplaceEmptyResultBehaviors.ThrowError);
 							break;
 						case "Ammo":
-							((Ammo)item).AmmoType_Name = source.Name.XRegexReplace("^.* (?<AmmoType>Charge|Arrow)$", "${AmmoType}", RegexReplaceEmptyResultBehaviors.ThrowError);
+							((Ammo)item).AmmoTypeName = source.Name.XRegexReplace("^.* (?<AmmoType>Charge|Arrow)$", "${AmmoType}", RegexReplaceEmptyResultBehaviors.ThrowError);
 							break;
 						case "Mule":
 							break;
 						case "CampKit":
-							((CampKit)item).Camp_Name = item.Name;
+							((CampKit)item).CampName = item.Name;
 							break;
 						case "HoldingKit":
-							((HoldingKit)item).Holding_Name = item.Name.Replace(" Kit", "");
+							((HoldingKit)item).HoldingName = item.Name.Replace(" Kit", "");
 							break;
 						case "OutpostKit":
-							((OutpostKit)item).Outpost_Name = item.Name.Replace(" Kit", "");
+							((OutpostKit)item).OutpostName = item.Name.Replace(" Kit", "");
 							break;
 						case "WeaponCoating":
-							((WeaponCoating)item).WeaponCoatingType_Name = source.Name.XRegexReplace("^(Apprentice's|Journeyman's|Master's|Cold Iron|Silver|Adamantine) (?<Type>.*)$", "${Type}", RegexReplaceEmptyResultBehaviors.ThrowError);
+							((WeaponCoating)item).WeaponCoatingTypeName = source.Name.XRegexReplace("^(Apprentice's|Journeyman's|Master's|Cold Iron|Silver|Adamantine) (?<Type>.*)$", "${Type}", RegexReplaceEmptyResultBehaviors.ThrowError);
 							break;
 						case "ConsumableItem":
-							((ConsumableItem)item).Consumable_Name = source.Name;
+							((ConsumableItem)item).ConsumableName = source.Name;
 							break;
 						case "Component":
 							break;
@@ -980,14 +907,14 @@
 				}
 				else if (item is Component)
 				{
-					((Component)item).Variety_Name = source.Variety;
+					((Component)item).VarietyName = source.Variety;
 				}
 				else
 				{
 					throw new Exception(string.Format("Unexpected Item Type: {0}", item.GetType().Name));
 				}
 				itemList.Add(item);
-				this.CreateRecipeOutputItem(item, source.InherentKeywords, source.UpgradeKeywords);
+				CreateRecipeOutputItem(item, source.InherentKeywords, source.UpgradeKeywords);
 			}
 
 			#endregion Build Recipe Items
@@ -995,7 +922,7 @@
 			#region Build Consumable Items
 
 			foreach (var source in
-				from fr in this.workDataSet.FeatRanks
+				from fr in workDataSet.FeatRanks
 				where fr.Type == "Consumable" && fr.WeaponCategory == "Token"
 				select new
 				{
@@ -1003,14 +930,14 @@
 				})
 			{
 				Console.WriteLine("Building Token: {0}", source.Consumable.FeatName);
-				ConsumableItem item = new ConsumableItem
+				var item = new ConsumableItem
 				{
 					Name = source.Consumable.FeatName,
 					BaseType_Name = "Item",
 					ItemType_Name = "ConsumableItem",
 					Tier = int.Parse(source.Consumable.Level) / 3,
-					ItemCategory_Name = source.Consumable.WeaponCategory,
-					Consumable_Name = source.Consumable.FeatName
+					ItemCategoryName = source.Consumable.WeaponCategory,
+					ConsumableName = source.Consumable.FeatName
 				};
 				itemList.Add(item);
 			}
@@ -1020,21 +947,21 @@
 			#region Build Salvages
 
 			foreach (var source in
-				from s in this.lookupDataSet.Salvages
+				from s in lookupDataSet.Salvages
 				select new
 				{
 					Salvage = s
 				})
 			{
 				Console.WriteLine("Building Salvage '{0}'.", source.Salvage.Salvage);
-				Salvage item = new Salvage
+				var item = new Salvage
 				{
 					Name = source.Salvage.Salvage,
 					BaseType_Name = "Item",
 					ItemType_Name = "Salvage",
 					Tier = int.Parse(source.Salvage.Tier),
 					Encumbrance = decimal.Parse(source.Salvage.Encumbrance),
-					Variety_Name = source.Salvage.Variety
+					VarietyName = source.Salvage.Variety
 				};
 				itemList.Add(item);
 			}
@@ -1044,8 +971,8 @@
 			#region Build Resources
 
 			foreach (var source in
-				from r in this.lookupDataSet.Resources
-				from rt in this.lookupDataSet.ResourceTypes
+				from r in lookupDataSet.Resources
+				from rt in lookupDataSet.ResourceTypes
 				where rt.ResourceType == r.ResourceType
 				select new
 				{
@@ -1054,15 +981,15 @@
 				})
 			{
 				Console.WriteLine("Building Resource '{0}'.", source.Resource.Resource);
-				Resource item = new Resource
+				var item = new Resource
 				{
 					Name = source.Resource.Resource,
 					BaseType_Name = "Item",
 					ItemType_Name = "Resource",
 					Tier = int.Parse(source.ResourceType.Tier),
 					Encumbrance = decimal.Parse(source.Resource.Encumbrance),
-					Variety_Name = source.ResourceType.Variety,
-					ResourceType_Name = source.ResourceType.ResourceType
+					VarietyName = source.ResourceType.Variety,
+					ResourceTypeName = source.ResourceType.ResourceType
 				};
 				itemList.Add(item);
 			}
@@ -1074,48 +1001,44 @@
 		{
 			#region Build Rank 0 for Crafting and Refining Feats
 
-			List<FeatRank> featRankList = this.GetEntityList<FeatRank>();
+			var featRankList = GetEntityList<FeatRank>();
+		    featRankList.AddRange((from r in workDataSet.Recipes
+		            where r.FeatRank == "0"
+		            select new
+		            {
+		                r.FeatName
+		            }).Distinct()
+		        .Select(source => new FeatRank
+		        {
+		            FeatName = source.FeatName,
+		            Rank = 0,
+		            ExpCost = 0,
+		            CoinCost = 0
+		        }));
 
-			foreach (var source in (
-				from r in this.workDataSet.Recipes
-				where r.FeatRank == "0"
-				select new
-				{
-					FeatName = r.FeatName
-				}).Distinct())
-			{
-				featRankList.Add(new FeatRank
-				{
-					Feat_Name = source.FeatName,
-					Rank = 0,
-					ExpCost = 0,
-					CoinCost = 0
-				});
-			}
+		    #endregion Build Rank 0 for Crafting and Refining Feats
 
-			#endregion Build Rank 0 for Crafting and Refining Feats
-
-			List<Recipe> recipeList = this.GetEntityList<Recipe>();
-			List<RecipeIngredient> recipeIngredientList = this.GetEntityList<RecipeIngredient>();
+			var recipeList = GetEntityList<Recipe>();
+			var recipeIngredientList = GetEntityList<RecipeIngredient>();
 
 			foreach (var source in
-				from r in this.workDataSet.Recipes
+				from r in workDataSet.Recipes
 				select new
 				{
 					Recipe = r
 				})
 			{
-				Recipe recipe = this.CreateEntity<Recipe>(source.Recipe.Type);
+				var recipe = CreateEntity<Recipe>(source.Recipe.Type);
 				recipe.Name = source.Recipe.Name;
-				recipe.BaseType_Name = "Recipe";
-				recipe.RecipeType_Name = source.Recipe.Type;
-				recipe.Feat_Name = source.Recipe.FeatName;
+				recipe.BaseTypeName = "Recipe";
+				recipe.RecipeTypeName = source.Recipe.Type;
+				recipe.FeatName = source.Recipe.FeatName;
 				recipe.Feat_Rank = int.Parse(source.Recipe.FeatRank);
 				recipe.Tier = int.Parse(source.Recipe.Tier);
-				recipe.OutputItem_Name = source.Recipe.Output.XRegexReplace(@"^(?<OutputItem>.*?)( Utility \((Boot|Glove)\))?$", "${OutputItem}", RegexReplaceEmptyResultBehaviors.ThrowError);
+				recipe.OutputItemName = source.Recipe.Output.XRegexReplace(@"^(?<OutputItem>.*?)( Utility \((Boot|Glove)\))?$", "${OutputItem}", RegexReplaceEmptyResultBehaviors.ThrowError);
 				recipe.QtyProduced = int.Parse(source.Recipe.Qty);
 				recipe.BaseCraftingSeconds = int.Parse(source.Recipe.BaseCraftingSeconds);
-				recipe.AchievementType_Name = source.Recipe.AchievementType;
+				recipe.AchievementTypeName = source.Recipe.AchievementType;
 				if (recipe is RefiningRecipe)
 				{
 					recipe.Quality = int.Parse(source.Recipe.Quality);
@@ -1131,23 +1054,23 @@
 				}
 				recipeList.Add(recipe);
 
-				for (int i = 1; i <= 4; i++)
+				for (var i = 1; i <= 4; i++)
 				{
 					if (source.Recipe["Ingredient" + i.ToString()] == DBNull.Value)
 					{
 						break;
 					}
-					RecipeIngredient recipeIngredient = this.CreateEntity<RecipeIngredient>(source.Recipe.Type + "Ingredient");
-					recipeIngredient.Recipe_Name = recipe.Name;
+					var recipeIngredient = CreateEntity<RecipeIngredient>(source.Recipe.Type + "Ingredient");
+					recipeIngredient.RecipeName = recipe.Name;
 					recipeIngredient.IngredientNo = i;
 					recipeIngredient.Quantity = int.Parse(source.Recipe["Qty" + i.ToString()].ToString());
 					if (recipeIngredient is RefiningRecipeIngredient)
 					{
-						((RefiningRecipeIngredient)recipeIngredient).Stock_Name = source.Recipe["Ingredient" + i.ToString()].ToString();
+						((RefiningRecipeIngredient)recipeIngredient).StockName = source.Recipe["Ingredient" + i.ToString()].ToString();
 					}
 					else if (recipeIngredient is CraftingRecipeIngredient)
 					{
-						((CraftingRecipeIngredient)recipeIngredient).Component_Name = source.Recipe["Ingredient" + i.ToString()].ToString();
+						((CraftingRecipeIngredient)recipeIngredient).ComponentName = source.Recipe["Ingredient" + i.ToString()].ToString();
 					}
 					else
 					{
@@ -1160,10 +1083,10 @@
 
 		private void BuildFeatRankTrainerLevels()
 		{
-			List<FeatRankTrainerLevel> levels = this.GetEntityList<FeatRankTrainerLevel>();
+			var levels = GetEntityList<FeatRankTrainerLevel>();
 			levels.AddRange((
-					from l in this.workDataSet.FeatRankTrainerLevels
-					from a in this.GetEntityList<AdvancementFeat>()
+					from l in workDataSet.FeatRankTrainerLevels
+					from a in GetEntityList<AdvancementFeat>()
 						.Where(x => x.Name.ToLower() == l.Feat.ToLower())
 						.DefaultIfEmpty()
 					select new FeatRankTrainerLevel
@@ -1176,7 +1099,7 @@
 				).ToList()
 			);
 
-			this.GetEntityList<Trainer>().AddRange((
+			GetEntityList<Trainer>().AddRange((
 					from tn in (
 							from l in levels
 							select l.Trainer_Name
@@ -1191,23 +1114,23 @@
 
 		private void BuildHexes()
 		{
-			List<string> ratings = new List<string> { "Stone", "Fish", "Crops", "Wood", "Game", "Herds", "Ore" };
+			var ratings = new List<string> { "Stone", "Fish", "Crops", "Wood", "Game", "Herds", "Ore" };
 
-			List<Hex> hexes = this.GetEntityList<Hex>();
-			List<HexBulkRating> hexBulkRatings = this.GetEntityList<HexBulkRating>();
+			var hexes = GetEntityList<Hex>();
+			var hexBulkRatings = GetEntityList<HexBulkRating>();
 
-			foreach (var source in this.workDataSet.Hexes)
+			foreach (var source in workDataSet.Hexes)
 			{
-				Hex hex = new Hex
+				var hex = new Hex
 				{
 					Longitude = int.Parse(source.Longitude),
 					Latitude = int.Parse(source.Latitude),
-					Region_Name = source.Region,
-					TerrainType_Name = source.TerrainType,
-					HexType_Name = source.HexType
+					RegionName = source.Region,
+					TerrainTypeName = source.TerrainType,
+					HexTypeName = source.HexType
 				};
 				hexes.Add(hex);
-				for (int i = 0; i <= 6; i++)
+				for (var i = 0; i <= 6; i++)
 				{
 					hexBulkRatings.Add(
 						new HexBulkRating
@@ -1223,82 +1146,74 @@
 
 		private void BuildStructures()
 		{
-			List<Camp> camps = this.GetEntityList<Camp>();
-			foreach (var source in this.workDataSet.Camps)
-			{
-				Camp camp = new Camp
-				{
-					BaseType_Name = "Structure",
-					StructureType_Name = "Camp",
-					Name = source.Name,
-					Description = source.Description,
-					DisplayName = source.DisplayName,
-					Encumbrance = decimal.Parse(source.Encumbrance),
-					Quality = int.Parse(source.Quality),
-					Tier = int.Parse(source.Tier),
-					Category = source.Category,
-					HousingData = source.HousingData,
-					HouseEntityDefn = source.HouseEntityDefn,
-					Cooldown = int.Parse(source.Cooldown),
-					NoLoot = source.IsNoLootNull() ? false : bool.Parse(source.NoLoot),
-					Upgradable = source.Upgradable == "Y",
-					AccountRedeem_Name = source.IsAccountRedeemNull() ? null : source.AccountRedeem
-				};
-				camps.Add(camp);
-			}
+			var camps = GetEntityList<Camp>();
+		    camps.AddRange(workDataSet.Camps.Select(source => new Camp
+		    {
+		        BaseTypeName = "Structure",
+		        StructureTypeName = "Camp",
+		        Name = source.Name,
+		        Description = source.Description,
+		        DisplayName = source.DisplayName,
+		        Encumbrance = decimal.Parse(source.Encumbrance),
+		        Quality = int.Parse(source.Quality),
+		        Tier = int.Parse(source.Tier),
+		        Category = source.Category,
+		        HousingData = source.HousingData,
+		        HouseEntityDefn = source.HouseEntityDefn,
+		        Cooldown = int.Parse(source.Cooldown),
+		        NoLoot = !source.IsNoLootNull() && bool.Parse(source.NoLoot),
+		        Upgradable = source.Upgradable == "Y",
+		        AccountRedeemName = source.IsAccountRedeemNull() ? null : source.AccountRedeem
+		    }));
 
-			string pattern = @"^(?<Name>.*) \+(?<Upgrade>[0-9]+)$";
+		    var pattern = @"^(?<Name>.*) \+(?<Upgrade>[0-9]+)$";
 			
 			// Kludge: Remove bogus row
-			this.workDataSet.CampUpgrades.Rows[0].Delete();
+			workDataSet.CampUpgrades.Rows[0].Delete();
 			// End Kludge
 			
-			List<CampUpgrade> campUpgrades = this.GetEntityList<CampUpgrade>();
-			foreach (var source in this.workDataSet.CampUpgrades)
-			{
-				CampUpgrade campUpgrade = new CampUpgrade
-				{
-					Structure_Name = source.Name.XRegexReplace(pattern, "${Name}"),
-					Upgrade = int.Parse(source.Name.XRegexReplace(pattern, "${Upgrade}")),
-					PowerChannelDurationSeconds = int.Parse(source.PowerChannelDuration),
-					PowerRegenerationSeconds = int.Parse(source.PowerRegeneration),
-					PowerCooldownMinutes = int.Parse(source.PowerCooldown),
-					BuildingDurationMinutes = int.Parse(source.BuildingDuration),
-					ConstructionData = source.ConstructionData,
-					BaseType_Name = source.BaseType
-				};
-				campUpgrades.Add(campUpgrade);
-			}
+			var campUpgrades = GetEntityList<CampUpgrade>();
+		    campUpgrades.AddRange(workDataSet.CampUpgrades.Select(source => new CampUpgrade
+		    {
+		        StructureName = source.Name.XRegexReplace(pattern, "${Name}"),
+		        Upgrade = int.Parse(source.Name.XRegexReplace(pattern, "${Upgrade}")),
+		        PowerChannelDurationSeconds = int.Parse(source.PowerChannelDuration),
+		        PowerRegenerationSeconds = int.Parse(source.PowerRegeneration),
+		        PowerCooldownMinutes = int.Parse(source.PowerCooldown),
+		        BuildingDurationMinutes = int.Parse(source.BuildingDuration),
+		        ConstructionData = source.ConstructionData,
+		        BaseTypeName = source.BaseType
+		    }));
 
-			pattern = @"^(?<Name>.*) (?<Quality>[0-9]+)$";
-			string trainerPattern = @"^(?<Trainer>.*)=(?<Level>[0-9]+)$";
-			string resourcePattern = @"^(?<Resource>.*) \+(?<Bonus>[0-9]+)$";
-			string upkeepPattern = @"^(?<Resource>.*) (?<Requirement>[0-9]+)$";
+		    pattern = @"^(?<Name>.*) (?<Quality>[0-9]+)$";
+			var trainerPattern = @"^(?<Trainer>.*)=(?<Level>[0-9]+)$";
+			var resourcePattern = @"^(?<Resource>.*) \+(?<Bonus>[0-9]+)$";
+			var upkeepPattern = @"^(?<Resource>.*) (?<Requirement>[0-9]+)$";
 
 			// Kludge: Remove bogus row
-			this.workDataSet.HoldingUpgrades.Rows[0].Delete();
+			workDataSet.HoldingUpgrades.Rows[0].Delete();
 			// End Kludge
 
-			List<Holding> holdings = this.GetEntityList<Holding>();
-			List<HoldingUpgrade> holdingUpgrades = this.GetEntityList<HoldingUpgrade>();
-			List<HoldingUpgradeBulkResourceBonus> holdingBonuses = this.GetEntityList<HoldingUpgradeBulkResourceBonus>();
-			List<HoldingUpgradeBulkResourceRequirement> holdingReqs = this.GetEntityList<HoldingUpgradeBulkResourceRequirement>();
-			List<HoldingUpgradeTrainerLevel> holdingTrainers = this.GetEntityList<HoldingUpgradeTrainerLevel>();
+			var holdings = GetEntityList<Holding>();
+			var holdingUpgrades = GetEntityList<HoldingUpgrade>();
+			var holdingBonuses = GetEntityList<HoldingUpgradeBulkResourceBonus>();
+			var holdingReqs = GetEntityList<HoldingUpgradeBulkResourceRequirement>();
+			var holdingTrainers = GetEntityList<HoldingUpgradeTrainerLevel>();
 			Holding holding = null;
-			foreach (var source in this.workDataSet.HoldingUpgrades)
+			foreach (var source in workDataSet.HoldingUpgrades)
 			{
 				if (holding == null || holding.Name != source.Name)
 				{
-					holding = new Holding { Name = source.Name, BaseType_Name = "Structure", StructureType_Name = "Holding" };
+					holding = new Holding { Name = source.Name, BaseTypeName = "Structure", StructureTypeName = "Holding" };
 					holdings.Add(holding);
 				}
 
-				HoldingUpgrade holdingUpgrade = new HoldingUpgrade
+				var holdingUpgrade = new HoldingUpgrade
 				{
-					CraftingFacilityFeat_Name = source.IsCraftingFacilityNull() ? null : source.CraftingFacility.XRegexReplace(pattern, "${Name}"),
+					CraftingFacilityFeatName = source.IsCraftingFacilityNull() ? null : source.CraftingFacility.XRegexReplace(pattern, "${Name}"),
 					CraftingFacilityQuality = source.IsCraftingFacilityNull() ? (int?)null : int.Parse(source.CraftingFacility.XRegexReplace(pattern, "${Quality}")),
 					InfluenceCost = int.Parse(source.InfluenceCost),
-					Structure_Name = source.Name,
+					StructureName = source.Name,
 					Upgrade = int.Parse(source.Upgrade),
 					PvPPeakGuards = int.Parse(source.PvPPeakGuards),
 					NonPvPPeakGuards = int.Parse(source.NonPvPPeakGuards),
@@ -1312,113 +1227,104 @@
 				};
 				holdingUpgrades.Add(holdingUpgrade);
 
-				int trainerNo = 1;
-				foreach (string training in source.Training.Replace(", ", ",").Trim().Split(','))
-				{
-					HoldingUpgradeTrainerLevel holdingTrainer = new HoldingUpgradeTrainerLevel
-					{
-						Structure_Name = holdingUpgrade.Structure_Name,
-						Upgrade = holdingUpgrade.Upgrade,
-						TrainerNo = trainerNo++,
-						Trainer_Name = training.XRegexReplace(trainerPattern, "${Trainer}"),
-						Level = int.Parse(training.XRegexReplace(trainerPattern, "${Level}"))
-					};
-					holdingTrainers.Add(holdingTrainer);
-				}
+				var trainerNo = 1;
+			    holdingTrainers.AddRange(source.Training.Replace(", ", ",")
+			        .Trim()
+			        .Split(',')
+			        .Select(training => new HoldingUpgradeTrainerLevel
+			        {
+			            StructureName = holdingUpgrade.StructureName,
+			            Upgrade = holdingUpgrade.Upgrade,
+			            TrainerNo = trainerNo++,
+			            TrainerName = training.XRegexReplace(trainerPattern, "${Trainer}"),
+			            Level = int.Parse(training.XRegexReplace(trainerPattern, "${Level}"))
+			        }));
 
-				int bonusNo = 1;
+			    var bonusNo = 1;
 				if (!source.IsResourceBonusNull())
 				{
-					foreach (string resource in source.ResourceBonus.Replace(", ", ",").Trim().Split(','))
-					{
-						HoldingUpgradeBulkResourceBonus holdingBonus = new HoldingUpgradeBulkResourceBonus
-						{
-							Structure_Name = holdingUpgrade.Structure_Name,
-							Upgrade = holdingUpgrade.Upgrade,
-							BonusNo = bonusNo++,
-							BulkResource_Name = resource.XRegexReplace(resourcePattern, "${Resource}"),
-							Bonus = int.Parse(resource.XRegexReplace(resourcePattern, "${Bonus}"))
-						};
-						holdingBonuses.Add(holdingBonus);
-					}
+				    holdingBonuses.AddRange(source.ResourceBonus.Replace(", ", ",")
+				        .Trim()
+				        .Split(',')
+				        .Select(resource => new HoldingUpgradeBulkResourceBonus
+				        {
+				            StructureName = holdingUpgrade.StructureName,
+				            Upgrade = holdingUpgrade.Upgrade,
+				            BonusNo = bonusNo++,
+				            BulkResourceName = resource.XRegexReplace(resourcePattern, "${Resource}"),
+				            Bonus = int.Parse(resource.XRegexReplace(resourcePattern, "${Bonus}"))
+				        }));
 				}
 
-				int reqNo = 1;
-				foreach (string req in source.Upkeep.Replace(", ", ",").Trim().Split(','))
-				{
-					HoldingUpgradeBulkResourceRequirement holdingReq = new HoldingUpgradeBulkResourceRequirement
-					{
-						Structure_Name = holdingUpgrade.Structure_Name,
-						Upgrade = holdingUpgrade.Upgrade,
-						RequirementNo = reqNo++,
-						BulkResource_Name = req.XRegexReplace(upkeepPattern, "${Resource}"),
-						Requirement = int.Parse(req.XRegexReplace(upkeepPattern, "${Requirement}"))
-					};
-					holdingReqs.Add(holdingReq);
-				}
+				var reqNo = 1;
+			    holdingReqs.AddRange(source.Upkeep.Replace(", ", ",")
+			        .Trim()
+			        .Split(',')
+			        .Select(req => new HoldingUpgradeBulkResourceRequirement
+			        {
+			            StructureName = holdingUpgrade.StructureName,
+			            Upgrade = holdingUpgrade.Upgrade,
+			            RequirementNo = reqNo++,
+			            BulkResourceName = req.XRegexReplace(upkeepPattern, "${Resource}"),
+			            Requirement = int.Parse(req.XRegexReplace(upkeepPattern, "${Requirement}"))
+			        }));
 			}
 
-			string genPattern = @"^(?<Percentage>[0-9]+)\% (?<Resource>.*) from (?<Rating>.*)$";
+			var genPattern = @"^(?<Percentage>[0-9]+)\% (?<Resource>.*) from (?<Rating>.*)$";
 
 			// Kludge: Remove bogus row
-			this.workDataSet.OutpostUpgrades.Rows[0].Delete();
+			workDataSet.OutpostUpgrades.Rows[0].Delete();
 			// End Kludge
 
-			List<Outpost> outposts = this.GetEntityList<Outpost>();
-			List<OutpostBulkResource> outpostResources = this.GetEntityList<OutpostBulkResource>();
-			List<OutpostWorkerFeat> outpostWorkers = this.GetEntityList<OutpostWorkerFeat>();
-			foreach (var source in this.workDataSet.Outposts)
+			var outposts = GetEntityList<Outpost>();
+			var outpostResources = GetEntityList<OutpostBulkResource>();
+			var outpostWorkers = GetEntityList<OutpostWorkerFeat>();
+			foreach (var source in workDataSet.Outposts)
 			{
-				Outpost outpost = new Outpost
+				var outpost = new Outpost
 				{
 					Name = source.Name,
-					BaseType_Name = "Structure",
-					StructureType_Name = "Outpost",
+					BaseTypeName = "Structure",
+					StructureTypeName = "Outpost",
 					ConstructionData = source.ConstructionData
 				};
 				outposts.Add(outpost);
 
-				foreach (var gen in source.ResourceGeneration.Replace(", ", ",").Trim().Split(','))
-				{
-					OutpostBulkResource outpostResource = new OutpostBulkResource
-					{
-						Structure_Name = outpost.Name,
-						BulkRating_Name = gen.XRegexReplace(genPattern, "${Rating}"),
-						BulkResource_Name = gen.XRegexReplace(genPattern, "${Resource}"),
-						Percentage = int.Parse(gen.XRegexReplace(genPattern, "${Percentage}"))
-					};
-					outpostResources.Add(outpostResource);
-				}
+			    outpostResources.AddRange(source.ResourceGeneration.Replace(", ", ",")
+			        .Trim()
+			        .Split(',')
+			        .Select(gen => new OutpostBulkResource
+			        {
+			            StructureName = outpost.Name,
+			            BulkRatingName = gen.XRegexReplace(genPattern, "${Rating}"),
+			            BulkResourceName = gen.XRegexReplace(genPattern, "${Resource}"),
+			            Percentage = int.Parse(gen.XRegexReplace(genPattern, "${Percentage}"))
+			        }));
 
-				foreach (var worker in source.WorkerSkills.Replace(", ", ",").Trim().Split(','))
-				{
-					OutpostWorkerFeat outpostWorker = new OutpostWorkerFeat
-					{
-						Structure_Name = outpost.Name,
-						WorkerFeat_Name = worker
-					};
-					outpostWorkers.Add(outpostWorker);
-				}
+			    outpostWorkers.AddRange(source.WorkerSkills.Replace(", ", ",")
+			        .Trim()
+			        .Split(',')
+			        .Select(worker => new OutpostWorkerFeat
+			        {
+			            StructureName = outpost.Name,
+			            WorkerFeatName = worker
+			        }));
 			}
 
-			List<OutpostUpgrade> outpostUpgrades = this.GetEntityList<OutpostUpgrade>();
-			foreach (var source in this.workDataSet.OutpostUpgrades)
-			{
-				OutpostUpgrade outpostUpgrade = new OutpostUpgrade
-				{
-					Structure_Name = source.Name,
-					Upgrade = int.Parse(source.Upgrade),
-					EffortBonus = int.Parse(source.EffortBonus),
-					InfluenceCost = int.Parse(source.InfluenceCost),
-					PvPPeakGuards = int.Parse(source.PvPPeakGuards),
-					GuardSurgeSize = int.Parse(source.GuardSurgeSize),
-					GuardRespawnsPerMinute = decimal.Parse(source.GuardRespawnsPerMinute),
-					PvPGuardRespawns = int.Parse(source.PvPGuardRespawns),
-					MinPvPTime = decimal.Parse(source.MinPvPTime),
-					GuardEntityNames = source.GuardEntityNames
-				};
-				outpostUpgrades.Add(outpostUpgrade);
-			}
+			var outpostUpgrades = GetEntityList<OutpostUpgrade>();
+		    outpostUpgrades.AddRange(workDataSet.OutpostUpgrades.Select(source => new OutpostUpgrade
+		    {
+		        StructureName = source.Name,
+		        Upgrade = int.Parse(source.Upgrade),
+		        EffortBonus = int.Parse(source.EffortBonus),
+		        InfluenceCost = int.Parse(source.InfluenceCost),
+		        PvPPeakGuards = int.Parse(source.PvPPeakGuards),
+		        GuardSurgeSize = int.Parse(source.GuardSurgeSize),
+		        GuardRespawnsPerMinute = decimal.Parse(source.GuardRespawnsPerMinute),
+		        PvPGuardRespawns = int.Parse(source.PvPGuardRespawns),
+		        MinPvPTime = decimal.Parse(source.MinPvPTime),
+		        GuardEntityNames = source.GuardEntityNames
+		    }));
 		}
 
 		#endregion Build Methods
@@ -1427,18 +1333,18 @@
 
 		private List<T> GetEntityList<T>()
 		{
-			if (!this.EntityLists.ContainsKey(typeof(T)))
-				this.EntityLists[typeof(T)] = new List<T>();
-			return (List<T>)this.EntityLists[typeof(T)];
+			if (!EntityLists.ContainsKey(typeof(T)))
+				EntityLists[typeof(T)] = new List<T>();
+			return (List<T>)EntityLists[typeof(T)];
 		}
 
 		private T CreateEntity<T>(string typeName) where T : class
 		{
-			Type baseType = typeof(T);
-			Type type = this.assembly.GetType(string.Format("{0}.{1}", baseType.Namespace, typeName));
+			var baseType = typeof(T);
+			var type = assembly.GetType(string.Format("{0}.{1}", baseType.Namespace, typeName));
 			if (type == null)
 				throw new Exception(string.Format("Unknown Type '{0}'.", typeName));
-			T entity = Activator.CreateInstance(type) as T;
+			var entity = Activator.CreateInstance(type) as T;
 			if (entity == null)
 				throw new Exception(string.Format("Type '{0}' cannot be cast as Type '{1}'.", typeName, baseType.Name));
 			return entity;
@@ -1446,24 +1352,24 @@
 
 		private Effect CreateEffect(string name, string effectTerm)
 		{
-			Effect effect = new Effect
+			var effect = new Effect
 			{
 				Name = name,
-				EffectTerm_Term = effectTerm
+				EffectTermTerm = effectTerm
 			};
-			this.effects[effect.Name] = effect;
+			effects[effect.Name] = effect;
 			return effect;
 		}
 
 		private List<T> GetEffects<T>(string effectsText, string effectType, Action<T> action) where T : IEffectReference, new()
 		{
-			List<T> effects = new List<T>();
-			List<Effect> effectList = this.GetEntityList<Effect>();
-			List<EffectDescription> effectDescriptionList = this.GetEntityList<EffectDescription>();
+			var effects = new List<T>();
+			var effectList = GetEntityList<Effect>();
+			var effectDescriptionList = GetEntityList<EffectDescription>();
 
-			int effectNo = 1;
-			string pattern = @"^(?<Entry>[^,\(]*(\([^\)]*\)[^,]*)?)(, *(?<Remainder>.*))?$";
-			string entryPattern
+			var effectNo = 1;
+			var pattern = @"^(?<Entry>[^,\(]*(\([^\)]*\)[^,]*)?)(, *(?<Remainder>.*))?$";
+			var entryPattern
 				= @"^"
 					+ @"(?<EffectName>(?:(?! \+| \-| [0-9]+| \(| to | on | if | with | per ).)+)"
 					+ @"(?: +(?<Magnitude>(?:\+|\-)?[0-9]+%?))?"
@@ -1477,20 +1383,20 @@
 					+ @"(?: +(?<Discriminator>with|if (?<DiscriminatorTarget>Attacker|Target) (?:has|is)|per|on) (?<Condition>(?:(?! to ).)+)(?: (?<ConditionTarget>to Self))?)?"
 				+ @"$"
 				;
-			Regex entryRegex = new Regex(entryPattern, RegexOptions.IgnoreCase);
-			string remainder = effectsText;
+			var entryRegex = new Regex(entryPattern, RegexOptions.IgnoreCase);
+			var remainder = effectsText;
 			while (remainder != "")
 			{
-				string entry = remainder.XRegexReplace(pattern, "${Entry}", RegexReplaceEmptyResultBehaviors.ThrowError);
+				var entry = remainder.XRegexReplace(pattern, "${Entry}", RegexReplaceEmptyResultBehaviors.ThrowError);
 				EffectDescription effectDescription;
-				if (!this.effectDescriptions.ContainsKey(entry))
+				if (!effectDescriptions.ContainsKey(entry))
 				{
 					effectDescription = new EffectDescription();
 					effectDescription.Text = entry;
-					effectDescription.Effect_Name = entry.XRegexReplace(entryRegex, "${EffectName}", RegexReplaceEmptyResultBehaviors.ThrowError);
-					if (!this.effects.Keys.Contains(effectDescription.Effect_Name))
+					effectDescription.EffectName = entry.XRegexReplace(entryRegex, "${EffectName}", RegexReplaceEmptyResultBehaviors.ThrowError);
+					if (!this.effects.Keys.Contains(effectDescription.EffectName))
 					{
-						effectList.Add(this.CreateEffect(effectDescription.Effect_Name, null));
+						effectList.Add(CreateEffect(effectDescription.EffectName, null));
 					}
 					effectDescription.Magnitude = entry.XRegexReplace(entryRegex, "${Magnitude}", RegexReplaceEmptyResultBehaviors.Ignore);
 					effectDescription.Duration = entry.XRegexReplace(entryRegex, "${Duration}", RegexReplaceEmptyResultBehaviors.Ignore);
@@ -1498,10 +1404,10 @@
 					effectDescription.Distance = entry.XRegexReplace(entryRegex, "${Distance}", RegexReplaceEmptyResultBehaviors.Ignore);
 					effectDescription.Target = entry.XRegexReplace(entryRegex, "${Target}", RegexReplaceEmptyResultBehaviors.Ignore);
 					effectDescription.Discriminator = entry.XRegexReplace(entryRegex, "${Discriminator}", RegexReplaceEmptyResultBehaviors.Ignore);
-					effectDescription.Condition_Name = entry.XRegexReplace(entryRegex, "${Condition}", RegexReplaceEmptyResultBehaviors.Ignore);
-					if (effectDescription.Condition_Name == "")
+					effectDescription.ConditionName = entry.XRegexReplace(entryRegex, "${Condition}", RegexReplaceEmptyResultBehaviors.Ignore);
+					if (effectDescription.ConditionName == "")
 					{
-						effectDescription.Condition_Name = null;
+						effectDescription.ConditionName = null;
 					}
 					effectDescription.ConditionTarget = entry.XRegexReplace(entryRegex, "${ConditionTarget}", RegexReplaceEmptyResultBehaviors.Ignore);
 
@@ -1509,93 +1415,99 @@
 					// {0} = Hyperlink to EffectDetails by Effect_Name
 					// {1} = Hyperlink to ??? by Condition
 					// {2} = Newline indention before Discriminator
-					StringBuilder sb = new StringBuilder();
+					var sb = new StringBuilder();
 					sb.Append("{0}");
-					if (!String.IsNullOrEmpty(effectDescription.Magnitude))
+					if (!string.IsNullOrEmpty(effectDescription.Magnitude))
 					{
 						sb.AppendFormat(" {0}", effectDescription.Magnitude);
 					}
-					if (!(String.IsNullOrEmpty(effectDescription.Duration) && String.IsNullOrEmpty(effectDescription.Chance) && String.IsNullOrEmpty(effectDescription.Distance)))
+					if (!(string.IsNullOrEmpty(effectDescription.Duration) && string.IsNullOrEmpty(effectDescription.Chance) && string.IsNullOrEmpty(effectDescription.Distance)))
 					{
 						sb.Append(" (");
-						string pad = "";
-						if (!String.IsNullOrEmpty(effectDescription.Duration))
+						var pad = "";
+						if (!string.IsNullOrEmpty(effectDescription.Duration))
 						{
 							sb.AppendFormat("{0}{1}", pad, effectDescription.Duration);
 							pad = ", ";
 						}
-						if (!String.IsNullOrEmpty(effectDescription.Chance))
+						if (!string.IsNullOrEmpty(effectDescription.Chance))
 						{
 							sb.AppendFormat("{0}{1}", pad, effectDescription.Chance);
 						}
-						if (!String.IsNullOrEmpty(effectDescription.Distance))
+						if (!string.IsNullOrEmpty(effectDescription.Distance))
 						{
 							sb.AppendFormat("{0}{1}", pad, effectDescription.Distance);
 							pad = ", ";
 						}
 						sb.Append(")");
 					}
-					if (!String.IsNullOrEmpty(effectDescription.Target))
+					if (!string.IsNullOrEmpty(effectDescription.Target))
 					{
 						sb.AppendFormat(" {0}", effectDescription.Target);
 					}
-					if (!String.IsNullOrEmpty(effectDescription.Discriminator))
+					if (!string.IsNullOrEmpty(effectDescription.Discriminator))
 					{
 						sb.Append("{2}");
 						sb.AppendFormat("{0}", effectDescription.Discriminator);
 					}
-					if (!String.IsNullOrEmpty(effectDescription.Condition_Name))
+					if (!string.IsNullOrEmpty(effectDescription.ConditionName))
 					{
 						sb.Append(" {1}");
 						//sb.AppendFormat(" {0}", effectDescription.Condition);
 					}
-					if (!String.IsNullOrEmpty(effectDescription.ConditionTarget))
+					if (!string.IsNullOrEmpty(effectDescription.ConditionTarget))
 					{
 						sb.AppendFormat(" {0}", effectDescription.ConditionTarget);
 					}
 					effectDescription.FormattedDescription = sb.ToString();
 
-					this.effectDescriptions[entry] = effectDescription;
+					effectDescriptions[entry] = effectDescription;
 					effectDescriptionList.Add(effectDescription);
 				}
 				else
 				{
-					effectDescription = this.effectDescriptions[entry];
+					effectDescription = effectDescriptions[entry];
 				}
 
-				T effect = new T();
-				effect.EffectDescription_Text = effectDescription.Text;
-				effect.EffectNo = effectNo++;
-				action(effect);
+			    var effect = new T
+			    {
+			        EffectDescriptionText = effectDescription.Text,
+			        EffectNo = effectNo++
+			    };
+			    action(effect);
 				effects.Add(effect);
-				remainder = remainder.XRegexReplace(pattern, "${Remainder}", RegexReplaceEmptyResultBehaviors.Ignore);
+				remainder = remainder.XRegexReplace(pattern, "${Remainder}");
 			}
 			return effects;
 		}
 
 		private List<FeatEffect> GetFeatEffects(Feat feat, string effectType, string effectsText)
 		{
-			List<FeatEffect> effects = new List<FeatEffect>();
-			foreach (FeatEffect effect in this.GetEffects<FeatEffect>(effectsText, effectType, (x) => { x.Feat_Name = feat.Name; x.EffectType = effectType; }))
-				effects.Add(effect);
-			return effects;
+		    return GetEffects<FeatEffect>(effectsText, effectType, (x) =>
+		        {
+		            x.FeatName = feat.Name;
+		            x.EffectType = effectType;
+		        })
+		        .ToList();
 		}
 
 		private List<FeatRankEffect> GetFeatRankEffects(FeatRank featRank, string effectsText)
 		{
-			List<FeatRankEffect> effects = new List<FeatRankEffect>();
-			foreach (FeatRankEffect effect in this.GetEffects<FeatRankEffect>(effectsText, null, (x) => { x.Feat_Name = featRank.Feat_Name; x.Feat_Rank = featRank.Rank; }))
-				effects.Add(effect);
-			return effects;
+		    return GetEffects<FeatRankEffect>(effectsText, null, (x) =>
+		        {
+		            x.FeatName = featRank.FeatName;
+		            x.Feat_Rank = featRank.Rank;
+		        })
+		        .ToList();
 		}
 
 		private List<T> GetFeatRankFacts<T>(FeatRank featRank, string factsText) where T : IFeatRankFact, new()
 		{
-			List<T> facts = new List<T>();
-			foreach (FactData factData in FactData.GetFacts(factsText))
+			var facts = new List<T>();
+			foreach (var factData in FactData.GetFacts(factsText))
 			{
-				T fact = new T();
-				fact.Feat_Name = featRank.Feat_Name;
+				var fact = new T();
+				fact.FeatName = featRank.FeatName;
 				fact.Feat_Rank = featRank.Rank;
 				fact.OptionNo = factData.OptionNo;
 				fact.FactName = factData.Name;
@@ -1620,16 +1532,18 @@
 
 		private List<T> GetAchievementRankFacts<T>(AchievementRank achievementRank, List<FactData> factsText) where T : IAchievementRankFact, new()
 		{
-			List<T> facts = new List<T>();
-			foreach (FactData factData in factsText)
+			var facts = new List<T>();
+			foreach (var factData in factsText)
 			{
-				T fact = new T();
-				fact.Achievement_Name = achievementRank.Achievement_Name;
-				fact.Achievement_Rank = achievementRank.Rank;
-				if (fact is IAchievementRankCategoryBonus)
+			    var fact = new T
+			    {
+			        AchievementName = achievementRank.AchievementName,
+			        Achievement_Rank = achievementRank.Rank
+			    };
+			    if (fact is IAchievementRankCategoryBonus)
 				{
 					((IAchievementRankCategoryBonus)fact).BonusNo = factData.FactNo;
-					((IAchievementRankCategoryBonus)fact).Category_Name = factData.Name;
+					((IAchievementRankCategoryBonus)fact).CategoryName = factData.Name;
 					((IAchievementRankCategoryBonus)fact).Bonus = int.Parse(factData.Value);
 				}
 				else if (fact is IAchievementRankRequirement)
@@ -1638,12 +1552,12 @@
 					((IAchievementRankRequirement)fact).OptionNo = factData.OptionNo;
 					if (fact is IAchievementRankFeatRequirement)
 					{
-						((IAchievementRankFeatRequirement)fact).Feat_Name = factData.Name;
+						((IAchievementRankFeatRequirement)fact).FeatName = factData.Name;
 						((IAchievementRankFeatRequirement)fact).Feat_Rank = int.Parse(factData.Value);
 					}
 					else if (fact is IAchievementRankFlagRequirement)
 					{
-						((IAchievementRankFlagRequirement)fact).Flag_Name = factData.Name;
+						((IAchievementRankFlagRequirement)fact).FlagName = factData.Name;
 					}
 				}
 				else
@@ -1657,48 +1571,45 @@
 
 		private void CreateRecipeOutputItem(Item item, List<string> inherentKeywords, List<string> upgradeKeywords)
 		{
-			List<RecipeOutputItem> recipeOutputItemList = this.GetEntityList<RecipeOutputItem>();
-			List<RecipeOutputItemUpgrade> recipeOutputItemUpgradeList = this.GetEntityList<RecipeOutputItemUpgrade>();
-			List<RecipeOutputItemUpgradeKeyword> recipeOutputItemUpgradeKeywordList = this.GetEntityList<RecipeOutputItemUpgradeKeyword>();
+			var recipeOutputItemList = GetEntityList<RecipeOutputItem>();
+			var recipeOutputItemUpgradeList = GetEntityList<RecipeOutputItemUpgrade>();
+			var recipeOutputItemUpgradeKeywordList = GetEntityList<RecipeOutputItemUpgradeKeyword>();
 
 			recipeOutputItemList.Add(new RecipeOutputItem
 			{
-				Item_Name = item.Name
+				ItemName = item.Name
 			});
 
-			for (int upgrade = 0; upgrade <= 5; upgrade++)
+			for (var upgrade = 0; upgrade <= 5; upgrade++)
 			{
 				recipeOutputItemUpgradeList.Add(new RecipeOutputItemUpgrade
 				{
-					Item_Name = item.Name,
+					ItemName = item.Name,
 					Upgrade = upgrade
 				});
-				int keywordNo = 1;
+				var keywordNo = 1;
 				if (upgrade == 0)
 				{
-					foreach (string keyword in inherentKeywords)
-					{
-						recipeOutputItemUpgradeKeywordList.Add(new RecipeOutputItemUpgradeKeyword
-						{
-							Item_Name = item.Name,
-							Upgrade = upgrade,
-							KeywordKind_Name = "Inherent",
-							KeywordNo = keywordNo++,
-							KeywordType_Name = item.ItemType_Name,
-							Keyword_Name = keyword
-						});
-					}
+				    recipeOutputItemUpgradeKeywordList.AddRange(inherentKeywords.Select(keyword => new RecipeOutputItemUpgradeKeyword
+				    {
+				        ItemName = item.Name,
+				        Upgrade = upgrade,
+				        KeywordKindName = "Inherent",
+				        KeywordNo = keywordNo++,
+				        KeywordTypeName = item.ItemType_Name,
+				        KeywordName = keyword
+				    }));
 				}
 				if (upgradeKeywords.Count > upgrade)
 				{
 					recipeOutputItemUpgradeKeywordList.Add(new RecipeOutputItemUpgradeKeyword
 					{
-						Item_Name = item.Name,
+						ItemName = item.Name,
 						Upgrade = upgrade,
-						KeywordKind_Name = "Upgrade",
+						KeywordKindName = "Upgrade",
 						KeywordNo = 1,
-						KeywordType_Name = item.ItemType_Name,
-						Keyword_Name = upgradeKeywords[upgrade].XRegexReplace(@"^(?<Keyword>.*) \(\+[0-3]\).*$", "${Keyword}", RegexReplaceEmptyResultBehaviors.ThrowError)
+						KeywordTypeName = item.ItemType_Name,
+						KeywordName = upgradeKeywords[upgrade].XRegexReplace(@"^(?<Keyword>.*) \(\+[0-3]\).*$", "${Keyword}", RegexReplaceEmptyResultBehaviors.ThrowError)
 					});
 				}
 			}

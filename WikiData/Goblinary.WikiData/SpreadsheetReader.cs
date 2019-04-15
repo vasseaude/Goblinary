@@ -1,62 +1,58 @@
-﻿namespace Goblinary.WikiData
+﻿
+namespace Goblinary.WikiData
 {
-	using System;
 	using System.Collections.Generic;
 	using System.Data;
-	using System.Linq;
-	using System.Text;
-	using System.Threading.Tasks;
-
 	using Google.GData.Client;
-	using Google.GData.Extensions;
 	using Google.GData.Spreadsheets;
+	using System.Linq;
 
-	public class SpreadsheetReader
+    public class SpreadsheetReader
 	{
 		public SpreadsheetReader()
 		{
-			this.service = new SpreadsheetsService("Nihimon.PFOData");
+			_service = new SpreadsheetsService("Nihimon.PFOData");
 		}
 
-		SpreadsheetsService service;
+	    readonly SpreadsheetsService _service;
 
-		public DataSet GetDataSet(string spreadsheetID)
+		public DataSet GetDataSet(string spreadsheetId)
 		{
-			DataSet dataSet = new DataSet();
-			int worksheetID = 1;
+			var dataSet = new DataSet();
+			var worksheetId = 1;
 			while (true)
 			{
-				DataTable table = this.GetDataTable(spreadsheetID, worksheetID++.ToString());
-				if (table == null)
-				{
-					break;
-				}
-				dataSet.Tables.Add(table);
+				var table = GetDataTable(spreadsheetId, worksheetId++.ToString());
+			    if (table != null)
+			        dataSet.Tables.Add(table);
+			    else
+			        break;
 			}
 			return dataSet;
 		}
 
-		public DataTable GetDataTable(string spreadsheetID, string worksheetID)
+		public DataTable GetDataTable(string spreadsheetId, string worksheetId)
 		{
 			ListFeed feed;
 			try
 			{
-				feed = this.service.Query(new ListQuery(spreadsheetID, worksheetID, "public", "values"));
+				feed = _service.Query(new ListQuery(spreadsheetId, worksheetId, "public", "values"));
 			}
 			catch (GDataRequestException)
 			{
 				return null;
 			}
-			DataTable table = new DataTable(feed.Title.Text);
-			List<DataColumn> columns = new List<DataColumn>();
-			foreach (ListEntry entry in feed.Entries)
+			var table = new DataTable(feed.Title.Text);
+			var columns = new List<DataColumn>();
+			foreach (var atomEntry in feed.Entries)
 			{
-				DataRow row = table.NewRow();
-				DataColumn column;
-				int columnIndex = 0;
+			    var entry = (ListEntry) atomEntry;
+			    var row = table.NewRow();
+			    var columnIndex = 0;
 				foreach (ListEntry.Custom custom in entry.Elements)
 				{
-					if (table.Columns.Contains(custom.LocalName))
+				    DataColumn column;
+				    if (table.Columns.Contains(custom.LocalName))
 					{
 						column = table.Columns[custom.LocalName];
 					}
@@ -65,51 +61,44 @@
 						column = table.Columns.Add(custom.LocalName);
 						columns.Insert(columnIndex, column);
 					}
-					if (custom.Value != "")
-					{
-						row[column] = custom.Value;
-					}
-					columnIndex++;
+				    if (custom.Value != "")
+				    {
+				        row[column] = custom.Value;
+				    }
+
+				    columnIndex++;
 				}
 				table.Rows.Add(row);
 			}
-			bool needsColumnReordering = false;
-			for (int i = 0; i < columns.Count; i++)
-			{
-				if (columns[i] != table.Columns[i])
-				{
-					needsColumnReordering = true;
-					break;
-				}
-			}
-			if (needsColumnReordering)
-			{
-				DataTable newTable = new DataTable(feed.Title.Text);
-				foreach (DataColumn column in columns)
-				{
-					newTable.Columns.Add(column.ColumnName);
-				}
-				foreach (DataRow row in table.Rows)
-				{
-					DataRow newRow = newTable.NewRow();
-					foreach (DataColumn column in columns)
-					{
-						newRow[column.ColumnName] = row[column.ColumnName];
-					}
-					newTable.Rows.Add(newRow);
-				}
-				table = newTable;
-			}
-			return table;
+			var needsColumnReordering = columns.Where((t, i) => t != table.Columns[i]).Any();
+		    if (!needsColumnReordering) return table;
+		    {
+		        var newTable = new DataTable(feed.Title.Text);
+		        foreach (var column in columns)
+		        {
+		            newTable.Columns.Add(column.ColumnName);
+		        }
+		        foreach (DataRow row in table.Rows)
+		        {
+		            var newRow = newTable.NewRow();
+		            foreach (var column in columns)
+		            {
+		                newRow[column.ColumnName] = row[column.ColumnName];
+		            }
+		            newTable.Rows.Add(newRow);
+		        }
+		        table = newTable;
+		    }
+		    return table;
 		}
 
-		public void FillDataSet(DataSet dataSet, string spreadsheetID)
+		public void FillDataSet(DataSet dataSet, string spreadsheetId)
 		{
-			foreach (DataTable source in this.GetDataSet(spreadsheetID).Tables)
+			foreach (DataTable source in GetDataSet(spreadsheetId).Tables)
 			{
 				if (dataSet.Tables.Contains(source.TableName))
 				{
-					this.MergeTable(source, dataSet.Tables[source.TableName]);
+					MergeTable(source, dataSet.Tables[source.TableName]);
 				}
 				else
 				{
@@ -118,14 +107,14 @@
 			}
 		}
 
-		public void FillDataTable(DataTable table, string spreadsheetID, string worksheetID)
+		public void FillDataTable(DataTable table, string spreadsheetId, string worksheetId)
 		{
-			this.MergeTable(this.GetDataTable(spreadsheetID, worksheetID), table);
+			MergeTable(GetDataTable(spreadsheetId, worksheetId), table);
 		}
 
 		private void MergeTable(DataTable source, DataTable target)
 		{
-			for (int i = 0; i < target.Columns.Count; i++)
+			for (var i = 0; i < target.Columns.Count; i++)
 			{
 				source.Columns[i].ColumnName = target.Columns[i].ColumnName;
 			}

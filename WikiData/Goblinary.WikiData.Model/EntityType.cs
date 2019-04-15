@@ -4,27 +4,21 @@
 	using System.Collections.Generic;
 	using System.ComponentModel.DataAnnotations;
 	using System.ComponentModel.DataAnnotations.Schema;
-	using System.Linq;
-	using System.Reflection;
-	using System.Text;
-	using System.Threading.Tasks;
-
-	using Goblinary.Common;
 
 	public class EntityType
 	{
 		public EntityType()
 		{
-			this.ChildTypes = new List<EntityType>();
-			this.ChildMappings = new List<EntityTypeMapping>();
-			this.ParentMappings = new List<EntityTypeMapping>();
+			ChildTypes = new List<EntityType>();
+			ChildMappings = new List<EntityTypeMapping>();
+			ParentMappings = new List<EntityTypeMapping>();
 		}
 
 		[Key, Column(Order = 1)]
-		public string BaseType_Name { get; set; }
+		public string BaseTypeName { get; set; }
 		[Key, Column(Order = 2)]
 		public string Name { get; set; }
-		public string ParentType_Name { get; set; }
+		public string ParentTypeName { get; set; }
 		[Required]
 		public string Modifier { get; set; }
 		[Required]
@@ -50,11 +44,11 @@
 	public class EntityTypeMapping
 	{
 		[Key, Column(Order = 1)]
-		public string BaseType_Name { get; set; }
+		public string BaseTypeName { get; set; }
 		[Key, Column(Order = 2)]
-		public string ParentType_Name { get; set; }
+		public string ParentTypeName { get; set; }
 		[Key, Column(Order = 3)]
-		public string ChildType_Name { get; set; }
+		public string ChildTypeName { get; set; }
 
 		[ForeignKey("BaseType_Name, ParentType_Name")]
 		public virtual EntityType ParentType { get; set; }

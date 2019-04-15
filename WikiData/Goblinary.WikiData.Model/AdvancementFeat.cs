@@ -4,19 +4,13 @@
 	using System.Collections.Generic;
 	using System.ComponentModel.DataAnnotations;
 	using System.ComponentModel.DataAnnotations.Schema;
-	using System.Linq;
-	using System.Reflection;
-	using System.Text;
-	using System.Threading.Tasks;
-
-	using Goblinary.Common;
 
 	public class AdvancementFeat
 	{
 		public AdvancementFeat()
 		{
-			this.Feats = new List<Feat>();
-			this.FeatRankTrainerLevels = new List<FeatRankTrainerLevel>();
+			Feats = new List<Feat>();
+			FeatRankTrainerLevels = new List<FeatRankTrainerLevel>();
 		}
 
 		[Key]

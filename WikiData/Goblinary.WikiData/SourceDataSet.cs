@@ -1,45 +1,35 @@
 ﻿namespace Goblinary.WikiData
 {
 	using System;
-	using System.Collections.Generic;
 	using System.Data;
-	using System.IO;
-	using System.Linq;
-	using System.Text;
-	using System.Text.RegularExpressions;
-
-	using Goblinary.Common;
+	using Common;
 
 	public partial class SourceDataSet : IWikiDataSet
 	{
 		public bool IsLoaded { get; set; }
-		public XmlWriteMode WriteMode { get { return XmlWriteMode.WriteSchema; } }
-		public LookupDataSet LookupDataSet { get; set; }
+		public XmlWriteMode WriteMode => XmlWriteMode.WriteSchema;
+	    public LookupDataSet LookupDataSet { get; set; }
 
-		private string spreadsheetID
-		{
-			get
-			{
-				return this.LookupDataSet.Dictionary.FindByKey("Copy of PFO Wiki - Official Data").Value;
-			}
-		}
+		//private string SpreadsheetId => LookupDataSet.Dictionary.FindByKey("Copy of PFO Wiki - Official Data").Value;
+	    private string SpreadsheetId = "1UsN8eNlnD7iM_XcFYRvVJJDGTM-0ShcOTQyGcgrxqA0";
 
-		public void Import()
+        public void Import()
 		{
-			if (!this.LookupDataSet.IsLoaded)
-				this.LookupDataSet.XRead();
-			this.Clear();
-			this.IsLoaded = false;
+			if (!LookupDataSet.IsLoaded)
+				LookupDataSet.XRead();
+			Clear();
+			IsLoaded = false;
 			try
 			{
-				new SpreadsheetReader().FillDataSet(this, this.spreadsheetID);
+				new SpreadsheetReader().FillDataSet(this, SpreadsheetId);
 			}
-			catch (Exception ex)
+			catch (Exception exception)
 			{
+                //what is the point of this
 				var errors = this.XGetErrors();
-				throw ex;
+				throw exception;
 			}
-			this.IsLoaded = true;
+			IsLoaded = true;
 			this.XSave();
 		}
 	}

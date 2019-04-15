@@ -1,22 +1,16 @@
 ﻿namespace Goblinary.WikiData.Model
 {
 	using System;
-	using System.Collections.Generic;
 	using System.ComponentModel.DataAnnotations;
 	using System.ComponentModel.DataAnnotations.Schema;
-	using System.Linq;
 	using System.Reflection;
-	using System.Text;
-	using System.Threading.Tasks;
-
-	using Goblinary.Common;
 
 	public class KeywordType
 	{
 		public static Type GetType<T>(string typeName)
 		{
-			Assembly assembly = Assembly.GetAssembly(typeof(T));
-			Type type = assembly.GetType(string.Format("{0}.{1}", typeof(T).Namespace, typeName));
+			var assembly = Assembly.GetAssembly(typeof(T));
+			var type = assembly.GetType(string.Format("{0}.{1}", typeof(T).Namespace, typeName));
 			if (type == null)
 			{
 				throw new Exception(string.Format("Type not found: {0}", typeName));
@@ -27,49 +21,43 @@
 		[Key]
 		public string Name { get; set; }
 		[Required]
-		public string SourceFeatType_Name { get; set; }
-		public string MatchingFeatType_Name { get; set; }
-		public string MatchingItemType_Name { get; set; }
+		public string SourceFeatTypeName { get; set; }
+		public string MatchingFeatTypeName { get; set; }
+		public string MatchingItemTypeName { get; set; }
 
-		private Type sourceFeatType;
+		private Type _sourceFeatType;
 		[NotMapped]
 		public Type SourceFeatType
 		{
 			get
 			{
-				if (this.sourceFeatType == null && this.SourceFeatType_Name != null)
-				{
-					this.sourceFeatType = KeywordType.GetType<Feat>(this.SourceFeatType_Name);
-				}
-				return this.sourceFeatType;
+			    if (_sourceFeatType != null || SourceFeatTypeName == null) return _sourceFeatType;
+			    _sourceFeatType = GetType<Feat>(SourceFeatTypeName);
+			    return _sourceFeatType;
 			}
 		}
 
-		private Type matchingFeatType;
+		private Type _matchingFeatType;
 		[NotMapped]
 		public Type MatchingFeatType
 		{
 			get
 			{
-				if (this.matchingFeatType == null && this.MatchingFeatType_Name != null)
-				{
-					this.matchingFeatType = KeywordType.GetType<Feat>(this.MatchingFeatType_Name);
-				}
-				return this.matchingFeatType;
+			    if (_matchingFeatType != null || MatchingFeatTypeName == null) return _matchingFeatType;
+			    _matchingFeatType = GetType<Feat>(MatchingFeatTypeName);
+			    return _matchingFeatType;
 			}
 		}
 
-		private Type matchingItemType;
+		private Type _matchingItemType;
 		[NotMapped]
 		public Type MatchingItemType
 		{
 			get
 			{
-				if (this.matchingItemType == null && this.MatchingItemType_Name != null)
-				{
-					this.matchingItemType = KeywordType.GetType<Feat>(this.MatchingItemType_Name);
-				}
-				return this.matchingItemType;
+			    if (_matchingItemType != null || MatchingItemTypeName == null) return _matchingItemType;
+			    _matchingItemType = GetType<Feat>(MatchingItemTypeName);
+			    return _matchingItemType;
 			}
 		}
 	}

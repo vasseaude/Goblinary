@@ -2,9 +2,7 @@
 {
 	using System;
 	using System.Collections.Generic;
-	using System.Linq;
-	using System.Text;
-	using System.Threading.Tasks;
+
 
 	public interface IListWrapper<TDerived>
 	{
@@ -16,53 +14,44 @@
 	{
 		public VariantList(IList<TDerived> list)
 		{
-			if (list is IListWrapper<TDerived>)
-				this.innerList = ((IListWrapper<TDerived>)list).InnerList;
-			else
-				this.innerList = list;
+		    _innerList = list is IListWrapper<TDerived> wrapper ? wrapper.InnerList : list;
 		}
 
-		private IList<TDerived> innerList;
+		private readonly IList<TDerived> _innerList;
 
-		IList<TDerived> IListWrapper<TDerived>.InnerList { get { return this.innerList; } }
+		IList<TDerived> IListWrapper<TDerived>.InnerList => _innerList;
 
-		public int IndexOf(TBase item)
+	    public int IndexOf(TBase item) => _innerList.IndexOf((TDerived)item);
+
+	    public void Insert(int index, TBase item)
 		{
-			return this.innerList.IndexOf((TDerived)item);
-		}
-
-		public void Insert(int index, TBase item)
-		{
-			this.innerList.Insert(index, (TDerived)item);
+			_innerList.Insert(index, (TDerived)item);
 		}
 
 		public void RemoveAt(int index)
 		{
-			this.innerList.RemoveAt(index);
+			_innerList.RemoveAt(index);
 		}
 
 		public TBase this[int index]
 		{
-			get { return (TBase)this.innerList[index]; }
-			set
-			{
-				this.innerList[index] = (TDerived)value;
-			}
+			get => (TBase)_innerList[index];
+		    set => _innerList[index] = (TDerived)value;
 		}
 
 		public void Add(TBase item)
 		{
-			this.innerList.Add((TDerived)item);
+			_innerList.Add((TDerived)item);
 		}
 
 		public void Clear()
 		{
-			this.innerList.Clear();
+			_innerList.Clear();
 		}
 
 		public bool Contains(TBase item)
 		{
-			return this.innerList.Contains((TDerived)item);
+			return _innerList.Contains((TDerived)item);
 		}
 
 		public void CopyTo(TBase[] array, int arrayIndex)
@@ -70,29 +59,23 @@
 			throw new NotImplementedException();
 		}
 
-		public int Count
-		{
-			get { return this.innerList.Count; }
-		}
+		public int Count => _innerList.Count;
 
-		public bool IsReadOnly
-		{
-			get { return this.innerList.IsReadOnly; }
-		}
+	    public bool IsReadOnly => _innerList.IsReadOnly;
 
-		public bool Remove(TBase item)
+	    public bool Remove(TBase item)
 		{
-			return this.innerList.Remove((TDerived)item);
+			return _innerList.Remove((TDerived)item);
 		}
 
 		public IEnumerator<TBase> GetEnumerator()
 		{
-			return (IEnumerator<TBase>)this.innerList.GetEnumerator();
+			return (IEnumerator<TBase>)_innerList.GetEnumerator();
 		}
 
 		System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
 		{
-			return ((System.Collections.IEnumerable)this.innerList).GetEnumerator();
+			return ((System.Collections.IEnumerable)_innerList).GetEnumerator();
 		}
 	}
 }

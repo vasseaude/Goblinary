@@ -1,25 +1,20 @@
 ﻿namespace Goblinary.WikiData.Model
 {
-	using System;
 	using System.Collections.Generic;
 	using System.ComponentModel.DataAnnotations;
 	using System.ComponentModel.DataAnnotations.Schema;
 	using System.Linq;
-	using System.Text;
-	using System.Threading.Tasks;
-
-	using Goblinary.Common;
 
 	public class RecipeOutputItem
 	{
 		public RecipeOutputItem()
 		{
-			this.RecipeOutputItemUpgrades = new List<RecipeOutputItemUpgrade>();
-			this.Recipes = new List<Recipe>();
+			RecipeOutputItemUpgrades = new List<RecipeOutputItemUpgrade>();
+			Recipes = new List<Recipe>();
 		}
 
 		[Key, ForeignKey("Item")]
-		public string Item_Name { get; set; }
+		public string ItemName { get; set; }
 
 		//[ForeignKey("Item_Name")]
 		public virtual Item Item { get; set; }
@@ -34,11 +29,11 @@
 	{
 		public RecipeOutputItemUpgrade()
 		{
-			this.RecipeOutputItemUpgradeKeywords = new List<RecipeOutputItemUpgradeKeyword>();
+			RecipeOutputItemUpgradeKeywords = new List<RecipeOutputItemUpgradeKeyword>();
 		}
 
 		[Key, Column(Order = 1)]
-		public string Item_Name { get; set; }
+		public string ItemName { get; set; }
 		[Key, Column(Order = 2)]
 		public int? Upgrade { get; set; }
 
@@ -48,21 +43,19 @@
 		[InverseProperty("RecipeOutputItemUpgrade")]
 		public virtual List<RecipeOutputItemUpgradeKeyword> RecipeOutputItemUpgradeKeywords { get; set; }
 
-		private Recipe recipe;
+		private Recipe _recipe;
 		[NotMapped]
 		public Recipe Recipe
 		{
 			get
 			{
-				if (this.recipe == null && this.RecipeOutputItem.Item is Component)
-				{
-					this.recipe = (
-						from r in this.RecipeOutputItem.Recipes
-						where r is RefiningRecipe
-							&& ((RefiningRecipe)r).Upgrade == this.Upgrade
-						select r).FirstOrDefault();
-				}
-				return this.recipe;
+			    if (_recipe != null || !(RecipeOutputItem.Item is Component)) return _recipe;
+			    _recipe = (
+			        from r in RecipeOutputItem.Recipes
+			        where r is RefiningRecipe
+			              && ((RefiningRecipe)r).Upgrade == Upgrade
+			        select r).FirstOrDefault();
+			    return _recipe;
 			}
 		}
 	}
@@ -70,17 +63,17 @@
 	public class RecipeOutputItemUpgradeKeyword
 	{
 		[Key, Column(Order = 1)]
-		public string Item_Name { get; set; }
+		public string ItemName { get; set; }
 		[Key, Column(Order = 2)]
 		public int? Upgrade { get; set; }
 		[Key, Column(Order = 3)]
-		public string KeywordKind_Name { get; set; }
+		public string KeywordKindName { get; set; }
 		[Key, Column(Order = 4)]
 		public int? KeywordNo { get; set; }
 		[Required]
-		public string KeywordType_Name { get; set; }
+		public string KeywordTypeName { get; set; }
 		[Required]
-		public string Keyword_Name { get; set; }
+		public string KeywordName { get; set; }
 
 		[ForeignKey("Item_Name, Upgrade")]
 		public virtual RecipeOutputItemUpgrade RecipeOutputItemUpgrade { get; set; }

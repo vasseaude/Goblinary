@@ -18,8 +18,8 @@
 		}
 
 		public bool IsLoaded { get; set; }
-		public XmlWriteMode WriteMode { get { return XmlWriteMode.IgnoreSchema; } }
-		public SourceDataSet SourceDataSet { get; set; }
+		public XmlWriteMode WriteMode => XmlWriteMode.IgnoreSchema;
+	    public SourceDataSet SourceDataSet { get; set; }
 
 		private Dictionary<string, Dictionary<string, Dictionary<int, int>>> trainerFeatRankLevels = new Dictionary<string, Dictionary<string, Dictionary<int, int>>>();
 
@@ -27,50 +27,50 @@
 		{
 			try
 			{
-				if (!this.SourceDataSet.IsLoaded)
-					this.SourceDataSet.XRead();
-				if (!this.SourceDataSet.LookupDataSet.IsLoaded)
-					this.SourceDataSet.LookupDataSet.XRead();
-				this.Clear();
-				this.IsLoaded = false;
-				foreach (DataTable sourceTable in this.SourceDataSet.Tables)
+				if (!SourceDataSet.IsLoaded)
+					SourceDataSet.XRead();
+				if (!SourceDataSet.LookupDataSet.IsLoaded)
+					SourceDataSet.LookupDataSet.XRead();
+				Clear();
+				IsLoaded = false;
+				foreach (DataTable sourceTable in SourceDataSet.Tables)
 				{
-					LookupDataSet.SourceWorksheetsRow workSheet = this.SourceDataSet.LookupDataSet.SourceWorksheets.FindByWorksheetName(sourceTable.TableName);
+					LookupDataSet.SourceWorksheetsRow workSheet = SourceDataSet.LookupDataSet.SourceWorksheets.FindByWorksheetName(sourceTable.TableName);
 					if (workSheet == null)
 					{
-						throw new Exception(string.Format("WorkSheet '{0}' not found.", sourceTable.TableName));
+						throw new Exception($"WorkSheet '{sourceTable.TableName}' not found.");
 					}
 					switch (workSheet.Action)
 					{
 						case "Ignore":
 							break;
 						case "Straight":
-							this.ImportStraight(sourceTable, workSheet);
+							ImportStraight(sourceTable, workSheet);
 							break;
 						case "Advancement":
 							ImportAdvancement(sourceTable, workSheet);
 							break;
 						case "Trainers":
-							this.ImportTrainers(sourceTable, workSheet);
+							ImportTrainers(sourceTable, workSheet);
 							break;
 						case "MultiTrainers":
-							this.ImportMultiTrainers(sourceTable, workSheet);
+							ImportMultiTrainers(sourceTable, workSheet);
 							break;
 						default:
-							throw new Exception(string.Format("Unexpected Action '{0}' for WorkSheet '{1}'.", workSheet.Action, workSheet.WorksheetName));
+							throw new Exception($"Unexpected Action '{workSheet.Action}' for WorkSheet '{workSheet.WorksheetName}'.");
 					}
 				}
-				foreach (string trainer in this.trainerFeatRankLevels.Keys)
+				foreach (string trainer in trainerFeatRankLevels.Keys)
 				{
-					foreach (string feat in this.trainerFeatRankLevels[trainer].Keys)
+					foreach (string feat in trainerFeatRankLevels[trainer].Keys)
 					{
-						foreach (int rank in this.trainerFeatRankLevels[trainer][feat].Keys)
+						foreach (int rank in trainerFeatRankLevels[trainer][feat].Keys)
 						{
-							this.FeatRankTrainerLevels.AddFeatRankTrainerLevelsRow(feat, rank, trainer, this.trainerFeatRankLevels[trainer][feat][rank]);
+							FeatRankTrainerLevels.AddFeatRankTrainerLevelsRow(feat, rank, trainer, trainerFeatRankLevels[trainer][feat][rank]);
 						}
 					}
 				}
-				this.IsLoaded = true;
+				IsLoaded = true;
 				this.XSave();
 			}
 			catch (Exception ex)
@@ -81,7 +81,7 @@
 
 		private void ImportStraight(DataTable sourceTable, LookupDataSet.SourceWorksheetsRow worksheet)
 		{
-			DataTable targetTable = this.Tables[worksheet.TargetTableName];
+			DataTable targetTable = Tables[worksheet.TargetTableName];
 			string[] columnNames = worksheet.ColumnNames.Split('|');
 			string pattern = @"^(?<SlotName>[^\s]*)\s*Level\s*(?<Rank>[0-9]*)\s*$";
 			foreach (DataRow sourceRow in sourceTable.Rows)
@@ -103,7 +103,7 @@
 					string displayName = sourceRow["DisplayName"].ToString();
 					if (!Regex.IsMatch(displayName, pattern))
 					{
-						throw new Exception(string.Format("Display Name '{0}' does not match Pattern '{1}'.", displayName, pattern));
+						throw new Exception($"Display Name '{displayName}' does not match Pattern '{pattern}'.");
 					}
 					targetRow["SlotName"] = Regex.Replace(displayName, pattern, "${SlotName}");
 					targetRow["Rank"] = Regex.Replace(displayName, pattern, "${Rank}");
@@ -121,7 +121,7 @@
 						case "Spellbook":
 						case "Toolkit":
 						case "Trophy Charm":
-							targetRow["Name"] = string.Format("{0} {1}", targetRow["Name"], targetRow["Slot"]);
+							targetRow["Name"] = $"{targetRow["Name"]} {targetRow["Slot"]}";
 							break;
 					}
 				}
@@ -141,29 +141,29 @@
 				string featName = sourceRow[0].ToString();
 				if (featName != "")
 				{
-					AdvancementsRow advancementsRow = this.Advancements.NewAdvancementsRow();
+					AdvancementsRow advancementsRow = Advancements.NewAdvancementsRow();
 					advancementsRow.Worksheet = worksheet.WorksheetName;
 					if (!worksheet.IsTypeNull())
 						advancementsRow.Type = worksheet.Type;
 					advancementsRow.SlotName = featName;
 					advancementsRow.Description = sourceTable.Columns.Contains("description") ? sourceRow["description"].ToString() : "";
-					this.Advancements.AddAdvancementsRow(advancementsRow);
+					Advancements.AddAdvancementsRow(advancementsRow);
 
 					int Rank = 0;
-					while (++Rank * WorkDataSet.advancementColumns + 1 <= sourceTable.Columns.Count)
+					while (++Rank * advancementColumns + 1 <= sourceTable.Columns.Count)
 					{
-						AdvancementRanksRow advancementRanksRow = this.AdvancementRanks.NewAdvancementRanksRow();
+						AdvancementRanksRow advancementRanksRow = AdvancementRanks.NewAdvancementRanksRow();
 						advancementRanksRow.SlotName = featName;
 						advancementRanksRow.Rank = Rank.ToString();
-						for (int i = 0; i < WorkDataSet.advancementColumns; i++)
+						for (int i = 0; i < advancementColumns; i++)
 						{
-							advancementRanksRow[2 + i] = sourceRow[1 + (Rank - 1) * WorkDataSet.advancementColumns + i];
+							advancementRanksRow[2 + i] = sourceRow[1 + (Rank - 1) * advancementColumns + i];
 						}
 						if (advancementRanksRow.IsExpCostNull())
 						{
 							break;
 						}
-						this.AdvancementRanks.AddAdvancementRanksRow(advancementRanksRow);
+						AdvancementRanks.AddAdvancementRanksRow(advancementRanksRow);
 					}
 				}
 			}
@@ -179,9 +179,9 @@
 				{
 					case "Trainer":
 						trainer = row[1].ToString();
-						if (!this.trainerFeatRankLevels.ContainsKey(trainer))
+						if (!trainerFeatRankLevels.ContainsKey(trainer))
 						{
-							this.trainerFeatRankLevels[trainer] = new Dictionary<string, Dictionary<int, int>>();
+							trainerFeatRankLevels[trainer] = new Dictionary<string, Dictionary<int, int>>();
 						}
 						featRankLevels = trainerFeatRankLevels[trainer];
 						break;
@@ -228,11 +228,11 @@
 				string feat = row[20].ToString().Split('=')[0];
 				foreach (string trainer in trainerFactors.Keys)
 				{
-					if (!this.trainerFeatRankLevels.ContainsKey(trainer))
+					if (!trainerFeatRankLevels.ContainsKey(trainer))
 					{
-						this.trainerFeatRankLevels[trainer] = new Dictionary<string, Dictionary<int, int>>();
+						trainerFeatRankLevels[trainer] = new Dictionary<string, Dictionary<int, int>>();
 					}
-					featRankLevels = this.trainerFeatRankLevels[trainer];
+					featRankLevels = trainerFeatRankLevels[trainer];
 					if (!featRankLevels.ContainsKey(feat))
 					{
 						featRankLevels[feat] = new Dictionary<int, int>();
@@ -256,7 +256,10 @@
 					case "Logical Level":
 						rowType = MultiTrainerRowTypes.None;
 						break;
-					case "Member":
+				    case "Building Level":
+				        rowType = MultiTrainerRowTypes.None;
+				        break;
+                    case "Member":
 						rowType = MultiTrainerRowTypes.Member;
 						trainerFactors = new Dictionary<string, decimal>();
 						memberAction(row);
