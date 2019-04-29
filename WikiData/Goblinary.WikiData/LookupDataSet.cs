@@ -18,19 +18,19 @@
 			try
 			{
 				//new SpreadsheetReader().FillDataSet(this, spreadsheetID);
-			    this.Dictionary.ReadXml("Dictionary.xml");
-			    this.SourceWorksheets.ReadXml("Worksheets.xml");
-			    this.WeaponTypes.ReadXml("WeaponTypes.xml");
-                this.Lookups.ReadXml("Lookups.xml");
-                this.EffectLookups.ReadXml("EffectLookups.xml");
-                this.EntityTypes.ReadXml("EntityTypes.xml");
-                this.GearTypes.ReadXml("GearTypes.xml");
-                this.Resources.ReadXml("Resources.xml");
-			    this.ResourceTypes.ReadXml("ResourceTypes.xml");
-                this.Salvages.ReadXml("Salvages.xml");
-                this.Stocks.ReadXml("Stocks.xml");
-                this.StockIngredients.ReadXml("StockIngredients.xml");
-			    this.KeywordTypes.ReadXml("KeywordTypes.xml");
+			    Dictionary.ReadXml("Dictionary.xml");
+			    SourceWorksheets.ReadXml("Worksheets.xml");
+			    WeaponTypes.ReadXml("WeaponTypes.xml");
+                Lookups.ReadXml("Lookups.xml");
+                EffectLookups.ReadXml("EffectLookups.xml");
+                EntityTypes.ReadXml("EntityTypes.xml");
+                GearTypes.ReadXml("GearTypes.xml");
+                Resources.ReadXml("Resources.xml");
+			    ResourceTypes.ReadXml("ResourceTypes.xml");
+                Salvages.ReadXml("Salvages.xml");
+                Stocks.ReadXml("Stocks.xml");
+                StockIngredients.ReadXml("StockIngredients.xml");
+			    KeywordTypes.ReadXml("KeywordTypes.xml");
 
 			}
 

@@ -1,4 +1,6 @@
-﻿namespace Goblinary.WikiData
+﻿using System.Net.Sockets;
+
+namespace Goblinary.WikiData
 {
     using System;
     using System.Collections.Generic;
@@ -1084,20 +1086,25 @@
 		private void BuildFeatRankTrainerLevels()
 		{
 			var levels = GetEntityList<FeatRankTrainerLevel>();
-			levels.AddRange((
-					from l in workDataSet.FeatRankTrainerLevels
-					from a in GetEntityList<AdvancementFeat>()
-						.Where(x => x.Name.ToLower() == l.Feat.ToLower())
-						.DefaultIfEmpty()
-					select new FeatRankTrainerLevel
-					{
-						Feat_Name = a.Name,
-						Feat_Rank = l.Rank,
-						Trainer_Name = l.Trainer,
-						Level = l.Level
-					}
-				).ToList()
-			);
+		    var featRankTrainerLevels = GetEntityList<AdvancementFeat>();
+		    foreach (var advancementFeat in featRankTrainerLevels.Where(x => String.CompareOrdinal(x.Name , "Enchantment Points")==0))
+		    {
+		        Console.WriteLine(advancementFeat.Name);
+		    }
+
+		    List<FeatRankTrainerLevel> list = new List<FeatRankTrainerLevel>();
+		    foreach (WorkDataSet.FeatRankTrainerLevelsRow l in workDataSet.FeatRankTrainerLevels)
+		    foreach (var a in GetEntityList<AdvancementFeat>()
+		        .Where(x => string.Equals(x.Name, l.Feat, StringComparison.CurrentCultureIgnoreCase))
+		        .DefaultIfEmpty())
+		        list.Add(new FeatRankTrainerLevel
+		        {
+		            Feat_Name = a.Name,
+		            Feat_Rank = l.Rank,
+		            Trainer_Name = l.Trainer,
+		            Level = l.Level
+		        });
+		    levels.AddRange(list);
 
 			GetEntityList<Trainer>().AddRange((
 					from tn in (
