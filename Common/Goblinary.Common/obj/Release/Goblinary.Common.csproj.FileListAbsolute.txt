@@ -1,5 +1,0 @@
-G:\Projects\Goblinary\Common\Goblinary.Common\bin\Release\Goblinary.Common.dll
-G:\Projects\Goblinary\Common\Goblinary.Common\bin\Release\Goblinary.Common.pdb
-G:\Projects\Goblinary\Common\Goblinary.Common\obj\Release\Goblinary.Common.dll
-G:\Projects\Goblinary\Common\Goblinary.Common\obj\Release\Goblinary.Common.pdb
-G:\Projects\Goblinary\Common\Goblinary.Common\obj\Release\Goblinary.Common.csprojResolveAssemblyReference.cache
